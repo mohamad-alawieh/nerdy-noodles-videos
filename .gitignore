@@ -1,0 +1,4 @@
+.tts/
+__pycache__/
+episodes/*/still_*.png
+*.wav

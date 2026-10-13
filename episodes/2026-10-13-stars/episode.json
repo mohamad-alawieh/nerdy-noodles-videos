@@ -1,0 +1,52 @@
+{
+  "id": "2026-10-13-stars",
+  "lesson": "counting",
+  "scene": "space",
+  "board_title": "Space Count!",
+  "board_label": "Stars:",
+  "voice": "af_heart",
+  "music_seed": 21,
+  "hook": {
+    "pre": "Hic... hic...",
+    "burst": "HIC!",
+    "burst_say": "Hic!",
+    "line": "Oh no! My hiccup scattered all the stars!",
+    "line_caption": "Oh no! My hiccup\nscattered all the stars!"
+  },
+  "items": [
+    {"kind": "star", "color": "#FFD23F", "big": "1", "word": "ONE", "say": "One!"},
+    {"kind": "star", "color": "#FF8C42", "big": "2", "word": "TWO", "say": "Two!"},
+    {"kind": "star", "color": "#FF6FB5", "big": "3", "word": "THREE", "say": "Three!"},
+    {"kind": "star", "color": "#8E5CF7", "big": "4", "word": "FOUR", "say": "Four!"},
+    {"kind": "star", "color": "#2EC4B6", "big": "5", "word": "FIVE", "say": "Five!"},
+    {"kind": "star", "color": "#3DDC84", "big": "6", "word": "SIX", "say": "Six!"},
+    {"kind": "star", "color": "#00B4D8", "big": "7", "word": "SEVEN", "say": "Seven!"},
+    {"kind": "star", "color": "#FF5A36", "big": "8", "word": "EIGHT", "say": "Eight!"},
+    {"kind": "star", "color": "#FFB627", "big": "9", "word": "NINE", "say": "Nine!"},
+    {"kind": "star", "color": "#F15BB5", "big": "10", "word": "TEN", "say": "Ten!"}
+  ],
+  "song": [
+    "One star, two stars,\ntwinkle way up high!",
+    "Three stars, four stars,\nshining in the sky!",
+    "Five, six, seven,\nsparkle, glow and zoom,",
+    "Eight, nine, ten,\nstars around the moon!"
+  ],
+  "celebrate_word": "TEN!",
+  "celebrate": "Ten stars! The sky is shiny again!",
+  "twist": {
+    "peek_line": "Wait... who's that?",
+    "reveal_word": "A PLANET?!",
+    "reveal": "A planet?!",
+    "laugh": "Hee hee! Hello, little planet!",
+    "laugh_caption": "Hee hee!\nHello, little planet!",
+    "item": {"kind": "planet", "color": "#8E5CF7", "big": "", "word": "PLANET!", "say": "Planet!"}
+  },
+  "outro": "Counting stars is out of this world! What should we count next? Tell me!",
+  "outro_caption": "Counting stars is out of this world!\nWhat should we count next? Tell me!",
+  "thumbnail": {"lines": ["COUNT", "THE", "STARS!"], "sticker": "HIC!", "burst": "HIC!"},
+  "youtube": {
+    "title": "Count the Stars! (HIC!) | Nerdy Noodles",
+    "description": "🌟 HIC! Noodle got the hiccups and all the stars flew out of the sky! Can you help count them back?\n\nCount from 1 to 10 with Noodle, the nerdiest noodle bowl in space! Watch the stars zoom back one by one, sing the twinkly counting song, and stay till the end for a surprise visitor from outer space! 🪐\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Count from 1 to 10\n✔️ See each number and its word (1 = ONE)\n✔️ Sing a catchy counting song\n✔️ Laugh along with Noodle!\n\n⏱️ Chapters\n0:00 HIC! Oh no!\n0:05 Let's count the stars!\n0:22 Sing along!\n0:40 Wait... who's that?\n0:52 What should we count next?\n\n💬 What should Noodle count next? Tell us in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #CountingForKids #LearnToCount #KidsSongs #Preschool #NumbersForKids #CountingSong #Space",
+    "tags": ["counting for kids", "learn to count", "counting song", "count to 10", "numbers for kids", "space for kids", "preschool learning", "toddler learning", "kids songs", "Nerdy Noodles"]
+  }
+}
