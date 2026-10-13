@@ -1,7 +1,29 @@
 [
-  {"id": "2026-10-13-noodles", "date": "2026-10-13", "lesson": "counting 1-10", "scene": "kitchen", "kinds": ["noodle"],
-   "hook": "sneeze ACHOO", "twist": "an 11th tiny noodle", "title": "Count the Noodles! (Oops!) | Nerdy Noodles",
-   "note": "made by hand, uploaded by the owner"},
-  {"id": "2026-10-13-stars", "date": "2026-10-13", "lesson": "counting 1-10", "scene": "space", "kinds": ["star"],
-   "hook": "hiccup HIC", "twist": "a planet joins the stars", "title": "Count the Stars! (HIC!) | Nerdy Noodles"}
+ {
+  "id": "2026-10-13-noodles",
+  "date": "2026-10-13",
+  "lesson": "counting 1-10",
+  "scene": "kitchen",
+  "kinds": [
+   "noodle"
+  ],
+  "hook": "sneeze ACHOO",
+  "twist": "an 11th tiny noodle",
+  "title": "Count the Noodles! (Oops!) | Nerdy Noodles",
+  "note": "made by hand, uploaded by the owner"
+ },
+ {
+  "id": "2026-10-13-stars",
+  "date": "2026-10-13",
+  "lesson": "counting 1-10",
+  "scene": "space",
+  "kinds": [
+   "star"
+  ],
+  "hook": "hiccup HIC",
+  "twist": "a planet joins the stars",
+  "title": "Count the Stars! (HIC!) | Nerdy Noodles",
+  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=7324908602702122577",
+  "scheduled": "2026-10-13T14:55:00+03:00"
+ }
 ]

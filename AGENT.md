@@ -20,7 +20,7 @@ pencil. Audience: ages 2-6. Language: English. Tone: funny, warm, encouraging, n
 5. Render: `python3 engine/episode.py <path>/episode.json` (~1-2 min). It writes `video.mp4` and
    `thumbnail.jpg` next to the JSON. If it prints a voice WARNING, stop and report it.
 6. Fill `youtube.title`, `youtube.description`, `youtube.tags` in the JSON (rules below).
-7. Housekeeping: delete `video.mp4` from episode folders older than 7 days (keep their JSON and thumbnail).
+7. Housekeeping: delete `video.mp4` from episode folders older than 3 days (Metricool keeps its own copy once scheduled; keep the JSON and thumbnail).
 8. Append the episode to `episodes/history.json` (fields: id, date, lesson, scene, kinds, hook, twist, title).
    `git add -A && git commit -m "Episode <id>" && git push`.
 9. Wait until both files are public: poll
