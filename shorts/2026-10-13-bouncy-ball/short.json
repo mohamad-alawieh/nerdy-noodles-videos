@@ -1,0 +1,139 @@
+{
+ "id": "2026-10-13-bouncy-ball",
+ "scene": "park",
+ "voice": "af_heart",
+ "music_seed": 4,
+ "hook_text": "WAIT FOR IT...",
+ "beats": [
+  {
+   "type": "say",
+   "text": "Ooh! A tiny bouncy ball!",
+   "face": "happy"
+  },
+  {
+   "type": "enter",
+   "with_prev": true,
+   "id": "ball",
+   "obj": {
+    "kind": "ball",
+    "color": "#FF6FB5"
+   },
+   "from": "right",
+   "to": "floor_right",
+   "style": "bounce",
+   "scale": 1.1,
+   "dur": 1.2
+  },
+  {
+   "type": "say",
+   "text": "Hello, little ball!",
+   "arms": "wave"
+  },
+  {
+   "type": "move",
+   "id": "ball",
+   "to": "head",
+   "style": "hop",
+   "dur": 0.9,
+   "face": "o",
+   "arms": "rest"
+  },
+  {
+   "type": "burst",
+   "word": "BOING!",
+   "at": "head",
+   "dur": 0.6
+  },
+  {
+   "type": "say",
+   "text": "Hee hee! That tickles!",
+   "face": "laugh"
+  },
+  {
+   "type": "grow",
+   "id": "ball",
+   "scale": 2.0,
+   "dur": 0.9,
+   "face": "shock"
+  },
+  {
+   "type": "say",
+   "text": "Uh oh... it's getting bigger!",
+   "face": "worried",
+   "arms": "shock"
+  },
+  {
+   "type": "grow",
+   "id": "ball",
+   "scale": 1.8,
+   "dur": 0.9
+  },
+  {
+   "type": "noodle",
+   "action": "shake",
+   "dur": 1.0
+  },
+  {
+   "type": "pop",
+   "id": "ball",
+   "word": "POP!",
+   "dur": 0.6
+  },
+  {
+   "type": "noodle",
+   "action": "hairpop",
+   "with_prev": true,
+   "dur": 1.2
+  },
+  {
+   "type": "enter",
+   "id": "mini",
+   "obj": {
+    "kind": "ball",
+    "color": "#FF6FB5"
+   },
+   "to": "top",
+   "style": "zoom",
+   "scale": 0.8,
+   "dur": 0.4,
+   "face": "o"
+  },
+  {
+   "type": "multiply",
+   "id": "mini",
+   "count": 6,
+   "radius": 280,
+   "dur": 1.2
+  },
+  {
+   "type": "say",
+   "text": "Oh no... now there are SEVEN of them!",
+   "caption": "Oh no...\nnow there are SEVEN of them!",
+   "face": "shock",
+   "arms": "shock"
+  },
+  {
+   "type": "noodle",
+   "action": "faint",
+   "dur": 1.2
+  },
+  {
+   "type": "end",
+   "text": "Follow for more giggles!",
+   "dur": 2.2
+  }
+ ],
+ "youtube": {
+  "title": "The Bouncy Ball Got TOO Big! #shorts",
+  "description": "Noodle found a tiny bouncy ball... and then it kept GROWING! 😱 Wait for the end!\n\nNoodle is the silliest noodle bowl on YouTube!\n\n🔔 Subscribe to Nerdy Noodles for more giggles!\n\n#NerdyNoodles #shorts #kids #funny #cartoon #bouncyball",
+  "tags": [
+   "funny cartoon for kids",
+   "kids shorts",
+   "silly cartoon",
+   "bouncy ball",
+   "cartoon for kids",
+   "funny kids video",
+   "Nerdy Noodles"
+  ]
+ }
+}
