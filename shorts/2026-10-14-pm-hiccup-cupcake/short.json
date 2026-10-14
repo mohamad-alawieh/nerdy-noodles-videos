@@ -1,0 +1,157 @@
+{
+ "id": "2026-10-14-pm-hiccup-cupcake",
+ "scene": "kitchen",
+ "voice": "af_heart",
+ "music_seed": 27,
+ "hook_text": "WATCH THE END",
+ "start_face": "happy",
+ "beats": [
+  {
+   "type": "say",
+   "text": "Yum! One little cupcake!",
+   "face": "happy"
+  },
+  {
+   "type": "enter",
+   "with_prev": true,
+   "id": "cake",
+   "obj": {
+    "kind": "cupcake",
+    "color": "#FF8FC8"
+   },
+   "from": "top_right",
+   "to": "floor_right",
+   "style": "fall",
+   "scale": 1.1,
+   "dur": 1.0
+  },
+  {
+   "type": "noodle",
+   "action": "jump",
+   "dur": 0.6,
+   "face": "o"
+  },
+  {
+   "type": "burst",
+   "with_prev": true,
+   "word": "HIC!",
+   "color": "#7FD8FF",
+   "at": "top_left",
+   "sfx": "hop",
+   "dur": 0.6
+  },
+  {
+   "type": "grow",
+   "id": "cake",
+   "scale": 1.6,
+   "dur": 0.8,
+   "face": "shock"
+  },
+  {
+   "type": "say",
+   "text": "Whoa! My hiccup made it BIG!",
+   "face": "laugh",
+   "arms": "cheer"
+  },
+  {
+   "type": "noodle",
+   "action": "jump",
+   "dur": 0.6,
+   "face": "o",
+   "arms": "rest"
+  },
+  {
+   "type": "burst",
+   "with_prev": true,
+   "word": "HIC!",
+   "color": "#7FD8FF",
+   "at": "top_left",
+   "sfx": "hop",
+   "dur": 0.6
+  },
+  {
+   "type": "move",
+   "id": "cake",
+   "to": [
+    540,
+    740
+   ],
+   "style": "hop",
+   "dur": 0.7,
+   "face": "o"
+  },
+  {
+   "type": "multiply",
+   "id": "cake",
+   "count": 5,
+   "radius": 320,
+   "dur": 1.2,
+   "face": "shock",
+   "arms": "shock"
+  },
+  {
+   "type": "say",
+   "text": "SIX cupcakes! Best hiccups ever!",
+   "face": "laugh",
+   "arms": "dance"
+  },
+  {
+   "type": "say",
+   "text": "One more hiccup... for MORE!",
+   "face": "squint",
+   "arms": "rest"
+  },
+  {
+   "type": "wait",
+   "sfx": "drum",
+   "dur": 0.8
+  },
+  {
+   "type": "noodle",
+   "action": "jump",
+   "dur": 0.6,
+   "face": "o"
+  },
+  {
+   "type": "burst",
+   "with_prev": true,
+   "word": "HIC!",
+   "color": "#7FD8FF",
+   "at": "top_left",
+   "sfx": "hop",
+   "dur": 0.6
+  },
+  {
+   "type": "noodle",
+   "action": "tiny",
+   "dur": 3.2,
+   "face": "shock"
+  },
+  {
+   "type": "say",
+   "text": "Uh oh... now I'M the tiny one!",
+   "face": "worried",
+   "arms": "shock",
+   "with_prev": true
+  },
+  {
+   "type": "end",
+   "text": "Follow for more giggles!",
+   "dur": 2.2
+  }
+ ],
+ "youtube": {
+  "title": "Noodle's Hiccups Are MAGIC! #shorts",
+  "description": "Every time Noodle hiccups, something silly happens to his cupcake... until the last hiccup! 😂 Watch the end!\n\nNoodle is the silliest noodle bowl on YouTube!\n\n🔔 Subscribe to Nerdy Noodles for more giggles!\n\n#NerdyNoodles #shorts #kids #funny #cartoon #hiccups",
+  "tags": [
+   "funny cartoon for kids",
+   "kids shorts",
+   "silly cartoon",
+   "hiccups",
+   "cupcake cartoon",
+   "cartoon for kids",
+   "funny kids video",
+   "Nerdy Noodles"
+  ]
+ }
+}
