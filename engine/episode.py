@@ -330,7 +330,8 @@ class Episode:
             ssz = fit_size(ctx, st, 120, 380)
             rrect(ctx, -230, -85, 460, 170, 85); fill(ctx, RED, True); stroke(ctx, INK, 12)
             text(ctx, st, 0, 0, ssz, WHITE, sw=14); ctx.restore()
-        for k, (x, y) in enumerate([(820, 870), (950, 820), (1080, 870)]):
+        badges = [(820, 870), (950, 820), (1080, 870)] if any(it.get('big') for it in self.items) else []
+        for k, (x, y) in enumerate(badges):
             it = self.items[k % self.N]
             circle(ctx, x, y, 62); fill(ctx, NUMCOL[k + 1], True); stroke(ctx, INK, 10)
             b = it.get('big') or str(k + 1)

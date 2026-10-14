@@ -1,0 +1,127 @@
+{
+  "id": "2026-10-14-pm-shapes-boing",
+  "lesson": "shapes",
+  "scene": "park",
+  "board_title": "Noodle Shapes",
+  "board_label": "Shapes:",
+  "voice": "af_heart",
+  "music_seed": 7291,
+  "hook": {
+    "pre": "Boing... boing...",
+    "burst": "BOING!",
+    "burst_say": "Boing!",
+    "line": "Oops! I bounced and my shapes flew away!",
+    "line_caption": "Oops! I bounced and\nmy shapes flew away!"
+  },
+  "items": [
+    {
+      "kind": "shape",
+      "shape": "circle",
+      "color": "#FF5A36",
+      "big": "",
+      "word": "CIRCLE",
+      "say": "Circle! It is round!"
+    },
+    {
+      "kind": "shape",
+      "shape": "square",
+      "color": "#00B4D8",
+      "big": "",
+      "word": "SQUARE",
+      "say": "Square! Four equal sides!",
+      "trick": "bounce"
+    },
+    {
+      "kind": "shape",
+      "shape": "triangle",
+      "color": "#3DDC84",
+      "big": "",
+      "word": "TRIANGLE",
+      "say": "Triangle! Three sides!"
+    },
+    {
+      "kind": "shape",
+      "shape": "rectangle",
+      "color": "#FFB627",
+      "big": "",
+      "word": "RECTANGLE",
+      "say": "Rectangle! Two long sides!",
+      "trick": "cartwheel"
+    },
+    {
+      "kind": "shape",
+      "shape": "oval",
+      "color": "#8E5CF7",
+      "big": "",
+      "word": "OVAL",
+      "say": "Oval! Like an egg!"
+    },
+    {
+      "kind": "shape",
+      "shape": "diamond",
+      "color": "#FF4FA3",
+      "big": "",
+      "word": "DIAMOND",
+      "say": "Diamond! Like a kite!",
+      "trick": "sunglasses"
+    },
+    {
+      "kind": "shape",
+      "shape": "hexagon",
+      "color": "#2E86FF",
+      "big": "",
+      "word": "HEXAGON",
+      "say": "Hexagon! Six sides!"
+    }
+  ],
+  "song": [
+    "A circle is round,\na square has four sides,",
+    "A triangle has three,\nlike playground slides!",
+    "Rectangle, oval,\ndiamond, hexagon too,",
+    "Shapes, shapes, shapes,\nI find shapes with you!"
+  ],
+  "celebrate_word": "7 SHAPES!",
+  "celebrate": "Seven shapes! We found them all!",
+  "twist": {
+    "peek_line": "Wait... who's that?",
+    "reveal_word": "A MOON?!",
+    "reveal": "A moon! A moon shape!",
+    "laugh": "Hee hee! Moon, it's not bedtime yet!",
+    "laugh_caption": "Hee hee! Moon,\nit's not bedtime yet!",
+    "item": {
+      "kind": "shape",
+      "shape": "moon",
+      "color": "#FFE14D",
+      "big": "",
+      "word": "MOON",
+      "say": "Moon!"
+    }
+  },
+  "outro": "Shapes are everywhere! What shape is your window? Tell me!",
+  "outro_caption": "Shapes are everywhere! What\nshape is your window? Tell me!",
+  "thumbnail": {
+    "lines": [
+      "SHAPES",
+      "WITH",
+      "NOODLE!"
+    ],
+    "sticker": "BOING!",
+    "burst": "BOING!"
+  },
+  "youtube": {
+    "title": "Shapes with Noodle! (BOING!) | Nerdy Noodles",
+    "description": "🔷 BOING! Noodle bounced way too high and all the shapes flew away! Can you help find them?\n\nLearn 7 shapes with Noodle in the park: circle, square, triangle, rectangle, oval, diamond and hexagon! Each shape comes back one by one, and Noodle tells you something special about it, like how many sides it has. Then sing the shapes song together, and stay till the end, because a sleepy surprise shape peeks out! 🌙\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn 7 shapes: circle, square, triangle, rectangle, oval, diamond and hexagon\n✔️ Count the sides: a triangle has 3, a square has 4, a hexagon has 6\n✔️ Spot shapes in everyday things (an oval like an egg, a diamond like a kite)\n✔️ Sing a catchy shapes song with Noodle!\n\n⏱️ Chapters\n0:00 BOING! Oh no!\n0:05 Let's find the shapes!\n0:22 Sing along!\n0:40 Wait... who's that?\n0:52 What shape is your window?\n\n💬 What shape is your window? Tell us in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #Shapes #LearnShapes #ShapesSong #Preschool #KidsSongs #ToddlerLearning #Kindergarten",
+    "tags": [
+      "shapes for kids",
+      "learn shapes",
+      "shapes song",
+      "circle square triangle",
+      "preschool learning",
+      "toddler learning",
+      "kindergarten shapes",
+      "kids songs",
+      "educational videos for kids",
+      "Nerdy Noodles"
+    ]
+  }
+}
