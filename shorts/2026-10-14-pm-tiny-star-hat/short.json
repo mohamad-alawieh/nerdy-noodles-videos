@@ -1,0 +1,220 @@
+{
+ "id": "2026-10-14-pm-tiny-star-hat",
+ "scene": "snow",
+ "voice": "af_heart",
+ "music_seed": 58,
+ "hook_text": "WAIT FOR IT...",
+ "start_face": "happy",
+ "beats": [
+  {
+   "type": "say",
+   "text": "Brrr! I need a hat!",
+   "face": "worried",
+   "arms": "shock"
+  },
+  {
+   "type": "enter",
+   "id": "flower",
+   "obj": {
+    "kind": "flower",
+    "color": "#FF8FC8"
+   },
+   "from": "top",
+   "to": "head",
+   "style": "fall",
+   "scale": 1.0,
+   "dur": 0.9
+  },
+  {
+   "type": "wait",
+   "sfx": "boing",
+   "dur": 0.3,
+   "face": "o"
+  },
+  {
+   "type": "say",
+   "text": "A flower hat? So fancy!",
+   "face": "proud",
+   "arms": "cheer"
+  },
+  {
+   "type": "enter",
+   "id": "sock",
+   "obj": {
+    "kind": "sock",
+    "color": "#7FD8FF"
+   },
+   "from": "top_left",
+   "to": [
+    380,
+    700
+   ],
+   "style": "fall",
+   "scale": 1.2,
+   "dur": 0.9
+  },
+  {
+   "type": "move",
+   "id": "sock",
+   "to": "head",
+   "style": "hop",
+   "dur": 0.6,
+   "face": "shock"
+  },
+  {
+   "type": "move",
+   "with_prev": true,
+   "id": "flower",
+   "to": "floor_left",
+   "style": "hop",
+   "dur": 0.6
+  },
+  {
+   "type": "burst",
+   "with_prev": true,
+   "word": "FLOP!",
+   "color": "#7FD8FF",
+   "at": "top_left",
+   "sfx": "splat",
+   "dur": 0.6
+  },
+  {
+   "type": "say",
+   "text": "A sock hat? Silly, but warm!",
+   "face": "laugh",
+   "arms": "rest"
+  },
+  {
+   "type": "enter",
+   "id": "duck",
+   "obj": {
+    "kind": "duck",
+    "color": "#FFD23F"
+   },
+   "from": "top_right",
+   "to": [
+    700,
+    700
+   ],
+   "style": "fall",
+   "scale": 1.3,
+   "dur": 0.9
+  },
+  {
+   "type": "move",
+   "id": "duck",
+   "to": "head",
+   "style": "hop",
+   "dur": 0.6,
+   "face": "shock"
+  },
+  {
+   "type": "move",
+   "with_prev": true,
+   "id": "sock",
+   "to": "floor_right",
+   "style": "hop",
+   "dur": 0.6
+  },
+  {
+   "type": "burst",
+   "with_prev": true,
+   "word": "QUACK!",
+   "color": "#FFD23F",
+   "at": "top_right",
+   "sfx": "honk",
+   "dur": 0.7
+  },
+  {
+   "type": "say",
+   "text": "A DUCK hat?! Still okay!",
+   "face": "laugh",
+   "arms": "cheer"
+  },
+  {
+   "type": "say",
+   "text": "Ooh, one tiny star on top!",
+   "face": "happy",
+   "arms": "rest"
+  },
+  {
+   "type": "enter",
+   "id": "star",
+   "obj": {
+    "kind": "star",
+    "color": "#FFE066"
+   },
+   "from": "top",
+   "to": [
+    540,
+    700
+   ],
+   "style": "zoom",
+   "scale": 0.6,
+   "dur": 0.8
+  },
+  {
+   "type": "move",
+   "id": "star",
+   "to": "head",
+   "style": "slide",
+   "dur": 0.8,
+   "face": "squint"
+  },
+  {
+   "type": "move",
+   "with_prev": true,
+   "id": "duck",
+   "to": [
+    140,
+    1400
+   ],
+   "style": "hop",
+   "dur": 0.8
+  },
+  {
+   "type": "wait",
+   "sfx": "drum",
+   "dur": 0.8
+  },
+  {
+   "type": "noodle",
+   "action": "squash",
+   "dur": 1.2,
+   "face": "shock"
+  },
+  {
+   "type": "burst",
+   "with_prev": true,
+   "word": "SQUASH!",
+   "color": "#FF6B6B",
+   "sfx": "thud",
+   "dur": 0.8
+  },
+  {
+   "type": "say",
+   "text": "The TINY star was too heavy!",
+   "face": "laugh",
+   "arms": "shock"
+  },
+  {
+   "type": "end",
+   "text": "Follow for more giggles!",
+   "dur": 2.2
+  }
+ ],
+ "youtube": {
+  "title": "Noodle's Hat Got TOO Heavy! #shorts",
+  "description": "Noodle needs a hat... a flower, a sock, a DUCK? Then one tiny star lands on top! 😂 Wait for it!\n\nNoodle is the silliest noodle bowl on YouTube!\n\n🔔 Subscribe to Nerdy Noodles for more giggles!\n\n#NerdyNoodles #shorts #kids #funny #cartoon #sillyhats",
+  "tags": [
+   "funny cartoon for kids",
+   "kids shorts",
+   "silly cartoon",
+   "silly hats",
+   "funny hat cartoon",
+   "duck cartoon",
+   "funny kids video",
+   "Nerdy Noodles"
+  ]
+ }
+}
