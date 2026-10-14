@@ -13,6 +13,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import draw as D
 from draw import (INK, WHITE, YEL, RED, NUMCOL, hexc, clamp, seg, eo, eio, back, lerp, text, text_w, fit_size,
                   rrect, circle, ellipse, fill, stroke, with_alpha, draw_noodle, draw_object, scene_bg)
+from hosts import draw_host, host_spec, HOST_HEAD_Y
 
 VW, VH, FPS, SR = 1080, 1920, 30, 44100
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -38,6 +39,12 @@ def pos_of(p, default=(540, 640)):
 class Short:
     def __init__(self, sj):
         self.sj = sj
+        self.host = host_spec(sj.get('host'))
+        if self.host['kind'] == 'car' and sj.get('scene') == 'road': self.host.setdefault('driving', True)
+        global HEAD_TOP  # objects sit on top of whichever host stars in this Short
+        if self.host['kind'] != 'noodle':
+            HEAD_TOP = NY + (HOST_HEAD_Y[self.host['kind']] - 450) * NS
+            NAMED['head'] = (540, HEAD_TOP - 61)
         self.compile()
 
     # -------------------------------------------------------------- beat compiler
@@ -263,7 +270,7 @@ class Short:
         ctx.save()
         if rot:
             ctx.translate(cx, cy + 100); ctx.rotate(rot); ctx.translate(-cx, -cy - 100)
-        draw_noodle(ctx, t, cx, cy, s, frac, eyes, mouth, look, sq, arms, brows)
+        draw_host(ctx, self.host, t, cx, cy, s, frac, eyes, mouth, look, sq, arms, brows)
         ctx.restore()
         for oid, o in self.objs.items():
             p = self.obj_pose(o, t)

@@ -11,6 +11,7 @@ import cairo
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from draw import *  # noqa
+from hosts import draw_host, host_spec
 
 FPS, DUR, SR = 30, 60.0, 44100
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -53,7 +54,9 @@ class Episode:
             r, c = divmod(k, per)
             self.SLOTS.append((x0 + c * sp, ys[r]))
         self.shelves = [(x0 - 60, y + 52, x1 - x0 + 110) for y in ys]
-        self.noodle_kind = all(it.get('kind') == 'noodle' for it in self.items)
+        self.host = host_spec(ep.get('host'))
+        if self.host['kind'] == 'car' and ep.get('scene') == 'road': self.host.setdefault('driving', True)
+        self.noodle_kind = self.host['kind'] == 'noodle' and all(it.get('kind') == 'noodle' for it in self.items)
         self.GLASSES = (960 + 75 * S, 610 + 45 * S)
         self.lyrics = ep.get('song', [''] * 4)
         rnd = random.Random(ep.get('music_seed', 1))
@@ -231,7 +234,7 @@ class Episode:
             if int(t * 1.3) % 3 == 2: eyes = 'happy'
         if eyes == 'normal' and (t % 3.7) < 0.12: eyes = 'closed'
 
-        draw_noodle(ctx, t, CX, CY + dy, S, frac, eyes, mouth, look, sq, arms, brows)
+        draw_host(ctx, self.host, t, CX, CY + dy, S, frac, eyes, mouth, look, sq, arms, brows)
         for i in range(N):
             st = self.item_state(i, t)
             if st is None: continue
@@ -279,7 +282,7 @@ class Episode:
                 ctx.save(); ctx.translate(960, 430); sc = back(k2) if k2 < 1 else 1; ctx.scale(sc, sc)
                 circle(ctx, 0, 0, 250); fill(ctx, BLUE, True); stroke(ctx, INK, 12)
                 ctx.save(); circle(ctx, 0, 0, 244); ctx.clip()
-                draw_noodle(ctx, t, 0, 30, 0.55, 1.0, 'happy' if int(t * 2) % 3 == 0 else 'normal', 'smile', (0, 0),
+                draw_host(ctx, self.host, t, 0, 30, 0.55, 1.0, 'happy' if int(t * 2) % 3 == 0 else 'normal', 'smile', (0, 0),
                             0.03 * math.sin(t * 8), 'wave', shadow=False)
                 ctx.restore(); ctx.restore()
             k3 = seg(t, 57.3, 57.8)
@@ -302,9 +305,9 @@ class Episode:
         ctx.set_source_rgba(1, 1, 1, 0.12); ctx.fill()
         expr = th.get('expression', 'shock')
         if expr == 'happy':
-            draw_noodle(ctx, 0.3, 1370, 640, 1.45, 1.0, 'happy', 'laugh', (0, 0), 0, 'cheer')
+            draw_host(ctx, self.host, 0.3, 1370, 640, 1.45, 1.0, 'happy', 'laugh', (0, 0), 0, 'cheer')
         else:
-            draw_noodle(ctx, 0.3, 1370, 640, 1.45, 0.0 if self.noodle_kind else 1.0, 'shock', 'big_o', (0, -0.6), 0.0, 'shock', brows=True)
+            draw_host(ctx, self.host, 0.3, 1370, 640, 1.45, 0.0 if self.noodle_kind else 1.0, 'shock', 'big_o', (0, -0.6), 0.0, 'shock', brows=True)
         spots = [(1050, 230, -0.4), (1220, 120, -0.2), (1420, 90, 0.2), (1610, 150, 0.4), (1780, 300, 0.6),
                  (1830, 520, 0.8), (980, 430, -0.6), (1790, 760, 1.0)]
         for k, (x, y, r) in enumerate(spots):
