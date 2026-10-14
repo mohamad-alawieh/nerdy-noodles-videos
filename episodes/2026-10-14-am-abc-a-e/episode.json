@@ -1,0 +1,110 @@
+{
+  "id": "2026-10-14-am-abc-a-e",
+  "lesson": "letters A-E",
+  "scene": "classroom",
+  "board_title": "Noodle's ABC",
+  "board_label": "Letters:",
+  "voice": "af_heart",
+  "music_seed": 314,
+  "hook": {
+    "pre": "Ah... ah... ahh...",
+    "burst": "ACHOO!",
+    "burst_say": "Achoo!",
+    "line": "Oops! My sneeze blew away my letter blocks!",
+    "line_caption": "Oops! My sneeze blew\naway my letter blocks!"
+  },
+  "items": [
+    {
+      "kind": "block",
+      "text": "A",
+      "color": "#FF5A36",
+      "big": "A",
+      "word": "APPLE",
+      "say": "A is for apple!"
+    },
+    {
+      "kind": "block",
+      "text": "B",
+      "color": "#00B4D8",
+      "big": "B",
+      "word": "BALL",
+      "say": "B is for ball!",
+      "trick": "bounce"
+    },
+    {
+      "kind": "block",
+      "text": "C",
+      "color": "#3DDC84",
+      "big": "C",
+      "word": "CAT",
+      "say": "C is for cat!",
+      "trick": "cartwheel"
+    },
+    {
+      "kind": "block",
+      "text": "D",
+      "color": "#FFB627",
+      "big": "D",
+      "word": "DUCK",
+      "say": "D is for duck!"
+    },
+    {
+      "kind": "block",
+      "text": "E",
+      "color": "#8E5CF7",
+      "big": "E",
+      "word": "EGG",
+      "say": "E is for egg!",
+      "trick": "sunglasses"
+    }
+  ],
+  "song": [
+    "A is for apple,\nB is for ball,",
+    "C is for cat,\nso cozy and small!",
+    "D is for duck,\nE is for egg,",
+    "A, B, C, D, E,\nwiggle your leg!"
+  ],
+  "celebrate_word": "A-B-C-D-E!",
+  "celebrate": "A, B, C, D, E! We found them all!",
+  "twist": {
+    "peek_line": "Wait... who's that?",
+    "reveal_word": "F?! A FISH!",
+    "reveal": "F! F is for fish!",
+    "laugh": "Hee hee! Fish, you're too early!",
+    "laugh_caption": "Hee hee!\nFish, you're too early!",
+    "item": {
+      "kind": "fish",
+      "color": "#FF8C42",
+      "big": "F",
+      "word": "FISH",
+      "say": "F is for fish!"
+    }
+  },
+  "outro": "Letters are so much fun! What word starts with F? Tell me!",
+  "outro_caption": "Letters are so much fun!\nWhat word starts with F? Tell me!",
+  "thumbnail": {
+    "lines": [
+      "ABC",
+      "A TO",
+      "E!"
+    ],
+    "sticker": "ACHOO!",
+    "burst": "ACHOO!"
+  },
+  "youtube": {
+    "title": "Noodle's ABC: A to E! (ACHOO!) | Nerdy Noodles",
+    "description": "🔤 ACHOO! Noodle sneezed and all the letter blocks flew away! Can you help find them?\n\nLearn the letters A, B, C, D and E with Noodle, the nerdiest noodle bowl in class! Each letter block comes back one by one with a word that starts with it: A is for apple, B is for ball, and more. Then sing the ABC song together, and stay till the end, because someone sneaks in a little too early! 🐟\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn the letters A, B, C, D and E\n✔️ Hear a word for each letter (A is for apple!)\n✔️ Practice early phonics and letter sounds\n✔️ Sing a catchy ABC song with Noodle!\n\n⏱️ Chapters\n0:00 ACHOO! Oh no!\n0:05 Let's find the letters!\n0:22 Sing along!\n0:40 Wait... who's that?\n0:52 What starts with F?\n\n💬 What word starts with F? Tell us in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #ABC #LearnTheAlphabet #Phonics #AlphabetSong #Preschool #KidsSongs #ToddlerLearning",
+    "tags": [
+      "abc for kids",
+      "learn the alphabet",
+      "alphabet song",
+      "letters A to E",
+      "phonics for kids",
+      "abc song",
+      "preschool learning",
+      "toddler learning",
+      "kids songs",
+      "Nerdy Noodles"
+    ]
+  }
+}

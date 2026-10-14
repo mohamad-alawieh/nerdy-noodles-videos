@@ -25,5 +25,18 @@
   "title": "Count the Stars! (HIC!) | Nerdy Noodles",
   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=7324908602702122577",
   "scheduled": "2026-10-13T14:55:00+03:00"
+ },
+ {
+  "id": "2026-10-14-am-abc-a-e",
+  "date": "2026-10-14",
+  "lesson": "letters A-E",
+  "scene": "classroom",
+  "kinds": [
+   "block",
+   "fish"
+  ],
+  "hook": "sneeze ACHOO",
+  "twist": "F is for fish sneaks in early",
+  "title": "Noodle's ABC: A to E! (ACHOO!) | Nerdy Noodles"
  }
 ]
