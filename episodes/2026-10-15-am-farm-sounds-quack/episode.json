@@ -1,0 +1,113 @@
+{
+  "id": "2026-10-15-am-farm-sounds-quack",
+  "host": "duck",
+  "lesson": "animal sounds (farm)",
+  "scene": "farm",
+  "board_title": "Farm Sounds",
+  "board_label": "Friends:",
+  "voice": "af_heart",
+  "music_seed": 51827,
+  "hook": {
+    "pre": "Quack... quack...",
+    "burst": "QUACK!",
+    "burst_say": "QUACK!",
+    "line": "Oops! Quackers quacked so loud, friends ran!",
+    "line_caption": "Oops! Quackers quacked\nso loud, friends ran!"
+  },
+  "items": [
+    {
+      "kind": "cow",
+      "color": "#FFFFFF",
+      "big": "",
+      "word": "COW: MOO",
+      "say": "The cow says moo!"
+    },
+    {
+      "kind": "pig",
+      "color": "#FF9EC4",
+      "big": "",
+      "word": "PIG: OINK",
+      "say": "The pig says oink!",
+      "trick": "bounce"
+    },
+    {
+      "kind": "dog",
+      "color": "#C8874A",
+      "big": "",
+      "word": "DOG: WOOF",
+      "say": "The dog says woof!"
+    },
+    {
+      "kind": "cat",
+      "color": "#FF9F40",
+      "big": "",
+      "word": "CAT: MEOW",
+      "say": "The cat says meow!",
+      "trick": "sunglasses"
+    },
+    {
+      "kind": "frog",
+      "color": "#3DDC84",
+      "big": "",
+      "word": "FROG: RIBBIT",
+      "say": "The frog says ribbit!"
+    },
+    {
+      "kind": "bird",
+      "color": "#2E86FF",
+      "big": "",
+      "word": "BIRD: TWEET",
+      "say": "The bird says tweet!",
+      "trick": "cartwheel"
+    }
+  ],
+  "song": [
+    "Moo says the cow,\noink says the pig,",
+    "Woof says the dog,\nwatch the doggy dig!",
+    "Meow, ribbit, tweet,\ncat, frog and bird,",
+    "Sing with Quackers,\nthe best song you heard!"
+  ],
+  "celebrate_word": "6 FRIENDS!",
+  "celebrate": "Six friends! Quackers found them all!",
+  "twist": {
+    "peek_line": "Quackers, who is in the pond?",
+    "reveal_word": "A FISH?!",
+    "reveal": "A fish! Quackers asks, what does a fish say?",
+    "laugh": "Hee hee! Fish just blow bubbles! Blub blub!",
+    "laugh_caption": "Hee hee! Fish just\nblow bubbles! Blub blub!",
+    "item": {
+      "kind": "fish",
+      "color": "#FF8C42",
+      "big": "",
+      "word": "FISH: BLUB",
+      "say": "Blub blub!"
+    }
+  },
+  "outro": "Quackers says quack! What animal sound can you make? Tell me!",
+  "outro_caption": "Quackers says quack! What animal\nsound can you make? Tell me!",
+  "thumbnail": {
+    "lines": [
+      "FARM",
+      "ANIMAL",
+      "SOUNDS!"
+    ],
+    "sticker": "QUACK!",
+    "burst": "QUACK!"
+  },
+  "youtube": {
+    "title": "Quackers' Farm Animal Sounds! (QUACK!) | Nerdy Noodles",
+    "description": "🦆 QUACK! Quackers the duck quacked so loud that all the farm friends ran away! Can you help bring them back?\n\nLearn farm animal names and the sounds they make with Quackers on the farm: the cow says moo, the pig says oink, the dog says woof, the cat says meow, the frog says ribbit and the bird says tweet! Each friend comes back one by one, then sing the animal sounds song with Quackers. Stay till the end, because a surprise friend peeks out of the pond! 🫧\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn 6 animal names: cow, pig, dog, cat, frog and bird\n✔️ Learn the sound each animal makes (moo, oink, woof, meow, ribbit, tweet)\n✔️ Practice making animal sounds out loud with Quackers\n✔️ Sing a catchy farm animal sounds song!\n\n⏱️ Chapters\n0:00 QUACK! Oh no!\n0:05 Let's find the farm friends!\n0:22 Sing along!\n0:40 Wait... who's in the pond?\n0:52 What animal sound can you make?\n\n💬 What animal sound can you make? Tell Quackers in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #AnimalSounds #FarmAnimals #LearnAnimals #Preschool #KidsSongs #ToddlerLearning #Kindergarten",
+    "tags": [
+      "animal sounds for kids",
+      "farm animals for kids",
+      "learn animal sounds",
+      "animal sounds song",
+      "farm animal names",
+      "preschool learning",
+      "toddler learning",
+      "kids songs",
+      "educational videos for kids",
+      "Nerdy Noodles"
+    ]
+  }
+}
