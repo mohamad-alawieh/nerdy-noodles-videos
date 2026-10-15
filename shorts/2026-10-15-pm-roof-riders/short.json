@@ -1,0 +1,246 @@
+{
+ "id": "2026-10-15-pm-roof-riders",
+ "host": "car",
+ "scene": "road",
+ "voice": "af_heart",
+ "music_seed": 7721,
+ "hook_text": "WAIT FOR IT...",
+ "start_face": "happy",
+ "beats": [
+  {
+   "type": "wait",
+   "sfx": "vroom",
+   "dur": 0.7,
+   "face": "laugh"
+  },
+  {
+   "type": "say",
+   "text": "Hi! I'm Zoomy! Road trip time!",
+   "face": "happy"
+  },
+  {
+   "type": "enter",
+   "id": "bird",
+   "obj": {
+    "kind": "bird",
+    "color": "#4CC9F0"
+   },
+   "from": "top_left",
+   "to": [
+    400,
+    835
+   ],
+   "style": "fall",
+   "scale": 1.0,
+   "dur": 0.8
+  },
+  {
+   "type": "wait",
+   "sfx": "bird",
+   "dur": 0.6,
+   "face": "o"
+  },
+  {
+   "type": "say",
+   "text": "Oh! A little passenger!",
+   "face": "laugh"
+  },
+  {
+   "type": "enter",
+   "id": "sheep",
+   "obj": {
+    "kind": "sheep",
+    "color": "#FFFFFF"
+   },
+   "from": "top_right",
+   "to": [
+    585,
+    805
+   ],
+   "style": "fall",
+   "scale": 1.2,
+   "dur": 0.8
+  },
+  {
+   "type": "wait",
+   "sfx": "sheep",
+   "dur": 0.7,
+   "face": "shock"
+  },
+  {
+   "type": "say",
+   "text": "A sheep? Okay, hop on!",
+   "face": "happy"
+  },
+  {
+   "type": "enter",
+   "id": "cow",
+   "obj": {
+    "kind": "cow",
+    "color": "#FFFFFF"
+   },
+   "from": "top",
+   "to": [
+    785,
+    785
+   ],
+   "style": "fall",
+   "scale": 1.5,
+   "dur": 0.9
+  },
+  {
+   "type": "noodle",
+   "action": "squash",
+   "with_prev": true,
+   "dur": 0.9
+  },
+  {
+   "type": "wait",
+   "sfx": "cow",
+   "dur": 0.8,
+   "face": "worried"
+  },
+  {
+   "type": "say",
+   "text": "Oof! Everybody, hold on tight!",
+   "face": "proud"
+  },
+  {
+   "type": "enter",
+   "id": "bus",
+   "obj": {
+    "kind": "bus",
+    "color": "#FFD23F"
+   },
+   "from": "left",
+   "to": [
+    270,
+    680
+   ],
+   "style": "slide",
+   "scale": 1.9,
+   "dur": 1.0
+  },
+  {
+   "type": "wait",
+   "sfx": "honk",
+   "dur": 0.6
+  },
+  {
+   "type": "move",
+   "id": "bird",
+   "to": [
+    270,
+    690
+   ],
+   "style": "hop",
+   "dur": 0.5,
+   "face": "shock"
+  },
+  {
+   "type": "wait",
+   "with_prev": true,
+   "sfx": "bird",
+   "dur": 0.4
+  },
+  {
+   "type": "shrink",
+   "id": "bird",
+   "scale": 0.02,
+   "dur": 0.2
+  },
+  {
+   "type": "move",
+   "id": "sheep",
+   "to": [
+    270,
+    690
+   ],
+   "style": "hop",
+   "dur": 0.5
+  },
+  {
+   "type": "wait",
+   "with_prev": true,
+   "sfx": "sheep",
+   "dur": 0.4
+  },
+  {
+   "type": "shrink",
+   "id": "sheep",
+   "scale": 0.02,
+   "dur": 0.2
+  },
+  {
+   "type": "move",
+   "id": "cow",
+   "to": [
+    270,
+    690
+   ],
+   "style": "hop",
+   "dur": 0.5
+  },
+  {
+   "type": "wait",
+   "with_prev": true,
+   "sfx": "cow",
+   "dur": 0.4
+  },
+  {
+   "type": "shrink",
+   "id": "cow",
+   "scale": 0.02,
+   "dur": 0.2
+  },
+  {
+   "type": "burst",
+   "word": "NOOO!",
+   "color": "#FF5A36",
+   "sfx": "drum",
+   "dur": 0.8,
+   "face": "shock"
+  },
+  {
+   "type": "move",
+   "id": "bus",
+   "to": [
+    -450,
+    680
+   ],
+   "style": "zip",
+   "dur": 0.8
+  },
+  {
+   "type": "wait",
+   "with_prev": true,
+   "sfx": "bus",
+   "dur": 0.6
+  },
+  {
+   "type": "say",
+   "text": "They took the BUS instead?!",
+   "face": "laugh",
+   "confetti": true
+  },
+  {
+   "type": "end",
+   "text": "Follow for more giggles!",
+   "dur": 2.2
+  }
+ ],
+ "youtube": {
+  "title": "Zoomy's Roof Riders Took the BUS?! #shorts",
+  "description": "A bird, a sheep and a big cow all ride on Zoomy's roof... until a yellow bus pulls up! 🚌 Watch the end!\n\nZoomy is the silliest little car on YouTube!\n\n🔔 Subscribe to Nerdy Noodles for more giggles!\n\n#NerdyNoodles #shorts #kids #funny #cartoon #roadtrip",
+  "tags": [
+   "funny cartoon for kids",
+   "kids shorts",
+   "silly cartoon",
+   "funny car cartoon",
+   "road trip cartoon",
+   "farm animals cartoon",
+   "funny kids video",
+   "Nerdy Noodles"
+  ]
+ }
+}

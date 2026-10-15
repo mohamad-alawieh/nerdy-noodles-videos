@@ -3,3 +3,4 @@ __pycache__/
 episodes/*/still_*.png
 *.wav
 shorts/*/still_*.png
+!assets/sounds/*.wav

@@ -54,5 +54,20 @@
   "title": "Quackers Met a Copycat Frog! #shorts",
   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-6867669445987712359",
   "scheduled": "2026-10-15T13:18:00+03:00"
+ },
+ {
+  "id": "2026-10-15-pm-roof-riders",
+  "date": "2026-10-15",
+  "host": "car",
+  "formula": "road trip",
+  "scene": "road",
+  "objects": [
+   "bird",
+   "sheep",
+   "cow",
+   "bus"
+  ],
+  "gag": "a bird, a sheep and a heavy cow land on Zoomy's roof; when Zoomy says hold on tight, a bus pulls up and they all hop on the bus instead",
+  "title": "Zoomy's Roof Riders Took the BUS?! #shorts"
  }
 ]
