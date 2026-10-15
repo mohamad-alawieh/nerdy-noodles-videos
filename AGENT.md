@@ -37,8 +37,8 @@ driving song ("Beep beep, here we go!").
    rotation rule above.
 3. Invent the episode (rules below) and write `episodes/<YYYY-MM-DD>-<am|pm>-<slug>/episode.json`
    (Beirut date; am before 12:00, pm after). Copy the shape of an existing episode.json.
-4. Preview: `python3 engine/episode.py <path>/episode.json --stills 3.5 9 30 41 47 50 54` and
-   `--thumb`, then look at a few of the PNGs and thumbnail.jpg with the Read tool. Fix anything clipped,
+4. Preview: `python3 engine/episode.py <path>/episode.json --stills 3.5 9 30 41 47 50 54`,
+   `--intro-stills 1.3 2.6` and `--thumb`, then look at a few of the PNGs and thumbnail.jpg with the Read tool. Fix anything clipped,
    overlapping or unreadable by editing the JSON (shorter words/lines), and re-check.
 5. Render: `python3 engine/episode.py <path>/episode.json` (~1-2 min). It writes `video.mp4` and
    `thumbnail.jpg` next to the JSON. If it prints a voice WARNING, stop and report it.
@@ -72,7 +72,11 @@ driving song ("Beep beep, here we go!").
 
 ## Inventing a great episode
 
-Every episode follows the same proven shape (the engine handles the timing):
+Every video opens with a 4-second **animated intro** (the "Nerdy Noodles" logo drops in letter by letter, the
+star bounces in and says hello, the episode's things dance around, the topic appears in a banner, then a circle
+wipe opens the episode). Set `intro_title` (≤ 22 chars, e.g. "Animal Sounds!") and `intro_say` (≤ 40 chars, e.g.
+"Hi friends! I'm Quackers! Listen!"). The episode itself then follows the same proven shape (the engine handles
+the timing; times below are inside the episode, add 4 s for the real video time):
 hook (0-5s, a funny accident scatters the items) → items come back one by one, each shown big and
 spoken (5-22s) → sing-along recap (22-40s) → celebration (40-42s) → surprise extra item peeks from behind the
 board, then joins (42-52s) → outro question that invites comments (52-60s).
@@ -87,6 +91,17 @@ What makes it work (aim for all of them):
 - **One clear lesson, accurate**: counting 1-10 (or 1-5 for little ones), counting down 10-1, counting by 2s
   (2,4,...,10), colors (6-8), shapes (6-8), letters (5-8, e.g. big "B", word "BALL", say "B is for ball!"),
   rhyming pairs, big/small. Labels must be correct and in order.
+- **Real sounds, never a voice imitating them**: animals and vehicles make their REAL sound. Give the item
+  `"sound"` and the voice only names it (`say`: "The cow says..."), then the real moo plays and a comic bubble
+  shows `sound_word` ("MOO!"). NEVER write the sound word in `say`, `burst_say`, `reveal`, `laugh` or
+  `outro` (no voice saying "moo", "woof", "quack", "honk"). Sound keys: real recordings `cow dog cat duck frog
+  horse owl pig rooster sheep`; synthesized `bird beep honk bus vroom roar`. A hook can use a sound too
+  (`"hook": {"burst": "QUACK!", "sound": "duck", ...}` and no `burst_say`). If the twist item has a sound, it
+  answers with it (its `say` is not spoken). Use 5-7 sound items so each sound has room.
+- **The place changes with the item**: give an item its own `"scene"` and the background wipes to it while
+  that item is shown (cow → farm, frog → pond, fish → ocean, owl → night, bird → sky, car → road, bus → city,
+  dino → jungle, sheep/horse → farm or park). Use at least 3 different scenes in an animal or vehicle episode,
+  and never put an animal somewhere it does not live. The twist item can have a scene too.
 - **A funny twist** that rewards watching to the end: an unexpected extra item (a planet among stars, a
   rainbow ball, a dancing sock, a baby dino) and a laugh line.
 - **Catchy original song**: 4 short lines, rhyming, simple words, each line ≤ 26 characters per row; use
@@ -99,15 +114,18 @@ What makes it work (aim for all of them):
 
 ### episode.json fields (see the existing episodes for full examples)
 - `host`: car | duck | dino | cat | tree | noodle, or `{"kind": "car", "color": "#FF5A36"}` (see the star table).
-- `scene`: road | farm | forest | kitchen | space | ocean | park | classroom | candy | jungle | snow
-  (`road` scrolls like a car trip, best with the car; `farm` has a barn and fence; `forest` has trees).
-- `items` (3-10): each `{"kind", "color" (#hex), "big", "word", "say"}` (+ `"text"` for kind block,
+- `scene`: road | city | farm | forest | pond | sky | night | kitchen | space | ocean | park | classroom | candy |
+  jungle | snow (`road` and `city` scroll like a car trip; `farm` has a barn and fence; `pond` has water and lily
+  pads; `night` has the moon and stars). Do not reuse the main scene of either of the last 2 episodes.
+- `intro_title`, `intro_say`: the intro banner and the star's hello (see above).
+- `items` (3-10): each `{"kind", "color" (#hex), "big", "word", "say"}`, optional `"sound"`, `"sound_word"`,
+  `"scene"` (see above) (+ `"text"` for kind block,
   `"shape"` for kind shape, optional `"trick"`: cartwheel | sunglasses | bounce — use 2-3 per episode).
   - `big`: what pops huge ("3", "B", "RED"); empty string `""` shows the object itself big (good for shapes).
   - `word`: small caption under it ("THREE", "BALL", "TRIANGLE"), ≤ 12 characters.
   - `say`: what the voice says ("Three!", "B is for ball!", "Red!"), short.
 - kinds: noodle star heart ball balloon apple fish cupcake block shape egg cookie leaf car bus duck sock planet
-  flower tree dino bubble, and animals cat dog cow pig frog bird duck fish dino (each drawn as that animal
+  flower tree dino bubble, and animals cat dog cow pig frog bird duck fish dino sheep horse rooster owl (each drawn as that animal
   with a face, so "The cow says moo!" is accurate). Never label an object as something it does not look like.
   Shapes: circle square rectangle triangle diamond oval pentagon hexagon star heart moon.
 - `board_title` (≤ 14 chars) and `board_label` (≤ 8 chars, e.g. "Stars:"): the chalkboard counter.
@@ -125,7 +143,8 @@ What makes it work (aim for all of them):
   "Count the Stars! (HIC!) | Nerdy Noodles", "Zoomy's Road Trip Colors! (HONK!) | Nerdy Noodles".
 - Description: 1-line hook with an emoji, 2-3 lines on what happens (no spoilers of the twist beyond a
   tease), "Perfect for toddlers, preschoolers and kindergarten kids (ages 2-6)", a ✔️ list of 3-4 learning
-  points, chapters (0:00 hook, 0:05 counting/learning, 0:22 sing along, 0:40 surprise, 0:52 what next), a
+  points, chapters (0:00 intro, 0:04 hook, 0:09 counting/learning, 0:26 sing along, 0:46 surprise, 0:56 what
+  next), a
   comment question, "🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!", then 6-9
   hashtags starting with #NerdyNoodles.
 - Tags: 8-12 plain keyword phrases (e.g. "counting for kids", "learn colors", "preschool learning").

@@ -77,14 +77,17 @@ title and description. Zoomy has no arms (write no lines about its hands); `hair
 - **Loop-friendly ending**: end on a laugh with the `end` beat; the last frame should make the start feel
   like a replay.
 - **Sound sells comedy**: give big moments an `sfx` (boing, pop, slide_up, slide_down, thud, honk, splat,
-  drum, tada, giggle, snore, rattle, whoosh, hop, blip, ding, sneeze).
+  drum, tada, giggle, snore, rattle, whoosh, hop, blip, ding, sneeze). Animals and vehicles use their REAL
+  sound as the `sfx`: cow dog cat duck frog horse owl pig rooster sheep (real recordings), bird beep bus vroom
+  roar (vehicle/bird/dino). Never have the voice say "moo", "woof", "quack" or "honk"; let the real sound do it.
+- **Change the place**: don't reuse the scene of either of the last 2 Shorts.
 - Kid-safe: no violence, scary or gross-out content, no brands, real people, copyrighted characters or
   real songs, nothing dangerous to copy (no eating non-food, no climbing).
 
 ## short.json format
 
-Top level: `id`, `host` (car | duck | dino | cat | tree | noodle), `scene` (road | farm | forest | kitchen |
-space | ocean | park | classroom | candy | jungle | snow), `voice`
+Top level: `id`, `host` (car | duck | dino | cat | tree | noodle), `scene` (road | city | farm | forest | pond |
+sky | night | kitchen | space | ocean | park | classroom | candy | jungle | snow), `voice`
 (always `af_heart`), `music_seed` (new integer), `hook_text`, `start_face`, `beats`, `youtube`.
 
 Beats play in order; add `"with_prev": true` to start a beat together with the previous one. Every beat
@@ -112,7 +115,7 @@ clear; the floor is at y 1476; the star covers about x 200-880, y 760-1476; `hea
 so a tree's head is much higher than a car's).
 
 Object kinds: noodle star heart ball balloon apple fish cupcake block shape egg cookie leaf car bus duck sock
-planet flower tree dino bubble cat dog cow pig frog bird.
+planet flower tree dino bubble cat dog cow pig frog bird sheep horse rooster owl.
 
 ## Title, description, tags
 - Title ≤ 60 chars, curiosity + emoji-free words, end with `#shorts`, e.g.

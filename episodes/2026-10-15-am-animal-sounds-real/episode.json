@@ -1,0 +1,135 @@
+{
+  "id": "2026-10-15-am-animal-sounds-real",
+  "host": "duck",
+  "lesson": "animal sounds (real sounds)",
+  "scene": "farm",
+  "intro_title": "Animal Sounds!",
+  "intro_say": "Hi friends! I'm Quackers! Listen!",
+  "board_title": "Animal Sounds",
+  "board_label": "Friends:",
+  "voice": "af_heart",
+  "music_seed": 60417,
+  "hook": {
+    "pre": "Quack... quack...",
+    "burst": "QUACK!",
+    "sound": "duck",
+    "line": "Oops! Quackers quacked so loud, friends ran!",
+    "line_caption": "Oops! Quackers quacked\nso loud, friends ran!"
+  },
+  "items": [
+    {
+      "kind": "cow",
+      "color": "#FFFFFF",
+      "big": "",
+      "word": "COW",
+      "say": "The cow says...",
+      "sound": "cow",
+      "sound_word": "MOO!",
+      "scene": "farm"
+    },
+    {
+      "kind": "dog",
+      "color": "#C8874A",
+      "big": "",
+      "word": "DOG",
+      "say": "The dog says...",
+      "sound": "dog",
+      "sound_word": "WOOF!",
+      "scene": "park",
+      "trick": "bounce"
+    },
+    {
+      "kind": "frog",
+      "color": "#3DDC84",
+      "big": "",
+      "word": "FROG",
+      "say": "The frog says...",
+      "sound": "frog",
+      "sound_word": "RIBBIT!",
+      "scene": "pond"
+    },
+    {
+      "kind": "sheep",
+      "big": "",
+      "word": "SHEEP",
+      "say": "The sheep says...",
+      "sound": "sheep",
+      "sound_word": "BAA!",
+      "scene": "farm",
+      "trick": "sunglasses"
+    },
+    {
+      "kind": "cat",
+      "color": "#FF9F40",
+      "big": "",
+      "word": "CAT",
+      "say": "The cat says...",
+      "sound": "cat",
+      "sound_word": "MEOW!",
+      "scene": "kitchen"
+    },
+    {
+      "kind": "horse",
+      "color": "#C68B59",
+      "big": "",
+      "word": "HORSE",
+      "say": "The horse says...",
+      "sound": "horse",
+      "sound_word": "NEIGH!",
+      "scene": "forest",
+      "trick": "cartwheel"
+    }
+  ],
+  "song": [
+    "Moo says the cow,\nwoof says the pup,",
+    "Ribbit says the frog,\nhop, hop, hop up!",
+    "Baa, meow, neigh,\nlisten and hear,",
+    "Animal friends\nare singing here!"
+  ],
+  "celebrate_word": "6 FRIENDS!",
+  "celebrate": "Six friends! Quackers found them all!",
+  "twist": {
+    "peek_line": "Shh... who's up so late?",
+    "reveal_word": "AN OWL?!",
+    "reveal": "It's an owl! Listen!",
+    "laugh": "Hee hee! Hello, owl!",
+    "laugh_caption": "Hee hee!\nHello, owl!",
+    "item": {
+      "kind": "owl",
+      "color": "#8B6B4A",
+      "big": "",
+      "word": "OWL",
+      "say": "The owl says...",
+      "sound": "owl",
+      "sound_word": "HOOT!",
+      "scene": "night"
+    }
+  },
+  "outro": "What animal sound can you make? Tell Quackers in the comments!",
+  "outro_caption": "What animal sound can you make?\nTell Quackers in the comments!",
+  "thumbnail": {
+    "lines": [
+      "ANIMAL",
+      "SOUNDS",
+      "FOR KIDS!"
+    ],
+    "sticker": "MOO!",
+    "burst": "QUACK!"
+  },
+  "youtube": {
+    "title": "Real Animal Sounds with Quackers! (QUACK!) | Nerdy Noodles",
+    "description": "🐮 QUACK! Quackers the duck quacked so loud that all the animal friends ran away! Can you help bring them back?\n\nHear the REAL sounds of 6 animals with Quackers: the cow, the dog, the frog, the sheep, the cat and the horse! Each friend comes back one by one in its own home (the farm, the park, the pond and more), and you hear the sound it really makes. Then sing along, and stay till the end, because someone is still awake late at night! 🌙\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn 6 animal names: cow, dog, frog, sheep, cat and horse\n✔️ Hear the real sound each animal makes\n✔️ See where animals live: farm, park, pond and forest\n✔️ Sing an animal sounds song with Quackers!\n\n⏱️ Chapters\n0:00 Hello from Quackers!\n0:04 QUACK! Oh no!\n0:09 Let's find the animals!\n0:26 Sing along!\n0:46 Who's up so late?\n0:56 What sound can you make?\n\n💬 What animal sound can you make? Tell Quackers in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #AnimalSounds #RealAnimalSounds #FarmAnimals #LearnAnimals #Preschool #ToddlerLearning #Kindergarten",
+    "tags": [
+      "animal sounds for kids",
+      "real animal sounds",
+      "farm animal sounds",
+      "learn animal sounds",
+      "animal names for kids",
+      "preschool learning",
+      "toddler learning",
+      "kids songs",
+      "educational videos for kids",
+      "Nerdy Noodles"
+    ]
+  }
+}

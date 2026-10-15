@@ -4,6 +4,7 @@ usage:
   python3 engine/episode.py episodes/<id>/episode.json            # video.mp4 + thumbnail.jpg
   python3 engine/episode.py episodes/<id>/episode.json --stills 3 12 44   # preview frames only
   python3 engine/episode.py episodes/<id>/episode.json --thumb    # thumbnail only
+  python3 engine/episode.py episodes/<id>/episode.json --intro-stills 0.6 1.5 2.6 3.7   # intro frames
 """
 import json, math, os, random, subprocess, sys, wave
 import numpy as np
@@ -12,8 +13,10 @@ import cairo
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from draw import *  # noqa
 from hosts import draw_host, host_spec
+from sfx import get_sound, KIND_SOUND
 
 FPS, DUR, SR = 30, 60.0, 44100
+INTRO = 4.0                      # animated channel intro before the episode
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CX, CY, S = 960, 610, 1.1
 BOWL_TOP = (960, 515)
@@ -57,6 +60,18 @@ class Episode:
         self.host = host_spec(ep.get('host'))
         if self.host['kind'] == 'car' and ep.get('scene') == 'road': self.host.setdefault('driving', True)
         self.noodle_kind = self.host['kind'] == 'noodle' and all(it.get('kind') == 'noodle' for it in self.items)
+        # background timeline: an item with its own "scene" brings its place with it (cow -> farm, fish -> ocean)
+        base = ep.get('scene', 'kitchen')
+        segs = [(0.0, base)]
+        for i, it in enumerate(self.items):
+            segs.append((self.START[i] - 0.35, it.get('scene', base)))
+        segs.append((22.0, base))
+        for i, it in enumerate(self.items):
+            segs.append((self.SECOND[i] - 0.3, it.get('scene', base)))
+        segs += [(40.0, base), (45.6, self.titem.get('scene', base)), (52.0, base)]
+        self.scene_segs = segs
+        self.voice_end = {}
+        self.intro_on = ep.get('intro', True) is not False
         self.GLASSES = (960 + 75 * S, 610 + 45 * S)
         self.lyrics = ep.get('song', [''] * 4)
         rnd = random.Random(ep.get('music_seed', 1))
@@ -119,7 +134,55 @@ class Episode:
         if 22 <= t < 40: return L[min(3, int((t - 22) / 4.5))]
         return None
 
+    # -------------------------------------------------------------- backgrounds
+    def scene_at(self, t):
+        cur, start, prev = self.scene_segs[0][1], 0.0, None
+        for (t0, sc) in self.scene_segs:
+            if t >= t0 and sc != cur:
+                prev, cur, start = cur, sc, t0
+            elif t >= t0:
+                pass
+        return cur, prev, t - start
+
+    def draw_bg(self, ctx, t):
+        cur, prev, age = self.scene_at(t)
+        if prev is None or age >= 0.45:
+            scene_bg(ctx, t, cur); return cur
+        scene_bg(ctx, t, prev)  # circle wipe from the old place to the new one
+        k = eio(clamp(age / 0.45))
+        ctx.save(); circle(ctx, 960, 560, 1150 * k); ctx.clip(); scene_bg(ctx, t, cur); ctx.restore()
+        if k < 1:
+            circle(ctx, 960, 560, 1150 * k); stroke(ctx, WHITE, 18)
+        return cur
+
+    def host_now(self, scene):
+        """The car's wheels spin (driving) whenever the current place is a road or a city street."""
+        h = self.host
+        raw = self.ep.get('host')
+        if h['kind'] == 'car' and not (isinstance(raw, dict) and 'driving' in raw):
+            h = dict(h); h['driving'] = scene in ('road', 'city')
+        return h
+
     # -------------------------------------------------------------- drawing
+    def sound_bubble(self, ctx, t, item, age, x=BIGPOP[0] + 215, y=BIGPOP[1] - 140):
+        w = item.get('sound_word', '')
+        if not w or age < 0.55 or age > 2.2: return
+        a = seg(age, 0.55, 0.7) * (1 - seg(age, 1.9, 2.2))
+        sc = back(clamp((age - 0.55) / 0.3)) if age < 0.85 else 1 + 0.04 * math.sin(age * 18)
+
+        def draw():
+            ctx.save(); ctx.translate(x, y); ctx.scale(sc, sc); ctx.rotate(-0.1)
+            sz = fit_size(ctx, w, 70, 230)
+            bw = text_w(ctx, w, sz) + 70
+            poly(ctx, [(-30, 40), (-70, 110), (10, 45)]); fill(ctx, WHITE, True); stroke(ctx, INK, 8)
+            rrect(ctx, -bw / 2, -60, bw, 120, 60); fill(ctx, WHITE, True); stroke(ctx, INK, 8)
+            poly(ctx, [(-28, 52), (-62, 98), (6, 52)]); fill(ctx, WHITE)
+            col = hexc(item.get('color', '#FF5A36'))
+            if 0.3 * col[0] + 0.59 * col[1] + 0.11 * col[2] > 0.75: col = RED  # white/pale animals: readable red text
+            text(ctx, w, 0, 0, sz, col, sw=10)
+            ctx.restore()
+        with_alpha(ctx, a, draw)
+
     def big_pop(self, ctx, t, item, age, x=BIGPOP[0], y=BIGPOP[1]):
         if age < 0 or age > 1.5: return
         sc = back(clamp(age / 0.35)) if age < 0.35 else 1.0
@@ -170,7 +233,7 @@ class Episode:
         ctx.save()
         if 1.0 <= t < 1.6:
             a = 16 * (1 - seg(t, 1.0, 1.6)); ctx.translate(a * math.sin(t * 90), a * math.cos(t * 77))
-        scene_bg(ctx, t, ep.get('scene', 'kitchen'))
+        scene_now = self.draw_bg(ctx, t)
         tw = self.twist_state(t)
         if tw and tw[4] == 'peek':
             draw_object(ctx, t, self.titem, tw[0], tw[1], tw[2], tw[3])
@@ -234,7 +297,7 @@ class Episode:
             if int(t * 1.3) % 3 == 2: eyes = 'happy'
         if eyes == 'normal' and (t % 3.7) < 0.12: eyes = 'closed'
 
-        draw_host(ctx, self.host, t, CX, CY + dy, S, frac, eyes, mouth, look, sq, arms, brows)
+        draw_host(ctx, self.host_now(scene_now), t, CX, CY + dy, S, frac, eyes, mouth, look, sq, arms, brows)
         for i in range(N):
             st = self.item_state(i, t)
             if st is None: continue
@@ -251,6 +314,10 @@ class Episode:
             self.big_pop(ctx, t, self.items[i], t - self.LAND[i])
             self.big_pop(ctx, t, self.items[i], t - self.SECOND[i])
         self.big_pop(ctx, t, self.titem, t - 49.2)
+        for i in range(N):
+            self.sound_bubble(ctx, t, self.items[i], t - self.LAND[i])
+            self.sound_bubble(ctx, t, self.items[i], t - self.SECOND[i])
+        self.sound_bubble(ctx, t, self.titem, t - 49.2)
         self.big_word(ctx, ep.get('celebrate_word', 'YAY!'), t - 40.05, 1450, 330, 200, YEL)
         self.big_word(ctx, self.twist.get('reveal_word', self.twist.get('reveal', 'WHAT?!')), t - 46.0, 1360, 250, 170, hexc('FF6FB5'), shake=8)
         if 22 <= t < 40:
@@ -343,6 +410,137 @@ class Episode:
         from PIL import Image
         Image.open(path + '.png').convert('RGB').resize((1280, 720), Image.LANCZOS).save(path, quality=92)
         os.remove(path + '.png')
+
+    # -------------------------------------------------------------- animated intro (before the episode)
+    def intro_frame(self, ctx, T):
+        ep = self.ep
+        g = cairo.RadialGradient(960, 560, 80, 960, 560, 1200)
+        g.add_color_stop_rgb(0, *hexc('FFE066')); g.add_color_stop_rgb(1, *hexc('FF9F1C'))
+        ctx.set_source(g); ctx.paint()
+        rot = T * 0.35
+        for k in range(0, 28, 2):  # spinning sun rays
+            a0 = k * 2 * math.pi / 28 + rot
+            ctx.move_to(960, 560); ctx.line_to(960 + 2500 * math.cos(a0), 560 + 2500 * math.sin(a0))
+            ctx.line_to(960 + 2500 * math.cos(a0 + math.pi / 28), 560 + 2500 * math.sin(a0 + math.pi / 28)); ctx.close_path()
+        ctx.set_source_rgba(1, 1, 1, 0.18); ctx.fill()
+        for k in range(14):  # twinkles
+            x = (k * 431) % 1880 + 20; y = (k * 277) % 1000 + 40
+            r = 10 + 8 * math.sin(T * 6 + k)
+            if r > 4:
+                ctx.save(); ctx.translate(x, y); ctx.rotate(T + k)
+                poly(ctx, [(0, -r), (r * .3, -r * .3), (r, 0), (r * .3, r * .3), (0, r), (-r * .3, r * .3), (-r, 0), (-r * .3, -r * .3)])
+                ctx.set_source_rgba(1, 1, 1, 0.85); ctx.fill(); ctx.restore()
+        # the episode's things dance on both sides of the star
+        things = (self.items + [self.titem])[:8]
+        for k, it in enumerate(things):
+            age = T - (0.25 + k * 0.08)
+            if age < 0: continue
+            sc = (back(clamp(age / 0.4)) if age < 0.4 else 1.0) * 0.95
+            rows = max(1, (len(things) + 1) // 2); side, row = k % 2, k // 2
+            x = (300 if side == 0 else 1620) + (row % 2) * (90 if side == 0 else -90) + 20 * math.sin(T * 2 + k)
+            y = 380 + row * (430 / max(1, rows - 1))
+            draw_object(ctx, T, it, x, y + 10 * math.sin(T * 5 + k), 0.2 * math.sin(T * 3 + k), sc)
+        # the star bounces in and waves
+        k = seg(T, 0.35, 1.05)
+        y = lerp(1500, 600, back(k) if k < 1 else 1) if T < 1.05 else 600 - 18 * abs(math.sin(T * 5))
+        talking = 1.75 <= T < 3.6
+        mouth = ('laugh' if int(T * 7) % 2 else 'o') if talking else ('big_o' if T < 1.2 else 'smile')
+        draw_host(ctx, self.host_now('intro'), T, 960, y, 0.78, 1.0, 'happy' if T > 1.2 and int(T * 2) % 3 == 0 else 'normal',
+                  mouth, (0, 0), 0.04 * math.sin(T * 10) if T > 1.05 else 0.0, 'wave' if T > 1.1 else 'cheer')
+        # logo letters drop in one by one
+        logo = "Nerdy Noodles"
+        sz = 150
+        ctx.select_font_face(FONT, cairo.FONT_SLANT_NORMAL, cairo.FONT_WEIGHT_BOLD); ctx.set_font_size(sz)
+        total = text_w(ctx, logo, sz); x = 960 - total / 2
+        cols = [RED, BLUE, hexc('3DDC84'), hexc('8E5CF7'), hexc('FF6FB5'), hexc('FFB627')]
+        for i, ch in enumerate(logo):
+            cw = text_w(ctx, ch, sz) if ch != ' ' else sz * 0.3
+            age = T - (0.9 + i * 0.06)
+            if ch != ' ' and age > 0:
+                kk = clamp(age / 0.35)
+                yy = lerp(-150, 170, back(kk) if kk < 1 else 1) - (8 * math.sin(T * 6 + i) if age > 0.5 else 0)
+                text(ctx, ch, x + cw / 2, yy, sz, cols[i % len(cols)], sw=22, scol=INK)
+                text(ctx, ch, x + cw / 2, yy, sz, cols[i % len(cols)], sw=0)
+            x += cw
+        # today's topic
+        topic = ep.get('intro_title') or ep.get('board_title', '')
+        age = T - 1.9
+        if topic and age > 0:
+            kk = clamp(age / 0.4); sc2 = back(kk) if kk < 1 else 1 + 0.02 * math.sin(T * 8)
+            tsz = fit_size(ctx, topic, 84, 1100)
+            bw = text_w(ctx, topic, tsz) + 120
+            ctx.save(); ctx.translate(960, 965); ctx.scale(sc2, sc2); ctx.rotate(-0.03)
+            rrect(ctx, -bw / 2, -70, bw, 140, 70); fill(ctx, WHITE, True); stroke(ctx, INK, 10)
+            text(ctx, topic, 0, 0, tsz, RED, sw=0)
+            ctx.restore()
+        # circle wipe into the episode
+        if T >= 3.4:
+            if not hasattr(self, '_f0'):
+                self._f0 = cairo.ImageSurface(cairo.FORMAT_ARGB32, W, H)
+                self.frame(cairo.Context(self._f0), 0.0)
+            kk = eio(seg(T, 3.4, 4.0))
+            ctx.save(); circle(ctx, 960, 560, 1150 * kk); ctx.clip(); ctx.set_source_surface(self._f0, 0, 0); ctx.paint(); ctx.restore()
+            circle(ctx, 960, 560, 1150 * kk); stroke(ctx, WHITE, 20)
+
+    def intro_audio(self):
+        n = int(INTRO * SR); buf = np.zeros(n)
+        rng = np.random.default_rng(42)
+
+        def add(sig, at, g=1.0):
+            i = int(at * SR)
+            if i >= n: return
+            m = min(len(sig), n - i); buf[i:i + m] += sig[:m] * g
+
+        def tt(d): return np.arange(int(d * SR)) / SR
+
+        def mf(m): return 440 * 2 ** ((m - 69) / 12)
+
+        def xylo(m, d=0.6):
+            f = mf(m); t = tt(d)
+            return (np.sin(2 * np.pi * f * t) + 0.35 * np.sin(2 * np.pi * 3.98 * f * t) * np.exp(-t * 25)) * np.exp(-t * 6.5) * np.minimum(1, t * 400)
+
+        def pluck(m, d=0.8):
+            f = mf(m); t = tt(d)
+            return sum(np.sin(2 * np.pi * f * h * t) * a * np.exp(-t * (4 + h * 2)) for h, a in ((1, 1), (2, .5), (3, .3))) * np.minimum(1, t * 600)
+
+        def whoosh(d, lo, hi):
+            x = rng.standard_normal(int(d * SR)); X = np.fft.rfft(x); f = np.fft.rfftfreq(len(x), 1 / SR)
+            X[(f < lo) | (f > hi)] = 0; x = np.fft.irfft(X, len(x)); return x / (np.abs(x).max() + 1e-9) * np.sin(np.pi * tt(d) / d)
+
+        add(whoosh(0.7, 300, 3000), 0.25, 0.35)
+        for b, ch in enumerate(([60, 64, 67], [65, 69, 72], [67, 71, 74], [72, 76, 79])):  # I-IV-V-I bed
+            for j, m in enumerate(ch): add(pluck(m), 0.2 + b * 0.8 + j * 0.02, 0.12)
+            add(pluck(ch[0] - 24, 0.6), 0.2 + b * 0.8, 0.25)
+        scale = [72, 74, 76, 79, 81, 84, 86, 88, 91, 93, 96, 98, 100]
+        for i in range(13): add(xylo(scale[i], 0.4), 0.9 + i * 0.06, 0.13)
+        snd = get_sound(KIND_SOUND.get(self.host['kind']), SR)
+        if snd is not None: add(snd[:int(0.9 * SR)] * np.linspace(1, 0.2, min(len(snd), int(0.9 * SR))), 0.95, 0.55)
+        for m in (84, 88, 91, 96): add(xylo(m, 1.0), 1.9 + (m - 84) * 0.01, 0.12)
+        add(whoosh(0.6, 500, 6000), 3.35, 0.3)
+        # the star says hello
+        line = self.ep.get('intro_say') or "Hi friends! I'm %s!" % self.host['name']
+        try:
+            from kokoro_onnx import Kokoro
+            vdir = os.environ.get('NN_TTS_DIR', os.path.join(ROOT, '.tts'))
+            k = Kokoro(os.path.join(vdir, 'kokoro-v1.0.int8.onnx'), os.path.join(vdir, 'voices-v1.0.bin'))
+            spd = 1.15
+            for _ in range(2):
+                v, sr = k.create(line, voice=self.ep.get('voice', 'af_heart'), speed=spd, lang='en-us')
+                v = np.asarray(v, float); v = np.interp(np.linspace(0, len(v) - 1, int(len(v) * SR / sr)), np.arange(len(v)), v)
+                nz = np.where(np.abs(v) > 0.01)[0]; v = v[max(0, nz[0] - 200): nz[-1] + 1500]
+                if len(v) / SR <= 1.9: break
+                spd = min(1.5, spd * (len(v) / SR) / 1.9)
+            v = v / (np.abs(v).max() + 1e-9)
+            win = int(0.2 * SR)
+            env = np.zeros(n); i0 = int(1.75 * SR); m = min(len(v), n - i0); env[i0:i0 + m] = 1
+            env = np.convolve(env, np.ones(win) / win, 'same')
+            buf *= 1 - 0.5 * env
+            add(v, 1.75, 0.95)
+        except Exception as e:
+            print('WARNING: intro voice unavailable:', e)
+        buf = buf / (np.abs(buf).max() + 1e-9) * 0.9
+        f = int(0.15 * SR); buf[-f:] *= np.linspace(1, 0.6, f)
+        return buf
 
     # -------------------------------------------------------------- audio
     def music_and_fx(self):
@@ -472,7 +670,8 @@ class Episode:
         except Exception:
             pass
         hook = ep.get('hook', {}); tw = self.twist
-        cues = [(1.0, hook.get('burst_say', hook.get('burst', 'Achoo!')), 1.1, 1.0), (2.1, hook.get('line', ''), 1.15, 1.0)]
+        cues = [] if hook.get('sound') else [(1.0, hook.get('burst_say', hook.get('burst', 'Achoo!')), 1.1, 1.0)]
+        cues.append((2.1, hook.get('line', ''), 1.15, 1.0))
         for i, it in enumerate(self.items):
             cues.append((self.LAND[i] + 0.02, it.get('say', it.get('word', '')), 1.0, 1.0))
             cues.append((self.SECOND[i] + 0.02, it.get('say', it.get('word', '')), 1.0, 0.8))
@@ -480,6 +679,9 @@ class Episode:
                  (46.0, tw.get('reveal', ''), 1.0, 1.0), (49.22, self.titem.get('say', ''), 1.05, 1.0),
                  (50.2, tw.get('laugh', ''), 1.1, 1.0), (52.2, ep.get('outro', ''), 1.15, 1.0)]
         limits = {2.1: 2.8, 40.05: 2.4, 42.6: 3.3, 46.0: 2.0, 50.2: 1.9, 52.2: 4.2}
+        if self.item_sound(self.titem):  # the surprise friend answers with its real sound instead of a word
+            cues = [c for c in cues if c[0] not in (49.22, 50.2)] + [(50.75, tw.get('laugh', ''), 1.15, 1.0)]
+            limits[50.75] = 1.4
         for at, txt, spd, g in cues:
             txt = (txt or '').replace('\n', ' ').strip()
             if not txt: continue
@@ -497,15 +699,55 @@ class Episode:
             s = s / (np.abs(s).max() + 1e-9) * g
             i = int(at * SR); m = min(len(s), n - i)
             voice[i:i + m] += s[:m]
+            self.voice_end[round(at, 3)] = at + m / SR
         return voice
+
+    # -------------------------------------------------------------- real sounds (animals, vehicles)
+    def item_sound(self, it):
+        snd = it.get('sound')
+        if snd is True: snd = KIND_SOUND.get(it.get('kind'))
+        return snd or None
+
+    def sfx_track(self, n):
+        """Each item with a "sound" plays the real sound right after the voice names it (never a voice saying moo)."""
+        out = np.zeros(n)
+
+        def place(key, at, until, g=0.85):
+            s = get_sound(key, SR)
+            if s is None:
+                print('WARNING: unknown sound', key); return
+            ln = int(max(0.3, min(1.9, until - at)) * SR)
+            s = s[:ln].copy()
+            f = min(int(0.12 * SR), len(s) // 3); s[-f:] *= np.linspace(1, 0, f)
+            i = int(at * SR); m = min(len(s), n - i)
+            if m > 0: out[i:i + m] += s[:m] * g
+
+        def after_voice(at):
+            return max(self.voice_end.get(round(at, 3), at + 0.55) + 0.06, at + 0.3)
+
+        hook = self.ep.get('hook', {})
+        if hook.get('sound'): place(hook['sound'], 1.0, 2.05)
+        for i, it in enumerate(self.items):
+            key = self.item_sound(it)
+            if not key: continue
+            nxt = self.LAND[i + 1] if i + 1 < self.N else 22.0
+            place(key, after_voice(self.LAND[i] + 0.02), nxt - 0.05)
+            nxt2 = self.SECOND[i + 1] if i + 1 < self.N else 40.0
+            place(key, after_voice(self.SECOND[i] + 0.02), nxt2 - 0.05, 0.7)
+        key = self.item_sound(self.titem)
+        if key: place(key, 49.3, 50.7)
+        return out
 
     def audio(self, path):
         music = self.music_and_fx() * 0.9
         voice = self.voice_track(len(music))
+        fx = self.sfx_track(len(music))
         win = int(0.25 * SR)
-        env = np.convolve((np.abs(voice) > 0.02).astype(float), np.ones(win) / win, 'same')
-        mix = music * (1 - 0.55 * np.clip(env * 3, 0, 1)) + voice * 0.8
+        env = np.convolve((np.abs(voice) + np.abs(fx) > 0.02).astype(float), np.ones(win) / win, 'same')
+        mix = music * (1 - 0.6 * np.clip(env * 3, 0, 1)) + voice * 0.8 + fx * 0.75
         mix = mix / np.abs(mix).max() * 0.92
+        if self.intro_on:
+            mix = np.concatenate([self.intro_audio(), mix])
         fl = int(0.4 * SR); mix[-fl:] *= np.linspace(1, 0, fl)
         with wave.open(path, 'wb') as wf:
             wf.setnchannels(1); wf.setsampwidth(2); wf.setframerate(SR)
@@ -519,6 +761,9 @@ class Episode:
                               '-r', str(FPS), '-i', '-', '-i', wav, '-c:v', 'libx264', '-preset', 'medium', '-crf', '23',
                               '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '160k', '-movflags', '+faststart', '-shortest', out_mp4],
                              stdin=subprocess.PIPE)
+        if self.intro_on:
+            for f in range(int(FPS * INTRO)):
+                self.intro_frame(ctx, f / FPS); surf.flush(); p.stdin.write(bytes(surf.get_data()))
         for f in range(int(FPS * DUR)):
             self.frame(ctx, f / FPS); surf.flush(); p.stdin.write(bytes(surf.get_data()))
         p.stdin.close(); p.wait(); os.remove(wav)
@@ -530,6 +775,12 @@ def main():
     ep = json.load(open(path))
     E = Episode(ep)
     d = os.path.dirname(os.path.abspath(path))
+    if '--intro-stills' in sys.argv:
+        ts = [float(x) for x in sys.argv[sys.argv.index('--intro-stills') + 1:]]
+        surf = cairo.ImageSurface(cairo.FORMAT_ARGB32, W, H); ctx = cairo.Context(surf)
+        for t in ts:
+            E.intro_frame(ctx, t); surf.write_to_png(os.path.join(d, f'intro_{t:04.1f}.png'))
+        return
     if '--stills' in sys.argv:
         ts = [float(x) for x in sys.argv[sys.argv.index('--stills') + 1:]]
         surf = cairo.ImageSurface(cairo.FORMAT_ARGB32, W, H); ctx = cairo.Context(surf)

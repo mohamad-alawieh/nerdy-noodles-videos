@@ -14,6 +14,7 @@ import draw as D
 from draw import (INK, WHITE, YEL, RED, NUMCOL, hexc, clamp, seg, eo, eio, back, lerp, text, text_w, fit_size,
                   rrect, circle, ellipse, fill, stroke, with_alpha, draw_noodle, draw_object, scene_bg)
 from hosts import draw_host, host_spec, HOST_HEAD_Y
+from sfx import get_sound
 
 VW, VH, FPS, SR = 1080, 1920, 30, 44100
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -415,6 +416,9 @@ class Short:
                 for k, m in enumerate([72, 76, 79, 84]):
                     d = tone(m, 1.0, 3); i = int(k * 0.09 * SR); place(s, d, i)
                 return s
+            real = get_sound(name, SR)  # real animal recordings + vehicle sounds (cow, dog, duck, beep, vroom...)
+            if real is not None: return real * 2.4
+            print('WARNING: unknown sfx', name)
             return np.zeros(10)
 
         for (t, name) in self.sfx: add(fx, sfx(name), t, 0.32)

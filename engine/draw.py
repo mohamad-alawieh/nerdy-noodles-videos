@@ -247,7 +247,7 @@ def darker(c, k=0.75): return tuple(v * k for v in c)
 
 OBJECT_KINDS = ['noodle', 'star', 'heart', 'ball', 'balloon', 'apple', 'fish', 'cupcake', 'block', 'shape',
                 'egg', 'cookie', 'leaf', 'car', 'duck', 'sock', 'planet', 'flower', 'dino', 'bubble',
-                'tree', 'cat', 'dog', 'cow', 'pig', 'frog', 'bird', 'bus']
+                'tree', 'cat', 'dog', 'cow', 'pig', 'frog', 'bird', 'bus', 'sheep', 'horse', 'rooster', 'owl']
 
 
 def draw_object(ctx, t, item, x, y, rot=0.0, sc=1.0, mood='happy', sun=False, alpha=1.0):
@@ -442,6 +442,55 @@ def draw_object(ctx, t, item, x, y, rot=0.0, sc=1.0, mood='happy', sun=False, al
         for wx in (-50, 46):
             circle(ctx, wx, 42, 17); fill(ctx, INK); circle(ctx, wx, 42, 7); fill(ctx, (0.8, 0.8, 0.8))
         face_xy = (-30, 14); fs = 0.6
+    elif kind == 'sheep':
+        for lx in (-22, 22):
+            rrect(ctx, lx - 7, 30, 14, 30, 5); fill(ctx, INK)
+        wool = [(-34, -6, 26), (0, -20, 28), (34, -6, 26), (-30, 22, 24), (0, 28, 26), (30, 22, 24)]
+        for (bx, by, r) in wool: circle(ctx, bx, by, r)
+        ctx.set_source_rgb(*INK); ctx.set_line_width(14); ctx.stroke()
+        for (bx, by, r) in wool: circle(ctx, bx, by, r)
+        fill(ctx, WHITE if 'color' not in item else col)
+        for sd in (-1, 1):
+            ellipse(ctx, sd * 30, -6, 12, 7); fill(ctx, hexc('3B3B4F'), True); stroke(ctx, INK, 4)
+        ellipse(ctx, 0, 4, 26, 32); fill(ctx, hexc('3B3B4F'), True); stroke(ctx, INK, 6)
+        circle(ctx, -9, -4, 4.5); fill(ctx, WHITE); circle(ctx, 9, -4, 4.5); fill(ctx, WHITE)
+        circle(ctx, -8, -4, 2.4); fill(ctx, INK); circle(ctx, 10, -4, 2.4); fill(ctx, INK)
+        ctx.move_to(-7, 18); quad_to(ctx, 0, 24, 7, 18); stroke(ctx, WHITE, 3)
+        face_xy = None
+    elif kind == 'horse':
+        for sd in (-1, 1):
+            poly(ctx, [(sd * 12, -46), (sd * 28, -70), (sd * 32, -40)]); fill(ctx, col, True); stroke(ctx, INK, 6)
+        ctx.save(); ctx.rotate(0.12)
+        ellipse(ctx, 0, 0, 36, 56); fill(ctx, col, True); stroke(ctx, INK, 8)
+        ellipse(ctx, 0, 34, 28, 22); fill(ctx, darker(col, 0.8), True); stroke(ctx, INK, 6)
+        circle(ctx, -9, 36, 4); fill(ctx, INK); circle(ctx, 9, 36, 4); fill(ctx, INK)
+        for k in range(2):  # forelock
+            ellipse(ctx, -4 + k * 8, -50 + k * 10, 10, 13); fill(ctx, hexc('6B3E1F'), True); stroke(ctx, INK, 4)
+        circle(ctx, -14, -14, 5.5); fill(ctx, INK); circle(ctx, 14, -14, 5.5); fill(ctx, INK)
+        circle(ctx, -12.5, -15.5, 1.8); fill(ctx, WHITE); circle(ctx, 15.5, -15.5, 1.8); fill(ctx, WHITE)
+        ctx.move_to(-10, 48); quad_to(ctx, 0, 54, 10, 48); stroke(ctx, INK, 3)
+        ctx.restore(); face_xy = None
+    elif kind == 'rooster':
+        poly(ctx, [(-30, 0), (-74, -40), (-62, 0), (-78, 10), (-40, 24)]); fill(ctx, hexc('2EC4B6'), True); stroke(ctx, INK, 6)
+        for lx in (-10, 12):
+            ctx.move_to(lx, 40); ctx.line_to(lx, 60); stroke(ctx, hexc('FF8C42'), 6)
+        ellipse(ctx, 0, 10, 44, 38); fill(ctx, col, True); stroke(ctx, INK, 8)
+        circle(ctx, 22, -26, 26); fill(ctx, col, True); stroke(ctx, INK, 7)
+        for k in range(3):
+            circle(ctx, 8 + k * 12, -54 + abs(k - 1) * 4, 9); fill(ctx, hexc('FF3B30'), True); stroke(ctx, INK, 4)
+        poly(ctx, [(44, -28), (62, -22), (44, -16)]); fill(ctx, hexc('FFB627'), True); stroke(ctx, INK, 4)
+        ellipse(ctx, 42, -8, 6, 10); fill(ctx, hexc('FF3B30'), True); stroke(ctx, INK, 3)
+        face_xy = (22, -24); fs = 0.7
+    elif kind == 'owl':
+        ellipse(ctx, 0, 6, 46, 56); fill(ctx, col, True); stroke(ctx, INK, 8)
+        for sd in (-1, 1):
+            poly(ctx, [(sd * 20, -40), (sd * 36, -66), (sd * 42, -34)]); fill(ctx, col, True); stroke(ctx, INK, 6)
+        ellipse(ctx, 0, 24, 26, 26); fill(ctx, hexc('FFF1E0'), True); stroke(ctx, INK, 5)
+        for sd in (-1, 1):
+            circle(ctx, sd * 18, -14, 15); fill(ctx, WHITE, True); stroke(ctx, INK, 5)
+            circle(ctx, sd * 18 + 2, -13, 7); fill(ctx, INK)
+        poly(ctx, [(-6, 0), (6, 0), (0, 12)]); fill(ctx, hexc('FFB627'), True); stroke(ctx, INK, 3)
+        face_xy = None
     else:
         circle(ctx, 0, 0, 56); fill(ctx, col, True); stroke(ctx, INK, 8)
     if face_xy is not None:
@@ -452,7 +501,8 @@ def draw_object(ctx, t, item, x, y, rot=0.0, sc=1.0, mood='happy', sun=False, al
 
 
 # ------------------------------------------------------------------ scenes
-SCENES = ['kitchen', 'space', 'ocean', 'park', 'classroom', 'candy', 'jungle', 'snow', 'road', 'farm', 'forest']
+SCENES = ['kitchen', 'space', 'ocean', 'park', 'classroom', 'candy', 'jungle', 'snow', 'road', 'farm', 'forest',
+          'pond', 'sky', 'night', 'city']
 _rnd = random.Random(11)
 _FLOAT = [(_rnd.uniform(0, W), _rnd.uniform(0, 820), _rnd.choice('1234567890+=ABC'), _rnd.uniform(60, 120), _rnd.uniform(0, 6)) for _ in range(16)]
 _STARS = [(_rnd.uniform(0, W), _rnd.uniform(0, 820), _rnd.uniform(2, 6), _rnd.uniform(0, 6)) for _ in range(90)]
@@ -542,6 +592,70 @@ def _forest(ctx, t):
         fill(ctx, hexc('4D9F5A'))
 
 
+def _pond(ctx, t):
+    ctx.set_source_rgb(*hexc('A6E3FF')); ctx.paint()
+    circle(ctx, 1760, 130, 75); fill(ctx, YEL, True); stroke(ctx, INK, 8)
+    _cloud(ctx, 1250 + 30 * math.sin(t * .3), 150, 1.0)
+    ctx.rectangle(0, 640, W, H - 640); fill(ctx, hexc('7BC67E'))
+    ellipse(ctx, 1500, 975, 640, 150); fill(ctx, hexc('3FA7D6'), True); stroke(ctx, INK, 8)
+    ellipse(ctx, 330, 990, 360, 110); fill(ctx, hexc('3FA7D6'), True); stroke(ctx, INK, 8)
+    for k in range(5):  # ripples
+        r = (t * 40 + k * 60) % 300
+        ellipse(ctx, 1500 + (k % 2) * 260 - 130, 985, 60 + r * 0.8, 12 + r * 0.15)
+        ctx.set_source_rgba(1, 1, 1, 0.35 * (1 - r / 300)); ctx.set_line_width(4); ctx.stroke()
+    for (lx, ly) in ((260, 990), (1300, 950), (1760, 1000)):
+        ctx.save(); ctx.translate(lx, ly); ctx.scale(1, 0.4)
+        ctx.new_sub_path(); ctx.arc(0, 0, 70, 0.4, 2 * math.pi - 0.1); ctx.line_to(0, 0); ctx.close_path(); ctx.restore()
+        fill(ctx, hexc('4CAF50'), True); stroke(ctx, INK, 5)
+    for x in (80, 150, 1860):  # reeds
+        for k in range(3):
+            ctx.move_to(x + k * 18, 760); quad_to(ctx, x + k * 18 + 10 * math.sin(t + k), 640, x + k * 22, 560 - k * 20)
+            stroke(ctx, hexc('3E7D3A'), 9)
+        rrect(ctx, x + 14, 540, 16, 60, 8); fill(ctx, hexc('8B5A2B'), True); stroke(ctx, INK, 4)
+    ctx.move_to(0, 640); ctx.line_to(W, 640); stroke(ctx, INK, 6)
+
+
+def _sky(ctx, t):
+    g = cairo.LinearGradient(0, 0, 0, H); g.add_color_stop_rgb(0, *hexc('5EB8FF')); g.add_color_stop_rgb(1, *hexc('D6F0FF'))
+    ctx.set_source(g); ctx.paint()
+    circle(ctx, 1760, 140, 80); fill(ctx, YEL, True); stroke(ctx, INK, 8)
+    for k in range(6):
+        x = (200 + k * 420 - t * 30) % 2400 - 250
+        _cloud(ctx, x, 180 + (k % 3) * 210, 0.8 + 0.25 * (k % 2))
+    _cloud(ctx, 960, 960, 3.2); _cloud(ctx, 120, 1000, 2.6); _cloud(ctx, 1500, 1010, 2.6)  # cloud floor
+
+
+def _night(ctx, t):
+    g = cairo.LinearGradient(0, 0, 0, FLOOR_Y); g.add_color_stop_rgb(0, *hexc('1B1F5E')); g.add_color_stop_rgb(1, *hexc('3C3F8F'))
+    ctx.set_source(g); ctx.paint()
+    for (x, y, r, p) in _STARS[:60]:
+        circle(ctx, x, y * 0.8, r * (0.7 + 0.3 * math.sin(t * 3 + p))); ctx.set_source_rgba(1, 1, 0.85, 0.85); ctx.fill()
+    circle(ctx, 1700, 170, 80); fill(ctx, hexc('FFF3B0'), True); stroke(ctx, INK, 8)
+    circle(ctx, 1735, 150, 70); fill(ctx, hexc('2D3175'))
+    for x in (60, 1860):
+        _bg_tree(ctx, x, 830, 1.3, hexc('2E6B47'))
+    ctx.rectangle(0, FLOOR_Y, W, H - FLOOR_Y); fill(ctx, hexc('2E6B47'))
+
+
+def _city(ctx, t):
+    ctx.set_source_rgb(*hexc('9ED8FF')); ctx.paint()
+    _cloud(ctx, (500 - t * 20) % 2300 - 200, 120, 0.9)
+    cols = ['FFB627', 'FF6FB5', '8E5CF7', '2EC4B6', 'FF8C42', '00B4D8']
+    for k in range(9):  # buildings scroll slowly
+        x = (k * 260 - t * 60) % 2340 - 210
+        h = 260 + (k * 97) % 230
+        rrect(ctx, x, 760 - h, 200, h, 10); fill(ctx, hexc(cols[k % 6]), True); stroke(ctx, INK, 7)
+        for r in range(int(h // 70)):
+            for c in range(3):
+                rrect(ctx, x + 22 + c * 58, 760 - h + 26 + r * 70, 36, 40, 6); fill(ctx, hexc('FFF3B0'), True); stroke(ctx, INK, 3)
+    ctx.rectangle(0, 760, W, H - 760); fill(ctx, hexc('5B5F6E'))
+    ctx.move_to(0, 760); ctx.line_to(W, 760); stroke(ctx, INK, 8)
+    ctx.rectangle(0, 772, W, 10); fill(ctx, WHITE)
+    for k in range(12):
+        x = (k * 220 - t * 300) % 2640 - 220
+        rrect(ctx, x, 1000, 120, 16, 8); fill(ctx, WHITE)
+
+
 def scene_bg(ctx, t, scene):
     if scene == 'space':
         g = cairo.LinearGradient(0, 0, 0, H); g.add_color_stop_rgb(0, *hexc('1B1464')); g.add_color_stop_rgb(1, *hexc('3A1C71'))
@@ -571,6 +685,14 @@ def scene_bg(ctx, t, scene):
         _road(ctx, t); return
     elif scene == 'farm':
         _farm(ctx, t)
+    elif scene == 'pond':
+        _pond(ctx, t); return
+    elif scene == 'sky':
+        _sky(ctx, t); return
+    elif scene == 'night':
+        _night(ctx, t)
+    elif scene == 'city':
+        _city(ctx, t); return
     elif scene == 'forest':
         _forest(ctx, t)
     elif scene == 'park':
