@@ -1,0 +1,143 @@
+{
+ "id": "2026-10-15-pm-copycat-frog",
+ "host": "duck",
+ "scene": "pond",
+ "voice": "af_heart",
+ "music_seed": 314,
+ "hook_text": "WATCH THE FROG!",
+ "start_face": "happy",
+ "beats": [
+  {
+   "type": "say",
+   "text": "Hi! I'm Quackers! Watch me jump!",
+   "face": "happy",
+   "arms": "wave"
+  },
+  {
+   "type": "enter",
+   "id": "frog",
+   "obj": {
+    "kind": "frog",
+    "color": "#6BCB77"
+   },
+   "from": "top_right",
+   "to": "head",
+   "style": "fall",
+   "scale": 1.5,
+   "dur": 0.9
+  },
+  {
+   "type": "wait",
+   "sfx": "frog",
+   "dur": 0.6
+  },
+  {
+   "type": "noodle",
+   "action": "jump",
+   "dur": 0.8,
+   "face": "proud"
+  },
+  {
+   "type": "move",
+   "id": "frog",
+   "to": "head",
+   "style": "hop",
+   "dur": 0.8,
+   "face": "o"
+  },
+  {
+   "type": "burst",
+   "with_prev": true,
+   "word": "HOP!",
+   "color": "#6BCB77",
+   "at": "top_right",
+   "sfx": "hop",
+   "dur": 0.6
+  },
+  {
+   "type": "say",
+   "text": "Hey! Are you copying me?",
+   "face": "squint",
+   "arms": "rest"
+  },
+  {
+   "type": "noodle",
+   "action": "spin",
+   "dur": 1.0,
+   "face": "laugh"
+  },
+  {
+   "type": "spin",
+   "id": "frog",
+   "turns": 2,
+   "dur": 1.0
+  },
+  {
+   "type": "wait",
+   "sfx": "frog",
+   "dur": 0.5,
+   "face": "shock"
+  },
+  {
+   "type": "say",
+   "text": "Okay, little frog. Try THIS!",
+   "face": "proud",
+   "arms": "dance"
+  },
+  {
+   "type": "noodle",
+   "action": "dance",
+   "dur": 1.6,
+   "arms": "dance",
+   "face": "laugh"
+  },
+  {
+   "type": "multiply",
+   "id": "frog",
+   "count": 6,
+   "radius": 240,
+   "dur": 1.0,
+   "face": "shock",
+   "arms": "shock"
+  },
+  {
+   "type": "wait",
+   "with_prev": true,
+   "sfx": "frog",
+   "dur": 1.0
+  },
+  {
+   "type": "burst",
+   "word": "WHAT?!",
+   "color": "#FFD23F",
+   "sfx": "drum",
+   "dur": 0.8
+  },
+  {
+   "type": "say",
+   "text": "A whole frog crowd copies me now!",
+   "face": "laugh",
+   "arms": "cheer",
+   "confetti": true
+  },
+  {
+   "type": "end",
+   "text": "Follow for more giggles!",
+   "dur": 2.2
+  }
+ ],
+ "youtube": {
+  "title": "Quackers Met a Copycat Frog! #shorts",
+  "description": "Quackers jumps, the frog jumps. Quackers spins, the frog spins. Then Quackers dances... and the frog has a BIG surprise! 🐸 Watch the end!\n\nQuackers is the silliest little duck on YouTube!\n\n🔔 Subscribe to Nerdy Noodles for more giggles!\n\n#NerdyNoodles #shorts #kids #funny #cartoon #copycat",
+  "tags": [
+   "funny cartoon for kids",
+   "kids shorts",
+   "silly cartoon",
+   "copycat frog",
+   "funny duck cartoon",
+   "frog cartoon",
+   "funny kids video",
+   "Nerdy Noodles"
+  ]
+ }
+}
