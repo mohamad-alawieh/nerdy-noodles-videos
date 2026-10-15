@@ -403,8 +403,10 @@ class Episode:
         badges = [(820, 870), (950, 820), (1080, 870)] if any(it.get('big') for it in self.items) else []
         for k, (x, y) in enumerate(badges):
             it = self.items[k % self.N]
-            circle(ctx, x, y, 62); fill(ctx, NUMCOL[k + 1], True); stroke(ctx, INK, 10)
             b = it.get('big') or str(k + 1)
+            # a word badge (e.g. a color name) uses the item's own color so the label is always true
+            bcol = hexc(it['color']) if (it.get('color') and not b.isdigit()) else NUMCOL[k + 1]
+            circle(ctx, x, y, 62); fill(ctx, bcol, True); stroke(ctx, INK, 10)
             text(ctx, b, x, y, fit_size(ctx, b, 84, 90), WHITE, sw=10)
         surf.write_to_png(path + '.png')
         from PIL import Image

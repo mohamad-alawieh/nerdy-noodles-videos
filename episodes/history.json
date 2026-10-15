@@ -103,5 +103,34 @@
     "twist": "an owl is up late at night and answers with a real hoot",
     "title": "Real Animal Sounds with Quackers! (QUACK!) | Nerdy Noodles",
     "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-7846164676988024791"
+  },
+  {
+    "id": "2026-10-15-pm-road-trip-colors",
+    "date": "2026-10-15",
+    "host": "car",
+    "lesson": "colors (red, orange, yellow, green, blue, purple, pink)",
+    "scene": "road",
+    "scenes": [
+      "road",
+      "ocean",
+      "city",
+      "pond",
+      "sky",
+      "forest",
+      "farm"
+    ],
+    "kinds": [
+      "car",
+      "fish",
+      "bus",
+      "frog",
+      "bird",
+      "flower",
+      "pig",
+      "horse"
+    ],
+    "hook": "Zoomy hit a bump on the road BUMP",
+    "twist": "a brown horse by the fence answers with a real neigh",
+    "title": "Zoomy's Road Trip Colors! (BUMP!) | Nerdy Noodles"
   }
 ]

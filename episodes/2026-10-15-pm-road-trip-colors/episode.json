@@ -1,0 +1,142 @@
+{
+  "id": "2026-10-15-pm-road-trip-colors",
+  "host": "car",
+  "lesson": "colors (7 colors with real vehicle and animal sounds)",
+  "scene": "road",
+  "intro_title": "Road Trip Colors!",
+  "intro_say": "Hi friends! I'm Zoomy! Let's drive!",
+  "board_title": "Road Colors",
+  "board_label": "Colors:",
+  "voice": "af_heart",
+  "music_seed": 73129,
+  "hook": {
+    "pre": "Bumpity... bump...",
+    "burst": "BUMP!",
+    "burst_say": "Bump!",
+    "line": "Oops! A big bump! Zoomy's colors flew away!",
+    "line_caption": "Oops! A big bump!\nZoomy's colors flew away!"
+  },
+  "items": [
+    {
+      "kind": "car",
+      "color": "#E53935",
+      "big": "RED",
+      "word": "RED CAR",
+      "say": "Red! The red car goes...",
+      "sound": "beep",
+      "sound_word": "BEEP BEEP!",
+      "scene": "road"
+    },
+    {
+      "kind": "fish",
+      "color": "#FF8C1A",
+      "big": "ORANGE",
+      "word": "ORANGE FISH",
+      "say": "Orange! An orange fish!",
+      "scene": "ocean",
+      "trick": "bounce"
+    },
+    {
+      "kind": "bus",
+      "color": "#FFC61A",
+      "big": "YELLOW",
+      "word": "YELLOW BUS",
+      "say": "Yellow! The yellow bus goes...",
+      "sound": "bus",
+      "sound_word": "HONK HONK!",
+      "scene": "city"
+    },
+    {
+      "kind": "frog",
+      "color": "#3DBE5C",
+      "big": "GREEN",
+      "word": "GREEN FROG",
+      "say": "Green! The green frog says...",
+      "sound": "frog",
+      "sound_word": "RIBBIT!",
+      "scene": "pond",
+      "trick": "sunglasses"
+    },
+    {
+      "kind": "bird",
+      "color": "#2E86FF",
+      "big": "BLUE",
+      "word": "BLUE BIRD",
+      "say": "Blue! The blue bird says...",
+      "sound": "bird",
+      "sound_word": "TWEET!",
+      "scene": "sky"
+    },
+    {
+      "kind": "flower",
+      "color": "#9C4DFF",
+      "big": "PURPLE",
+      "word": "FLOWER",
+      "say": "Purple! A purple flower!",
+      "scene": "forest",
+      "trick": "cartwheel"
+    },
+    {
+      "kind": "pig",
+      "color": "#FF8FB1",
+      "big": "PINK",
+      "word": "PINK PIG",
+      "say": "Pink! The pink pig says...",
+      "sound": "pig",
+      "sound_word": "OINK!",
+      "scene": "farm"
+    }
+  ],
+  "song": [
+    "Drive along with Zoomy,\nred, orange, yellow!",
+    "Green and blue go by,\nhello, hello!",
+    "Purple, pink, so bright,\nwhat a happy sight!",
+    "Colors on the road,\nZoomy knows them all!"
+  ],
+  "celebrate_word": "ALL 7!",
+  "celebrate": "Seven colors! Zoomy found them all!",
+  "twist": {
+    "peek_line": "Wait... who's by the fence?",
+    "reveal_word": "BROWN HORSE!",
+    "reveal": "Brown! A brown horse! Listen!",
+    "laugh": "Hee hee! Hello, horse!",
+    "laugh_caption": "Hee hee!\nHello, horse!",
+    "item": {
+      "kind": "horse",
+      "color": "#8B5A2B",
+      "big": "BROWN",
+      "word": "BROWN HORSE",
+      "say": "Brown!",
+      "sound": "horse",
+      "sound_word": "NEIGH!",
+      "scene": "farm"
+    }
+  },
+  "outro": "What is your favorite color? Tell Zoomy in the comments!",
+  "outro_caption": "What is your favorite color?\nTell Zoomy in the comments!",
+  "thumbnail": {
+    "lines": [
+      "ROAD",
+      "TRIP",
+      "COLORS!"
+    ],
+    "sticker": "RED!",
+    "burst": "BUMP!"
+  },
+  "youtube": {
+    "title": "Zoomy's Road Trip Colors! (BUMP!) | Nerdy Noodles",
+    "description": "🚗 BUMP! Zoomy the car hit a big bump on the road, and all the colors flew away! Can you help Zoomy find them?\n\nDrive along with Zoomy and learn 7 colors: red, orange, yellow, green, blue, purple and pink! Each color comes back one by one in its own place (the road, the ocean, the city, the pond, the sky, the forest and the farm), and you hear the REAL sounds of the car, the bus and the animals. Then sing the road trip song, and stay till the end, because someone is waiting by the fence! 👀\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn 7 colors: red, orange, yellow, green, blue, purple and pink\n✔️ Match each color to a real thing: a red car, a yellow bus, a green frog and more\n✔️ Hear real car, bus and animal sounds\n✔️ Sing a road trip colors song with Zoomy!\n\n⏱️ Chapters\n0:00 Hello from Zoomy!\n0:04 BUMP! Oh no!\n0:09 Let's find the colors!\n0:26 Sing along!\n0:46 Who's by the fence?\n0:56 What's your favorite color?\n\n💬 What is your favorite color? Tell Zoomy in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #LearnColors #ColorsForKids #RoadTrip #Preschool #ToddlerLearning #Kindergarten #KidsSongs",
+    "tags": [
+      "learn colors",
+      "colors for kids",
+      "colors song for kids",
+      "road trip for kids",
+      "car videos for kids",
+      "vehicle sounds for kids",
+      "preschool learning",
+      "toddler learning",
+      "educational videos for kids",
+      "Nerdy Noodles"
+    ]
+  }
+}
