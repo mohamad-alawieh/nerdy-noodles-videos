@@ -71,5 +71,19 @@
   "title": "Zoomy's Roof Riders Took the BUS?! #shorts",
   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=8513608773492362588",
   "scheduled": "2026-10-15T16:26:00+03:00"
+ },
+ {
+  "id": "2026-10-16-pm-tiny-loud-peekaboo",
+  "date": "2026-10-16",
+  "host": "cat",
+  "formula": "peekaboo",
+  "scene": "farm",
+  "objects": [
+   "pig",
+   "cow",
+   "rooster"
+  ],
+  "gag": "Mittens plays peekaboo with a pig, then a big cow; bracing for someone HUGE, a tiny rooster appears... and crows so loud Mittens jumps",
+  "title": "Mittens' Peekaboo Had a LOUD Surprise! #shorts"
  }
 ]

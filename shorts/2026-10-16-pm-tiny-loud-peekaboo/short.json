@@ -1,0 +1,185 @@
+{
+ "id": "2026-10-16-pm-tiny-loud-peekaboo",
+ "host": "cat",
+ "scene": "farm",
+ "voice": "af_heart",
+ "music_seed": 4183,
+ "hook_text": "WATCH THE END",
+ "start_face": "happy",
+ "beats": [
+  {
+   "type": "wait",
+   "sfx": "cat",
+   "dur": 0.7,
+   "face": "laugh",
+   "arms": "wave"
+  },
+  {
+   "type": "say",
+   "text": "Hi! I'm Mittens! Peekaboo time!",
+   "face": "happy"
+  },
+  {
+   "type": "face",
+   "face": "squint",
+   "arms": "rest",
+   "dur": 0.5
+  },
+  {
+   "type": "enter",
+   "id": "pig",
+   "obj": {
+    "kind": "pig",
+    "color": "#FFAFC5"
+   },
+   "from": "right",
+   "to": [
+    980,
+    1020
+   ],
+   "style": "slide",
+   "scale": 2.2,
+   "dur": 0.7
+  },
+  {
+   "type": "wait",
+   "sfx": "pig",
+   "dur": 0.7,
+   "face": "o"
+  },
+  {
+   "type": "say",
+   "text": "Peekaboo, little pig!",
+   "face": "laugh"
+  },
+  {
+   "type": "move",
+   "id": "pig",
+   "to": [
+    1400,
+    1020
+   ],
+   "style": "zip",
+   "dur": 0.5
+  },
+  {
+   "type": "enter",
+   "id": "cow",
+   "obj": {
+    "kind": "cow",
+    "color": "#FFFFFF"
+   },
+   "from": "left",
+   "to": [
+    110,
+    960
+   ],
+   "style": "slide",
+   "scale": 2.8,
+   "dur": 0.8
+  },
+  {
+   "type": "wait",
+   "sfx": "cow",
+   "dur": 0.8,
+   "face": "shock",
+   "arms": "shock"
+  },
+  {
+   "type": "say",
+   "text": "Whoa! A BIG peekaboo!",
+   "face": "laugh",
+   "arms": "cheer"
+  },
+  {
+   "type": "move",
+   "id": "cow",
+   "to": [
+    -500,
+    960
+   ],
+   "style": "zip",
+   "dur": 0.5
+  },
+  {
+   "type": "say",
+   "text": "Who's next? Someone HUGE?",
+   "face": "worried",
+   "arms": "rest"
+  },
+  {
+   "type": "wait",
+   "sfx": "drum",
+   "dur": 0.9,
+   "face": "squint"
+  },
+  {
+   "type": "enter",
+   "id": "rooster",
+   "obj": {
+    "kind": "rooster",
+    "color": "#FF5A36"
+   },
+   "from": "bottom",
+   "to": [
+    990,
+    1320
+   ],
+   "style": "bounce",
+   "scale": 1.3,
+   "dur": 0.7
+  },
+  {
+   "type": "say",
+   "text": "Aww, just a tiny rooster!",
+   "face": "happy"
+  },
+  {
+   "type": "wait",
+   "sfx": "rooster",
+   "dur": 1.2
+  },
+  {
+   "type": "noodle",
+   "action": "jump",
+   "with_prev": true,
+   "face": "shock",
+   "arms": "shock",
+   "dur": 1.0
+  },
+  {
+   "type": "burst",
+   "word": "WHOA!",
+   "color": "#FF5A36",
+   "sfx": "boing",
+   "dur": 0.8,
+   "face": "shock"
+  },
+  {
+   "type": "say",
+   "text": "Tiny friend... HUGE voice!",
+   "face": "laugh",
+   "arms": "cheer",
+   "confetti": true
+  },
+  {
+   "type": "end",
+   "text": "Follow for more giggles!",
+   "dur": 2.2
+  }
+ ],
+ "youtube": {
+  "title": "Mittens' Peekaboo Had a LOUD Surprise! #shorts",
+  "description": "Mittens plays peekaboo on the farm: a pig, then a BIG cow... and then a tiny rooster with a HUGE voice! 🐓 Watch the end!\n\nMittens is the curious little cat of Nerdy Noodles!\n\n🔔 Subscribe to Nerdy Noodles for more giggles!\n\n#NerdyNoodles #shorts #kids #funny #cartoon #peekaboo",
+  "tags": [
+   "funny cartoon for kids",
+   "kids shorts",
+   "silly cartoon",
+   "funny cat cartoon",
+   "peekaboo cartoon",
+   "farm animals cartoon",
+   "funny kids video",
+   "Nerdy Noodles"
+  ]
+ }
+}
