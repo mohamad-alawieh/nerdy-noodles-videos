@@ -1,0 +1,115 @@
+{
+  "id": "2026-10-16-pm-mittens-abc-f-j",
+  "host": "cat",
+  "lesson": "letters F-J",
+  "scene": "kitchen",
+  "intro_title": "ABC: F to J!",
+  "intro_say": "Hi friends! I'm Mittens! Let's read!",
+  "board_title": "Mittens' ABC",
+  "board_label": "Letters:",
+  "voice": "af_heart",
+  "music_seed": 60917,
+  "hook": {
+    "pre": "Wiggle... wiggle...",
+    "burst": "POUNCE!",
+    "burst_say": "Pounce!",
+    "line": "Oops! Mittens knocked the letters down!",
+    "line_caption": "Oops! Mittens knocked\nthe letters down!"
+  },
+  "items": [
+    {
+      "kind": "block",
+      "text": "F",
+      "color": "#FF5A36",
+      "big": "F",
+      "word": "FROG",
+      "say": "F is for frog!"
+    },
+    {
+      "kind": "block",
+      "text": "G",
+      "color": "#3DDC84",
+      "big": "G",
+      "word": "GRAPES",
+      "say": "G is for grapes!",
+      "trick": "bounce"
+    },
+    {
+      "kind": "block",
+      "text": "H",
+      "color": "#00B4D8",
+      "big": "H",
+      "word": "HAT",
+      "say": "H is for hat!",
+      "trick": "sunglasses"
+    },
+    {
+      "kind": "block",
+      "text": "I",
+      "color": "#8E5CF7",
+      "big": "I",
+      "word": "IGLOO",
+      "say": "I is for igloo!"
+    },
+    {
+      "kind": "block",
+      "text": "J",
+      "color": "#FFB627",
+      "big": "J",
+      "word": "JUMP",
+      "say": "J is for jump! Jump, jump!",
+      "trick": "cartwheel"
+    }
+  ],
+  "song": [
+    "F is for frog,\nG is for grapes,",
+    "H is for hat\nin funny shapes!",
+    "I is for igloo,\nJ is for jump,",
+    "F, G, H, I, J,\nbump, bump, bump!"
+  ],
+  "celebrate_word": "F-G-H-I-J!",
+  "celebrate": "F, G, H, I, J! Mittens found them all!",
+  "twist": {
+    "peek_line": "Wait... who's that?",
+    "reveal_word": "K? A KITTEN!",
+    "reveal": "K! K is for kitten!",
+    "laugh": "Hee hee! A kitten, just like Mittens!",
+    "laugh_caption": "Hee hee! A kitten,\njust like Mittens!",
+    "item": {
+      "kind": "cat",
+      "color": "#B0B7C3",
+      "big": "K",
+      "word": "KITTEN",
+      "say": "K is for kitten!",
+      "sound": "cat",
+      "sound_word": "MEOW!"
+    }
+  },
+  "outro": "Mittens loves letters! What word starts with K? Tell me!",
+  "outro_caption": "Mittens loves letters!\nWhat word starts with K? Tell me!",
+  "thumbnail": {
+    "lines": [
+      "ABC",
+      "F TO",
+      "J!"
+    ],
+    "sticker": "POUNCE",
+    "burst": "POUNCE!"
+  },
+  "youtube": {
+    "title": "Mittens' ABC: F to J! (POUNCE!) | Nerdy Noodles",
+    "description": "🔤 POUNCE! Mittens the cat jumped after a butterfly and knocked all the letter blocks down! Can you help find them?\n\nLearn the letters F, G, H, I and J with Mittens, the nerdiest cat in the kitchen! Each letter block comes back one by one with a word that starts with it: F is for frog, G is for grapes, and more. Then sing the ABC song with Mittens, and stay till the end, because a tiny someone wants to learn the next letter! 🐾\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn the letters F, G, H, I and J\n✔️ Hear a word for each letter (F is for frog!)\n✔️ Practice early phonics and letter sounds\n✔️ Sing a catchy ABC song with Mittens!\n\n⏱️ Chapters\n0:00 Intro\n0:04 POUNCE! Oh no!\n0:09 Let's find the letters!\n0:26 Sing along!\n0:46 Wait... who's that?\n0:56 What starts with K?\n\n💬 What word starts with K? Tell us in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #ABC #LearnTheAlphabet #Phonics #AlphabetSong #Preschool #KidsSongs #ToddlerLearning",
+    "tags": [
+      "abc for kids",
+      "learn the alphabet",
+      "alphabet song",
+      "letters F to J",
+      "phonics for kids",
+      "abc song",
+      "preschool learning",
+      "toddler learning",
+      "kids songs",
+      "Nerdy Noodles"
+    ]
+  }
+}
