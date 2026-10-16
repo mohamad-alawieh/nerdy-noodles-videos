@@ -133,5 +133,25 @@
     "twist": "a brown horse by the fence answers with a real neigh",
     "title": "Zoomy's Road Trip Colors! (BUMP!) | Nerdy Noodles",
     "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=8180988667883963115"
+  },
+  {
+    "id": "2026-10-16-am-nature-walk-words",
+    "date": "2026-10-16",
+    "host": "tree",
+    "lesson": "nature words (tree, leaf, flower, apple, bird, frog, owl)",
+    "scene": "forest",
+    "kinds": [
+      "tree",
+      "leaf",
+      "flower",
+      "apple",
+      "bird",
+      "frog",
+      "owl",
+      "dino"
+    ],
+    "hook": "a big wind shook Twiggy WHOOSH",
+    "twist": "a friendly dino peeks from behind the board (jungle)",
+    "title": "Twiggy's Nature Walk Words! (WHOOSH!) | Nerdy Noodles"
   }
 ]

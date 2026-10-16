@@ -1,0 +1,136 @@
+{
+  "id": "2026-10-16-am-nature-walk-words",
+  "host": "tree",
+  "lesson": "nature words (tree, leaf, flower, apple, bird, frog, owl)",
+  "scene": "forest",
+  "intro_title": "Nature Walk Words!",
+  "intro_say": "Hi friends! I'm Twiggy! Let's walk!",
+  "board_title": "Nature Walk",
+  "board_label": "Words:",
+  "voice": "af_heart",
+  "music_seed": 51847,
+  "hook": {
+    "pre": "Swish... swish...",
+    "burst": "WHOOSH!",
+    "burst_say": "Whoosh!",
+    "line": "Oh no! The wind blew Twiggy's words away!",
+    "line_caption": "Oh no! The wind blew\nTwiggy's words away!"
+  },
+  "items": [
+    {
+      "kind": "tree",
+      "color": "#3DBE5C",
+      "big": "TREE",
+      "word": "TALL TREE",
+      "say": "Tree! A tall tree, just like Twiggy!",
+      "scene": "forest"
+    },
+    {
+      "kind": "leaf",
+      "color": "#FF8C1A",
+      "big": "LEAF",
+      "word": "FALL LEAF",
+      "say": "Leaf! An orange fall leaf!",
+      "scene": "park",
+      "trick": "cartwheel"
+    },
+    {
+      "kind": "flower",
+      "color": "#FF5FA2",
+      "big": "FLOWER",
+      "word": "PINK FLOWER",
+      "say": "Flower! A pretty pink flower!",
+      "scene": "park"
+    },
+    {
+      "kind": "apple",
+      "color": "#E53935",
+      "big": "APPLE",
+      "word": "RED APPLE",
+      "say": "Apple! Apples grow on trees!",
+      "scene": "farm",
+      "trick": "bounce"
+    },
+    {
+      "kind": "bird",
+      "color": "#2E86FF",
+      "big": "BIRD",
+      "word": "BLUE BIRD",
+      "say": "Bird! The bird says...",
+      "sound": "bird",
+      "sound_word": "TWEET!",
+      "scene": "sky"
+    },
+    {
+      "kind": "frog",
+      "color": "#3DBE5C",
+      "big": "FROG",
+      "word": "GREEN FROG",
+      "say": "Frog! The frog says...",
+      "sound": "frog",
+      "sound_word": "RIBBIT!",
+      "scene": "pond",
+      "trick": "sunglasses"
+    },
+    {
+      "kind": "owl",
+      "color": "#8B5A2B",
+      "big": "OWL",
+      "word": "BROWN OWL",
+      "say": "Owl! At night, the owl says...",
+      "sound": "owl",
+      "sound_word": "HOOT!",
+      "scene": "night"
+    }
+  ],
+  "song": [
+    "Tree and leaf,\nand flower too!",
+    "Apples red,\nthe sky is blue!",
+    "Bird and frog,\nand owl at night,",
+    "Walk with Twiggy,\nwhat a sight!"
+  ],
+  "celebrate_word": "ALL 7!",
+  "celebrate": "Seven words! Twiggy found them all!",
+  "twist": {
+    "peek_line": "Wait... who's behind the board?",
+    "reveal_word": "A DINO?!",
+    "reveal": "A dinosaur? On Twiggy's nature walk?",
+    "laugh": "Hee hee! Hello, friendly dino!",
+    "laugh_caption": "Hee hee!\nHello, friendly dino!",
+    "item": {
+      "kind": "dino",
+      "color": "#5BC236",
+      "big": "DINO",
+      "word": "DINOSAUR",
+      "say": "Dino!",
+      "scene": "jungle"
+    }
+  },
+  "outro": "What do you see outside? Tell Twiggy in the comments!",
+  "outro_caption": "What do you see outside?\nTell Twiggy in the comments!",
+  "thumbnail": {
+    "lines": [
+      "NATURE",
+      "WALK",
+      "WORDS!"
+    ],
+    "sticker": "LEAF!",
+    "burst": "WHOOSH!"
+  },
+  "youtube": {
+    "title": "Twiggy's Nature Walk Words! (WHOOSH!) | Nerdy Noodles",
+    "description": "🌳 WHOOSH! A big wind shook Twiggy the tree, and all of Twiggy's nature words blew away! Can you help Twiggy find them?\n\nWalk along with Twiggy and learn 7 nature words: tree, leaf, flower, apple, bird, frog and owl! Each word comes back one by one in its own place (the forest, the park, the farm, the sky, the pond and the night), and you hear the REAL sounds of the bird, the frog and the owl. Then sing the nature walk song with Twiggy, and stay till the end, because someone very surprising is hiding behind the board! 👀\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn 7 nature words: tree, leaf, flower, apple, bird, frog and owl\n✔️ Learn that apples grow on trees and owls come out at night\n✔️ Hear real bird, frog and owl sounds\n✔️ Sing a nature walk song with Twiggy!\n\n⏱️ Chapters\n0:00 Hello from Twiggy!\n0:04 WHOOSH! Oh no!\n0:09 Let's find the nature words!\n0:26 Sing along!\n0:46 Who's behind the board?\n0:56 What do you see outside?\n\n💬 What do you see outside? Tell Twiggy in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #NatureForKids #FirstWords #NatureWalk #Preschool #ToddlerLearning #Kindergarten #KidsSongs",
+    "tags": [
+      "nature words for kids",
+      "first words for toddlers",
+      "nature walk for kids",
+      "learn words",
+      "animal sounds for kids",
+      "vocabulary for kids",
+      "preschool learning",
+      "toddler learning",
+      "educational videos for kids",
+      "Nerdy Noodles"
+    ]
+  }
+}
