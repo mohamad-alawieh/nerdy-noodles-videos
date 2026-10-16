@@ -1,0 +1,183 @@
+{
+ "id": "2026-10-16-pm-leaf-wakeup",
+ "host": "dino",
+ "scene": "night",
+ "voice": "af_heart",
+ "music_seed": 5291,
+ "hook_text": "DON'T WAKE HIM!",
+ "start_face": "sleep",
+ "beats": [
+  {
+   "type": "noodle",
+   "action": "sleep",
+   "dur": 1.2
+  },
+  {
+   "type": "wait",
+   "sfx": "snore",
+   "dur": 1.0,
+   "face": "sleep"
+  },
+  {
+   "type": "enter",
+   "id": "owl",
+   "obj": {
+    "kind": "owl",
+    "color": "#9B6B43"
+   },
+   "from": "top_right",
+   "to": [
+    940,
+    760
+   ],
+   "style": "fall",
+   "scale": 1.6,
+   "dur": 0.7
+  },
+  {
+   "type": "wait",
+   "sfx": "owl",
+   "dur": 1.0,
+   "face": "sleep"
+  },
+  {
+   "type": "wait",
+   "sfx": "snore",
+   "dur": 0.9,
+   "face": "sleep"
+  },
+  {
+   "type": "enter",
+   "id": "dog",
+   "obj": {
+    "kind": "dog",
+    "color": "#C98B4F"
+   },
+   "from": "left",
+   "to": [
+    140,
+    1250
+   ],
+   "style": "slide",
+   "scale": 1.9,
+   "dur": 0.7
+  },
+  {
+   "type": "wait",
+   "sfx": "dog",
+   "dur": 1.0,
+   "face": "sleep"
+  },
+  {
+   "type": "wait",
+   "sfx": "snore",
+   "dur": 0.9,
+   "face": "sleep"
+  },
+  {
+   "type": "enter",
+   "id": "horse",
+   "obj": {
+    "kind": "horse",
+    "color": "#7A4E2D"
+   },
+   "from": "right",
+   "to": [
+    960,
+    1180
+   ],
+   "style": "slide",
+   "scale": 2.2,
+   "dur": 0.8
+  },
+  {
+   "type": "wait",
+   "sfx": "horse",
+   "dur": 1.1,
+   "face": "sleep"
+  },
+  {
+   "type": "wait",
+   "sfx": "snore",
+   "dur": 1.0,
+   "face": "sleep"
+  },
+  {
+   "type": "enter",
+   "id": "leaf",
+   "obj": {
+    "kind": "leaf",
+    "color": "#E8A33D"
+   },
+   "from": "top",
+   "to": "head",
+   "style": "fall",
+   "scale": 0.8,
+   "dur": 1.4
+  },
+  {
+   "type": "noodle",
+   "action": "jump",
+   "face": "shock",
+   "arms": "shock",
+   "dur": 0.9
+  },
+  {
+   "type": "burst",
+   "word": "ROAR!",
+   "color": "#FFD23F",
+   "sfx": "roar",
+   "dur": 1.0,
+   "with_prev": true
+  },
+  {
+   "type": "say",
+   "text": "Who is being SO loud?!",
+   "face": "worried",
+   "arms": "shock"
+  },
+  {
+   "type": "say",
+   "text": "This leaf! Shhh, little leaf!",
+   "face": "squint",
+   "arms": "rest"
+  },
+  {
+   "type": "wait",
+   "sfx": "giggle",
+   "dur": 0.8,
+   "face": "laugh"
+  },
+  {
+   "type": "say",
+   "text": "Okay, Stompy's back to bed!",
+   "face": "happy",
+   "arms": "wave"
+  },
+  {
+   "type": "noodle",
+   "action": "sleep",
+   "face": "sleep",
+   "dur": 1.0
+  },
+  {
+   "type": "end",
+   "text": "Follow for more giggles!",
+   "dur": 2.2
+  }
+ ],
+ "youtube": {
+  "title": "Stompy Slept Through EVERYTHING... Except This! #shorts",
+  "description": "An owl, a dog and a horse can't wake sleepy Stompy... but one tiny falling leaf? ROAR! 🍂 Watch the end!\n\nStompy is the gentlest little dinosaur of Nerdy Noodles!\n\n🔔 Subscribe to Nerdy Noodles for more giggles!\n\n#NerdyNoodles #shorts #kids #funny #cartoon #bedtime",
+  "tags": [
+   "funny cartoon for kids",
+   "kids shorts",
+   "silly cartoon",
+   "funny dinosaur cartoon",
+   "sleepy dinosaur",
+   "animal sounds for kids",
+   "funny kids video",
+   "Nerdy Noodles"
+  ]
+ }
+}
