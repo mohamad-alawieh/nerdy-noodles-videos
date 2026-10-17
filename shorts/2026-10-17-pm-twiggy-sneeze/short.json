@@ -1,0 +1,178 @@
+{
+ "id": "2026-10-17-pm-twiggy-sneeze",
+ "host": "tree",
+ "scene": "forest",
+ "voice": "af_heart",
+ "music_seed": 7713,
+ "hook_text": "WATCH THE END!",
+ "start_face": "squint",
+ "beats": [
+  {
+   "type": "say",
+   "text": "Uh oh... Twiggy needs to sneeze!",
+   "face": "squint",
+   "arms": "rest"
+  },
+  {
+   "type": "noodle",
+   "action": "sneeze",
+   "word": "ACHOO!",
+   "face": "squint",
+   "dur": 0.9
+  },
+  {
+   "type": "enter",
+   "id": "apple",
+   "obj": {
+    "kind": "apple",
+    "color": "#E63946"
+   },
+   "from": "top",
+   "to": [
+    150,
+    1320
+   ],
+   "style": "bounce",
+   "scale": 1.0,
+   "dur": 0.8,
+   "with_prev": true
+  },
+  {
+   "type": "say",
+   "text": "Phew! Just an apple.",
+   "face": "happy",
+   "arms": "wave"
+  },
+  {
+   "type": "noodle",
+   "action": "sneeze",
+   "word": "ACHOO!",
+   "face": "squint",
+   "dur": 0.9
+  },
+  {
+   "type": "multiply",
+   "id": "apple",
+   "count": 5,
+   "radius": 105,
+   "dur": 0.9,
+   "with_prev": true
+  },
+  {
+   "type": "say",
+   "text": "Apple party! But one more is coming...",
+   "face": "worried",
+   "arms": "shock"
+  },
+  {
+   "type": "noodle",
+   "action": "sneeze",
+   "word": "AH-CHOO!!",
+   "face": "squint",
+   "dur": 1.0
+  },
+  {
+   "type": "enter",
+   "id": "bird",
+   "obj": {
+    "kind": "bird",
+    "color": "#4DA3FF"
+   },
+   "from": "top_right",
+   "to": [
+    860,
+    820
+   ],
+   "style": "zoom",
+   "scale": 1.3,
+   "dur": 0.7,
+   "with_prev": true
+  },
+  {
+   "type": "wait",
+   "sfx": "bird",
+   "dur": 1.0,
+   "face": "shock"
+  },
+  {
+   "type": "say",
+   "text": "A bird?! Were you in my branches?",
+   "face": "o",
+   "arms": "shock"
+  },
+  {
+   "type": "say",
+   "text": "Ah... ah... ah...",
+   "face": "squint",
+   "arms": "rest"
+  },
+  {
+   "type": "noodle",
+   "action": "sneeze",
+   "word": "choo.",
+   "face": "squint",
+   "dur": 0.8
+  },
+  {
+   "type": "enter",
+   "id": "cow",
+   "obj": {
+    "kind": "cow",
+    "color": "#FFFFFF"
+   },
+   "from": "top",
+   "to": [
+    905,
+    1300
+   ],
+   "style": "fall",
+   "scale": 1.75,
+   "dur": 0.9
+  },
+  {
+   "type": "wait",
+   "sfx": "thud",
+   "dur": 0.4,
+   "with_prev": true
+  },
+  {
+   "type": "wait",
+   "sfx": "cow",
+   "dur": 1.2,
+   "face": "shock",
+   "arms": "shock"
+  },
+  {
+   "type": "say",
+   "text": "Okay... THAT was not in my branches!",
+   "face": "shock",
+   "arms": "shock"
+  },
+  {
+   "type": "wait",
+   "sfx": "giggle",
+   "dur": 0.9,
+   "face": "laugh",
+   "arms": "cheer"
+  },
+  {
+   "type": "end",
+   "text": "Follow for more giggles!",
+   "dur": 2.2
+  }
+ ],
+ "youtube": {
+  "title": "Twiggy Sneezed Out a WHAT?! #shorts",
+  "description": "Twiggy sneezes out an apple, a pile of apples, a bird... and then the tiniest sneeze of all brings the BIGGEST surprise! 🍎 Watch the end!\n\nTwiggy is the kindest, sneeziest apple tree of Nerdy Noodles!\n\n🔔 Subscribe to Nerdy Noodles for more giggles!\n\n#NerdyNoodles #shorts #kids #funny #cartoon #sneeze",
+  "tags": [
+   "funny cartoon for kids",
+   "kids shorts",
+   "silly cartoon",
+   "funny sneeze cartoon",
+   "talking tree cartoon",
+   "animal sounds for kids",
+   "funny kids video",
+   "Nerdy Noodles"
+  ]
+ }
+}
