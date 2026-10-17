@@ -1,0 +1,128 @@
+{
+  "id": "2026-10-17-am-stompy-rhyme-time",
+  "host": "dino",
+  "lesson": "rhyming words (dog/frog, star/car, moon/balloon)",
+  "scene": "jungle",
+  "intro_title": "Rhyme Time!",
+  "intro_say": "Hi friends! I'm Stompy! Let's rhyme!",
+  "board_title": "Rhyme Time!",
+  "board_label": "Words:",
+  "voice": "af_heart",
+  "music_seed": 48213,
+  "hook": {
+    "pre": "Stomp... stomp...",
+    "burst": "STOMP!",
+    "burst_say": "Stomp!",
+    "line": "Oops! Stompy's stomp bounced the words away!",
+    "line_caption": "Oops! Stompy's stomp\nbounced the words away!"
+  },
+  "items": [
+    {
+      "kind": "dog",
+      "color": "#B5835A",
+      "big": "DOG",
+      "word": "-OG",
+      "say": "Dog! The dog says...",
+      "sound": "dog",
+      "sound_word": "WOOF!",
+      "scene": "park"
+    },
+    {
+      "kind": "frog",
+      "color": "#3DBE5C",
+      "big": "FROG",
+      "word": "-OG TOO!",
+      "say": "Frog rhymes with dog!",
+      "sound": "frog",
+      "sound_word": "RIBBIT!",
+      "scene": "pond",
+      "trick": "sunglasses"
+    },
+    {
+      "kind": "star",
+      "color": "#FFC61A",
+      "big": "STAR",
+      "word": "-AR",
+      "say": "Star! A shiny star!",
+      "scene": "space"
+    },
+    {
+      "kind": "car",
+      "color": "#E53935",
+      "big": "CAR",
+      "word": "-AR TOO!",
+      "say": "Car rhymes with star!",
+      "sound": "beep",
+      "sound_word": "BEEP BEEP!",
+      "scene": "road",
+      "trick": "bounce"
+    },
+    {
+      "kind": "shape",
+      "shape": "moon",
+      "color": "#FFE066",
+      "big": "MOON",
+      "word": "-OON",
+      "say": "Moon! A big moon!",
+      "scene": "night"
+    },
+    {
+      "kind": "balloon",
+      "color": "#9C4DFF",
+      "big": "BALLOON",
+      "word": "-OON TOO!",
+      "say": "Balloon rhymes with moon!",
+      "scene": "park",
+      "trick": "cartwheel"
+    }
+  ],
+  "song": [
+    "Dog and frog,\nthey rhyme, hooray!",
+    "Star and car,\nlet's drive away!",
+    "Moon, balloon,\nup, up they go!",
+    "Stompy loves to rhyme,\nnow you know!"
+  ],
+  "celebrate_word": "ALL 3!",
+  "celebrate": "Three rhyming pairs! Stompy did it!",
+  "twist": {
+    "peek_line": "Wait... what's behind the board?",
+    "reveal_word": "SOCK?!",
+    "reveal": "A sock?! Sock rhymes with rock!",
+    "laugh": "Hee hee! Silly sock!",
+    "laugh_caption": "Hee hee!\nSilly sock!",
+    "item": {
+      "kind": "sock",
+      "color": "#FF5A9E",
+      "big": "SOCK",
+      "word": "-OCK",
+      "say": "Sock!"
+    }
+  },
+  "outro": "What rhymes with cat? Tell Stompy in the comments!",
+  "outro_caption": "What rhymes with cat?\nTell Stompy in the comments!",
+  "thumbnail": {
+    "lines": [
+      "STOMPY'S",
+      "RHYME",
+      "TIME!"
+    ],
+    "sticker": "RHYME!",
+    "burst": "STOMP!"
+  },
+  "youtube": {
+    "title": "Stompy's Rhyme Time! (STOMP!) | Nerdy Noodles",
+    "description": "🦖 STOMP! Stompy the dino stomped so hard that all the rhyming words bounced away! Can you help Stompy find them?\n\nLearn rhyming words with Stompy: dog and frog, star and car, moon and balloon! Each word comes back in its own place (the park, the pond, outer space, the road and the night sky), and you hear the REAL sounds of the dog, the frog and the car. Then sing the rhyme time song, and stay till the end, because something silly is hiding behind the board! 👀\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn what rhyming words are\n✔️ Hear 3 rhyming pairs: dog/frog, star/car, moon/balloon\n✔️ Notice the matching word endings: -og, -ar, -oon\n✔️ Sing a rhyming song with Stompy!\n\n⏱️ Chapters\n0:00 Hello from Stompy!\n0:04 STOMP! Oh no!\n0:09 Let's find the rhymes!\n0:26 Sing along!\n0:46 What's behind the board?\n0:56 What rhymes with cat?\n\n💬 What rhymes with cat? Tell Stompy in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #RhymingWords #Rhymes #Phonics #Preschool #ToddlerLearning #Kindergarten #KidsSongs",
+    "tags": [
+      "rhyming words for kids",
+      "rhymes for kids",
+      "rhyming song",
+      "phonics for kids",
+      "learn to read",
+      "dinosaur for kids",
+      "preschool learning",
+      "toddler learning",
+      "educational videos for kids",
+      "Nerdy Noodles"
+    ]
+  }
+}

@@ -169,5 +169,24 @@
     "twist": "K is for kitten: a grey kitten peeks in and answers with a real meow",
     "title": "Mittens' ABC: F to J! (POUNCE!) | Nerdy Noodles",
     "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=521607602374132941"
+  },
+  {
+    "id": "2026-10-17-am-stompy-rhyme-time",
+    "date": "2026-10-17",
+    "host": "dino",
+    "lesson": "rhyming words (dog/frog, star/car, moon/balloon)",
+    "scene": "jungle",
+    "kinds": [
+      "dog",
+      "frog",
+      "star",
+      "car",
+      "shape",
+      "balloon",
+      "sock"
+    ],
+    "hook": "Stompy stomped and the words bounced away STOMP",
+    "twist": "a pink sock peeks from behind the board ('sock rhymes with rock!')",
+    "title": "Stompy's Rhyme Time! (STOMP!) | Nerdy Noodles"
   }
 ]
