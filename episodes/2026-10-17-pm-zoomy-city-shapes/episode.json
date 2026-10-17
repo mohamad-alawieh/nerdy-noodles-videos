@@ -1,0 +1,138 @@
+{
+  "id": "2026-10-17-pm-zoomy-city-shapes",
+  "host": "car",
+  "lesson": "shapes (circle, triangle, square, rectangle, diamond, oval, hexagon)",
+  "scene": "city",
+  "intro_title": "Shapes Drive!",
+  "intro_say": "Hi friends! I'm Zoomy! Let's drive!",
+  "board_title": "Zoomy Shapes",
+  "board_label": "Shapes:",
+  "voice": "af_heart",
+  "music_seed": 51723,
+  "hook": {
+    "pre": "Toot... toot...",
+    "burst": "HONK!",
+    "sound": "honk",
+    "line": "Oops! Zoomy honked so loud, the shapes flew!",
+    "line_caption": "Oops! Zoomy honked so\nloud, the shapes flew!"
+  },
+  "items": [
+    {
+      "kind": "shape",
+      "shape": "circle",
+      "color": "#FF5A36",
+      "big": "",
+      "word": "CIRCLE",
+      "say": "Circle! Round like Zoomy's wheels!",
+      "scene": "road"
+    },
+    {
+      "kind": "shape",
+      "shape": "triangle",
+      "color": "#3DDC84",
+      "big": "",
+      "word": "TRIANGLE",
+      "say": "Triangle! Three sides!",
+      "scene": "city",
+      "trick": "bounce"
+    },
+    {
+      "kind": "shape",
+      "shape": "square",
+      "color": "#00B4D8",
+      "big": "",
+      "word": "SQUARE",
+      "say": "Square! Four sides the same!",
+      "scene": "park"
+    },
+    {
+      "kind": "shape",
+      "shape": "rectangle",
+      "color": "#FFB627",
+      "big": "",
+      "word": "RECTANGLE",
+      "say": "Rectangle! Like a door!",
+      "scene": "city",
+      "trick": "cartwheel"
+    },
+    {
+      "kind": "shape",
+      "shape": "diamond",
+      "color": "#FF4FA3",
+      "big": "",
+      "word": "DIAMOND",
+      "say": "Diamond! Like a kite!",
+      "scene": "sky"
+    },
+    {
+      "kind": "shape",
+      "shape": "oval",
+      "color": "#8E5CF7",
+      "big": "",
+      "word": "OVAL",
+      "say": "Oval! Like an egg!",
+      "scene": "farm",
+      "trick": "sunglasses"
+    },
+    {
+      "kind": "shape",
+      "shape": "hexagon",
+      "color": "#2E86FF",
+      "big": "",
+      "word": "HEXAGON",
+      "say": "Hexagon! Six sides!",
+      "scene": "road"
+    }
+  ],
+  "song": [
+    "Drive, drive, here we go,\ncircles roll so slow!",
+    "Triangle, square, it's true,\nrectangle, I see you!",
+    "Diamond, oval, wow,\nhexagon, six sides now!",
+    "Drive, drive, all along,\nZoomy's happy shape song!"
+  ],
+  "celebrate_word": "7 SHAPES!",
+  "celebrate": "Seven shapes! Zoomy found them all!",
+  "twist": {
+    "peek_line": "Wait... it's getting dark!",
+    "reveal_word": "A STAR?!",
+    "reveal": "A star! A star shape!",
+    "laugh": "Hee hee! A star has five points!",
+    "laugh_caption": "Hee hee! A star\nhas five points!",
+    "item": {
+      "kind": "shape",
+      "shape": "star",
+      "color": "#FFE14D",
+      "big": "",
+      "word": "STAR",
+      "say": "Star!",
+      "scene": "night"
+    }
+  },
+  "outro": "What shapes do you see in your street? Tell Zoomy in the comments!",
+  "outro_caption": "What shapes do you see in your\nstreet? Tell Zoomy in the comments!",
+  "thumbnail": {
+    "lines": [
+      "SHAPES",
+      "WITH",
+      "ZOOMY!"
+    ],
+    "sticker": "HONK!",
+    "burst": "HONK!"
+  },
+  "youtube": {
+    "title": "Zoomy's Shape Drive! (HONK!) | Nerdy Noodles",
+    "description": "🚗 HONK! Zoomy the car honked so loud in the city that all the shapes flew away! Can you help Zoomy find them?\n\nDrive along with Zoomy and learn 7 shapes: circle, triangle, square, rectangle, diamond, oval and hexagon! Each shape comes back one by one in a new place (the road, the city, the park, the sky and the farm), and Zoomy shows where you can spot it, like a circle in Zoomy's wheels, a rectangle door and a diamond kite. Then sing the shape driving song, and stay till the end, because it gets dark and a surprise shape starts to shine! ✨\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn 7 shapes: circle, triangle, square, rectangle, diamond, oval and hexagon\n✔️ Count the sides: a triangle has 3, a square has 4, a hexagon has 6\n✔️ Spot shapes in everyday things: wheels, doors, kites and eggs\n✔️ Sing a happy driving shapes song with Zoomy!\n\n⏱️ Chapters\n0:00 Hello from Zoomy!\n0:04 HONK! Oh no!\n0:09 Let's find the shapes!\n0:26 Sing along!\n0:46 It's getting dark... surprise!\n0:56 What shapes do you see?\n\n💬 What shapes do you see in your street? Tell Zoomy in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #Shapes #LearnShapes #ShapesSong #CarsForKids #Preschool #ToddlerLearning #Kindergarten",
+    "tags": [
+      "shapes for kids",
+      "learn shapes",
+      "shapes song",
+      "circle square triangle",
+      "car videos for kids",
+      "preschool learning",
+      "toddler learning",
+      "kindergarten shapes",
+      "educational videos for kids",
+      "Nerdy Noodles"
+    ]
+  }
+}
