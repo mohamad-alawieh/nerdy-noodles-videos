@@ -1,0 +1,281 @@
+{
+ "id": "2026-10-17-pm-bubble-fish",
+ "host": "duck",
+ "scene": "ocean",
+ "voice": "af_heart",
+ "music_seed": 5821,
+ "hook_text": "WATCH THE END",
+ "start_face": "happy",
+ "beats": [
+  {
+   "type": "wait",
+   "sfx": "duck",
+   "dur": 0.6,
+   "face": "happy",
+   "arms": "wave"
+  },
+  {
+   "type": "say",
+   "text": "Hi! I'm Quackers! Look, bubbles!",
+   "face": "happy",
+   "arms": "wave"
+  },
+  {
+   "type": "enter",
+   "id": "b1",
+   "obj": {
+    "kind": "bubble",
+    "color": "#9AD8FF"
+   },
+   "from": "bottom",
+   "to": [
+    300,
+    900
+   ],
+   "style": "slide",
+   "scale": 1.0,
+   "dur": 1.0
+  },
+  {
+   "type": "pop",
+   "id": "b1",
+   "word": "POP!",
+   "color": "#4FC3F7",
+   "dur": 0.7,
+   "face": "laugh"
+  },
+  {
+   "type": "say",
+   "text": "Ooh! More bubbles! Lots more!",
+   "face": "o",
+   "arms": "cheer"
+  },
+  {
+   "type": "enter",
+   "id": "c1",
+   "obj": {
+    "kind": "bubble",
+    "color": "#B39DFF"
+   },
+   "from": "bottom",
+   "to": [
+    170,
+    820
+   ],
+   "style": "slide",
+   "scale": 1.4,
+   "dur": 1.0
+  },
+  {
+   "type": "enter",
+   "id": "c2",
+   "obj": {
+    "kind": "bubble",
+    "color": "#9AD8FF"
+   },
+   "from": "bottom",
+   "to": [
+    910,
+    820
+   ],
+   "style": "slide",
+   "scale": 1.4,
+   "dur": 0.6,
+   "with_prev": true
+  },
+  {
+   "type": "enter",
+   "id": "c3",
+   "obj": {
+    "kind": "bubble",
+    "color": "#7FE3D0"
+   },
+   "from": "bottom",
+   "to": [
+    170,
+    1200
+   ],
+   "style": "slide",
+   "scale": 1.4,
+   "dur": 0.6,
+   "with_prev": true
+  },
+  {
+   "type": "enter",
+   "id": "c4",
+   "obj": {
+    "kind": "bubble",
+    "color": "#FFB3D9"
+   },
+   "from": "bottom",
+   "to": [
+    910,
+    1200
+   ],
+   "style": "slide",
+   "scale": 1.4,
+   "dur": 0.6,
+   "with_prev": true
+  },
+  {
+   "type": "wait",
+   "sfx": "blip",
+   "dur": 0.4,
+   "face": "shock",
+   "arms": "shock"
+  },
+  {
+   "type": "pop",
+   "id": "c1",
+   "word": "POP!",
+   "color": "#B39DFF",
+   "dur": 0.35
+  },
+  {
+   "type": "pop",
+   "id": "c2",
+   "word": "POP!",
+   "color": "#4FC3F7",
+   "dur": 0.35
+  },
+  {
+   "type": "pop",
+   "id": "c3",
+   "word": "POP!",
+   "color": "#26C6DA",
+   "dur": 0.35
+  },
+  {
+   "type": "pop",
+   "id": "c4",
+   "word": "POP!",
+   "color": "#FF6FB5",
+   "dur": 0.35
+  },
+  {
+   "type": "say",
+   "text": "Who is making all these bubbles?",
+   "face": "laugh",
+   "arms": "dance"
+  },
+  {
+   "type": "enter",
+   "id": "b3",
+   "obj": {
+    "kind": "bubble",
+    "color": "#7FE3D0"
+   },
+   "from": "bottom",
+   "to": [
+    540,
+    690
+   ],
+   "style": "slide",
+   "scale": 1.5,
+   "dur": 1.0,
+   "face": "o",
+   "arms": "rest"
+  },
+  {
+   "type": "grow",
+   "id": "b3",
+   "scale": 2.0,
+   "dur": 1.2,
+   "face": "worried"
+  },
+  {
+   "type": "wait",
+   "sfx": "drum",
+   "dur": 0.8,
+   "face": "squint"
+  },
+  {
+   "type": "pop",
+   "id": "b3",
+   "word": "POP!",
+   "color": "#26C6DA",
+   "dur": 0.6
+  },
+  {
+   "type": "enter",
+   "id": "fish",
+   "obj": {
+    "kind": "fish",
+    "color": "#FF8A3D",
+    "sunglasses": true
+   },
+   "from": "top",
+   "to": "head",
+   "style": "zoom",
+   "scale": 1.5,
+   "dur": 0.8,
+   "face": "shock",
+   "arms": "shock"
+  },
+  {
+   "type": "wait",
+   "with_prev": true,
+   "sfx": "giggle",
+   "dur": 0.8
+  },
+  {
+   "type": "say",
+   "text": "A fish?! YOU made the bubbles!",
+   "face": "shock",
+   "arms": "shock"
+  },
+  {
+   "type": "spin",
+   "id": "fish",
+   "turns": 2,
+   "dur": 1.0
+  },
+  {
+   "type": "enter",
+   "id": "b4",
+   "obj": {
+    "kind": "bubble",
+    "color": "#9AD8FF"
+   },
+   "from": "top_right",
+   "to": "nose",
+   "style": "slide",
+   "scale": 1.0,
+   "dur": 1.0
+  },
+  {
+   "type": "pop",
+   "id": "b4",
+   "word": "BLOOP!",
+   "color": "#4FC3F7",
+   "dur": 0.7,
+   "face": "squint"
+  },
+  {
+   "type": "say",
+   "text": "Okay, fishy. You win!",
+   "face": "laugh",
+   "arms": "cheer",
+   "confetti": true
+  },
+  {
+   "type": "end",
+   "text": "Follow for more giggles!",
+   "dur": 2.2
+  }
+ ],
+ "youtube": {
+  "title": "Quackers Found Out Who Makes the Bubbles! #shorts",
+  "description": "Quackers pops one bubble, then four, then a GIANT one... and something very surprising swims out! 🫧 Watch the end!\n\nQuackers is the silliest little duck on YouTube!\n\n🔔 Subscribe to Nerdy Noodles for more giggles!\n\n#NerdyNoodles #shorts #kids #funny #cartoon #bubbles",
+  "tags": [
+   "funny cartoon for kids",
+   "kids shorts",
+   "silly cartoon",
+   "bubble cartoon",
+   "funny duck cartoon",
+   "fish cartoon",
+   "funny kids video",
+   "Nerdy Noodles"
+  ]
+ }
+}

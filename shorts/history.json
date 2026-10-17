@@ -120,5 +120,18 @@
   "title": "Twiggy Sneezed Out a WHAT?! #shorts",
   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=2720850165852359515",
   "scheduled": "2026-10-17T13:16:00+03:00"
+ },
+ {
+  "id": "2026-10-17-pm-bubble-fish",
+  "date": "2026-10-17",
+  "host": "duck",
+  "formula": "bubble trouble",
+  "scene": "ocean",
+  "objects": [
+   "bubble",
+   "fish"
+  ],
+  "gag": "Quackers pops one bubble, then four at once; a giant bubble pops and out comes a cool fish in sunglasses who was blowing all the bubbles - and blows one on Quackers' nose",
+  "title": "Quackers Found Out Who Makes the Bubbles! #shorts"
  }
 ]
