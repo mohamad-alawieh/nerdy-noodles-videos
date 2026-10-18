@@ -37,7 +37,9 @@ driving song ("Beep beep, here we go!").
    rotation rule above.
 3. Invent the episode (rules below) and write `episodes/<YYYY-MM-DD>-<am|pm>-<slug>/episode.json`
    (Beirut date; am before 12:00, pm after). Copy the shape of an existing episode.json.
-4. Preview: `python3 engine/episode.py <path>/episode.json --stills 3.5 9 30 41 47 50 54`,
+4. Check the song can be understood: `python3 engine/check_lyrics.py <path>/episode.json`; rewrite any line
+   scoring below 80 or heard as a different/rude word, and check again (at most 3 rounds).
+   Preview: `python3 engine/episode.py <path>/episode.json --stills 3.5 9 30 41 47 50 54`,
    `--intro-stills 1.3 2.6` and `--thumb`, then look at a few of the PNGs and thumbnail.jpg with the Read tool. Fix anything clipped,
    overlapping or unreadable by editing the JSON (shorter words/lines), and re-check.
 5. Render: `python3 engine/episode.py <path>/episode.json` (~1-2 min). It writes `video.mp4` and
@@ -78,7 +80,7 @@ wipe opens the episode). Set `intro_title` (≤ 22 chars, e.g. "Animal Sounds!")
 "Hi friends! I'm Quackers! Listen!"). The episode itself then follows the same proven shape (the engine handles
 the timing; times below are inside the episode, add 4 s for the real video time):
 hook (0-5s, a funny accident scatters the items) → items come back one by one, each shown big and
-spoken (5-22s) → sing-along recap (22-40s) → celebration (40-42s) → surprise extra item peeks from behind the
+spoken (5-22s) → SUNG sing-along recap (22-38s, the star sings your song) → celebration (40-42s) → surprise extra item peeks from behind the
 board, then joins (42-52s) → outro question that invites comments (52-60s).
 
 What makes it work (aim for all of them):
@@ -104,8 +106,13 @@ What makes it work (aim for all of them):
   and never put an animal somewhere it does not live. The twist item can have a scene too.
 - **A funny twist** that rewards watching to the end: an unexpected extra item (a planet among stars, a
   rainbow ball, a dancing sock, a baby dino) and a laugh line.
-- **Catchy original song**: 4 short lines, rhyming, simple words, each line ≤ 26 characters per row; use
-  `\n` to split into two rows. Never use or imitate existing songs' lyrics.
+- **A real sung song** (the sing-along recap is SUNG by the star, like the top toddler song channels): 4 short
+  rhyming lines that recap the lesson (name the items), simple words, each row ≤ 26 characters; use `\n` to
+  split into two rows. Give the tune in `song_notes`: 4 lines in the same `word:NOTE[/beats]` format as the
+  Shorts (see SHORTS.md "sing beat"), each line exactly 8 beats (sung at 120 bpm, 4 s per line), C major, notes
+  C4-D5, one note per word, a long note at the end of each line, last line ending on C. Example:
+  `"Pig:G4 and:G4 sheep:E4 live:G4 on:A4 the:G4 farm:E4/2"`. Split words like "bye-bye" into two tokens
+  (`bye:E4 bye:C4/2`). Never use or imitate existing songs' lyrics or tunes.
 - **Variety**: rotate lessons, objects, colors, scenes and hooks. Series names help ("Count the ___!",
   "Colors with Zoomy", "Mittens' ABC", "Road Trip Colors"). Mix in seasonal themes when the date fits (Halloween pumpkins can be
   drawn as orange `ball`s with the right words; winter → `snow` scene; spring → `flower`).
@@ -131,7 +138,7 @@ What makes it work (aim for all of them):
 - `board_title` (≤ 14 chars) and `board_label` (≤ 8 chars, e.g. "Stars:"): the chalkboard counter.
 - `hook`: `pre` ("Hic... hic..."), `burst` ("HIC!"), `burst_say`, `line` (spoken, ≤ 45 chars),
   `line_caption` (same text split in two rows with `\n`).
-- `song`: 4 lines. `celebrate_word` ("TEN!"), `celebrate` (spoken, ≤ 40 chars).
+- `song`: 4 lines (on-screen lyrics). `song_notes`: the same 4 lines with notes (required, see above). `celebrate_word` ("TEN!"), `celebrate` (spoken, ≤ 40 chars).
 - `twist`: `peek_line`, `reveal_word` (≤ 12 chars, e.g. "A PLANET?!"), `reveal` (spoken), `laugh`,
   `laugh_caption`, `item` (same shape as items).
 - `outro` (spoken, ≤ 75 chars, must end with a question inviting comments) and `outro_caption` (two rows).

@@ -1,7 +1,7 @@
 """Listen to the sung lyrics like a viewer would: sing each line alone (voice only), transcribe it with Whisper
 and compare with the written lyrics. Use it before rendering a song Short.
 
-usage: python3 engine/check_lyrics.py shorts/<id>/short.json
+usage: python3 engine/check_lyrics.py shorts/<id>/short.json   (or episodes/<id>/episode.json)
 Prints, per line: score (0-100), what we wrote, what Whisper heard. Rewrite any line that is misheard
 (especially into a different or rude word), then check again.
 """
@@ -22,7 +22,12 @@ def norm(s, lang):
 
 def main():
     import sherpa_onnx
-    sj = json.load(open(sys.argv[1])); song = sj['song']; lang = song.get('lang', 'en')
+    sj = json.load(open(sys.argv[1]))
+    if 'song_notes' in sj:  # episode: 4 sung recap lines at 120 bpm
+        song = {'lang': 'en', 'bpm': 120}; sj['beats'] = [{'type': 'sing', 'line': l} for l in sj['song_notes']]
+    else:
+        song = sj['song']
+    lang = song.get('lang', 'en')
     m = os.path.join(ROOT, '.tts', 'sherpa-onnx-whisper-small')
     rec = sherpa_onnx.OfflineRecognizer.from_whisper(
         encoder=os.path.join(m, 'small-encoder.int8.onnx'), decoder=os.path.join(m, 'small-decoder.int8.onnx'),

@@ -74,6 +74,10 @@ class Episode:
         self.intro_on = ep.get('intro', True) is not False
         self.GLASSES = (960 + 75 * S, 610 + 45 * S)
         self.lyrics = ep.get('song', [''] * 4)
+        # sung recap: 4 lines of notes (8 beats each at 120 bpm = 4 s per line) sung from 22.0 s to 38.0 s
+        self.notes = ep.get('song_notes') or []
+        self.sung = len(self.notes) == 4
+        self.SONG_T0, self.SONG_BPM = 22.0, 120.0
         rnd = random.Random(ep.get('music_seed', 1))
         self.conf = [(rnd.uniform(0, W), rnd.uniform(-300, -20), rnd.uniform(180, 420), rnd.uniform(-60, 60),
                       rnd.uniform(0, 6), rnd.choice(NUMCOL)) for _ in range(140)]
@@ -131,7 +135,7 @@ class Episode:
     def lyric(self, t):
         L = self.lyrics
         if 5.0 <= t < 22: return L[min(3, int((t - 5.0) / (17 / 4)))]
-        if 22 <= t < 40: return L[min(3, int((t - 22) / 4.5))]
+        if 22 <= t < 40: return L[min(3, int((t - 22) / (4.0 if self.sung else 4.5)))]
         return None
 
     # -------------------------------------------------------------- backgrounds
@@ -585,6 +589,7 @@ class Episode:
             return np.sin(2 * np.pi * np.cumsum(f) / SR)
 
         key = prnd.choice([0, 2, -3, 5, -1])
+        if self.sung: key = 0  # the sung melody is written in C major
         CH = {'C': [60, 64, 67, 72], 'F': [60, 65, 69, 72], 'G': [59, 62, 67, 71], 'Am': [60, 64, 69, 72], 'Dm': [62, 65, 69, 74]}
         RT = {'C': 36, 'F': 41, 'G': 43, 'Am': 45, 'Dm': 38}
         prog = prnd.choice([['C', 'F', 'G', 'C'], ['C', 'Am', 'F', 'G'], ['C', 'G', 'Am', 'F'], ['F', 'G', 'C', 'C'], ['C', 'Dm', 'G', 'C']])
@@ -600,6 +605,24 @@ class Episode:
                 n = cand[prnd.randint(0, 1)]
                 mel.append((b * 4 + bt, n, ln)); prev = n; bt += ln
 
+        song_chord = {}
+        if self.sung:
+            import singer
+            CT = {'C': (0, 4, 7), 'F': (5, 9, 0), 'G': (7, 11, 2), 'Am': (9, 0, 4)}
+            self.melody = []
+            for li, line in enumerate(self.notes):
+                tn = self.SONG_T0 + li * 4.0
+                for w, ns in singer.parse_line(line):
+                    for m, bts in ns:
+                        if m is not None: self.melody.append((tn, m, bts * 0.5))
+                        tn += bts * 0.5
+            for barn in range(8):  # 2 bars per line
+                a = self.SONG_T0 + barn * 2.0; w = np.zeros(12)
+                for (tn, m, d) in self.melody:
+                    ov = max(0, min(a + 2, tn + d) - max(a, tn))
+                    if ov: w[m % 12] += ov * (1.5 if a <= tn < a + 0.5 else 1)
+                song_chord[barn] = max(CT, key=lambda c: sum(w[q] for q in CT[c]) + (0.01 if c == 'C' else 0)) if w.any() else 'C'
+
         def lvl(t):
             if t < 5 or 46 <= t < 49.2 or t >= 56.5: return 0
             if 40 <= t < 46: return 0.6
@@ -610,16 +633,21 @@ class Episode:
             lv = lvl(t)
             if lv == 0: continue
             bar = (b // 4) % 4; bi = b % 4
-            for j, m in enumerate(CH[prog[bar]]):
+            chd = prog[bar]
+            if self.sung and self.SONG_T0 <= t < self.SONG_T0 + 16: chd = song_chord[int((t - self.SONG_T0) // 2)]
+            for j, m in enumerate(CH[chd]):
                 add(pluck(m + key), t + j * 0.012, 0.09 * lv * (1 if bi % 2 == 0 else 0.6))
-            if bi in (0, 2): add(bass(RT[prog[bar]] + key), t, 0.32 * lv)
+            if bi in (0, 2): add(bass(RT[chd] + key), t, 0.32 * lv)
             n = rng.standard_normal(int(0.05 * SR)) * np.exp(-env_t(0.05) * 80)
             add(bp(n, 5000, 12000), t + 0.25, 0.08 * lv)
         for ph in range(8):
             base = 5.0 + ph * 8
             for (bt, m, ln) in mel:
                 t = base + bt * 0.5
+                if self.sung and self.SONG_T0 - 0.01 <= t < 40: continue
                 if (5 <= t < 40) or (52 <= t < 56.5): add(xylo(m + key, 0.5 * ln + 0.5), t, 0.22 if t < 40 else 0.14)
+        if self.sung:
+            for (tn, m, d) in self.melody: add(xylo(m + 12, min(0.9, d + 0.3)), tn, 0.07)
 
         add(xylo(79, 0.6), 0.25, 0.18); add(xylo(81, 0.6), 0.65, 0.2)
         n = rng.standard_normal(int(0.45 * SR)); tt = env_t(0.45)
@@ -676,7 +704,7 @@ class Episode:
         cues.append((2.1, hook.get('line', ''), 1.15, 1.0))
         for i, it in enumerate(self.items):
             cues.append((self.LAND[i] + 0.02, it.get('say', it.get('word', '')), 1.0, 1.0))
-            cues.append((self.SECOND[i] + 0.02, it.get('say', it.get('word', '')), 1.0, 0.8))
+            if not self.sung: cues.append((self.SECOND[i] + 0.02, it.get('say', it.get('word', '')), 1.0, 0.8))
         cues += [(40.05, ep.get('celebrate', ''), 1.05, 1.0), (42.6, tw.get('peek_line', "Wait... who's that?"), 1.0, 1.0),
                  (46.0, tw.get('reveal', ''), 1.0, 1.0), (49.22, self.titem.get('say', ''), 1.05, 1.0),
                  (50.2, tw.get('laugh', ''), 1.1, 1.0), (52.2, ep.get('outro', ''), 1.15, 1.0)]
@@ -734,8 +762,9 @@ class Episode:
             if not key: continue
             nxt = self.LAND[i + 1] if i + 1 < self.N else 22.0
             place(key, after_voice(self.LAND[i] + 0.02), nxt - 0.05)
-            nxt2 = self.SECOND[i + 1] if i + 1 < self.N else 40.0
-            place(key, after_voice(self.SECOND[i] + 0.02), nxt2 - 0.05, 0.7)
+            if not self.sung:
+                nxt2 = self.SECOND[i + 1] if i + 1 < self.N else 40.0
+                place(key, after_voice(self.SECOND[i] + 0.02), nxt2 - 0.05, 0.7)
         key = self.item_sound(self.titem)
         if key: place(key, 49.3, 50.7)
         return out
@@ -747,6 +776,11 @@ class Episode:
         win = int(0.25 * SR)
         env = np.convolve((np.abs(voice) + np.abs(fx) > 0.02).astype(float), np.ones(win) / win, 'same')
         mix = music * (1 - 0.6 * np.clip(env * 3, 0, 1)) + voice * 0.8 + fx * 0.75
+        if self.sung:
+            import singer
+            sung, _, _ = singer.sing([(self.SONG_T0 + li * 4.0, l) for li, l in enumerate(self.notes)], self.SONG_BPM,
+                                     'en', self.ep.get('voice', 'af_heart'))
+            m = min(len(mix), len(sung)); mix[:m] += sung[:m] * 0.8
         mix = mix / np.abs(mix).max() * 0.92
         if self.intro_on:
             mix = np.concatenate([self.intro_audio(), mix])
