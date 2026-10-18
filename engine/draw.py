@@ -1,6 +1,7 @@
 """Nerdy Noodles drawing library: helpers, the Noodle mascot, objects and scenes (pycairo)."""
 import math, random
 import cairo
+import rtl
 
 W, H = 1920, 1080
 FONT = "Poppins"
@@ -78,6 +79,10 @@ def poly(ctx, pts):
 
 
 def text(ctx, s, x, y, size, col, sw=0, scol=INK):
+    if rtl.has_arabic(s):  # shaped right-to-left Arabic with the bundled Arabic font
+        ctx.new_path(); rtl.path(ctx, s, x - rtl.width(s, size) / 2, y + size * 0.3, size)
+        if sw: stroke(ctx, scol, sw, keep=True)
+        fill(ctx, col); return
     ctx.select_font_face(FONT, cairo.FONT_SLANT_NORMAL, cairo.FONT_WEIGHT_BOLD); ctx.set_font_size(size)
     xa = ctx.text_extents(s)[4]
     ctx.move_to(x - xa / 2, y + size * 0.36)
@@ -87,6 +92,7 @@ def text(ctx, s, x, y, size, col, sw=0, scol=INK):
 
 
 def text_w(ctx, s, size):
+    if rtl.has_arabic(s): return rtl.width(s, size)
     ctx.select_font_face(FONT, cairo.FONT_SLANT_NORMAL, cairo.FONT_WEIGHT_BOLD); ctx.set_font_size(size)
     return ctx.text_extents(s)[4]
 

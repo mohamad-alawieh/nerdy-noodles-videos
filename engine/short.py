@@ -62,17 +62,41 @@ class Short:
         self.confetti = []    # t
         self.looks = []       # (t, obj id)
         self.zzz = []         # (t0, t1)
+        self.song = sj.get('song')
+        self.lyrics = []      # (t0, t1, [display words], [(w_t0, w_t1)], rtl)
+        self.sung_lines = []  # (t0, token line) for the singer
+        self.beat_len = 60.0 / float(self.song.get('bpm', 108)) if self.song else 0.5
         T = 0.0; prev_start = 0.0
+        if self.song: T = prev_start = float(self.song.get('intro_beats', 2)) * self.beat_len
+        self.line_start = T
         self.face_track.append((0.0, sj.get('start_face', 'normal')))
         self.arms_track.append((0.0, 'rest'))
         self.plan = []
         for b in sj['beats']:
             typ = b['type']
             start = prev_start if b.get('with_prev') else T
+            if 'at_beat' in b and self.song:  # place an action on a beat of the current sung line
+                start = self.line_start + float(b['at_beat']) * self.beat_len
             dur = float(b.get('dur', {'say': 0, 'enter': 1.0, 'move': 0.9, 'grow': 0.8, 'shrink': 0.8, 'pop': 0.6,
                                        'multiply': 1.2, 'burst': 0.9, 'noodle': 1.0, 'wait': 0.8, 'face': 0.4,
                                        'end': 2.2}.get(typ, 1.0)))
-            if typ == 'say':
+            if typ == 'sing':
+                self.line_start = start
+                from singer import parse_line
+                toks = parse_line(b['line'])
+                wt, tt = [], start
+                for w, notes in toks:
+                    d = sum(x for _, x in notes) * self.beat_len
+                    if w is not None: wt.append((tt, tt + d))
+                    tt += d
+                dur = tt - start
+                shown = b.get('show', ' '.join(w for w, _ in toks if w is not None)).split()
+                if len(shown) != len(wt): shown = [w for w, _ in toks if w is not None]
+                self.lyrics.append((start, start + dur, shown, wt))
+                self.sung_lines.append((start, b['line']))
+                if b.get('face'): self.face_track.append((start, b['face']))
+                if b.get('arms'): self.arms_track.append((start, b['arms']))
+            elif typ == 'say':
                 est = 0.55 + len(b.get('text', '')) / 13.5
                 dur = max(dur, est)
                 self.voice.append((start, b['text'], dur - 0.15))
@@ -147,22 +171,26 @@ class Short:
             elif typ == 'end':
                 self.face_track.append((start, 'laugh')); self.arms_track.append((start, 'wave'))
                 self.end_t = start
-                self.caps.append((start, start + dur, b.get('text', 'Follow for more giggles!')))
-                if b.get('say', True): self.voice.append((start, b.get('voice', b.get('text', 'Follow for more giggles!')), dur - 0.2))
+                dflt = 'تابِعونا لِأغانٍ أكثر!' if self.lang() == 'ar' else 'Follow for more giggles!'
+                self.caps.append((start, start + dur, b.get('text', dflt)))
+                if b.get('say', True): self.voice.append((start, b.get('voice', b.get('text', dflt)), dur - 0.2))
                 self.sfx.append((start, 'ding'))
-            if 'face' in b and typ not in ('say', 'face'): self.face_track.append((start, b['face']))
-            if 'arms' in b and typ not in ('say', 'face'): self.arms_track.append((start, b['arms']))
+            if 'face' in b and typ not in ('say', 'face', 'sing'): self.face_track.append((start, b['face']))
+            if 'arms' in b and typ not in ('say', 'face', 'sing'): self.arms_track.append((start, b['arms']))
             if 'sfx' in b and typ in ('wait', 'say', 'face', 'end'): self.sfx.append((start, b['sfx']))
             if b.get('confetti'): self.confetti.append(start)
-            self.plan.append((round(start, 2), round(start + dur, 2), typ, b.get('text', b.get('word', b.get('action', b.get('id', ''))))))
+            self.plan.append((round(start, 2), round(start + dur, 2), typ, b.get('show', b.get('line', b.get('text', b.get('word', b.get('action', b.get('id', ''))))))))
             prev_start = start
-            T = max(T, start + dur)
+            if 'at_beat' not in b: T = max(T, start + dur)
         self.dur = min(58.0, T + 0.3)
         if not hasattr(self, 'end_t'): self.end_t = self.dur
         self.face_track.sort(key=lambda x: x[0]); self.arms_track.sort(key=lambda x: x[0])
         rnd = random.Random(sj.get('music_seed', 7))
         self.conf = [(rnd.uniform(0, VW), rnd.uniform(-400, -20), rnd.uniform(250, 500), rnd.uniform(-60, 60),
                       rnd.uniform(0, 6), rnd.choice(NUMCOL)) for _ in range(160)]
+
+    def lang(self):
+        return (self.song or {}).get('lang', self.sj.get('lang', 'en'))
 
     # -------------------------------------------------------------- state
     def obj_pose(self, o, t):
@@ -256,6 +284,15 @@ class Short:
                 sq = 0.25 * math.sin(math.pi * k * 3) * (1 - k)
             elif a == 'faint' and active:
                 eyes, mouth = 'closed', 'o'; rot = -0.35 * eio(min(1, k * 2)); cx -= 40 * eio(min(1, k * 2))
+        if self.song and t < self.end_t:  # bop to the music
+            ph = (t / self.beat_len) % 1
+            sq += 0.045 * math.exp(-ph * 6); cx += 14 * math.sin(math.pi * t / self.beat_len)
+            for (l0, l1, words, wt) in self.lyrics:
+                if l0 <= t < l1:
+                    for (w0, w1) in wt:
+                        if w0 - 0.04 <= t < w1 - 0.05:
+                            mouth = 'laugh' if (t - w0) < 0.6 * (w1 - w0) or (w1 - w0) > 0.6 else 'smile'
+                            if (w1 - w0) > 0.6 and ((t - w0) // 0.3) % 2: mouth = 'o'
         # look at the most recently active object
         look = (0, 0)
         cur = None
@@ -313,7 +350,11 @@ class Short:
         cap = None
         for (t0, t1, c) in self.caps:
             if t0 <= t < t1: cap = c
-        if cap: self.caption(ctx, cap)
+        lyr = None
+        for L in self.lyrics:
+            if L[0] - 0.25 <= t < L[1] + 0.1: lyr = L
+        if lyr: self.karaoke(ctx, t, lyr)
+        elif cap: self.caption(ctx, cap)
         # hook title in first 2.5 s
         hook = sj.get('hook_text')
         if hook and t < 2.5:
@@ -325,6 +366,34 @@ class Short:
                 rrect(ctx, -500, -80, 1000, 160, 40); fill(ctx, YEL, True); stroke(ctx, INK, 9)
                 text(ctx, hook, 0, 0, sz, INK); ctx.restore()
             with_alpha(ctx, a, hk)
+        ctx.restore()
+
+    def karaoke(self, ctx, t, L):
+        """Sung line in a big bubble; words light up (and bounce) exactly when they are sung."""
+        l0, l1, words, wt = L
+        rtl = self.lang() == 'ar'
+        size = 84; gap = 0.38
+        ws = [text_w(ctx, w, size) for w in words]
+        tot = sum(ws) + gap * size * (len(words) - 1)
+        if tot > 940: k = 940 / tot; size *= k; ws = [w * k for w in ws]; tot = 940
+        bw, bh = tot + 90, size * 1.5 + 40
+        x, y = VW / 2 - bw / 2, 430
+        a = seg(t, l0 - 0.25, l0 - 0.05)
+        ctx.save(); ctx.translate(VW / 2, y + bh / 2); ctx.scale(0.9 + 0.1 * a, 0.9 + 0.1 * a); ctx.translate(-VW / 2, -y - bh / 2)
+        rrect(ctx, x, y, bw, bh, 40); ctx.set_source_rgba(1, 1, 1, 0.97); ctx.fill_preserve(); stroke(ctx, INK, 8)
+        ctx.rectangle(x + 30, y + bh - 16, (bw - 60) * clamp((t - l0) / (l1 - l0)), 8); fill(ctx, hexc('#FF6B35'))
+        order = list(range(len(words)))
+        cxp = VW / 2 + tot / 2 if rtl else VW / 2 - tot / 2
+        for i in order:
+            wc = cxp - ws[i] / 2 if rtl else cxp + ws[i] / 2
+            w0, w1 = wt[i] if i < len(wt) else (1e9, 1e9)
+            on = t >= w0 - 0.03
+            pop = 1 + 0.1 * math.sin(math.pi * clamp((t - w0) / 0.25)) if on else 1
+            ctx.save(); ctx.translate(wc, y + bh / 2 - 4); ctx.scale(pop, pop)
+            text(ctx, words[i], 0, 0, size, hexc('#FF6B35') if on else INK, sw=(size * 0.12 if on else 0), scol=INK)
+            ctx.restore()
+            step = ws[i] + gap * size
+            cxp = cxp - step if rtl else cxp + step
         ctx.restore()
 
     def caption(self, ctx, s):
@@ -365,12 +434,18 @@ class Short:
             if i >= n or at < 0: return
             m = min(len(sig), n - i); buf[i:i + m] += sig[:m] * g
 
+        sung = None
+        if self.song:
+            import singer
+            sung, _, mel = singer.sing(self.sung_lines, float(self.song.get('bpm', 108)), self.lang(),
+                                       self.sj.get('voice', 'af_heart'))
+            self.song_backing(music, mel, add, tone, bp, noise, et, prnd)
         # bouncy music: 128 bpm, staccato bass + xylophone riff
         beat = 60 / 128; key = prnd.choice([0, 2, 5, -3])
         prog = prnd.choice([[60, 65, 67, 60], [60, 57, 65, 67], [60, 67, 69, 65]])
         riff = [prnd.choice([0, 4, 7, 12, 7, 4]) for _ in range(8)]
         b = 0
-        while b * beat < self.end_t:
+        while not self.song and b * beat < self.end_t:
             t = b * beat; root = prog[(b // 4) % 4] + key
             add(music, tone(root - 24, 0.25, 9, ((1, 1), (2, .3))), t, 0.35)
             if b % 2: add(music, bp(noise(0.06), 4000, 12000) * np.exp(-et(0.06) * 60), t, 0.12)
@@ -426,24 +501,79 @@ class Short:
         win = int(0.25 * SR)
         env = np.convolve((np.abs(voice) > 0.02).astype(float), np.ones(win) / win, 'same')
         mix = music * (1 - 0.6 * np.clip(env * 3, 0, 1)) * 0.8 + fx * 0.9 + voice * 0.85
+        if sung is not None:
+            m = min(n, len(sung)); mix[:m] += sung[:m] * 0.8
         mix = mix / (np.abs(mix).max() + 1e-9) * 0.92
         fl = int(0.3 * SR); mix[-fl:] *= np.linspace(1, 0, fl)
         with wave.open(path, 'wb') as wf:
             wf.setnchannels(1); wf.setsampwidth(2); wf.setframerate(SR)
             wf.writeframes((mix * 32767).astype(np.int16).tobytes())
 
+    def song_backing(self, music, mel, add, tone, bp, noise, et, prnd):
+        """Nursery-song band in time with the singer: kick/clap/shaker, bass, ukulele-style chords on the
+        off-beats and a quiet glockenspiel doubling the melody. Chords are picked per bar to fit the melody (C major)."""
+        bl = self.beat_len; t0 = float(self.song.get('intro_beats', 2)) * bl
+        chords = {'C': (0, 4, 7), 'F': (5, 9, 0), 'G': (7, 11, 2), 'Am': (9, 0, 4), 'Dm': (2, 5, 9), 'Em': (4, 7, 11)}
+        bar = 4 * bl
+
+        def chord_at(k):
+            a, b = t0 + k * bar, t0 + (k + 1) * bar
+            w = np.zeros(12)
+            for (tn, m, d) in mel:
+                ov = max(0, min(b, tn + d) - max(a, tn))
+                if ov > 0: w[m % 12] += ov * (1.5 if a <= tn < a + bl else 1)
+            if not w.any(): return 'C'
+            best = max(['C', 'F', 'G', 'Am'], key=lambda c: sum(w[p] for p in chords[c]) + (0.01 if c == 'C' else 0))
+            return best
+
+        def pluck(f, d):  # Karplus-Strong string
+            N = max(2, int(SR / f)); buf = np.random.default_rng(int(f)).uniform(-1, 1, N)
+            out = np.zeros(int(d * SR))
+            for i in range(len(out)):
+                out[i] = buf[i % N]; buf[i % N] = 0.497 * (buf[i % N] + buf[(i + 1) % N])
+            return out * np.minimum(1, et(d) * 300)
+        mf = lambda m: 440 * 2 ** ((m - 69) / 12)
+        cache = {}
+        b = 0
+        while b * bl < self.end_t + 0.01:
+            t = b * bl; k = int((t - t0) // bar) if t >= t0 else -1
+            ch = chord_at(k) if k >= 0 else 'C'; root = chords[ch][0]
+            beat_in_bar = b % 4
+            kick = np.sin(2 * np.pi * np.cumsum(np.linspace(140, 45, int(0.18 * SR))) / SR) * np.exp(-et(0.18) * 18)
+            if beat_in_bar in (0, 2): add(music, kick, t, 0.55)
+            if beat_in_bar in (1, 3): add(music, bp(noise(0.12), 900, 7000) * np.exp(-et(0.12) * 30), t, 0.22)
+            add(music, bp(noise(0.04), 6000, 14000) * np.exp(-et(0.04) * 80), t + bl / 2, 0.09)
+            if t >= t0 - 0.01:
+                add(music, tone(36 + root, bl * 0.8, 7, ((1, 1), (2, .4), (3, .15))), t, 0.32)
+                for j, pc in enumerate(chords[ch]):
+                    key = (pc, round(bl * 0.9, 2))
+                    if key not in cache: cache[key] = pluck(mf(60 + pc), bl * 0.9)
+                    add(music, cache[key], t + bl / 2 + j * 0.012, 0.16)
+            b += 1
+        for (tn, m, d) in mel:  # glockenspiel melody
+            add(music, tone(m + 12, min(0.8, d + 0.2), 6, ((1, 1), (2.76, .25))), tn, 0.07)
+        for kk, m in enumerate([72, 76, 79, 84]): add(music, tone(m, 1.0, 4), self.end_t + kk * 0.1, 0.2)
+
     def voice_track(self, n):
         out = np.zeros(n)
         vdir = os.environ.get('NN_TTS_DIR', os.path.join(ROOT, '.tts'))
+        if not self.voice: return out
         try:
-            from kokoro_onnx import Kokoro
-            k = Kokoro(os.path.join(vdir, 'kokoro-v1.0.int8.onnx'), os.path.join(vdir, 'voices-v1.0.bin'))
+            if self.lang() == 'ar':
+                from singer import Voices
+                k = Voices('ar').tts
+            else:
+                from kokoro_onnx import Kokoro
+                k = Kokoro(os.path.join(vdir, 'kokoro-v1.0.int8.onnx'), os.path.join(vdir, 'voices-v1.0.bin'))
         except Exception as e:
             print('WARNING: voice engine unavailable:', e); return out
         vname = self.sj.get('voice', 'af_heart')
 
         def synth(txt, spd):
-            s, sr = k.create(txt, voice=vname, speed=spd, lang='en-us')
+            if self.lang() == 'ar':
+                a = k.generate(txt, sid=0, speed=spd); s, sr = a.samples, a.sample_rate
+            else:
+                s, sr = k.create(txt, voice=vname, speed=spd, lang='en-us')
             s = np.asarray(s, float); s = np.interp(np.linspace(0, len(s) - 1, int(len(s) * SR / sr)), np.arange(len(s)), s)
             nz = np.where(np.abs(s) > 0.01)[0]
             return s[max(0, nz[0] - 200): nz[-1] + 1500] if len(nz) else s
