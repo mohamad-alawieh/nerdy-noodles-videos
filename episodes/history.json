@@ -203,5 +203,24 @@
     "twist": "it gets dark (night) and a yellow star shape shines ('a star has five points!')",
     "title": "Zoomy's Shape Drive! (HONK!) | Nerdy Noodles",
     "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=6483746220613190163"
+  },
+  {
+    "id": "2026-10-18-am-quackers-animal-homes",
+    "date": "2026-10-18",
+    "host": "duck",
+    "lesson": "animals: where animals live (farm, pond, ocean, sky, forest, home)",
+    "scene": "pond",
+    "kinds": [
+      "pig",
+      "frog",
+      "fish",
+      "bird",
+      "owl",
+      "sheep",
+      "dog"
+    ],
+    "hook": "Quackers splashed too big in the pond SPLASH",
+    "twist": "a puppy peeks in: it lives at home with us (kitchen) and answers with a real woof",
+    "title": "Where Do Animals Live? with Quackers! (SPLASH!) | Nerdy Noodles"
   }
 ]

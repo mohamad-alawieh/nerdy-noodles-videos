@@ -1,0 +1,135 @@
+{
+  "id": "2026-10-18-am-quackers-animal-homes",
+  "host": "duck",
+  "lesson": "animals: where animals live (farm, pond, ocean, sky, forest, home)",
+  "scene": "pond",
+  "intro_title": "Animal Homes!",
+  "intro_say": "Hi friends! I'm Quackers! Let's go!",
+  "board_title": "Animal Homes",
+  "board_label": "Friends:",
+  "voice": "af_heart",
+  "music_seed": 71842,
+  "hook": {
+    "pre": "Splish... splash...",
+    "burst": "SPLASH!",
+    "burst_say": "Splash!",
+    "line": "Oops! Quackers splashed, friends ran home!",
+    "line_caption": "Oops! Quackers splashed,\nfriends ran home!"
+  },
+  "items": [
+    {
+      "kind": "pig",
+      "color": "#FF9EC4",
+      "big": "",
+      "word": "PIG",
+      "say": "The pig lives on the farm! It says...",
+      "sound": "pig",
+      "sound_word": "OINK!",
+      "scene": "farm"
+    },
+    {
+      "kind": "frog",
+      "color": "#3DDC84",
+      "big": "",
+      "word": "FROG",
+      "say": "The frog lives in the pond! It says...",
+      "sound": "frog",
+      "sound_word": "RIBBIT!",
+      "scene": "pond",
+      "trick": "bounce"
+    },
+    {
+      "kind": "fish",
+      "color": "#FF8C42",
+      "big": "",
+      "word": "FISH",
+      "say": "The fish swims in the big ocean!",
+      "scene": "ocean"
+    },
+    {
+      "kind": "bird",
+      "color": "#4FC3F7",
+      "big": "",
+      "word": "BIRD",
+      "say": "The bird flies in the sky! It says...",
+      "sound": "bird",
+      "sound_word": "TWEET!",
+      "scene": "sky",
+      "trick": "sunglasses"
+    },
+    {
+      "kind": "owl",
+      "color": "#8B6B4A",
+      "big": "",
+      "word": "OWL",
+      "say": "The owl lives in the forest! It says...",
+      "sound": "owl",
+      "sound_word": "HOOT!",
+      "scene": "forest"
+    },
+    {
+      "kind": "sheep",
+      "color": "#FFFFFF",
+      "big": "",
+      "word": "SHEEP",
+      "say": "The sheep lives on the farm too! It says...",
+      "sound": "sheep",
+      "sound_word": "BAA!",
+      "scene": "farm",
+      "trick": "cartwheel"
+    }
+  ],
+  "song": [
+    "Pig and sheep\nlive on the farm,",
+    "Frog in the pond,\nwave your arm!",
+    "Fish in the sea,\nbird up high,",
+    "Owl in the tree\nwaves bye-bye!"
+  ],
+  "celebrate_word": "6 HOMES!",
+  "celebrate": "Six friends, six homes! Yay, Quackers!",
+  "twist": {
+    "peek_line": "Wait... who lives in a house?",
+    "reveal_word": "A PUPPY?!",
+    "reveal": "It's a puppy! Listen!",
+    "laugh": "Hee hee! The puppy lives at home with us!",
+    "laugh_caption": "Hee hee! The puppy\nlives at home with us!",
+    "item": {
+      "kind": "dog",
+      "color": "#C8874A",
+      "big": "",
+      "word": "PUPPY",
+      "say": "The puppy says...",
+      "sound": "dog",
+      "sound_word": "WOOF!",
+      "scene": "kitchen"
+    }
+  },
+  "outro": "Where does your favorite animal live? Tell Quackers in the comments!",
+  "outro_caption": "Where does your favorite animal live?\nTell Quackers in the comments!",
+  "thumbnail": {
+    "lines": [
+      "WHERE",
+      "ANIMALS",
+      "LIVE?"
+    ],
+    "sticker": "HOMES",
+    "burst": "SPLASH!"
+  },
+  "youtube": {
+    "title": "Where Do Animals Live? with Quackers! (SPLASH!) | Nerdy Noodles",
+    "description": "🏡 SPLASH! Quackers the duck splashed so big that all the animal friends ran home! Where did they go?\n\nVisit each animal in its real home with Quackers: the pig and the sheep on the farm, the frog in the pond, the fish in the ocean, the bird in the sky and the owl in the forest, and hear the REAL sound each animal makes. Then sing the animal homes song, and stay till the end, because one more friend lives somewhere very close to you! 🐾\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn where animals live: farm, pond, ocean, sky and forest\n✔️ Learn 6 animal names: pig, frog, fish, bird, owl and sheep\n✔️ Hear the real sounds animals make\n✔️ Sing an animal homes song with Quackers!\n\n⏱️ Chapters\n0:00 Hello from Quackers!\n0:04 SPLASH! Oh no!\n0:09 Where do animals live?\n0:26 Sing along!\n0:46 Who lives in a house?\n0:56 What next?\n\n💬 Where does your favorite animal live? Tell Quackers in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #AnimalHomes #WhereAnimalsLive #LearnAnimals #AnimalSounds #Preschool #ToddlerLearning #Kindergarten",
+    "tags": [
+      "where do animals live",
+      "animal homes for kids",
+      "animal habitats for kids",
+      "learn animals",
+      "real animal sounds",
+      "animal names for kids",
+      "preschool learning",
+      "toddler learning",
+      "kids songs",
+      "educational videos for kids",
+      "Nerdy Noodles"
+    ]
+  }
+}
