@@ -1,0 +1,183 @@
+{
+ "id": "2026-10-18-pm-hello-friends-song",
+ "host": "car",
+ "scene": "city",
+ "voice": "af_heart",
+ "music_seed": 5217,
+ "song": {
+  "lang": "en",
+  "bpm": 104,
+  "intro_beats": 4
+ },
+ "hook_text": "SING WITH ZOOMY!",
+ "start_face": "happy",
+ "beats": [
+  {
+   "type": "sing",
+   "line": "Hel-lo:D5,C5 hel-lo:A4,G4 friends:C5/2 _/2",
+   "show": "Hello, hello, friends!",
+   "face": "laugh"
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "beep",
+   "dur": 0.5
+  },
+  {
+   "type": "sing",
+   "line": "I'm:G4 Zoo-my:G4,E4 the:G4 car:C5/2 _/2",
+   "show": "I'm Zoomy the car!",
+   "face": "happy"
+  },
+  {
+   "type": "noodle",
+   "at_beat": 4,
+   "action": "jump"
+  },
+  {
+   "type": "sing",
+   "line": "Here's:A4 a:A4 dog:G4 and:E4 cat:D4/2 _/2",
+   "show": "Here's a dog and cat!",
+   "face": "laugh"
+  },
+  {
+   "type": "enter",
+   "at_beat": 2,
+   "id": "dog",
+   "obj": {
+    "kind": "dog",
+    "color": "#C68B59"
+   },
+   "from": "left",
+   "to": [
+    170,
+    1650
+   ],
+   "style": "bounce",
+   "scale": 1.7
+  },
+  {
+   "type": "enter",
+   "at_beat": 4,
+   "id": "cat",
+   "obj": {
+    "kind": "cat",
+    "color": "#9E9E9E"
+   },
+   "from": "right",
+   "to": [
+    910,
+    1650
+   ],
+   "style": "bounce",
+   "scale": 1.7
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "dog",
+   "dur": 0.5
+  },
+  {
+   "type": "wait",
+   "at_beat": 7,
+   "sfx": "cat",
+   "dur": 0.5
+  },
+  {
+   "type": "sing",
+   "line": "Here:E4 comes:G4 the:E4 big:G4 blue:A4 bus:G4/2 _/1",
+   "show": "Here comes the big blue bus!",
+   "face": "o"
+  },
+  {
+   "type": "enter",
+   "at_beat": 3,
+   "id": "bus",
+   "obj": {
+    "kind": "bus",
+    "color": "#42A5F5"
+   },
+   "from": "right",
+   "to": [
+    540,
+    1770
+   ],
+   "style": "slide",
+   "scale": 2.2
+  },
+  {
+   "type": "wait",
+   "at_beat": 7,
+   "sfx": "bus",
+   "dur": 0.6
+  },
+  {
+   "type": "sing",
+   "line": "Hel-lo:D5,C5 hel-lo:A4,G4 friends:C5/2 _/2",
+   "show": "Hello, hello, friends!",
+   "face": "laugh",
+   "arms": "dance"
+  },
+  {
+   "type": "enter",
+   "at_beat": 1,
+   "id": "bird",
+   "obj": {
+    "kind": "bird",
+    "color": "#FFCA28"
+   },
+   "from": "top_right",
+   "to": [
+    880,
+    700
+   ],
+   "style": "bounce",
+   "scale": 1.4
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "bird",
+   "dur": 0.5
+  },
+  {
+   "type": "sing",
+   "line": "Hel-lo:D5,C5 hel-lo:A4,G4 friends:C5/4",
+   "show": "Hello, hello, friends!",
+   "face": "proud",
+   "confetti": true
+  },
+  {
+   "type": "move",
+   "at_beat": 2,
+   "id": "bird",
+   "to": "head",
+   "style": "hop"
+  },
+  {
+   "type": "wait",
+   "at_beat": 5,
+   "sfx": "beep",
+   "dur": 0.6
+  },
+  {
+   "type": "end"
+  }
+ ],
+ "youtube": {
+  "title": "Hello Hello Friends Song with Zoomy! #shorts",
+  "description": "Sing along with Zoomy! Hello, hello, friends! Say hi to a dog, a cat, the big blue bus and a little bird in town. 🚗🐶🐱🚌\n\nZoomy is a friendly little blue car who loves to say hello!\n\n🔔 Subscribe to Nerdy Noodles for more songs and giggles!\n\n#NerdyNoodles #shorts #kidssongs #nurseryrhymes #singalong #hellosong",
+  "tags": [
+   "kids songs",
+   "nursery rhymes",
+   "toddler songs",
+   "sing along for kids",
+   "hello song",
+   "car song for kids",
+   "greeting song",
+   "Nerdy Noodles"
+  ]
+ }
+}
