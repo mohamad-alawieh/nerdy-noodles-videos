@@ -223,5 +223,32 @@
     "twist": "a puppy peeks in: it lives at home with us (kitchen) and answers with a real woof",
     "title": "Where Do Animals Live? with Quackers! (SPLASH!) | Nerdy Noodles",
     "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-5193113836645170522"
+  },
+  {
+    "id": "2026-10-18-pm-mittens-opposites",
+    "date": "2026-10-18",
+    "host": "cat",
+    "lesson": "opposites (big/small, night/day, up/down, fast)",
+    "scene": "park",
+    "scenes": [
+      "park",
+      "farm",
+      "pond",
+      "night",
+      "sky",
+      "ocean"
+    ],
+    "kinds": [
+      "cow",
+      "frog",
+      "owl",
+      "rooster",
+      "bird",
+      "fish",
+      "horse"
+    ],
+    "hook": "Mittens' tail swished the words away SWISH",
+    "twist": "a horse peeks from behind the board on the farm: horses run FAST, and it answers with a real neigh",
+    "title": "Mittens' Opposites! Big and Small (SWISH!) | Nerdy Noodles"
   }
 ]

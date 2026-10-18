@@ -1,0 +1,139 @@
+{
+  "id": "2026-10-18-pm-mittens-opposites",
+  "host": "cat",
+  "lesson": "opposites (big/small, night/day, up/down, fast)",
+  "scene": "park",
+  "intro_title": "Opposites!",
+  "intro_say": "Hi friends! I'm Mittens! Let's go!",
+  "board_title": "Opposites!",
+  "board_label": "Words:",
+  "voice": "af_heart",
+  "music_seed": 61537,
+  "hook": {
+    "pre": "Swish... swish...",
+    "burst": "SWISH!",
+    "burst_say": "Swish!",
+    "line": "Oops! Mittens' tail swished the words away!",
+    "line_caption": "Oops! Mittens' tail\nswished the words away!"
+  },
+  "items": [
+    {
+      "kind": "cow",
+      "color": "#FFFFFF",
+      "big": "BIG",
+      "word": "COW",
+      "say": "Big! The cow is big!",
+      "sound": "cow",
+      "sound_word": "MOO!",
+      "scene": "farm"
+    },
+    {
+      "kind": "frog",
+      "color": "#3DDC84",
+      "big": "SMALL",
+      "word": "FROG",
+      "say": "Small! The frog is small!",
+      "sound": "frog",
+      "sound_word": "RIBBIT!",
+      "scene": "pond",
+      "trick": "sunglasses"
+    },
+    {
+      "kind": "owl",
+      "color": "#8B6B4A",
+      "big": "NIGHT",
+      "word": "OWL",
+      "say": "Night! The owl is awake!",
+      "scene": "night"
+    },
+    {
+      "kind": "rooster",
+      "color": "#E53935",
+      "big": "DAY",
+      "word": "ROOSTER",
+      "say": "Day! The rooster wakes up!",
+      "sound": "rooster",
+      "sound_word": "COCK-A-DOODLE-DOO!",
+      "scene": "farm"
+    },
+    {
+      "kind": "bird",
+      "color": "#4FC3F7",
+      "big": "UP",
+      "word": "BIRD",
+      "say": "Up! The bird flies up high!",
+      "sound": "bird",
+      "sound_word": "TWEET!",
+      "scene": "sky",
+      "trick": "bounce"
+    },
+    {
+      "kind": "fish",
+      "color": "#FF8C42",
+      "big": "DOWN",
+      "word": "FISH",
+      "say": "Down! The fish swims down deep!",
+      "scene": "ocean",
+      "trick": "cartwheel"
+    }
+  ],
+  "song": [
+    "The cow is big,\nthe frog is small!",
+    "Opposites,\nwe love them all!",
+    "Day and night,\nup and down,",
+    "Let's all sing them\nround and round!"
+  ],
+  "song_notes": [
+    "The:G4 cow:G4 is:E4 big:G4 the:A4 frog:G4 is:E4 small:G4/2",
+    "Op-po-sites:E4,F4,G4 we:A4 love:G4 them:E4 all:D4/2",
+    "Day:G4 and:G4 night:C5/2 up:A4 and:A4 down:G4/2",
+    "Let's:G4 all:G4 sing:E4 them:G4 round:E4 and:D4 round:C4/2"
+  ],
+  "celebrate_word": "3 PAIRS!",
+  "celebrate": "Three opposite pairs! Mittens did it!",
+  "twist": {
+    "peek_line": "Wait... who's behind the board?",
+    "reveal_word": "A HORSE?!",
+    "reveal": "A horse! Horses run fast!",
+    "laugh": "Hee hee! Fast, not slow!",
+    "laugh_caption": "Hee hee!\nFast, not slow!",
+    "item": {
+      "kind": "horse",
+      "color": "#8B5A2B",
+      "big": "FAST",
+      "word": "HORSE",
+      "say": "Fast!",
+      "sound": "horse",
+      "sound_word": "NEIGH!",
+      "scene": "farm"
+    }
+  },
+  "outro": "What is the opposite of hot? Tell Mittens in the comments!",
+  "outro_caption": "What is the opposite of hot?\nTell Mittens in the comments!",
+  "thumbnail": {
+    "lines": [
+      "BIG",
+      "OR",
+      "SMALL?"
+    ],
+    "sticker": "WOW!",
+    "burst": "SWISH!"
+  },
+  "youtube": {
+    "title": "Mittens' Opposites! Big and Small (SWISH!) | Nerdy Noodles",
+    "description": "🐱 SWISH! Mittens the cat swished her tail and all the opposite words flew away! Can you help Mittens find them?\n\nLearn opposites with Mittens: BIG and SMALL, NIGHT and DAY, UP and DOWN! Mittens visits the farm, the pond, the night sky, the clouds and the ocean, and you hear the REAL sounds of the cow, the frog, the rooster and the bird. Then sing the opposites song with Mittens, and stay till the end, because someone is hiding behind the board! 👀\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn what opposites are\n✔️ Learn 3 opposite pairs: big/small, night/day, up/down\n✔️ Hear real animal sounds: cow, frog, rooster and bird\n✔️ Sing an opposites song with Mittens!\n\n⏱️ Chapters\n0:00 Hello from Mittens!\n0:04 SWISH! Oh no!\n0:09 Let's learn opposites!\n0:26 Sing along!\n0:46 Who's behind the board?\n0:56 What's the opposite of hot?\n\n💬 What is the opposite of hot? Tell Mittens in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #Opposites #LearnOpposites #AnimalSounds #Preschool #ToddlerLearning #Kindergarten #KidsSongs",
+    "tags": [
+      "opposites for kids",
+      "learn opposites",
+      "big and small",
+      "opposites song",
+      "animal sounds for kids",
+      "preschool learning",
+      "toddler learning",
+      "kindergarten learning",
+      "educational videos for kids",
+      "cat cartoon for kids",
+      "Nerdy Noodles"
+    ]
+  }
+}
