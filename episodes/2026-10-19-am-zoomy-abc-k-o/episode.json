@@ -1,0 +1,128 @@
+{
+  "id": "2026-10-19-am-zoomy-abc-k-o",
+  "host": "car",
+  "lesson": "letters K-O",
+  "scene": "road",
+  "intro_title": "ABC: K to O!",
+  "intro_say": "Hi friends! I'm Zoomy! Let's read!",
+  "board_title": "Zoomy's ABC",
+  "board_label": "Letters:",
+  "voice": "af_heart",
+  "music_seed": 71943,
+  "hook": {
+    "pre": "Bumpity... bump...",
+    "burst": "POP!",
+    "burst_say": "Pop!",
+    "line": "Oops! Zoomy's trunk popped, the letters flew!",
+    "line_caption": "Oops! Zoomy's trunk popped,\nthe letters flew!"
+  },
+  "items": [
+    {
+      "kind": "block",
+      "text": "K",
+      "color": "#FF5A36",
+      "big": "K",
+      "word": "KITE",
+      "say": "K is for kite!",
+      "scene": "sky"
+    },
+    {
+      "kind": "block",
+      "text": "L",
+      "color": "#3DDC84",
+      "big": "L",
+      "word": "LEAF",
+      "say": "L is for leaf!",
+      "scene": "forest",
+      "trick": "bounce"
+    },
+    {
+      "kind": "block",
+      "text": "M",
+      "color": "#FFB627",
+      "big": "M",
+      "word": "MOON",
+      "say": "M is for moon!",
+      "scene": "night",
+      "trick": "sunglasses"
+    },
+    {
+      "kind": "block",
+      "text": "N",
+      "color": "#8E5CF7",
+      "big": "N",
+      "word": "NEST",
+      "say": "N is for nest!",
+      "scene": "park"
+    },
+    {
+      "kind": "block",
+      "text": "O",
+      "color": "#00B4D8",
+      "big": "O",
+      "word": "OCEAN",
+      "say": "O is for ocean!",
+      "scene": "ocean",
+      "trick": "cartwheel"
+    }
+  ],
+  "song": [
+    "K for kite,\nL for leaf,",
+    "M for moon,\nN for nest,",
+    "O for ocean,\nhere we go!",
+    "Letters, letters,\nK to O!"
+  ],
+  "song_notes": [
+    "K:E4 for:G4 kite:G4/2 L:A4 for:G4 leaf:E4/2",
+    "M:G4 for:G4 moon:C5/2 N:A4 for:A4 nest:G4/2",
+    "O:E4 for:E4 o-cean:G4,E4 here:F4 we:E4 go:D4/2",
+    "Let-ters:G4,E4 let-ters:A4,F4 K:E4 to:D4 O:C4/2"
+  ],
+  "celebrate_word": "K-L-M-N-O!",
+  "celebrate": "K, L, M, N, O! Zoomy found them all!",
+  "twist": {
+    "peek_line": "Wait... who's on the farm?",
+    "reveal_word": "P? A PIG!",
+    "reveal": "P! P is for pig!",
+    "laugh": "Hee hee! The pig wants a ride with Zoomy!",
+    "laugh_caption": "Hee hee! The pig wants\na ride with Zoomy!",
+    "item": {
+      "kind": "pig",
+      "color": "#FF9EC4",
+      "big": "P",
+      "word": "PIG",
+      "say": "P is for pig!",
+      "sound": "pig",
+      "sound_word": "OINK!",
+      "scene": "farm"
+    }
+  },
+  "outro": "Zoomy loves letters! What word starts with P? Tell Zoomy!",
+  "outro_caption": "Zoomy loves letters!\nWhat word starts with P? Tell Zoomy!",
+  "thumbnail": {
+    "lines": [
+      "ABC",
+      "K TO",
+      "O!"
+    ],
+    "sticker": "POP!",
+    "burst": "POP!"
+  },
+  "youtube": {
+    "title": "Zoomy's Road Trip ABC: K to O! (POP!) | Nerdy Noodles",
+    "description": "🚗 POP! Zoomy the car hit a bump, the trunk popped open and all the letter blocks flew out! Can you help Zoomy find them?\n\nDrive along with Zoomy and learn the letters K, L, M, N and O! Each letter block comes back one by one with a word that starts with it: K is for kite, L is for leaf, M is for moon, and more. Zoomy's road trip goes up in the sky, through the forest, under the moon and down to the ocean! Then sing the letter song with Zoomy, and stay till the end, because someone on the farm wants to learn the next letter! 🐷\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn the letters K, L, M, N and O\n✔️ Hear a word for each letter (K is for kite!)\n✔️ Practice early phonics and letter sounds\n✔️ Sing a catchy driving letter song with Zoomy!\n\n⏱️ Chapters\n0:00 Intro\n0:04 POP! Oh no!\n0:09 Let's find the letters!\n0:26 Sing along!\n0:46 Wait... who's on the farm?\n0:56 What starts with P?\n\n💬 What word starts with P? Tell Zoomy in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #ABC #LearnTheAlphabet #Phonics #AlphabetSong #Preschool #KidsSongs #ToddlerLearning",
+    "tags": [
+      "abc for kids",
+      "learn the alphabet",
+      "letters K to O",
+      "alphabet song",
+      "phonics for kids",
+      "learn letters",
+      "car song for kids",
+      "preschool learning",
+      "toddler learning",
+      "kids songs",
+      "Nerdy Noodles"
+    ]
+  }
+}
