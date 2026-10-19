@@ -1,0 +1,172 @@
+{
+ "id": "2026-10-19-pm-sharing-song",
+ "host": "tree",
+ "scene": "park",
+ "voice": "af_heart",
+ "music_seed": 5317,
+ "song": {
+  "lang": "en",
+  "bpm": 108,
+  "intro_beats": 4
+ },
+ "hook_text": "SING WITH TWIGGY!",
+ "start_face": "happy",
+ "beats": [
+  {
+   "type": "sing",
+   "line": "Shar-ing:D5,C5 is:A4 so:G4 fun:C5/2 _/2",
+   "show": "Sharing is so fun!",
+   "face": "laugh",
+   "arms": "wave"
+  },
+  {
+   "type": "enter",
+   "at_beat": 4,
+   "id": "h1",
+   "obj": {
+    "kind": "heart",
+    "color": "#FF6F91"
+   },
+   "from": "left",
+   "to": [
+    170,
+    700
+   ],
+   "style": "bounce",
+   "scale": 1.1
+  },
+  {
+   "type": "sing",
+   "line": "I:A4 have:A4 cook-ies:G4,E4 here:D4/2 _/2",
+   "show": "I have cookies here!",
+   "face": "happy",
+   "arms": "rest"
+  },
+  {
+   "type": "enter",
+   "at_beat": 2,
+   "id": "ck",
+   "obj": {
+    "kind": "cookie",
+    "color": "#C98B4F"
+   },
+   "from": "top_right",
+   "to": [
+    915,
+    1190
+   ],
+   "style": "bounce",
+   "scale": 1.3
+  },
+  {
+   "type": "sing",
+   "line": "One:E4 for:G4 you:E4 and:G4 me:C4/2 _/2",
+   "show": "One for you and me!",
+   "arms": "dance"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "sheep",
+   "obj": {
+    "kind": "sheep",
+    "color": "#FFFFFF"
+   },
+   "from": "left",
+   "to": "floor_left",
+   "style": "slide",
+   "scale": 1.2
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "sheep",
+   "dur": 0.6
+  },
+  {
+   "type": "sing",
+   "line": "Here:F4 comes:A4 pup-py:G4,E4 too:C4/2 _/2",
+   "show": "Here comes puppy too!",
+   "face": "o",
+   "arms": "cheer"
+  },
+  {
+   "type": "enter",
+   "at_beat": 1,
+   "id": "dog",
+   "obj": {
+    "kind": "dog",
+    "color": "#D9A066"
+   },
+   "from": "right",
+   "to": "floor_right",
+   "style": "bounce",
+   "scale": 1.2
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "dog",
+   "dur": 0.6
+  },
+  {
+   "type": "sing",
+   "line": "Hug:G4 your:G4 friends:E4 and:G4 smile:C5/2 _/2",
+   "show": "Hug your friends and smile!",
+   "face": "proud",
+   "arms": "wave"
+  },
+  {
+   "type": "multiply",
+   "at_beat": 4,
+   "id": "h1",
+   "count": 5,
+   "radius": 120
+  },
+  {
+   "type": "sing",
+   "line": "Shar-ing:D5,C5 is:A4 so:G4 fun:C5/2 _/2",
+   "show": "Sharing is so fun!",
+   "face": "laugh",
+   "arms": "dance"
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "sheep",
+   "dur": 0.5
+  },
+  {
+   "type": "sing",
+   "line": "Shar-ing:D5,C5 is:A4 so:G4 fun:C5/4",
+   "show": "Sharing is so fun!",
+   "face": "proud",
+   "arms": "cheer",
+   "confetti": true
+  },
+  {
+   "type": "wait",
+   "at_beat": 5,
+   "sfx": "dog",
+   "dur": 0.6
+  },
+  {
+   "type": "end"
+  }
+ ],
+ "youtube": {
+  "title": "Sharing Is So Fun Song with Twiggy! #shorts",
+  "description": "Sing along with Twiggy! Sharing is so fun... I have cookies here, one for you and me! 🍪💕\n\nTwiggy is the kindest little apple tree, sharing with a fluffy sheep and a happy puppy in the park!\n\n🔔 Subscribe to Nerdy Noodles for more songs and giggles!\n\n#NerdyNoodles #shorts #kidssongs #nurseryrhymes #singalong #sharing",
+  "tags": [
+   "kids songs",
+   "nursery rhymes",
+   "toddler songs",
+   "sing along for kids",
+   "sharing song",
+   "sharing is caring for kids",
+   "songs about friends",
+   "Twiggy the tree",
+   "Nerdy Noodles"
+  ]
+ }
+}

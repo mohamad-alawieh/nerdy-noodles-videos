@@ -189,5 +189,22 @@
   "gag": "Quackers sings 'What color do you see?' - a red apple, a green frog, a pink pig, a yellow duck like him, then a bunch of blue balloons",
   "title": "What Color Do You See? Song with Quackers! #shorts",
   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=6791614999743253203"
+ },
+ {
+  "id": "2026-10-19-pm-sharing-song",
+  "date": "2026-10-19",
+  "host": "tree",
+  "lang": "en",
+  "format": "song",
+  "topic": "sharing with friends (sharing song)",
+  "scene": "park",
+  "objects": [
+   "cookie",
+   "heart",
+   "sheep",
+   "dog"
+  ],
+  "gag": "Twiggy sings 'Sharing is so fun!', shares cookies with a sheep (baa) and a puppy (woof), hearts multiply",
+  "title": "Sharing Is So Fun Song with Twiggy! #shorts"
  }
 ]
