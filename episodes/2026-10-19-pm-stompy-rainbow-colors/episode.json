@@ -1,0 +1,142 @@
+{
+  "id": "2026-10-19-pm-stompy-rainbow-colors",
+  "host": "dino",
+  "lesson": "colors (red, orange, yellow, green, blue, purple, white + pink)",
+  "scene": "jungle",
+  "intro_title": "Stompy's Colors!",
+  "intro_say": "Hi friends! I'm Stompy! Colors!",
+  "board_title": "Stompy Colors",
+  "board_label": "Colors:",
+  "voice": "af_heart",
+  "music_seed": 40917,
+  "hook": {
+    "pre": "Hic... hic...",
+    "burst": "HIC!",
+    "burst_say": "Hic!",
+    "line": "Oh no! Stompy's hiccup bounced the colors away!",
+    "line_caption": "Oh no! Stompy's hiccup\nbounced the colors away!"
+  },
+  "items": [
+    {
+      "kind": "apple",
+      "color": "#E53935",
+      "big": "RED",
+      "word": "RED APPLE",
+      "say": "Red! A red apple!",
+      "scene": "farm"
+    },
+    {
+      "kind": "fish",
+      "color": "#FF8C1A",
+      "big": "ORANGE",
+      "word": "ORANGE FISH",
+      "say": "Orange! An orange fish!",
+      "scene": "ocean",
+      "trick": "bounce"
+    },
+    {
+      "kind": "duck",
+      "color": "#FFC61A",
+      "big": "YELLOW",
+      "word": "YELLOW DUCK",
+      "say": "Yellow! The yellow duck says...",
+      "sound": "duck",
+      "sound_word": "QUACK!",
+      "scene": "pond"
+    },
+    {
+      "kind": "tree",
+      "color": "#3DBE5C",
+      "big": "GREEN",
+      "word": "GREEN TREE",
+      "say": "Green! A big green tree!",
+      "scene": "forest"
+    },
+    {
+      "kind": "bird",
+      "color": "#2E86FF",
+      "big": "BLUE",
+      "word": "BLUE BIRD",
+      "say": "Blue! The blue bird says...",
+      "sound": "bird",
+      "sound_word": "TWEET!",
+      "scene": "sky",
+      "trick": "sunglasses"
+    },
+    {
+      "kind": "balloon",
+      "color": "#9C4DFF",
+      "big": "PURPLE",
+      "word": "BALLOON",
+      "say": "Purple! A purple balloon!",
+      "scene": "city",
+      "trick": "cartwheel"
+    },
+    {
+      "kind": "sheep",
+      "color": "#FFFFFF",
+      "big": "WHITE",
+      "word": "WHITE SHEEP",
+      "say": "White! The fluffy white sheep says...",
+      "sound": "sheep",
+      "sound_word": "BAA!",
+      "scene": "farm"
+    }
+  ],
+  "song": [
+    "Red and orange,\nyellow too!",
+    "Green tree, and\na bird so blue!",
+    "Purple balloon\nin the sky,",
+    "White sheep! Colors,\nmy oh my!"
+  ],
+  "song_notes": [
+    "Red:E4 and:E4 or-ange:G4,G4 yel-low:A4,G4 too:E4/2",
+    "Green:G4 tree:A4 and:G4 a:E4 bird:G4 so:A4 blue:G4/2",
+    "Pur-ple:E4,E4 bal-loon:G4,A4 in:G4 the:E4 sky:D4/2",
+    "White:G4 sheep:G4 col-ors:A4,G4 my:E4 oh:D4 my:C4/2"
+  ],
+  "celebrate_word": "ALL 7!",
+  "celebrate": "Seven colors! Stompy found them all!",
+  "twist": {
+    "peek_line": "Wait... what's behind the board?",
+    "reveal_word": "PINK?!",
+    "reveal": "Pink! A pink cupcake! For Stompy?",
+    "laugh": "Hee hee! Pink is yummy too!",
+    "laugh_caption": "Hee hee!\nPink is yummy too!",
+    "item": {
+      "kind": "cupcake",
+      "color": "#FF5FA2",
+      "big": "PINK",
+      "word": "PINK CUPCAKE",
+      "say": "Pink!",
+      "scene": "kitchen"
+    }
+  },
+  "outro": "What is your favorite color? Tell Stompy in the comments!",
+  "outro_caption": "What is your favorite color?\nTell Stompy in the comments!",
+  "thumbnail": {
+    "lines": [
+      "COLORS",
+      "WITH",
+      "STOMPY!"
+    ],
+    "sticker": "RED!",
+    "burst": "HIC!"
+  },
+  "youtube": {
+    "title": "Stompy's Colors! (HIC!) | Nerdy Noodles",
+    "description": "🦖 HIC! Stompy the dinosaur got the hiccups, and one big HIC bounced all of Stompy's colors away! Can you help Stompy find them?\n\nLearn 7 colors with Stompy: red, orange, yellow, green, blue, purple and white! Each color comes back one by one in its own place (the farm, the ocean, the pond, the forest, the sky and the city), and you hear the REAL sounds of the yellow duck, the blue bird and the white sheep. Then sing the color song with Stompy, and stay till the end, because one more color is hiding behind the board! 👀\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn 7 colors: red, orange, yellow, green, blue, purple and white\n✔️ Match each color to a thing: red apple, green tree, blue bird and more\n✔️ Hear real duck, bird and sheep sounds\n✔️ Sing a color song with Stompy!\n\n⏱️ Chapters\n0:00 Hello from Stompy!\n0:04 HIC! Oh no!\n0:09 Let's find the colors!\n0:26 Sing along!\n0:46 What's behind the board?\n0:56 What's your favorite color?\n\n💬 What is your favorite color? Tell Stompy in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #LearnColors #ColorsForKids #Dinosaur #Preschool #ToddlerLearning #Kindergarten #KidsSongs",
+    "tags": [
+      "learn colors",
+      "colors for kids",
+      "color song for kids",
+      "dinosaur for kids",
+      "animal sounds for kids",
+      "toddler learning",
+      "preschool learning",
+      "kindergarten learning",
+      "educational videos for kids",
+      "Nerdy Noodles"
+    ]
+  }
+}
