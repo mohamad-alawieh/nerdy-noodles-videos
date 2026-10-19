@@ -1,0 +1,183 @@
+{
+ "id": "2026-10-19-pm-color-song",
+ "host": "duck",
+ "scene": "classroom",
+ "voice": "af_heart",
+ "music_seed": 5219,
+ "song": {
+  "lang": "en",
+  "bpm": 108,
+  "intro_beats": 4
+ },
+ "hook_text": "SING WITH QUACKERS!",
+ "start_face": "happy",
+ "beats": [
+  {
+   "type": "sing",
+   "line": "What:G4 col-or:G4,E4 do:G4 you:A4 see:C5/2 _/1",
+   "show": "What color do you see?",
+   "face": "happy",
+   "arms": "wave"
+  },
+  {
+   "type": "sing",
+   "line": "A:A4 red:A4 ap-ple:G4,E4 for:E4 me:C4/2 _/1",
+   "show": "A red apple for me!",
+   "face": "laugh",
+   "arms": "rest"
+  },
+  {
+   "type": "enter",
+   "at_beat": 1,
+   "id": "apple",
+   "obj": {
+    "kind": "apple",
+    "color": "#FF4D4D"
+   },
+   "from": "top_right",
+   "to": [
+    930,
+    900
+   ],
+   "style": "bounce",
+   "scale": 1.4
+  },
+  {
+   "type": "sing",
+   "line": "A:E4 green:G4 frog:E4 _/1 a:A4 pink:G4 pig:E4 _/1",
+   "show": "A green frog, a pink pig!",
+   "face": "laugh",
+   "arms": "dance"
+  },
+  {
+   "type": "enter",
+   "at_beat": 1,
+   "id": "frog",
+   "obj": {
+    "kind": "frog",
+    "color": "#5CCB5F"
+   },
+   "from": "left",
+   "to": [
+    150,
+    1360
+   ],
+   "style": "bounce",
+   "scale": 1.6
+  },
+  {
+   "type": "wait",
+   "at_beat": 3,
+   "sfx": "frog",
+   "dur": 0.5
+  },
+  {
+   "type": "enter",
+   "at_beat": 5,
+   "id": "pig",
+   "obj": {
+    "kind": "pig",
+    "color": "#FFA6C9"
+   },
+   "from": "right",
+   "to": [
+    930,
+    1360
+   ],
+   "style": "bounce",
+   "scale": 1.6
+  },
+  {
+   "type": "wait",
+   "at_beat": 7,
+   "sfx": "pig",
+   "dur": 0.5
+  },
+  {
+   "type": "sing",
+   "line": "A:F4 yel-low:A4,G4 duck:E4 like:D4 me:C4/2 _/1",
+   "show": "A yellow duck like me!",
+   "face": "proud",
+   "arms": "cheer"
+  },
+  {
+   "type": "noodle",
+   "at_beat": 3,
+   "action": "jump"
+  },
+  {
+   "type": "wait",
+   "at_beat": 7,
+   "sfx": "duck",
+   "dur": 0.5
+  },
+  {
+   "type": "sing",
+   "line": "What:G4 col-or:G4,E4 do:G4 you:A4 see:C5/2 _/1",
+   "show": "What color do you see?",
+   "face": "laugh",
+   "arms": "dance"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "bal",
+   "obj": {
+    "kind": "balloon",
+    "color": "#4FA3FF"
+   },
+   "from": "bottom",
+   "to": [
+    170,
+    700
+   ],
+   "style": "slide",
+   "scale": 1.1
+  },
+  {
+   "type": "multiply",
+   "at_beat": 4,
+   "id": "bal",
+   "count": 4,
+   "radius": 110
+  },
+  {
+   "type": "sing",
+   "line": "What:G4 col-or:G4,E4 do:G4 you:A4 see:C5/3",
+   "show": "What color do you see?",
+   "face": "happy",
+   "arms": "wave"
+  },
+  {
+   "type": "sing",
+   "line": "Col-ors:D5,C5 col-ors:A4,G4 yay:C5/4",
+   "show": "Colors, colors, yay!",
+   "face": "proud",
+   "arms": "cheer",
+   "confetti": true
+  },
+  {
+   "type": "wait",
+   "at_beat": 5,
+   "sfx": "duck",
+   "dur": 0.6
+  },
+  {
+   "type": "end"
+  }
+ ],
+ "youtube": {
+  "title": "What Color Do You See? Song with Quackers! #shorts",
+  "description": "Sing along with Quackers! What color do you see? A red apple, a green frog, a pink pig... and a yellow duck like me! 🍎🐸🐷🦆\n\nQuackers is the cheerful little yellow duck of Nerdy Noodles!\n\n🔔 Subscribe to Nerdy Noodles for more songs and giggles!\n\n#NerdyNoodles #shorts #kidssongs #nurseryrhymes #singalong #colorsong",
+  "tags": [
+   "kids songs",
+   "nursery rhymes",
+   "toddler songs",
+   "sing along for kids",
+   "colors song",
+   "learn colors for toddlers",
+   "animal sounds for kids",
+   "Nerdy Noodles"
+  ]
+ }
+}

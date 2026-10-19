@@ -171,5 +171,22 @@
   "gag": "Stompy sings 'Stomp, stomp, stomp with me!' and jumps like a frog, flies like a bird, runs like a horse",
   "title": "Stomp With Me Song with Stompy the Dino! #shorts",
   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-6171559412104016232"
+ },
+ {
+  "id": "2026-10-19-pm-color-song",
+  "date": "2026-10-19",
+  "host": "duck",
+  "lang": "en",
+  "format": "song",
+  "topic": "naming colors (learn colors)",
+  "scene": "classroom",
+  "objects": [
+   "apple",
+   "frog",
+   "pig",
+   "balloon"
+  ],
+  "gag": "Quackers sings 'What color do you see?' - a red apple, a green frog, a pink pig, a yellow duck like him, then a bunch of blue balloons",
+  "title": "What Color Do You See? Song with Quackers! #shorts"
  }
 ]
