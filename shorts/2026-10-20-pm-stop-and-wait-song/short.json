@@ -1,0 +1,214 @@
+{
+ "id": "2026-10-20-pm-stop-and-wait-song",
+ "host": "car",
+ "scene": "road",
+ "voice": "af_heart",
+ "music_seed": 5217,
+ "song": {
+  "lang": "en",
+  "bpm": 106,
+  "intro_beats": 4
+ },
+ "hook_text": "SING WITH ZOOMY!",
+ "start_face": "happy",
+ "beats": [
+  {
+   "type": "sing",
+   "line": "Stop:G4 and:G4 wait:E4 for:G4 friends:C5/2 _/2",
+   "show": "Stop and wait for friends!",
+   "face": "happy"
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "beep",
+   "dur": 0.5
+  },
+  {
+   "type": "sing",
+   "line": "Here:A4 comes:A4 a:G4 lit-tle:E4,D4 duck:E4/2 _/1",
+   "show": "Here comes a little duck!",
+   "face": "o"
+  },
+  {
+   "type": "enter",
+   "at_beat": 2,
+   "id": "duck",
+   "obj": {
+    "kind": "duck",
+    "color": "#FFD54F"
+   },
+   "from": "left",
+   "to": [
+    180,
+    1680
+   ],
+   "style": "bounce",
+   "scale": 1.7
+  },
+  {
+   "type": "wait",
+   "at_beat": 7,
+   "sfx": "duck",
+   "dur": 0.5
+  },
+  {
+   "type": "sing",
+   "line": "Then:E4 a:G4 frog-gy:A4,G4 hops:E4 a-long:D4,C4 _/1",
+   "show": "Then a froggy hops along!",
+   "face": "laugh"
+  },
+  {
+   "type": "move",
+   "at_beat": 0,
+   "id": "duck",
+   "to": [
+    900,
+    1680
+   ],
+   "style": "hop"
+  },
+  {
+   "type": "enter",
+   "at_beat": 2,
+   "id": "frog",
+   "obj": {
+    "kind": "frog",
+    "color": "#66BB6A"
+   },
+   "from": "left",
+   "to": [
+    180,
+    1680
+   ],
+   "style": "bounce",
+   "scale": 1.7
+  },
+  {
+   "type": "wait",
+   "at_beat": 7,
+   "sfx": "frog",
+   "dur": 0.5
+  },
+  {
+   "type": "sing",
+   "line": "Pig-gy:F4,A4 walks:G4 so:E4 slow:D4/2 _/2",
+   "show": "Piggy walks so slow!",
+   "face": "squint"
+  },
+  {
+   "type": "move",
+   "at_beat": 0,
+   "id": "frog",
+   "to": [
+    540,
+    1720
+   ],
+   "style": "hop"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "pig",
+   "obj": {
+    "kind": "pig",
+    "color": "#F8A5C2"
+   },
+   "from": "left",
+   "to": [
+    180,
+    1680
+   ],
+   "style": "slide",
+   "scale": 1.7
+  },
+  {
+   "type": "wait",
+   "at_beat": 6.5,
+   "sfx": "pig",
+   "dur": 0.5
+  },
+  {
+   "type": "sing",
+   "line": "Stop:G4 and:G4 wait:E4 for:G4 friends:C5/2 _/2",
+   "show": "Stop and wait for friends!",
+   "face": "happy"
+  },
+  {
+   "type": "move",
+   "at_beat": 0,
+   "id": "pig",
+   "to": [
+    180,
+    1700
+   ],
+   "style": "hop"
+  },
+  {
+   "type": "enter",
+   "at_beat": 1,
+   "id": "heart",
+   "obj": {
+    "kind": "heart",
+    "color": "#FF5C8A"
+   },
+   "from": "top_left",
+   "to": [
+    170,
+    720
+   ],
+   "style": "bounce",
+   "scale": 1.0
+  },
+  {
+   "type": "sing",
+   "line": "Stop:D5 and:C5 wait:A4 for:G4 friends:C5/2 _/2",
+   "show": "Stop and wait for friends!",
+   "face": "laugh"
+  },
+  {
+   "type": "multiply",
+   "at_beat": 0,
+   "id": "heart",
+   "count": 4,
+   "radius": 110
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "honk",
+   "dur": 0.5
+  },
+  {
+   "type": "sing",
+   "line": "Now:D5 we:C5 drive:A4 a-way:G4,E4 home:C5/3",
+   "show": "Now we drive away home!",
+   "face": "proud",
+   "confetti": true
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "vroom",
+   "dur": 0.6
+  },
+  {
+   "type": "end"
+  }
+ ],
+ "youtube": {
+  "title": "Stop and Wait Song with Zoomy! #shorts",
+  "description": "Sing along with Zoomy! Stop and wait for friends... a little duck, a hopping froggy and a slow piggy cross the road! 🚗🦆🐸🐷\n\nZoomy is the friendliest little blue car on the road!\n\n🔔 Subscribe to Nerdy Noodles for more songs and giggles!\n\n#NerdyNoodles #shorts #kidssongs #nurseryrhymes #singalong #roadsafety",
+  "tags": [
+   "kids songs",
+   "nursery rhymes",
+   "toddler songs",
+   "sing along for kids",
+   "stop and wait song",
+   "car song for kids",
+   "animal sounds for kids",
+   "patience song",
+   "Nerdy Noodles"
+  ]
+ }
+}

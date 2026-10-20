@@ -226,5 +226,22 @@
   "gag": "Mittens sings 'Breakfast time, hooray!' and feeds apples to a horse (neigh), seeds to a little duck (quack) and grass to a fluffy sheep (baa)",
   "title": "Farm Breakfast Song with Mittens! #shorts",
   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=470993919849023930"
+ },
+ {
+  "id": "2026-10-20-pm-stop-and-wait-song",
+  "date": "2026-10-20",
+  "host": "car",
+  "lang": "en",
+  "format": "song",
+  "topic": "waiting kindly while animal friends cross the road (patience song)",
+  "scene": "road",
+  "objects": [
+   "duck",
+   "frog",
+   "pig",
+   "heart"
+  ],
+  "gag": "Zoomy sings 'Stop and wait for friends!' while a duck, a froggy and a slow piggy cross the road, then drives home",
+  "title": "Stop and Wait Song with Zoomy! #shorts"
  }
 ]
