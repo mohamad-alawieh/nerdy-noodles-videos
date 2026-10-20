@@ -1,0 +1,205 @@
+{
+ "id": "2026-10-20-pm-farm-breakfast-song",
+ "host": "cat",
+ "scene": "farm",
+ "voice": "af_heart",
+ "music_seed": 5217,
+ "song": {
+  "lang": "en",
+  "bpm": 110,
+  "intro_beats": 4
+ },
+ "hook_text": "SING WITH MITTENS!",
+ "start_face": "happy",
+ "beats": [
+  {
+   "type": "sing",
+   "line": "Break-fast:D5,C5 time:A4 hoo-ray:G4,C5/2 _/2",
+   "show": "Breakfast time, hooray!",
+   "face": "laugh",
+   "arms": "wave"
+  },
+  {
+   "type": "sing",
+   "line": "Mit-tens:G4,G4 feeds:E4 the:G4 farm:C5/2 _/2",
+   "show": "Mittens feeds the farm!",
+   "face": "happy",
+   "arms": "dance"
+  },
+  {
+   "type": "enter",
+   "at_beat": 4,
+   "id": "apple",
+   "obj": {
+    "kind": "apple",
+    "color": "#E53935"
+   },
+   "from": "top_right",
+   "to": "hand_right",
+   "style": "bounce",
+   "scale": 1.2
+  },
+  {
+   "type": "sing",
+   "line": "Ap-ples:A4,A4 for:G4 the:E4 horse:D4/2 _/2",
+   "show": "Apples for the horse!",
+   "arms": "rest"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "horse",
+   "obj": {
+    "kind": "horse",
+    "color": "#A1673A"
+   },
+   "from": "left",
+   "to": [
+    150,
+    1360
+   ],
+   "style": "bounce",
+   "scale": 1.9
+  },
+  {
+   "type": "move",
+   "at_beat": 3,
+   "id": "apple",
+   "to": [
+    300,
+    1300
+   ],
+   "style": "hop"
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "horse",
+   "dur": 0.6
+  },
+  {
+   "type": "sing",
+   "line": "Seeds:E4 for:G4 lit-tle:A4,G4 duck:E4/2 _/2",
+   "show": "Seeds for little duck!",
+   "face": "happy",
+   "arms": "wave"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "duck",
+   "obj": {
+    "kind": "duck",
+    "color": "#FFD54F"
+   },
+   "from": "right",
+   "to": [
+    940,
+    1390
+   ],
+   "style": "bounce",
+   "scale": 1.7
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "duck",
+   "dur": 0.6
+  },
+  {
+   "type": "sing",
+   "line": "Grass:G4 for:G4 fluf-fy:E4,G4 sheep:C5/2 _/2",
+   "show": "Grass for fluffy sheep!",
+   "face": "laugh",
+   "arms": "dance"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "sheep",
+   "obj": {
+    "kind": "sheep",
+    "color": "#FFFFFF"
+   },
+   "from": "top_left",
+   "to": [
+    150,
+    860
+   ],
+   "style": "fall",
+   "scale": 1.8
+  },
+  {
+   "type": "enter",
+   "at_beat": 2,
+   "id": "leaf",
+   "obj": {
+    "kind": "leaf",
+    "color": "#66BB6A"
+   },
+   "from": "top_right",
+   "to": [
+    950,
+    690
+   ],
+   "style": "slide",
+   "scale": 1.0
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "sheep",
+   "dur": 0.6
+  },
+  {
+   "type": "sing",
+   "line": "Break-fast:D5,C5 time:A4 hoo-ray:G4,C5/2 _/2",
+   "show": "Breakfast time, hooray!",
+   "face": "laugh",
+   "arms": "cheer"
+  },
+  {
+   "type": "multiply",
+   "at_beat": 1,
+   "id": "leaf",
+   "count": 4,
+   "radius": 90
+  },
+  {
+   "type": "noodle",
+   "at_beat": 4,
+   "action": "jump"
+  },
+  {
+   "type": "sing",
+   "line": "Full:D5 and:C5 hap-py:A4,G4 now:C5/4",
+   "show": "Full and happy now!",
+   "face": "proud",
+   "arms": "cheer",
+   "confetti": true
+  },
+  {
+   "type": "wait",
+   "at_beat": 5,
+   "sfx": "cat",
+   "dur": 0.6
+  },
+  {
+   "type": "end"
+  }
+ ],
+ "youtube": {
+  "title": "Farm Breakfast Song with Mittens! #shorts",
+  "description": "Sing along with Mittens! Breakfast time, hooray! Apples for the horse, seeds for little duck, grass for fluffy sheep! 🍎🐴🦆🐑\n\nMittens is the curious little cat who loves to sing!\n\n🔔 Subscribe to Nerdy Noodles for more songs and giggles!\n\n#NerdyNoodles #shorts #kidssongs #nurseryrhymes #singalong #farmanimals",
+  "tags": [
+   "kids songs",
+   "nursery rhymes",
+   "toddler songs",
+   "sing along for kids",
+   "farm animals song",
+   "breakfast song",
+   "animal sounds for kids",
+   "Nerdy Noodles"
+  ]
+ }
+}

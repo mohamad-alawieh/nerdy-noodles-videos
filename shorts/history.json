@@ -207,5 +207,23 @@
   "gag": "Twiggy sings 'Sharing is so fun!', shares cookies with a sheep (baa) and a puppy (woof), hearts multiply",
   "title": "Sharing Is So Fun Song with Twiggy! #shorts",
   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-4433206424960679768"
+ },
+ {
+  "id": "2026-10-20-pm-farm-breakfast-song",
+  "date": "2026-10-20",
+  "host": "cat",
+  "lang": "en",
+  "format": "song",
+  "topic": "feeding farm animals breakfast (mealtime song)",
+  "scene": "farm",
+  "objects": [
+   "apple",
+   "horse",
+   "duck",
+   "sheep",
+   "leaf"
+  ],
+  "gag": "Mittens sings 'Breakfast time, hooray!' and feeds apples to a horse (neigh), seeds to a little duck (quack) and grass to a fluffy sheep (baa)",
+  "title": "Farm Breakfast Song with Mittens! #shorts"
  }
 ]
