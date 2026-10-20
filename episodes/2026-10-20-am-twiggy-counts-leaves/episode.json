@@ -1,0 +1,153 @@
+{
+ "id": "2026-10-20-am-twiggy-counts-leaves",
+ "host": "tree",
+ "lesson": "counting 1-10 (fall leaves)",
+ "scene": "forest",
+ "intro_title": "Count the Leaves!",
+ "intro_say": "Hi friends! I'm Twiggy! Let's count!",
+ "board_title": "Leaf Count!",
+ "board_label": "Found:",
+ "voice": "af_heart",
+ "music_seed": 73519,
+ "hook": {
+  "pre": "Hee... hee...",
+  "burst": "TICKLE!",
+  "burst_say": "Tickle tickle!",
+  "line": "Oh no! Twiggy giggled and the leaves fell!",
+  "line_caption": "Oh no! Twiggy giggled\nand the leaves fell!"
+ },
+ "items": [
+  {
+   "kind": "leaf",
+   "color": "#E53935",
+   "big": "1",
+   "word": "ONE",
+   "say": "One!"
+  },
+  {
+   "kind": "leaf",
+   "color": "#FF8C1A",
+   "big": "2",
+   "word": "TWO",
+   "say": "Two!"
+  },
+  {
+   "kind": "leaf",
+   "color": "#FFC61A",
+   "big": "3",
+   "word": "THREE",
+   "say": "Three!",
+   "trick": "cartwheel"
+  },
+  {
+   "kind": "leaf",
+   "color": "#8B5A2B",
+   "big": "4",
+   "word": "FOUR",
+   "say": "Four!"
+  },
+  {
+   "kind": "leaf",
+   "color": "#C62828",
+   "big": "5",
+   "word": "FIVE",
+   "say": "Five!"
+  },
+  {
+   "kind": "leaf",
+   "color": "#FFB627",
+   "big": "6",
+   "word": "SIX",
+   "say": "Six!",
+   "trick": "bounce"
+  },
+  {
+   "kind": "leaf",
+   "color": "#3DBE5C",
+   "big": "7",
+   "word": "SEVEN",
+   "say": "Seven!"
+  },
+  {
+   "kind": "leaf",
+   "color": "#FF5A36",
+   "big": "8",
+   "word": "EIGHT",
+   "say": "Eight!"
+  },
+  {
+   "kind": "leaf",
+   "color": "#A0522D",
+   "big": "9",
+   "word": "NINE",
+   "say": "Nine!",
+   "trick": "sunglasses"
+  },
+  {
+   "kind": "leaf",
+   "color": "#F9A825",
+   "big": "10",
+   "word": "TEN",
+   "say": "Ten!"
+  }
+ ],
+ "song": [
+  "One, two, three,\nleaves fall down!",
+  "Four, five, six,\nred and brown!",
+  "Seven, eight,\nnine and ten,",
+  "Twiggy's leaves\nare back again!"
+ ],
+ "song_notes": [
+  "One:C4 two:E4 three:G4/2 leaves:A4 fall:G4 down:E4/2",
+  "Four:E4 five:G4 six:A4/2 red:G4 and:E4 brown:D4/2",
+  "Sev-en:G4,G4 eight:A4/2 nine:G4 and:E4 ten:D4/2",
+  "Twig-gy's:E4,G4 leaves:A4 are:G4 back:E4 a-gain:D4,C4/2"
+ ],
+ "celebrate_word": "TEN!",
+ "celebrate": "Ten leaves! Twiggy is leafy again!",
+ "twist": {
+  "peek_line": "Wait... who tickled Twiggy?",
+  "reveal_word": "A BIRDIE?!",
+  "reveal": "It was the little bird! Silly bird!",
+  "laugh": "Hee hee! That tickles, little bird!",
+  "laugh_caption": "Hee hee! That tickles,\nlittle bird!",
+  "item": {
+   "kind": "bird",
+   "color": "#2E86FF",
+   "big": "",
+   "word": "BLUE BIRD",
+   "say": "Bird!",
+   "sound": "bird",
+   "sound_word": "TWEET!",
+   "scene": "forest"
+  }
+ },
+ "outro": "What color are the leaves near you? Tell Twiggy in the comments!",
+ "outro_caption": "What color are the leaves near you?\nTell Twiggy in the comments!",
+ "thumbnail": {
+  "lines": [
+   "COUNT",
+   "THE",
+   "LEAVES!"
+  ],
+  "sticker": "10!",
+  "burst": "TICKLE!"
+ },
+ "youtube": {
+  "title": "Count the Leaves with Twiggy! (TICKLE!) | Nerdy Noodles",
+  "description": "🍂 TICKLE! Someone tickled Twiggy the tree, Twiggy giggled, and all the fall leaves fell down! Can you help Twiggy count them back?\n\nCount from 1 to 10 with Twiggy, the nerdiest tree in the forest! Each red, orange, yellow, green and brown fall leaf comes back one by one with its number and its word. Then sing the leaf counting song with Twiggy, and stay till the end to find out who did the tickling! 👀\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Count from 1 to 10\n✔️ See each number and its word (1 = ONE)\n✔️ Spot the colors of fall leaves\n✔️ Sing a leaf counting song with Twiggy!\n\n⏱️ Chapters\n0:00 Hello from Twiggy!\n0:04 TICKLE! Oh no!\n0:09 Let's count the leaves!\n0:26 Sing along!\n0:46 Who tickled Twiggy?\n0:56 What color are the leaves near you?\n\n💬 What color are the leaves near you? Tell Twiggy in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #CountingForKids #LearnToCount #FallLeaves #Autumn #Preschool #ToddlerLearning #KidsSongs",
+  "tags": [
+   "counting for kids",
+   "learn to count",
+   "count to 10",
+   "counting song",
+   "fall leaves for kids",
+   "autumn for kids",
+   "numbers for kids",
+   "preschool learning",
+   "toddler learning",
+   "educational videos for kids",
+   "Nerdy Noodles"
+  ]
+ }
+}
