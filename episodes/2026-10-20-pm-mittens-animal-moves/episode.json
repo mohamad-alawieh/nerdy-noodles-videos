@@ -1,0 +1,141 @@
+{
+  "id": "2026-10-20-pm-mittens-animal-moves",
+  "host": "cat",
+  "lesson": "animals: how animals move (hop, swim, fly, gallop, waddle, wag)",
+  "scene": "park",
+  "intro_title": "Animal Moves!",
+  "intro_say": "Hi friends! I'm Mittens! Let's move!",
+  "board_title": "Animal Moves",
+  "board_label": "Moves:",
+  "voice": "af_heart",
+  "music_seed": 52917,
+  "hook": {
+    "pre": "Ah... ah...",
+    "burst": "ACHOO!",
+    "burst_say": "Achoo!",
+    "line": "Oops! Mittens sneezed, the animals ran!",
+    "line_caption": "Oops! Mittens sneezed,\nthe animals ran!"
+  },
+  "items": [
+    {
+      "kind": "frog",
+      "color": "#3DDC84",
+      "big": "HOP",
+      "word": "FROG",
+      "say": "The frog can hop! It says...",
+      "sound": "frog",
+      "sound_word": "RIBBIT!",
+      "scene": "pond",
+      "trick": "bounce"
+    },
+    {
+      "kind": "fish",
+      "color": "#FF8C42",
+      "big": "SWIM",
+      "word": "FISH",
+      "say": "The fish can swim! Swish, swish!",
+      "scene": "ocean"
+    },
+    {
+      "kind": "bird",
+      "color": "#4FC3F7",
+      "big": "FLY",
+      "word": "BIRD",
+      "say": "The bird can fly! It says...",
+      "sound": "bird",
+      "sound_word": "TWEET!",
+      "scene": "sky",
+      "trick": "sunglasses"
+    },
+    {
+      "kind": "horse",
+      "color": "#A0522D",
+      "big": "GALLOP",
+      "word": "HORSE",
+      "say": "The horse can gallop! It says...",
+      "sound": "horse",
+      "sound_word": "NEIGH!",
+      "scene": "farm"
+    },
+    {
+      "kind": "duck",
+      "color": "#FFD93D",
+      "big": "WADDLE",
+      "word": "DUCK",
+      "say": "The duck can waddle! It says...",
+      "sound": "duck",
+      "sound_word": "QUACK!",
+      "scene": "farm"
+    },
+    {
+      "kind": "dog",
+      "color": "#C8874A",
+      "big": "WAG",
+      "word": "DOG",
+      "say": "The dog can wag its tail! It says...",
+      "sound": "dog",
+      "sound_word": "WOOF!",
+      "scene": "park",
+      "trick": "cartwheel"
+    }
+  ],
+  "song": [
+    "Frogs can hop,\nfish can swim,",
+    "Birds can fly\nup in the sky!",
+    "Horses run,\nducks waddle too,",
+    "Dogs wag, Mittens\nwaves to you!"
+  ],
+  "song_notes": [
+    "Frogs:C4 can:E4 hop:G4/2 fish:A4 can:G4 swim:E4/2",
+    "Birds:E4 can:G4 fly:A4 up:G4 in:E4 the:E4 sky:D4/2",
+    "Hors-es:G4,G4 run:A4 ducks:G4 wad-dle:E4,G4 too:E4/2",
+    "Dogs:E4 wag:G4 Mit-tens:A4,G4 waves:E4 to:D4 you:C4/2"
+  ],
+  "celebrate_word": "6 MOVES!",
+  "celebrate": "Six animals, six moves! Yay, Mittens!",
+  "twist": {
+    "peek_line": "Wait... who can stomp?",
+    "reveal_word": "A DINO?!",
+    "reveal": "It's a dino! Listen!",
+    "laugh": "Hee hee! The dino can stomp, Mittens!",
+    "laugh_caption": "Hee hee! The dino\ncan stomp, Mittens!",
+    "item": {
+      "kind": "dino",
+      "color": "#6BCB77",
+      "big": "STOMP",
+      "word": "DINO",
+      "say": "The dino says...",
+      "sound": "roar",
+      "sound_word": "ROAR!",
+      "scene": "jungle"
+    }
+  },
+  "outro": "How do you like to move? Tell Mittens in the comments!",
+  "outro_caption": "How do you like to move?\nTell Mittens in the comments!",
+  "thumbnail": {
+    "lines": [
+      "HOP",
+      "SWIM",
+      "FLY!"
+    ],
+    "sticker": "MOVES",
+    "burst": "ACHOO!"
+  },
+  "youtube": {
+    "title": "Mittens' Animal Moves! (ACHOO!) | Nerdy Noodles",
+    "description": "🐸 ACHOO! Mittens the cat sneezed so big that all the animal friends ran away! Can you help Mittens find them?\n\nLearn how animals move with Mittens: the frog hops in the pond, the fish swims in the ocean, the bird flies in the sky, and the horse gallops and the duck waddles on the farm, and the dog wags its tail in the park. Hear the REAL sound each animal makes, then sing the animal moves song with Mittens. Stay till the end, because one more friend has a very big move! 🐾\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn action words: hop, swim, fly, gallop, waddle and wag\n✔️ Learn 6 animal names: frog, fish, bird, horse, duck and dog\n✔️ Hear the real sounds animals make\n✔️ Sing an animal moves song with Mittens!\n\n⏱️ Chapters\n0:00 Hello from Mittens!\n0:04 ACHOO! Oh no!\n0:09 How do animals move?\n0:26 Sing along!\n0:46 Who can stomp?\n0:56 What next?\n\n💬 How do you like to move? Tell Mittens in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #AnimalMoves #LearnAnimals #AnimalSounds #ActionWords #Preschool #ToddlerLearning #Kindergarten",
+    "tags": [
+      "how animals move",
+      "animal actions for kids",
+      "action words for kids",
+      "learn animals",
+      "real animal sounds",
+      "animal names for kids",
+      "preschool learning",
+      "toddler learning",
+      "kids songs",
+      "educational videos for kids",
+      "Nerdy Noodles"
+    ]
+  }
+}
