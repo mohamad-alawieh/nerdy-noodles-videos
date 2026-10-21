@@ -244,5 +244,22 @@
   "gag": "Zoomy sings 'Stop and wait for friends!' while a duck, a froggy and a slow piggy cross the road, then drives home",
   "title": "Stop and Wait Song with Zoomy! #shorts",
   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-7690363616084409504"
+ },
+ {
+  "id": "2026-10-21-pm-goodnight-song",
+  "date": "2026-10-21",
+  "host": "noodle",
+  "lang": "en",
+  "format": "song",
+  "topic": "bedtime / saying goodnight (bedtime song)",
+  "scene": "night",
+  "objects": [
+   "star",
+   "owl",
+   "sheep",
+   "heart"
+  ],
+  "gag": "Noodle sings 'Night-night, night-night, sleep!' as the stars come out, an owl hoots in the tree and a sheep yawns (baa), then Noodle falls asleep",
+  "title": "Night-Night Goodnight Song with Noodle! #shorts"
  }
 ]
