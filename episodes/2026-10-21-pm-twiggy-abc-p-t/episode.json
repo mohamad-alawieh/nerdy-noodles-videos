@@ -1,0 +1,127 @@
+{
+  "id": "2026-10-21-pm-twiggy-abc-p-t",
+  "host": "tree",
+  "lesson": "letters P-T",
+  "scene": "forest",
+  "intro_title": "ABC: P to T!",
+  "intro_say": "Hi friends! I'm Twiggy! Let's read!",
+  "board_title": "Twiggy's ABC",
+  "board_label": "Letters:",
+  "voice": "af_heart",
+  "music_seed": 52817,
+  "hook": {
+    "pre": "La la la...",
+    "burst": "BONK!",
+    "burst_say": "Bonk!",
+    "line": "Oops! An apple bonked Twiggy, letters fell!",
+    "line_caption": "Oops! An apple bonked Twiggy,\nletters fell!"
+  },
+  "items": [
+    {
+      "kind": "block",
+      "text": "P",
+      "color": "#FF8C1A",
+      "big": "P",
+      "word": "PUMPKIN",
+      "say": "P is for pumpkin!",
+      "scene": "farm"
+    },
+    {
+      "kind": "block",
+      "text": "Q",
+      "color": "#8E5CF7",
+      "big": "Q",
+      "word": "QUIET",
+      "say": "Q is for quiet! Shh!",
+      "scene": "night",
+      "trick": "sunglasses"
+    },
+    {
+      "kind": "block",
+      "text": "R",
+      "color": "#FF5A36",
+      "big": "R",
+      "word": "RAINBOW",
+      "say": "R is for rainbow!",
+      "scene": "sky",
+      "trick": "bounce"
+    },
+    {
+      "kind": "block",
+      "text": "S",
+      "color": "#00B4D8",
+      "big": "S",
+      "word": "SNOW",
+      "say": "S is for snow!",
+      "scene": "snow"
+    },
+    {
+      "kind": "block",
+      "text": "T",
+      "color": "#3DDC84",
+      "big": "T",
+      "word": "TREE",
+      "say": "T is for tree, like me!",
+      "scene": "forest",
+      "trick": "cartwheel"
+    }
+  ],
+  "song": [
+    "P is pumpkin,\nQ is quiet,",
+    "R for rainbow,\nS for snow,",
+    "T for tree,\njust like me!",
+    "Letters, letters,\nP to T!"
+  ],
+  "song_notes": [
+    "P:G4 is:E4 pump-kin:A4,G4 Q:C5 is:A4 quiet:G4/2",
+    "R:G4 for:G4 rain-bow:C5,A4 S:G4 for:A4 snow:G4/2",
+    "T:E4 for:E4 tree:G4/2 just:F4 like:E4 me:D4/2",
+    "Let-ters:E4,G4 let-ters:A4,G4 P:E4 to:D4 T:C4/2"
+  ],
+  "celebrate_word": "P-Q-R-S-T!",
+  "celebrate": "P, Q, R, S, T! Twiggy found them all!",
+  "twist": {
+    "peek_line": "Wait... what's way up high?",
+    "reveal_word": "U? UP!",
+    "reveal": "U! U is for up!",
+    "laugh": "Hee hee! U went up, up, up with Twiggy!",
+    "laugh_caption": "Hee hee! U went up, up, up\nwith Twiggy!",
+    "item": {
+      "kind": "block",
+      "text": "U",
+      "color": "#FFB627",
+      "big": "U",
+      "word": "UP",
+      "say": "U is for up!",
+      "scene": "sky"
+    }
+  },
+  "outro": "Twiggy loves letters! What word starts with U? Tell Twiggy!",
+  "outro_caption": "Twiggy loves letters!\nWhat word starts with U? Tell Twiggy!",
+  "thumbnail": {
+    "lines": [
+      "ABC",
+      "P TO",
+      "T!"
+    ],
+    "sticker": "BONK!",
+    "burst": "BONK!"
+  },
+  "youtube": {
+    "title": "Twiggy's ABC: P to T! (BONK!) | Nerdy Noodles",
+    "description": "🌳 BONK! An apple fell on Twiggy the tree, and all the letter blocks tumbled down! Can you help Twiggy find them?\n\nLearn the letters P, Q, R, S and T with Twiggy! Each letter block comes back one by one with a word that starts with it: P is for pumpkin, Q is for quiet, R is for rainbow, S is for snow, and T is for tree, just like Twiggy! Visit the pumpkin farm, a quiet night, the rainbow sky and the snowy hills. Then sing the letter song with Twiggy, and stay till the end, because a surprise letter is waiting way up high! ☁️\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn the letters P, Q, R, S and T\n✔️ Hear a word for each letter (P is for pumpkin!)\n✔️ Practice early phonics and letter sounds\n✔️ Sing a happy alphabet song with Twiggy the tree!\n\n⏱️ Chapters\n0:00 Intro\n0:04 BONK! Oh no!\n0:09 Let's find the letters!\n0:26 Sing along!\n0:46 Wait... what's way up high?\n0:56 What starts with U?\n\n💬 What word starts with U? Tell Twiggy in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #ABC #LearnTheAlphabet #Phonics #AlphabetSong #Preschool #KidsSongs #ToddlerLearning",
+    "tags": [
+      "abc for kids",
+      "learn the alphabet",
+      "letters P to T",
+      "alphabet song",
+      "phonics for kids",
+      "learn letters",
+      "tree song for kids",
+      "preschool learning",
+      "toddler learning",
+      "kids songs",
+      "Nerdy Noodles"
+    ]
+  }
+}
