@@ -1,0 +1,146 @@
+{
+  "id": "2026-10-21-am-quackers-moonlight-shapes",
+  "host": "duck",
+  "lesson": "shapes (circle, triangle, square, pentagon, heart, crescent, diamond)",
+  "scene": "night",
+  "intro_title": "Moonlight Shapes!",
+  "intro_say": "Hi! I'm Quackers! Let's find shapes!",
+  "board_title": "Moon Shapes",
+  "board_label": "Shapes:",
+  "voice": "af_heart",
+  "music_seed": 60421,
+  "hook": {
+    "pre": "Flap... flap...",
+    "burst": "FLAP!",
+    "burst_say": "Flap!",
+    "line": "Oops! Quackers flapped, the shapes flew!",
+    "line_caption": "Oops! Quackers flapped,\nthe shapes flew!"
+  },
+  "items": [
+    {
+      "kind": "shape",
+      "shape": "circle",
+      "color": "#FF8C42",
+      "big": "",
+      "word": "CIRCLE",
+      "say": "Circle! Round like a pumpkin!",
+      "scene": "farm"
+    },
+    {
+      "kind": "shape",
+      "shape": "triangle",
+      "color": "#3DDC84",
+      "big": "",
+      "word": "TRIANGLE",
+      "say": "Triangle! Three sides!",
+      "scene": "forest",
+      "trick": "bounce"
+    },
+    {
+      "kind": "shape",
+      "shape": "square",
+      "color": "#00B4D8",
+      "big": "",
+      "word": "SQUARE",
+      "say": "Square! Like a window!",
+      "scene": "city"
+    },
+    {
+      "kind": "shape",
+      "shape": "pentagon",
+      "color": "#8E5CF7",
+      "big": "",
+      "word": "PENTAGON",
+      "say": "Pentagon! Five sides!",
+      "scene": "park",
+      "trick": "cartwheel"
+    },
+    {
+      "kind": "shape",
+      "shape": "heart",
+      "color": "#FF4FA3",
+      "big": "",
+      "word": "HEART",
+      "say": "Heart! Quackers loves you!",
+      "scene": "pond"
+    },
+    {
+      "kind": "shape",
+      "shape": "moon",
+      "color": "#FFE14D",
+      "big": "",
+      "word": "CRESCENT",
+      "say": "Crescent! Like the moon!",
+      "scene": "night",
+      "trick": "sunglasses"
+    },
+    {
+      "kind": "shape",
+      "shape": "diamond",
+      "color": "#FF5A36",
+      "big": "",
+      "word": "DIAMOND",
+      "say": "Diamond! Like a kite!",
+      "scene": "sky"
+    }
+  ],
+  "song": [
+    "Circle, triangle,\nsquare, yay!",
+    "Pentagon, heart,\nshapes at play!",
+    "Crescent moon\nand diamond bright,",
+    "Shapes with Quackers,\ngood night!"
+  ],
+  "song_notes": [
+    "Cir-cle:C4,E4 tri-an-gle:G4,G4,A4 square:G4 yay:E4/2",
+    "Pen-ta-gon:E4,G4,A4 heart:G4 shapes:E4 at:D4 play:E4/2",
+    "Cres-cent:G4,A4 moon:C5 and:A4 dia-mond:G4,E4 bright:G4/2",
+    "Shapes:E4 with:G4 Quack-ers:A4,G4 good:D4 night:C4/3"
+  ],
+  "celebrate_word": "7 SHAPES!",
+  "celebrate": "Seven shapes! Quackers found them all!",
+  "twist": {
+    "peek_line": "Wait... who is in the pond?",
+    "reveal_word": "A FROG?!",
+    "reveal": "It's a frog! Listen!",
+    "laugh": "Hee hee! His eyes are two circles!",
+    "laugh_caption": "Hee hee! His eyes\nare two circles!",
+    "item": {
+      "kind": "frog",
+      "color": "#3DDC84",
+      "big": "",
+      "word": "FROG",
+      "say": "The frog says...",
+      "sound": "frog",
+      "sound_word": "RIBBIT!",
+      "scene": "pond"
+    }
+  },
+  "outro": "What is your favorite shape? Tell Quackers in the comments!",
+  "outro_caption": "What is your favorite shape?\nTell Quackers in the comments!",
+  "thumbnail": {
+    "lines": [
+      "SHAPES",
+      "WITH",
+      "QUACKERS!"
+    ],
+    "sticker": "FLAP!",
+    "burst": ""
+  },
+  "youtube": {
+    "title": "Quackers' Moonlight Shapes! (FLAP!) | Nerdy Noodles",
+    "description": "🦆 FLAP! Quackers the duck flapped so hard that all the shapes flew away into the night! Can you help Quackers find them?\n\nLearn 7 shapes with Quackers: circle, triangle, square, pentagon, heart, crescent and diamond! Each shape comes back one by one in a new place (the farm, the forest, the city, the park, the pond, the night sky and the sunny sky), and Quackers shows where you can spot it, like a round pumpkin, a window and a kite. Then sing the moonlight shapes song, and stay till the end, because someone in the pond has a surprise! 🐸\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn 7 shapes: circle, triangle, square, pentagon, heart, crescent and diamond\n✔️ Count the sides: a triangle has 3, a square has 4, a pentagon has 5\n✔️ Spot shapes in everyday things: pumpkins, windows, kites and the moon\n✔️ Sing a happy shapes song with Quackers!\n\n⏱️ Chapters\n0:00 Hello from Quackers!\n0:04 FLAP! Oh no!\n0:09 Let's find the shapes!\n0:26 Sing along!\n0:46 Who is in the pond?\n0:56 What is your favorite shape?\n\n💬 What is your favorite shape? Tell Quackers in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #Shapes #LearnShapes #ShapesSong #DuckForKids #Preschool #ToddlerLearning #Kindergarten",
+    "tags": [
+      "shapes for kids",
+      "learn shapes",
+      "shapes song",
+      "circle triangle square",
+      "pentagon crescent diamond",
+      "duck videos for kids",
+      "preschool learning",
+      "toddler learning",
+      "kindergarten shapes",
+      "educational videos for kids",
+      "Nerdy Noodles"
+    ]
+  }
+}

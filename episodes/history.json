@@ -1,337 +1,351 @@
 [
- {
-  "id": "2026-10-13-noodles",
-  "date": "2026-10-13",
-  "lesson": "counting 1-10",
-  "scene": "kitchen",
-  "kinds": [
-   "noodle"
-  ],
-  "hook": "sneeze ACHOO",
-  "twist": "an 11th tiny noodle",
-  "title": "Count the Noodles! (Oops!) | Nerdy Noodles",
-  "note": "made by hand, uploaded by the owner"
- },
- {
-  "id": "2026-10-13-stars",
-  "date": "2026-10-13",
-  "lesson": "counting 1-10",
-  "scene": "space",
-  "kinds": [
-   "star"
-  ],
-  "hook": "hiccup HIC",
-  "twist": "a planet joins the stars",
-  "title": "Count the Stars! (HIC!) | Nerdy Noodles",
-  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=7324908602702122577",
-  "scheduled": "2026-10-13T14:55:00+03:00"
- },
- {
-  "id": "2026-10-14-am-abc-a-e",
-  "date": "2026-10-14",
-  "lesson": "letters A-E",
-  "scene": "classroom",
-  "kinds": [
-   "block",
-   "fish"
-  ],
-  "hook": "sneeze ACHOO",
-  "twist": "F is for fish sneaks in early",
-  "title": "Noodle's ABC: A to E! (ACHOO!) | Nerdy Noodles",
-  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=491869082106088514",
-  "scheduled": "2026-10-14T13:10:00+03:00"
- },
- {
-  "id": "2026-10-14-pm-shapes-boing",
-  "date": "2026-10-14",
-  "lesson": "shapes",
-  "scene": "park",
-  "kinds": [
-   "shape"
-  ],
-  "hook": "bounced too high BOING",
-  "twist": "a crescent moon shape peeks in ('not bedtime yet!')",
-  "title": "Shapes with Noodle! (BOING!) | Nerdy Noodles",
-  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=2354683244804261340"
- },
- {
-  "id": "2026-10-15-am-farm-sounds-quack",
-  "date": "2026-10-15",
-  "host": "duck",
-  "lesson": "animal sounds (farm)",
-  "scene": "farm",
-  "kinds": [
-   "cow",
-   "pig",
-   "dog",
-   "cat",
-   "frog",
-   "bird",
-   "fish"
-  ],
-  "hook": "Quackers quacked too loud QUACK",
-  "twist": "a fish from the pond peeks in ('fish just blow bubbles, blub blub!')",
-  "title": "Quackers' Farm Animal Sounds! (QUACK!) | Nerdy Noodles",
-  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-4978912368010247402",
-  "replaced_by": "2026-10-15-am-animal-sounds-real",
-  "note": "owner asked to remove: the voice said the animal sounds; remade with real sounds"
- },
- {
-  "id": "2026-10-15-am-animal-sounds-real",
-  "date": "2026-10-15",
-  "host": "duck",
-  "lesson": "animal sounds (real sounds)",
-  "scene": "farm",
-  "scenes": [
-   "farm",
-   "park",
-   "pond",
-   "kitchen",
-   "forest",
-   "night"
-  ],
-  "kinds": [
-   "cow",
-   "dog",
-   "frog",
-   "sheep",
-   "cat",
-   "horse",
-   "owl"
-  ],
-  "hook": "Quackers quacked too loud (real quack) QUACK",
-  "twist": "an owl is up late at night and answers with a real hoot",
-  "title": "Real Animal Sounds with Quackers! (QUACK!) | Nerdy Noodles",
-  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-7846164676988024791"
- },
- {
-  "id": "2026-10-15-pm-road-trip-colors",
-  "date": "2026-10-15",
-  "host": "car",
-  "lesson": "colors (red, orange, yellow, green, blue, purple, pink)",
-  "scene": "road",
-  "scenes": [
-   "road",
-   "ocean",
-   "city",
-   "pond",
-   "sky",
-   "forest",
-   "farm"
-  ],
-  "kinds": [
-   "car",
-   "fish",
-   "bus",
-   "frog",
-   "bird",
-   "flower",
-   "pig",
-   "horse"
-  ],
-  "hook": "Zoomy hit a bump on the road BUMP",
-  "twist": "a brown horse by the fence answers with a real neigh",
-  "title": "Zoomy's Road Trip Colors! (BUMP!) | Nerdy Noodles",
-  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=8180988667883963115"
- },
- {
-  "id": "2026-10-16-am-nature-walk-words",
-  "date": "2026-10-16",
-  "host": "tree",
-  "lesson": "nature words (tree, leaf, flower, apple, bird, frog, owl)",
-  "scene": "forest",
-  "kinds": [
-   "tree",
-   "leaf",
-   "flower",
-   "apple",
-   "bird",
-   "frog",
-   "owl",
-   "dino"
-  ],
-  "hook": "a big wind shook Twiggy WHOOSH",
-  "twist": "a friendly dino peeks from behind the board (jungle)",
-  "title": "Twiggy's Nature Walk Words! (WHOOSH!) | Nerdy Noodles",
-  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=7075430512553510210"
- },
- {
-  "id": "2026-10-16-pm-mittens-abc-f-j",
-  "date": "2026-10-16",
-  "host": "cat",
-  "lesson": "letters F-J",
-  "scene": "kitchen",
-  "kinds": [
-   "block",
-   "cat"
-  ],
-  "hook": "Mittens pounced after a butterfly and knocked the letter blocks down POUNCE",
-  "twist": "K is for kitten: a grey kitten peeks in and answers with a real meow",
-  "title": "Mittens' ABC: F to J! (POUNCE!) | Nerdy Noodles",
-  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=521607602374132941"
- },
- {
-  "id": "2026-10-17-am-stompy-rhyme-time",
-  "date": "2026-10-17",
-  "host": "dino",
-  "lesson": "rhyming words (dog/frog, star/car, moon/balloon)",
-  "scene": "jungle",
-  "kinds": [
-   "dog",
-   "frog",
-   "star",
-   "car",
-   "shape",
-   "balloon",
-   "sock"
-  ],
-  "hook": "Stompy stomped and the words bounced away STOMP",
-  "twist": "a pink sock peeks from behind the board ('sock rhymes with rock!')",
-  "title": "Stompy's Rhyme Time! (STOMP!) | Nerdy Noodles",
-  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-7134541770766135364"
- },
- {
-  "id": "2026-10-17-pm-zoomy-city-shapes",
-  "date": "2026-10-17",
-  "host": "car",
-  "lesson": "shapes (circle, triangle, square, rectangle, diamond, oval, hexagon)",
-  "scene": "city",
-  "kinds": [
-   "shape"
-  ],
-  "hook": "Zoomy honked too loud in the city (real honk) HONK",
-  "twist": "it gets dark (night) and a yellow star shape shines ('a star has five points!')",
-  "title": "Zoomy's Shape Drive! (HONK!) | Nerdy Noodles",
-  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=6483746220613190163"
- },
- {
-  "id": "2026-10-18-am-quackers-animal-homes",
-  "date": "2026-10-18",
-  "host": "duck",
-  "lesson": "animals: where animals live (farm, pond, ocean, sky, forest, home)",
-  "scene": "pond",
-  "kinds": [
-   "pig",
-   "frog",
-   "fish",
-   "bird",
-   "owl",
-   "sheep",
-   "dog"
-  ],
-  "hook": "Quackers splashed too big in the pond SPLASH",
-  "twist": "a puppy peeks in: it lives at home with us (kitchen) and answers with a real woof",
-  "title": "Where Do Animals Live? with Quackers! (SPLASH!) | Nerdy Noodles",
-  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-5193113836645170522"
- },
- {
-  "id": "2026-10-18-pm-mittens-opposites",
-  "date": "2026-10-18",
-  "host": "cat",
-  "lesson": "opposites (big/small, night/day, up/down, fast)",
-  "scene": "park",
-  "scenes": [
-   "park",
-   "farm",
-   "pond",
-   "night",
-   "sky",
-   "ocean"
-  ],
-  "kinds": [
-   "cow",
-   "frog",
-   "owl",
-   "rooster",
-   "bird",
-   "fish",
-   "horse"
-  ],
-  "hook": "Mittens' tail swished the words away SWISH",
-  "twist": "a horse peeks from behind the board on the farm: horses run FAST, and it answers with a real neigh",
-  "title": "Mittens' Opposites! Big and Small (SWISH!) | Nerdy Noodles",
-  "scheduled": "2026-10-18T19:30:00+03:00",
-  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=1365778618953976183"
- },
- {
-  "id": "2026-10-19-am-zoomy-abc-k-o",
-  "date": "2026-10-19",
-  "host": "car",
-  "lesson": "letters K-O",
-  "scene": "road",
-  "scenes": [
-   "road",
-   "sky",
-   "forest",
-   "night",
-   "park",
-   "ocean",
-   "farm"
-  ],
-  "kinds": [
-   "block",
-   "pig"
-  ],
-  "hook": "Zoomy hit a bump and the trunk popped open, letter blocks flew out POP",
-  "twist": "P is for pig: a pink pig on the farm peeks in and answers with a real oink",
-  "title": "Zoomy's Road Trip ABC: K to O! (POP!) | Nerdy Noodles",
-  "scheduled": "2026-10-19T08:25:00+03:00",
-  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-5079820047261548166"
- },
- {
-  "id": "2026-10-19-pm-stompy-rainbow-colors",
-  "date": "2026-10-19",
-  "host": "dino",
-  "lesson": "colors (red, orange, yellow, green, blue, purple, white + pink)",
-  "scene": "jungle",
-  "kinds": [
-   "apple",
-   "fish",
-   "duck",
-   "tree",
-   "bird",
-   "balloon",
-   "sheep",
-   "cupcake"
-  ],
-  "hook": "Stompy got the hiccups and one big hiccup bounced the colors away HIC",
-  "twist": "a pink cupcake peeks from behind the board in the kitchen ('Pink is yummy too!')",
-  "title": "Stompy's Colors! (HIC!) | Nerdy Noodles",
-  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-2990057836302479621"
- },
- {
-  "id": "2026-10-20-am-twiggy-counts-leaves",
-  "date": "2026-10-20",
-  "host": "tree",
-  "lesson": "counting 1-10 (fall leaves)",
-  "scene": "forest",
-  "kinds": [
-   "leaf",
-   "bird"
-  ],
-  "hook": "a little bird tickled Twiggy, Twiggy giggled and the fall leaves fell TICKLE",
-  "twist": "the blue bird who tickled Twiggy peeks from behind the board and answers with a real tweet",
-  "title": "Count the Leaves with Twiggy! (TICKLE!) | Nerdy Noodles",
-  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-5974915955077725702"
- },
- {
-  "id": "2026-10-20-pm-mittens-animal-moves",
-  "date": "2026-10-20",
-  "host": "cat",
-  "lesson": "animals: how animals move (hop, swim, fly, gallop, waddle, wag)",
-  "scene": "park",
-  "kinds": [
-   "frog",
-   "fish",
-   "bird",
-   "horse",
-   "duck",
-   "dog",
-   "dino"
-  ],
-  "hook": "Mittens sneezed and the animals ran away ACHOO",
-  "twist": "a dino peeks from behind the board in the jungle: dinos can STOMP, and it answers with a roar",
-  "title": "Mittens' Animal Moves! (ACHOO!) | Nerdy Noodles",
-  "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-7513708662750229932"
- }
+  {
+    "id": "2026-10-13-noodles",
+    "date": "2026-10-13",
+    "lesson": "counting 1-10",
+    "scene": "kitchen",
+    "kinds": [
+      "noodle"
+    ],
+    "hook": "sneeze ACHOO",
+    "twist": "an 11th tiny noodle",
+    "title": "Count the Noodles! (Oops!) | Nerdy Noodles",
+    "note": "made by hand, uploaded by the owner"
+  },
+  {
+    "id": "2026-10-13-stars",
+    "date": "2026-10-13",
+    "lesson": "counting 1-10",
+    "scene": "space",
+    "kinds": [
+      "star"
+    ],
+    "hook": "hiccup HIC",
+    "twist": "a planet joins the stars",
+    "title": "Count the Stars! (HIC!) | Nerdy Noodles",
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=7324908602702122577",
+    "scheduled": "2026-10-13T14:55:00+03:00"
+  },
+  {
+    "id": "2026-10-14-am-abc-a-e",
+    "date": "2026-10-14",
+    "lesson": "letters A-E",
+    "scene": "classroom",
+    "kinds": [
+      "block",
+      "fish"
+    ],
+    "hook": "sneeze ACHOO",
+    "twist": "F is for fish sneaks in early",
+    "title": "Noodle's ABC: A to E! (ACHOO!) | Nerdy Noodles",
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=491869082106088514",
+    "scheduled": "2026-10-14T13:10:00+03:00"
+  },
+  {
+    "id": "2026-10-14-pm-shapes-boing",
+    "date": "2026-10-14",
+    "lesson": "shapes",
+    "scene": "park",
+    "kinds": [
+      "shape"
+    ],
+    "hook": "bounced too high BOING",
+    "twist": "a crescent moon shape peeks in ('not bedtime yet!')",
+    "title": "Shapes with Noodle! (BOING!) | Nerdy Noodles",
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=2354683244804261340"
+  },
+  {
+    "id": "2026-10-15-am-farm-sounds-quack",
+    "date": "2026-10-15",
+    "host": "duck",
+    "lesson": "animal sounds (farm)",
+    "scene": "farm",
+    "kinds": [
+      "cow",
+      "pig",
+      "dog",
+      "cat",
+      "frog",
+      "bird",
+      "fish"
+    ],
+    "hook": "Quackers quacked too loud QUACK",
+    "twist": "a fish from the pond peeks in ('fish just blow bubbles, blub blub!')",
+    "title": "Quackers' Farm Animal Sounds! (QUACK!) | Nerdy Noodles",
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-4978912368010247402",
+    "replaced_by": "2026-10-15-am-animal-sounds-real",
+    "note": "owner asked to remove: the voice said the animal sounds; remade with real sounds"
+  },
+  {
+    "id": "2026-10-15-am-animal-sounds-real",
+    "date": "2026-10-15",
+    "host": "duck",
+    "lesson": "animal sounds (real sounds)",
+    "scene": "farm",
+    "scenes": [
+      "farm",
+      "park",
+      "pond",
+      "kitchen",
+      "forest",
+      "night"
+    ],
+    "kinds": [
+      "cow",
+      "dog",
+      "frog",
+      "sheep",
+      "cat",
+      "horse",
+      "owl"
+    ],
+    "hook": "Quackers quacked too loud (real quack) QUACK",
+    "twist": "an owl is up late at night and answers with a real hoot",
+    "title": "Real Animal Sounds with Quackers! (QUACK!) | Nerdy Noodles",
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-7846164676988024791"
+  },
+  {
+    "id": "2026-10-15-pm-road-trip-colors",
+    "date": "2026-10-15",
+    "host": "car",
+    "lesson": "colors (red, orange, yellow, green, blue, purple, pink)",
+    "scene": "road",
+    "scenes": [
+      "road",
+      "ocean",
+      "city",
+      "pond",
+      "sky",
+      "forest",
+      "farm"
+    ],
+    "kinds": [
+      "car",
+      "fish",
+      "bus",
+      "frog",
+      "bird",
+      "flower",
+      "pig",
+      "horse"
+    ],
+    "hook": "Zoomy hit a bump on the road BUMP",
+    "twist": "a brown horse by the fence answers with a real neigh",
+    "title": "Zoomy's Road Trip Colors! (BUMP!) | Nerdy Noodles",
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=8180988667883963115"
+  },
+  {
+    "id": "2026-10-16-am-nature-walk-words",
+    "date": "2026-10-16",
+    "host": "tree",
+    "lesson": "nature words (tree, leaf, flower, apple, bird, frog, owl)",
+    "scene": "forest",
+    "kinds": [
+      "tree",
+      "leaf",
+      "flower",
+      "apple",
+      "bird",
+      "frog",
+      "owl",
+      "dino"
+    ],
+    "hook": "a big wind shook Twiggy WHOOSH",
+    "twist": "a friendly dino peeks from behind the board (jungle)",
+    "title": "Twiggy's Nature Walk Words! (WHOOSH!) | Nerdy Noodles",
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=7075430512553510210"
+  },
+  {
+    "id": "2026-10-16-pm-mittens-abc-f-j",
+    "date": "2026-10-16",
+    "host": "cat",
+    "lesson": "letters F-J",
+    "scene": "kitchen",
+    "kinds": [
+      "block",
+      "cat"
+    ],
+    "hook": "Mittens pounced after a butterfly and knocked the letter blocks down POUNCE",
+    "twist": "K is for kitten: a grey kitten peeks in and answers with a real meow",
+    "title": "Mittens' ABC: F to J! (POUNCE!) | Nerdy Noodles",
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=521607602374132941"
+  },
+  {
+    "id": "2026-10-17-am-stompy-rhyme-time",
+    "date": "2026-10-17",
+    "host": "dino",
+    "lesson": "rhyming words (dog/frog, star/car, moon/balloon)",
+    "scene": "jungle",
+    "kinds": [
+      "dog",
+      "frog",
+      "star",
+      "car",
+      "shape",
+      "balloon",
+      "sock"
+    ],
+    "hook": "Stompy stomped and the words bounced away STOMP",
+    "twist": "a pink sock peeks from behind the board ('sock rhymes with rock!')",
+    "title": "Stompy's Rhyme Time! (STOMP!) | Nerdy Noodles",
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-7134541770766135364"
+  },
+  {
+    "id": "2026-10-17-pm-zoomy-city-shapes",
+    "date": "2026-10-17",
+    "host": "car",
+    "lesson": "shapes (circle, triangle, square, rectangle, diamond, oval, hexagon)",
+    "scene": "city",
+    "kinds": [
+      "shape"
+    ],
+    "hook": "Zoomy honked too loud in the city (real honk) HONK",
+    "twist": "it gets dark (night) and a yellow star shape shines ('a star has five points!')",
+    "title": "Zoomy's Shape Drive! (HONK!) | Nerdy Noodles",
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=6483746220613190163"
+  },
+  {
+    "id": "2026-10-18-am-quackers-animal-homes",
+    "date": "2026-10-18",
+    "host": "duck",
+    "lesson": "animals: where animals live (farm, pond, ocean, sky, forest, home)",
+    "scene": "pond",
+    "kinds": [
+      "pig",
+      "frog",
+      "fish",
+      "bird",
+      "owl",
+      "sheep",
+      "dog"
+    ],
+    "hook": "Quackers splashed too big in the pond SPLASH",
+    "twist": "a puppy peeks in: it lives at home with us (kitchen) and answers with a real woof",
+    "title": "Where Do Animals Live? with Quackers! (SPLASH!) | Nerdy Noodles",
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-5193113836645170522"
+  },
+  {
+    "id": "2026-10-18-pm-mittens-opposites",
+    "date": "2026-10-18",
+    "host": "cat",
+    "lesson": "opposites (big/small, night/day, up/down, fast)",
+    "scene": "park",
+    "scenes": [
+      "park",
+      "farm",
+      "pond",
+      "night",
+      "sky",
+      "ocean"
+    ],
+    "kinds": [
+      "cow",
+      "frog",
+      "owl",
+      "rooster",
+      "bird",
+      "fish",
+      "horse"
+    ],
+    "hook": "Mittens' tail swished the words away SWISH",
+    "twist": "a horse peeks from behind the board on the farm: horses run FAST, and it answers with a real neigh",
+    "title": "Mittens' Opposites! Big and Small (SWISH!) | Nerdy Noodles",
+    "scheduled": "2026-10-18T19:30:00+03:00",
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=1365778618953976183"
+  },
+  {
+    "id": "2026-10-19-am-zoomy-abc-k-o",
+    "date": "2026-10-19",
+    "host": "car",
+    "lesson": "letters K-O",
+    "scene": "road",
+    "scenes": [
+      "road",
+      "sky",
+      "forest",
+      "night",
+      "park",
+      "ocean",
+      "farm"
+    ],
+    "kinds": [
+      "block",
+      "pig"
+    ],
+    "hook": "Zoomy hit a bump and the trunk popped open, letter blocks flew out POP",
+    "twist": "P is for pig: a pink pig on the farm peeks in and answers with a real oink",
+    "title": "Zoomy's Road Trip ABC: K to O! (POP!) | Nerdy Noodles",
+    "scheduled": "2026-10-19T08:25:00+03:00",
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-5079820047261548166"
+  },
+  {
+    "id": "2026-10-19-pm-stompy-rainbow-colors",
+    "date": "2026-10-19",
+    "host": "dino",
+    "lesson": "colors (red, orange, yellow, green, blue, purple, white + pink)",
+    "scene": "jungle",
+    "kinds": [
+      "apple",
+      "fish",
+      "duck",
+      "tree",
+      "bird",
+      "balloon",
+      "sheep",
+      "cupcake"
+    ],
+    "hook": "Stompy got the hiccups and one big hiccup bounced the colors away HIC",
+    "twist": "a pink cupcake peeks from behind the board in the kitchen ('Pink is yummy too!')",
+    "title": "Stompy's Colors! (HIC!) | Nerdy Noodles",
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-2990057836302479621"
+  },
+  {
+    "id": "2026-10-20-am-twiggy-counts-leaves",
+    "date": "2026-10-20",
+    "host": "tree",
+    "lesson": "counting 1-10 (fall leaves)",
+    "scene": "forest",
+    "kinds": [
+      "leaf",
+      "bird"
+    ],
+    "hook": "a little bird tickled Twiggy, Twiggy giggled and the fall leaves fell TICKLE",
+    "twist": "the blue bird who tickled Twiggy peeks from behind the board and answers with a real tweet",
+    "title": "Count the Leaves with Twiggy! (TICKLE!) | Nerdy Noodles",
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-5974915955077725702"
+  },
+  {
+    "id": "2026-10-20-pm-mittens-animal-moves",
+    "date": "2026-10-20",
+    "host": "cat",
+    "lesson": "animals: how animals move (hop, swim, fly, gallop, waddle, wag)",
+    "scene": "park",
+    "kinds": [
+      "frog",
+      "fish",
+      "bird",
+      "horse",
+      "duck",
+      "dog",
+      "dino"
+    ],
+    "hook": "Mittens sneezed and the animals ran away ACHOO",
+    "twist": "a dino peeks from behind the board in the jungle: dinos can STOMP, and it answers with a roar",
+    "title": "Mittens' Animal Moves! (ACHOO!) | Nerdy Noodles",
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-7513708662750229932"
+  },
+  {
+    "id": "2026-10-21-am-quackers-moonlight-shapes",
+    "date": "2026-10-21",
+    "host": "duck",
+    "lesson": "shapes (circle, triangle, square, pentagon, heart, crescent, diamond)",
+    "scene": "night",
+    "kinds": [
+      "shape",
+      "frog"
+    ],
+    "hook": "Quackers flapped too hard and the shapes flew away into the night FLAP",
+    "twist": "a frog peeks in at the pond and answers with a real ribbit ('his eyes are two circles!')",
+    "title": "Quackers' Moonlight Shapes! (FLAP!) | Nerdy Noodles"
+  }
 ]
