@@ -262,5 +262,23 @@
   "gag": "Noodle sings 'Night-night, night-night, sleep!' as the stars come out, an owl hoots in the tree and a sheep yawns (baa), then Noodle falls asleep",
   "title": "Night-Night Goodnight Song with Noodle! #shorts",
   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-5872034672029253161"
+ },
+ {
+  "id": "2026-10-21-pm-tidy-up-song",
+  "date": "2026-10-21",
+  "host": "dino",
+  "lang": "en",
+  "format": "song",
+  "topic": "tidying up toys with friends (clean-up song)",
+  "scene": "park",
+  "objects": [
+   "block",
+   "dog",
+   "ball",
+   "duck",
+   "star"
+  ],
+  "gag": "Stompy sings 'Tidy, tidy, tidy up!' while Doggy brings the ball and Ducky brings the blocks to the toy box",
+  "title": "Tidy Up Song with Stompy the Dino! #shorts"
  }
 ]

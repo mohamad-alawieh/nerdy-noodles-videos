@@ -1,0 +1,220 @@
+{
+ "id": "2026-10-21-pm-tidy-up-song",
+ "host": "dino",
+ "scene": "park",
+ "voice": "af_heart",
+ "music_seed": 6382,
+ "song": {
+  "lang": "en",
+  "bpm": 106,
+  "intro_beats": 4
+ },
+ "hook_text": "SING WITH STOMPY!",
+ "start_face": "happy",
+ "beats": [
+  {
+   "type": "sing",
+   "line": "Ti-dy:G4,G4 ti-dy:E4,G4 ti-dy:A4,G4 up:C5/2",
+   "show": "Tidy, tidy, tidy up!",
+   "face": "laugh",
+   "arms": "wave"
+  },
+  {
+   "type": "sing",
+   "line": "Stomp-y:E4,E4 helps:G4 to:A4 clean:G4/2 _/2",
+   "show": "Stompy helps to clean!",
+   "face": "happy",
+   "arms": "dance"
+  },
+  {
+   "type": "enter",
+   "at_beat": 3,
+   "id": "box",
+   "obj": {
+    "kind": "block",
+    "color": "#42A5F5"
+   },
+   "from": "right",
+   "to": [
+    945,
+    1395
+   ],
+   "style": "slide",
+   "scale": 1.5
+  },
+  {
+   "type": "sing",
+   "line": "Dog-gy:A4,A4 brings:G4 the:E4 ball:D4/2 _/2",
+   "show": "Doggy brings the ball!",
+   "arms": "rest"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "dog",
+   "obj": {
+    "kind": "dog",
+    "color": "#C68B59"
+   },
+   "from": "left",
+   "to": [
+    150,
+    1360
+   ],
+   "style": "bounce",
+   "scale": 1.8
+  },
+  {
+   "type": "enter",
+   "at_beat": 2,
+   "id": "ball",
+   "obj": {
+    "kind": "ball",
+    "color": "#E53935"
+   },
+   "from": "left",
+   "to": [
+    320,
+    1400
+   ],
+   "style": "bounce",
+   "scale": 1.0
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "dog",
+   "dur": 0.6
+  },
+  {
+   "type": "sing",
+   "line": "In:E4 the:G4 box:E4 it:G4 goes:C5/2 _/2",
+   "show": "In the box it goes!",
+   "face": "happy",
+   "arms": "cheer"
+  },
+  {
+   "type": "move",
+   "at_beat": 1,
+   "id": "ball",
+   "to": [
+    930,
+    1250
+   ],
+   "style": "hop"
+  },
+  {
+   "type": "sing",
+   "line": "Duck-y:G4,G4 brings:E4 the:G4 blocks:C5/2 _/2",
+   "show": "Ducky brings the blocks!",
+   "face": "shock",
+   "arms": "shock"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "duck",
+   "obj": {
+    "kind": "duck",
+    "color": "#FFD54F"
+   },
+   "from": "left",
+   "to": [
+    150,
+    940
+   ],
+   "style": "bounce",
+   "scale": 1.6
+  },
+  {
+   "type": "enter",
+   "at_beat": 2,
+   "id": "blocks",
+   "obj": {
+    "kind": "block",
+    "color": "#AB47BC",
+    "text": "B"
+   },
+   "from": "top_left",
+   "to": [
+    170,
+    690
+   ],
+   "style": "fall",
+   "scale": 1.0
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "duck",
+   "dur": 0.6
+  },
+  {
+   "type": "sing",
+   "line": "Ti-dy:G4,G4 ti-dy:E4,G4 ti-dy:A4,G4 up:C5/2",
+   "show": "Tidy, tidy, tidy up!",
+   "face": "laugh",
+   "arms": "dance"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "star",
+   "obj": {
+    "kind": "star",
+    "color": "#FFCA28"
+   },
+   "from": "top_right",
+   "to": [
+    930,
+    720
+   ],
+   "style": "zoom",
+   "scale": 0.9
+  },
+  {
+   "type": "multiply",
+   "at_beat": 2,
+   "id": "star",
+   "count": 4,
+   "radius": 90
+  },
+  {
+   "type": "noodle",
+   "at_beat": 4,
+   "action": "jump"
+  },
+  {
+   "type": "sing",
+   "line": "Clean:D5 and:C5 ti-dy:A4,G4 now:C5/4",
+   "show": "Clean and tidy now!",
+   "face": "proud",
+   "arms": "cheer",
+   "confetti": true
+  },
+  {
+   "type": "wait",
+   "at_beat": 5,
+   "sfx": "roar",
+   "dur": 0.6
+  },
+  {
+   "type": "end"
+  }
+ ],
+ "youtube": {
+  "title": "Tidy Up Song with Stompy the Dino! #shorts",
+  "description": "Sing along with Stompy! Tidy, tidy, tidy up! Doggy brings the ball, Ducky brings the blocks, in the box they go! 🧸🐶🦆\n\nStompy is the gentle little dino who loves to sing and help!\n\n🔔 Subscribe to Nerdy Noodles for more songs and giggles!\n\n#NerdyNoodles #shorts #kidssongs #nurseryrhymes #singalong #cleanupsong",
+  "tags": [
+   "kids songs",
+   "nursery rhymes",
+   "toddler songs",
+   "sing along for kids",
+   "tidy up song",
+   "clean up song for kids",
+   "animal sounds for kids",
+   "dinosaur song",
+   "Nerdy Noodles"
+  ]
+ }
+}
