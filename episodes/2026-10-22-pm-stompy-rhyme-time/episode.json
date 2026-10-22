@@ -1,0 +1,136 @@
+{
+  "id": "2026-10-22-pm-stompy-rhyme-time",
+  "host": "dino",
+  "lesson": "rhyming words (dog/frog, star/car, sock/block + egg/leg)",
+  "scene": "park",
+  "intro_title": "Rhyme Time!",
+  "intro_say": "Hi friends! I'm Stompy! Let's rhyme!",
+  "board_title": "Rhyme Time!",
+  "board_label": "Words:",
+  "voice": "af_heart",
+  "music_seed": 52961,
+  "hook": {
+    "pre": "One big step...",
+    "burst": "STOMP!",
+    "burst_say": "Stomp!",
+    "line": "Oops! Stompy stomped and the words flew!",
+    "line_caption": "Oops! Stompy stomped\nand the words flew!"
+  },
+  "items": [
+    {
+      "kind": "dog",
+      "color": "#C68642",
+      "big": "DOG",
+      "word": "DOG",
+      "say": "Dog! The dog says...",
+      "sound": "dog",
+      "sound_word": "WOOF!",
+      "scene": "park",
+      "trick": "bounce"
+    },
+    {
+      "kind": "frog",
+      "color": "#3DDC84",
+      "big": "FROG",
+      "word": "DOG + FROG",
+      "say": "Frog! Dog and frog rhyme!",
+      "sound": "frog",
+      "sound_word": "RIBBIT!",
+      "scene": "pond"
+    },
+    {
+      "kind": "star",
+      "color": "#FFD23F",
+      "big": "STAR",
+      "word": "STAR",
+      "say": "Star! A twinkly star!",
+      "scene": "night"
+    },
+    {
+      "kind": "car",
+      "color": "#E53935",
+      "big": "CAR",
+      "word": "STAR + CAR",
+      "say": "Car! Star and car rhyme!",
+      "sound": "beep",
+      "sound_word": "BEEP BEEP!",
+      "scene": "road",
+      "trick": "sunglasses"
+    },
+    {
+      "kind": "sock",
+      "color": "#9B5DE5",
+      "big": "SOCK",
+      "word": "SOCK",
+      "say": "Sock! A warm, stripy sock!",
+      "scene": "snow"
+    },
+    {
+      "kind": "block",
+      "text": "B",
+      "color": "#00B4D8",
+      "big": "BLOCK",
+      "word": "SOCK + BLOCK",
+      "say": "Block! Sock and block rhyme!",
+      "scene": "classroom",
+      "trick": "cartwheel"
+    }
+  ],
+  "song": [
+    "Dog and frog,\nstar and car,",
+    "A sock, a block,\nhere they are!",
+    "Words that sound\nalike will rhyme,",
+    "Stompy loves\nrhyming time!"
+  ],
+  "song_notes": [
+    "Dog:G4 and:G4 frog:E4/2 star:A4 and:G4 car:E4/2",
+    "A:G4 sock:A4 a:G4 block:E4 here:A4 they:G4 are:D4/2",
+    "Words:E4 that:G4 sound:A4 a-like:G4,A4 will:G4 rhyme:D4/2",
+    "Stomp-y:E4,G4 loves:A4 rhym-ing:G4,E4 time:C4/3"
+  ],
+  "celebrate_word": "3 PAIRS!",
+  "celebrate": "Three rhyming pairs! Stompy did it!",
+  "twist": {
+    "peek_line": "Wait... who's behind the board?",
+    "reveal_word": "AN EGG?!",
+    "reveal": "An egg! Egg rhymes with leg!",
+    "laugh": "Hee hee! Egg and leg! Stompy has legs!",
+    "laugh_caption": "Hee hee! Egg and leg!\nStompy has legs!",
+    "item": {
+      "kind": "egg",
+      "color": "#A8E6A1",
+      "big": "EGG",
+      "word": "EGG + LEG",
+      "say": "Egg!",
+      "scene": "jungle"
+    }
+  },
+  "outro": "What rhymes with cat? Tell Stompy in the comments!",
+  "outro_caption": "What rhymes with cat?\nTell Stompy in the comments!",
+  "thumbnail": {
+    "lines": [
+      "RHYME",
+      "WITH",
+      "STOMPY!"
+    ],
+    "sticker": "WOW!",
+    "burst": "STOMP!"
+  },
+  "youtube": {
+    "title": "Stompy's Rhyme Time! Dog and Frog (STOMP!) | Nerdy Noodles",
+    "description": "🦖 STOMP! Stompy the dino took one big step and all the rhyming words flew away! Can you help Stompy find them?\n\nLearn rhyming words with Stompy: DOG and FROG, STAR and CAR, SOCK and BLOCK! Visit the park, the pond, the night sky, the road, the snow and the classroom, and hear the REAL sounds of the dog, the frog and the car. Then sing Stompy's rhyming song, and stay till the end, because something is hiding behind the board! 👀\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn what rhyming words are\n✔️ Hear 3 rhyming pairs: dog/frog, star/car, sock/block\n✔️ Practice listening for the same end sound\n✔️ Sing a rhyming song with Stompy!\n\n⏱️ Chapters\n0:00 Hello from Stompy!\n0:04 STOMP! Oh no!\n0:09 Let's learn rhyming words!\n0:26 Sing along!\n0:46 Who's behind the board?\n0:56 What rhymes with cat?\n\n💬 What rhymes with cat? Tell Stompy in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #RhymingWords #Rhymes #Phonics #DinosaurForKids #Preschool #ToddlerLearning #KidsSongs",
+    "tags": [
+      "rhyming words for kids",
+      "learn rhyming words",
+      "rhymes for preschoolers",
+      "phonics for kids",
+      "dinosaur cartoon for kids",
+      "early reading skills",
+      "preschool learning",
+      "toddler learning",
+      "kindergarten learning",
+      "educational videos for kids",
+      "Nerdy Noodles"
+    ]
+  }
+}

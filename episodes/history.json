@@ -381,5 +381,24 @@
     "hook": "Zoomy bounced over a hill and the opposite words flew out of the trunk BOING",
     "twist": "a happy puppy peeks from behind the board in the park ('happy is the opposite of sad!') and answers with a real woof",
     "title": "Zoomy's Road Trip Opposites! Stop and Go (BOING!) | Nerdy Noodles"
+  },
+  {
+    "id": "2026-10-22-pm-stompy-rhyme-time",
+    "date": "2026-10-22",
+    "host": "dino",
+    "lesson": "rhyming words (dog/frog, star/car, sock/block + egg/leg)",
+    "scene": "park",
+    "kinds": [
+      "dog",
+      "frog",
+      "star",
+      "car",
+      "sock",
+      "block",
+      "egg"
+    ],
+    "hook": "Stompy took one big stomp and the rhyming words flew away STOMP",
+    "twist": "a green egg peeks from behind the board in the jungle ('Egg rhymes with leg!')",
+    "title": "Stompy's Rhyme Time! Dog and Frog (STOMP!) | Nerdy Noodles"
   }
 ]
