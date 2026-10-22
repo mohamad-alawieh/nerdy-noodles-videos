@@ -1,0 +1,199 @@
+{
+ "id": "2026-10-22-pm-paddle-splash-song",
+ "host": "duck",
+ "scene": "pond",
+ "voice": "af_heart",
+ "music_seed": 7731,
+ "song": {
+  "lang": "en",
+  "bpm": 104,
+  "intro_beats": 4
+ },
+ "hook_text": "SING WITH QUACKERS!",
+ "start_face": "happy",
+ "beats": [
+  {
+   "type": "sing",
+   "line": "Pad-dle:D5,C5 pad-dle:A4,G4 splash:C5/2 _/2",
+   "show": "Paddle, paddle, splash!",
+   "face": "laugh",
+   "arms": "wave"
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "duck",
+   "dur": 0.5
+  },
+  {
+   "type": "sing",
+   "line": "Quack-ers:G4,G4 loves:E4 the:G4 pond:C5/2 _/2",
+   "show": "Quackers loves the pond!",
+   "face": "happy",
+   "arms": "dance"
+  },
+  {
+   "type": "sing",
+   "line": "Frog-gy:A4,A4 jumps:G4 right:E4 in:G4/2 _/2",
+   "show": "Froggy jumps right in!",
+   "face": "o",
+   "arms": "cheer"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "frog",
+   "obj": {
+    "kind": "frog",
+    "color": "#6CCB5F"
+   },
+   "from": "left",
+   "to": [
+    140,
+    1390
+   ],
+   "style": "bounce",
+   "scale": 1.3
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "frog",
+   "dur": 0.5
+  },
+  {
+   "type": "sing",
+   "line": "Fish-y:E4,G4 makes:A4 bub-bles:G4,E4/2 _/2",
+   "show": "Fishy makes bubbles!",
+   "face": "laugh",
+   "arms": "dance"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "fish",
+   "obj": {
+    "kind": "fish",
+    "color": "#FF9F43"
+   },
+   "from": "right",
+   "to": [
+    945,
+    1390
+   ],
+   "style": "slide",
+   "scale": 1.3
+  },
+  {
+   "type": "enter",
+   "at_beat": 4,
+   "id": "bub",
+   "obj": {
+    "kind": "bubble",
+    "color": "#9AD8FF"
+   },
+   "from": "bottom",
+   "to": [
+    900,
+    900
+   ],
+   "style": "slide",
+   "scale": 1.3
+  },
+  {
+   "type": "sing",
+   "line": "Bird-ie:F4,A4 lands:G4 on:E4 me:C4/2 _/2",
+   "show": "Birdie lands on me!",
+   "face": "shock",
+   "arms": "rest"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "bird",
+   "obj": {
+    "kind": "bird",
+    "color": "#5DADE2"
+   },
+   "from": "top_left",
+   "to": "head",
+   "style": "fall",
+   "scale": 1.0
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "bird",
+   "dur": 0.5
+  },
+  {
+   "type": "sing",
+   "line": "Pad-dle:D5,C5 pad-dle:A4,G4 splash:C5/2 _/2",
+   "show": "Paddle, paddle, splash!",
+   "face": "laugh",
+   "arms": "dance"
+  },
+  {
+   "type": "pop",
+   "at_beat": 4,
+   "id": "bub",
+   "word": "SPLASH!",
+   "color": "#4FC3F7",
+   "dur": 0.4
+  },
+  {
+   "type": "enter",
+   "at_beat": 1,
+   "id": "bubs",
+   "obj": {
+    "kind": "bubble",
+    "color": "#B39DFF"
+   },
+   "from": "bottom",
+   "to": [
+    170,
+    760
+   ],
+   "style": "slide",
+   "scale": 1.0
+  },
+  {
+   "type": "multiply",
+   "at_beat": 5,
+   "id": "bubs",
+   "count": 4,
+   "radius": 110
+  },
+  {
+   "type": "sing",
+   "line": "Pad-dle:D5,C5 pad-dle:A4,G4 splash:C5/3 _/1",
+   "show": "Paddle, paddle, splash!",
+   "face": "proud",
+   "arms": "cheer",
+   "confetti": true
+  },
+  {
+   "type": "wait",
+   "at_beat": 5,
+   "sfx": "duck",
+   "dur": 0.6
+  },
+  {
+   "type": "end"
+  }
+ ],
+ "youtube": {
+  "title": "Paddle Paddle Splash Song with Quackers! #shorts",
+  "description": "Sing along with Quackers! Paddle, paddle, splash! Froggy jumps right in, Fishy makes bubbles and Birdie lands on me! \ud83e\udd86\ud83d\udca6\n\nQuackers is the happiest little duck at the pond!\n\n\ud83d\udd14 Subscribe to Nerdy Noodles for more songs and giggles!\n\n#NerdyNoodles #shorts #kidssongs #nurseryrhymes #singalong #pondanimals",
+  "tags": [
+   "kids songs",
+   "nursery rhymes",
+   "toddler songs",
+   "sing along for kids",
+   "duck song",
+   "pond animals song",
+   "animal sounds for kids",
+   "Nerdy Noodles"
+  ]
+ }
+}
