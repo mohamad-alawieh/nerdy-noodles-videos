@@ -1,0 +1,194 @@
+{
+ "id": "2026-10-22-pm-snowy-fun-song",
+ "host": "tree",
+ "scene": "snow",
+ "voice": "af_heart",
+ "music_seed": 7731,
+ "song": {
+  "lang": "en",
+  "bpm": 104,
+  "intro_beats": 4
+ },
+ "hook_text": "SING WITH TWIGGY!",
+ "start_face": "happy",
+ "beats": [
+  {
+   "type": "sing",
+   "line": "Snow-y:D5,C5 snow-y:A4,G4 fun:C5/2 _/2",
+   "show": "Snowy, snowy fun!",
+   "face": "laugh",
+   "arms": "wave"
+  },
+  {
+   "type": "enter",
+   "at_beat": 1,
+   "id": "f1",
+   "obj": {
+    "kind": "star",
+    "color": "#FFFFFF"
+   },
+   "from": "top",
+   "to": [
+    170,
+    700
+   ],
+   "style": "fall",
+   "scale": 0.9
+  },
+  {
+   "type": "enter",
+   "at_beat": 3,
+   "id": "f2",
+   "obj": {
+    "kind": "star",
+    "color": "#DFF3FF"
+   },
+   "from": "top",
+   "to": [
+    910,
+    700
+   ],
+   "style": "fall",
+   "scale": 0.9
+  },
+  {
+   "type": "sing",
+   "line": "Twig-gy:G4,G4 loves:E4 the:G4 snow:C5/2 _/2",
+   "show": "Twiggy loves the snow!",
+   "face": "happy",
+   "arms": "dance"
+  },
+  {
+   "type": "sing",
+   "line": "Roll:A4 the:A4 snow:G4 so:E4 big:D4/2 _/2",
+   "show": "Roll the snow so big!",
+   "arms": "cheer"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "ball",
+   "obj": {
+    "kind": "ball",
+    "color": "#FFFFFF"
+   },
+   "from": "left",
+   "to": [
+    200,
+    1320
+   ],
+   "style": "slide",
+   "scale": 0.9
+  },
+  {
+   "type": "grow",
+   "at_beat": 4,
+   "id": "ball",
+   "scale": 2.0
+  },
+  {
+   "type": "sing",
+   "line": "Pup-py:E4,G4 jumps:A4 in:G4 too:E4/2 _/2",
+   "show": "Puppy jumps in too!",
+   "face": "laugh",
+   "arms": "dance"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "dog",
+   "obj": {
+    "kind": "dog",
+    "color": "#C68B59"
+   },
+   "from": "right",
+   "to": [
+    900,
+    1360
+   ],
+   "style": "bounce",
+   "scale": 1.3
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "dog",
+   "dur": 0.6
+  },
+  {
+   "type": "sing",
+   "line": "Lit-tle:F4,A4 bird:G4 says:E4 hi:E4/2 _/2",
+   "show": "Little bird says hi!",
+   "face": "o",
+   "arms": "wave"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "bird",
+   "obj": {
+    "kind": "bird",
+    "color": "#E53935"
+   },
+   "from": "top_right",
+   "to": [
+    930,
+    1110
+   ],
+   "style": "bounce",
+   "scale": 1.2
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "bird",
+   "dur": 0.6
+  },
+  {
+   "type": "sing",
+   "line": "Snow-y:D5,C5 snow-y:A4,G4 fun:C5/2 _/2",
+   "show": "Snowy, snowy fun!",
+   "face": "laugh",
+   "arms": "dance"
+  },
+  {
+   "type": "multiply",
+   "at_beat": 1,
+   "id": "f1",
+   "count": 5,
+   "radius": 120
+  },
+  {
+   "type": "sing",
+   "line": "Snow-y:D5,C5 snow-y:A4,G4 fun:C5/4",
+   "show": "Snowy, snowy fun!",
+   "face": "proud",
+   "arms": "cheer",
+   "confetti": true
+  },
+  {
+   "type": "wait",
+   "at_beat": 5,
+   "sfx": "dog",
+   "dur": 0.6
+  },
+  {
+   "type": "end"
+  }
+ ],
+ "youtube": {
+  "title": "Snowy Snowy Fun Song with Twiggy! #shorts",
+  "description": "Sing along with Twiggy! Snowy, snowy fun! Roll the snow so big... puppy jumps in too, and a little bird says hi! ❄️🐶🐦\n\nTwiggy is the kindest little apple tree on YouTube!\n\n🔔 Subscribe to Nerdy Noodles for more songs and giggles!\n\n#NerdyNoodles #shorts #kidssongs #nurseryrhymes #singalong #snowday",
+  "tags": [
+   "kids songs",
+   "nursery rhymes",
+   "toddler songs",
+   "sing along for kids",
+   "snow song for kids",
+   "winter song",
+   "playing in the snow",
+   "cartoon for kids",
+   "Nerdy Noodles"
+  ]
+ }
+}

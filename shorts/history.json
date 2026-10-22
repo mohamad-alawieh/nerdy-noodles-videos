@@ -299,5 +299,22 @@
   "gag": "Quackers sings 'Paddle, paddle, splash!' as Froggy jumps in (ribbit), Fishy makes bubbles and a little bird lands on his head (tweet)",
   "title": "Paddle Paddle Splash Song with Quackers! #shorts",
   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=5689718000940108551"
+ },
+ {
+  "id": "2026-10-22-pm-snowy-fun-song",
+  "date": "2026-10-22",
+  "host": "tree",
+  "lang": "en",
+  "format": "song",
+  "topic": "playing in the snow with friends (snow day song)",
+  "scene": "snow",
+  "objects": [
+   "ball",
+   "dog",
+   "bird",
+   "star"
+  ],
+  "gag": "Twiggy sings 'Snowy, snowy fun!' while rolling a giant snowball as a puppy and a little bird join in",
+  "title": "Snowy Snowy Fun Song with Twiggy! #shorts"
  }
 ]
