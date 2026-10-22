@@ -362,5 +362,24 @@
     "twist": "U is for up: a yellow U block floats way up in the sky ('U went up, up, up!')",
     "title": "Twiggy's ABC: P to T! (BONK!) | Nerdy Noodles",
     "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-234433932215630477"
+  },
+  {
+    "id": "2026-10-22-am-zoomy-road-opposites",
+    "date": "2026-10-22",
+    "host": "car",
+    "lesson": "opposites (go/stop, fast/slow, loud/quiet + happy)",
+    "scene": "road",
+    "kinds": [
+      "car",
+      "bus",
+      "horse",
+      "duck",
+      "rooster",
+      "fish",
+      "dog"
+    ],
+    "hook": "Zoomy bounced over a hill and the opposite words flew out of the trunk BOING",
+    "twist": "a happy puppy peeks from behind the board in the park ('happy is the opposite of sad!') and answers with a real woof",
+    "title": "Zoomy's Road Trip Opposites! Stop and Go (BOING!) | Nerdy Noodles"
   }
 ]

@@ -1,0 +1,141 @@
+{
+  "id": "2026-10-22-am-zoomy-road-opposites",
+  "host": "car",
+  "lesson": "opposites (go/stop, fast/slow, loud/quiet + happy)",
+  "scene": "road",
+  "intro_title": "Road Opposites!",
+  "intro_say": "Hi friends! I'm Zoomy! Let's drive!",
+  "board_title": "Opposites!",
+  "board_label": "Words:",
+  "voice": "af_heart",
+  "music_seed": 84217,
+  "hook": {
+    "pre": "Up the hill...",
+    "burst": "BOING!",
+    "burst_say": "Boing!",
+    "line": "Oops! Zoomy bounced, the words flew out!",
+    "line_caption": "Oops! Zoomy bounced,\nthe words flew out!"
+  },
+  "items": [
+    {
+      "kind": "car",
+      "color": "#3DDC84",
+      "big": "GO",
+      "word": "CAR",
+      "say": "Go! The green car goes!",
+      "sound": "vroom",
+      "sound_word": "VROOM!",
+      "scene": "road",
+      "trick": "bounce"
+    },
+    {
+      "kind": "bus",
+      "color": "#FFB627",
+      "big": "STOP",
+      "word": "BUS",
+      "say": "Stop! The bus stops for friends!",
+      "sound": "bus",
+      "sound_word": "HONK!",
+      "scene": "city"
+    },
+    {
+      "kind": "horse",
+      "color": "#8B5A2B",
+      "big": "FAST",
+      "word": "HORSE",
+      "say": "Fast! The horse runs fast!",
+      "sound": "horse",
+      "sound_word": "NEIGH!",
+      "scene": "farm",
+      "trick": "cartwheel"
+    },
+    {
+      "kind": "duck",
+      "color": "#FFD23F",
+      "big": "SLOW",
+      "word": "DUCK",
+      "say": "Slow! The duck waddles slow!",
+      "sound": "duck",
+      "sound_word": "QUACK!",
+      "scene": "pond",
+      "trick": "sunglasses"
+    },
+    {
+      "kind": "rooster",
+      "color": "#E53935",
+      "big": "LOUD",
+      "word": "ROOSTER",
+      "say": "Loud! The rooster is loud!",
+      "sound": "rooster",
+      "sound_word": "COCK-A-DOODLE-DOO!",
+      "scene": "farm"
+    },
+    {
+      "kind": "fish",
+      "color": "#00B4D8",
+      "big": "QUIET",
+      "word": "FISH",
+      "say": "Quiet! The fish is so quiet!",
+      "scene": "ocean"
+    }
+  ],
+  "song": [
+    "Go and stop,\nfast and slow,",
+    "Loud and quiet,\noff we go!",
+    "Zoomy sings\nthe whole day long,",
+    "Opposites,\nour driving song!"
+  ],
+  "song_notes": [
+    "Go:G4 and:G4 stop:E4/2 fast:A4 and:G4 slow:E4/2",
+    "Loud:G4 and:G4 qui-et:C5,A4 off:G4 we:E4 go:D4/2",
+    "Zoo-my:E4,G4 sings:A4 the:G4 whole:A4 day:G4 long:E4/2",
+    "Op-po-sites:E4,F4,G4 our:A4 driv-ing:G4,E4 song:C4/2"
+  ],
+  "celebrate_word": "3 PAIRS!",
+  "celebrate": "Three opposite pairs! Zoomy did it!",
+  "twist": {
+    "peek_line": "Wait... who's behind the board?",
+    "reveal_word": "A PUPPY?!",
+    "reveal": "A puppy! Happy is the opposite of sad!",
+    "laugh": "Hee hee! Zoomy is happy, not sad!",
+    "laugh_caption": "Hee hee! Zoomy is\nhappy, not sad!",
+    "item": {
+      "kind": "dog",
+      "color": "#C68642",
+      "big": "HAPPY",
+      "word": "PUPPY",
+      "say": "Happy!",
+      "sound": "dog",
+      "sound_word": "WOOF!",
+      "scene": "park"
+    }
+  },
+  "outro": "What is the opposite of up? Tell Zoomy in the comments!",
+  "outro_caption": "What is the opposite of up?\nTell Zoomy in the comments!",
+  "thumbnail": {
+    "lines": [
+      "STOP",
+      "OR",
+      "GO?"
+    ],
+    "sticker": "WOW!",
+    "burst": "BOING!"
+  },
+  "youtube": {
+    "title": "Zoomy's Road Trip Opposites! Stop and Go (BOING!) | Nerdy Noodles",
+    "description": "🚗 BOING! Zoomy the car bounced over a hill and all the opposite words flew out! Can you help Zoomy find them?\n\nLearn opposites on a road trip with Zoomy: GO and STOP, FAST and SLOW, LOUD and QUIET! Zoomy drives past the city, the farm, the pond and the ocean, and you hear the REAL sounds of the car, the bus, the horse, the duck and the rooster. Then sing Zoomy's driving song, and stay till the end, because someone is hiding behind the board! 👀\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn what opposites are\n✔️ Learn 3 opposite pairs: go/stop, fast/slow, loud/quiet\n✔️ Hear real vehicle and animal sounds\n✔️ Sing a driving song about opposites with Zoomy!\n\n⏱️ Chapters\n0:00 Hello from Zoomy!\n0:04 BOING! Oh no!\n0:09 Let's learn opposites!\n0:26 Sing along!\n0:46 Who's behind the board?\n0:56 What's the opposite of up?\n\n💬 What is the opposite of up? Tell Zoomy in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #Opposites #LearnOpposites #StopAndGo #CarsForKids #Preschool #ToddlerLearning #KidsSongs",
+    "tags": [
+      "opposites for kids",
+      "learn opposites",
+      "stop and go",
+      "fast and slow",
+      "car cartoon for kids",
+      "vehicle sounds for kids",
+      "preschool learning",
+      "toddler learning",
+      "kindergarten learning",
+      "educational videos for kids",
+      "Nerdy Noodles"
+    ]
+  }
+}
