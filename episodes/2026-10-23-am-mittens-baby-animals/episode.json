@@ -1,0 +1,141 @@
+{
+  "id": "2026-10-23-am-mittens-baby-animals",
+  "host": "cat",
+  "lesson": "animals: baby animals (calf, duckling, lamb, puppy, piglet, owlet + kitten)",
+  "scene": "farm",
+  "intro_title": "Baby Animals!",
+  "intro_say": "Hi! I'm Mittens! Meet the babies!",
+  "board_title": "Baby Animals",
+  "board_label": "Babies:",
+  "voice": "af_heart",
+  "music_seed": 82317,
+  "hook": {
+    "pre": "Wiggle... wiggle...",
+    "burst": "POUNCE!",
+    "burst_say": "Pounce!",
+    "line": "Oops! Mittens pounced and the babies hid!",
+    "line_caption": "Oops! Mittens pounced\nand the babies hid!"
+  },
+  "items": [
+    {
+      "kind": "cow",
+      "color": "#FFFFFF",
+      "big": "CALF",
+      "word": "BABY COW",
+      "say": "A baby cow is a calf! It says...",
+      "sound": "cow",
+      "sound_word": "MOO!",
+      "scene": "farm"
+    },
+    {
+      "kind": "duck",
+      "color": "#FFD93D",
+      "big": "DUCKLING",
+      "word": "BABY DUCK",
+      "say": "A baby duck is a duckling! It says...",
+      "sound": "duck",
+      "sound_word": "QUACK!",
+      "scene": "pond"
+    },
+    {
+      "kind": "sheep",
+      "big": "LAMB",
+      "word": "BABY SHEEP",
+      "say": "A baby sheep is a lamb! It says...",
+      "sound": "sheep",
+      "sound_word": "BAA!",
+      "scene": "farm",
+      "trick": "sunglasses"
+    },
+    {
+      "kind": "dog",
+      "color": "#C8874A",
+      "big": "PUPPY",
+      "word": "BABY DOG",
+      "say": "A baby dog is a puppy! It says...",
+      "sound": "dog",
+      "sound_word": "WOOF!",
+      "scene": "park",
+      "trick": "bounce"
+    },
+    {
+      "kind": "pig",
+      "color": "#FFA6C9",
+      "big": "PIGLET",
+      "word": "BABY PIG",
+      "say": "A baby pig is a piglet! It says...",
+      "sound": "pig",
+      "sound_word": "OINK!",
+      "scene": "farm",
+      "trick": "cartwheel"
+    },
+    {
+      "kind": "owl",
+      "color": "#8B6B4A",
+      "big": "OWLET",
+      "word": "BABY OWL",
+      "say": "A baby owl is an owlet! It says...",
+      "sound": "owl",
+      "sound_word": "HOOT!",
+      "scene": "night"
+    }
+  ],
+  "song": [
+    "The calf, the duckling,\nthe lamb so new,",
+    "Puppy and piglet\nsay hi to you!",
+    "Little owlet\nin the tree,",
+    "Baby animals,\nsing with me!"
+  ],
+  "song_notes": [
+    "The:C4/0.5 calf:E4 the:G4/0.5 duck-ling:G4/0.5,G4 the:A4/0.5 lamb:A4/1.5 so:G4/0.5 new:E4/2",
+    "Pup-py:G4/0.5,G4/0.5 and:A4 pig-let:G4/0.5,E4/0.5 say:G4 hi:A4 to:G4 you:E4/2",
+    "Lit-tle:E4,G4 owl-et:A4,G4 in:E4 the:D4 tree:E4/2",
+    "Ba-by:D4/0.5,E4/0.5 an-i-mals:F4/0.5,E4/0.5,D4 sing:E4 with:D4 me:C4/3"
+  ],
+  "celebrate_word": "6 BABIES!",
+  "celebrate": "Six babies! Mittens found them all!",
+  "twist": {
+    "peek_line": "Who is that? So tiny!",
+    "reveal_word": "A KITTEN?!",
+    "reveal": "It's a kitten! A baby cat!",
+    "laugh": "Hee hee! Mittens was a kitten too!",
+    "laugh_caption": "Hee hee! Mittens\nwas a kitten too!",
+    "item": {
+      "kind": "cat",
+      "color": "#9E9EAE",
+      "big": "KITTEN",
+      "word": "BABY CAT",
+      "say": "A baby cat is a kitten!",
+      "sound": "cat",
+      "sound_word": "MEOW!",
+      "scene": "kitchen"
+    }
+  },
+  "outro": "Which baby animal do you love most? Tell Mittens in the comments!",
+  "outro_caption": "Which baby animal do you love most?\nTell Mittens in the comments!",
+  "thumbnail": {
+    "lines": [
+      "BABY",
+      "ANIMALS",
+      "FOR KIDS!"
+    ],
+    "sticker": "AWW!",
+    "burst": "POUNCE!"
+  },
+  "youtube": {
+    "title": "Mittens' Baby Animals! (POUNCE!) | Nerdy Noodles",
+    "description": "🐣 POUNCE! Mittens the cat pounced so fast that all the baby animals ran off to hide! Can you help Mittens find them?\n\nMittens meets 6 baby animals and learns their names: a baby cow is a calf, a baby duck is a duckling, a baby sheep is a lamb, a baby dog is a puppy, a baby pig is a piglet and a baby owl is an owlet! Each baby shows up in its own home (the farm, the pond, the park and the night sky) and you hear the REAL sound it makes. Then sing along with Mittens, and stay till the end, because one more tiny baby is hiding nearby! 🐾\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn 6 baby animal names: calf, duckling, lamb, puppy, piglet and owlet\n✔️ Match each baby to its grown-up animal\n✔️ Hear the real sound each animal makes\n✔️ Sing a baby animals song with Mittens!\n\n⏱️ Chapters\n0:00 Hello from Mittens!\n0:04 POUNCE! Oh no!\n0:09 Let's find the baby animals!\n0:26 Sing along!\n0:46 Who is that, so tiny?\n0:56 Which baby do you love most?\n\n💬 Which baby animal do you love most? Tell Mittens in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #BabyAnimals #AnimalNames #AnimalSounds #LearnAnimals #Preschool #ToddlerLearning #Kindergarten",
+    "tags": [
+      "baby animals for kids",
+      "baby animal names",
+      "learn animals",
+      "animal sounds for kids",
+      "real animal sounds",
+      "farm animals for kids",
+      "preschool learning",
+      "toddler learning",
+      "educational videos for kids",
+      "Nerdy Noodles"
+    ]
+  }
+}
