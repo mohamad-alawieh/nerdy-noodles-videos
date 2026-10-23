@@ -1,0 +1,203 @@
+{
+ "id": "2026-10-23-pm-car-wash-song",
+ "host": "car",
+ "scene": "city",
+ "voice": "af_heart",
+ "music_seed": 8153,
+ "song": {
+  "lang": "en",
+  "bpm": 106,
+  "intro_beats": 4
+ },
+ "hook_text": "SING WITH ZOOMY!",
+ "start_face": "happy",
+ "beats": [
+  {
+   "type": "sing",
+   "line": "Shi-ny:D5,C5 shi-ny:A4,G4 car:C5/2 _/2",
+   "show": "Shiny, shiny car!",
+   "face": "laugh"
+  },
+  {
+   "type": "enter",
+   "at_beat": 4,
+   "id": "s1",
+   "obj": {
+    "kind": "star",
+    "color": "#FFD54F"
+   },
+   "from": "top_left",
+   "to": [
+    180,
+    640
+   ],
+   "style": "zoom",
+   "scale": 1.0
+  },
+  {
+   "type": "sing",
+   "line": "Zoo-my:E4,G4 drives:A4 in:G4 slow:E4/2 _/2",
+   "show": "Zoomy drives in slow.",
+   "face": "happy"
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "beep",
+   "dur": 0.5
+  },
+  {
+   "type": "sing",
+   "line": "Bub-bles:E4,G4 on:A4 the:G4 roof:C5/2 _/2",
+   "show": "Bubbles on the roof!",
+   "face": "laugh"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "b1",
+   "obj": {
+    "kind": "bubble",
+    "color": "#9AD8FF"
+   },
+   "from": "bottom",
+   "to": [
+    170,
+    830
+   ],
+   "style": "slide",
+   "scale": 1.3
+  },
+  {
+   "type": "enter",
+   "at_beat": 2,
+   "id": "b2",
+   "obj": {
+    "kind": "bubble",
+    "color": "#B39DFF"
+   },
+   "from": "bottom",
+   "to": [
+    910,
+    830
+   ],
+   "style": "slide",
+   "scale": 1.3
+  },
+  {
+   "type": "multiply",
+   "at_beat": 4,
+   "id": "b1",
+   "count": 3,
+   "radius": 90
+  },
+  {
+   "type": "sing",
+   "line": "Dog-gy:F4,A4 wants:G4 a:E4 bath:C4/2 _/2",
+   "show": "Doggy wants a bath!",
+   "face": "shock"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "dog",
+   "obj": {
+    "kind": "dog",
+    "color": "#C68B59"
+   },
+   "from": "right",
+   "to": [
+    800,
+    1660
+   ],
+   "style": "bounce",
+   "scale": 1.8
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "dog",
+   "dur": 0.6
+  },
+  {
+   "type": "sing",
+   "line": "Rinse:G4 and:G4 dry:E4 all:G4 clean:C5/2 _/2",
+   "show": "Rinse and dry, all clean!",
+   "face": "laugh"
+  },
+  {
+   "type": "pop",
+   "at_beat": 2,
+   "id": "b2",
+   "word": "POP!",
+   "color": "#B39DFF",
+   "dur": 0.3
+  },
+  {
+   "type": "enter",
+   "at_beat": 4,
+   "id": "bird",
+   "obj": {
+    "kind": "bird",
+    "color": "#4FC3F7"
+   },
+   "from": "top_right",
+   "to": [
+    900,
+    620
+   ],
+   "style": "fall",
+   "scale": 1.0
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "bird",
+   "dur": 0.5
+  },
+  {
+   "type": "sing",
+   "line": "Shi-ny:D5,C5 shi-ny:A4,G4 car:C5/2 _/2",
+   "show": "Shiny, shiny car!",
+   "face": "laugh",
+   "confetti": true
+  },
+  {
+   "type": "spin",
+   "at_beat": 4,
+   "id": "s1",
+   "turns": 2
+  },
+  {
+   "type": "sing",
+   "line": "Shi-ny:D5,C5 shi-ny:A4,G4 car:C5/4",
+   "show": "Shiny, shiny car!",
+   "face": "proud",
+   "confetti": true
+  },
+  {
+   "type": "wait",
+   "at_beat": 5,
+   "sfx": "honk",
+   "dur": 0.5
+  },
+  {
+   "type": "end"
+  }
+ ],
+ "youtube": {
+  "title": "Shiny Car Wash Song with Zoomy the Car! #shorts",
+  "description": "Sing along with Zoomy! Shiny, shiny car! Bubbles on the roof, rinse and dry, all clean! 🚗🫧\n\nZoomy is a friendly blue car who loves to sing and beep!\n\n🔔 Subscribe to Nerdy Noodles for more songs and giggles!\n\n#NerdyNoodles #shorts #kidssongs #nurseryrhymes #singalong #carwash",
+  "tags": [
+   "kids songs",
+   "nursery rhymes",
+   "toddler songs",
+   "sing along for kids",
+   "car wash song",
+   "car songs for kids",
+   "bath time song",
+   "Zoomy the car",
+   "Nerdy Noodles"
+  ]
+ }
+}
