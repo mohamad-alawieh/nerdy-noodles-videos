@@ -317,5 +317,21 @@
   "gag": "Twiggy sings 'Snowy, snowy fun!' while rolling a giant snowball as a puppy and a little bird join in",
   "title": "Snowy Snowy Fun Song with Twiggy! #shorts",
   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-5451442083409935905"
+ },
+ {
+  "id": "2026-10-23-pm-count-apples-song",
+  "date": "2026-10-23",
+  "host": "dino",
+  "lang": "en",
+  "format": "song",
+  "topic": "counting apples and animal friends (counting song)",
+  "scene": "forest",
+  "objects": [
+   "apple",
+   "bird",
+   "frog"
+  ],
+  "gag": "Stompy sings 'One, two, three, count with me!' as apples drop from the trees, a little bird and two frogs join, and the apples multiply",
+  "title": "Count With Me Song with Stompy the Dino! #shorts"
  }
 ]

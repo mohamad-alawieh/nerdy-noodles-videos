@@ -1,0 +1,198 @@
+{
+ "id": "2026-10-23-pm-count-apples-song",
+ "host": "dino",
+ "scene": "forest",
+ "voice": "af_heart",
+ "music_seed": 5317,
+ "song": {
+  "lang": "en",
+  "bpm": 104,
+  "intro_beats": 4
+ },
+ "hook_text": "COUNT WITH STOMPY!",
+ "start_face": "happy",
+ "beats": [
+  {
+   "type": "sing",
+   "line": "One:E4 two:G4 three:C5 _/1 count:D5 with:C5 me:C5/2",
+   "show": "One, two, three, count with me!",
+   "face": "laugh",
+   "arms": "wave"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "a1",
+   "obj": {
+    "kind": "apple",
+    "color": "#E53935"
+   },
+   "from": "top_left",
+   "to": [
+    180,
+    800
+   ],
+   "style": "bounce",
+   "scale": 1.3
+  },
+  {
+   "type": "enter",
+   "at_beat": 1,
+   "id": "a2",
+   "obj": {
+    "kind": "apple",
+    "color": "#E53935"
+   },
+   "from": "top_right",
+   "to": [
+    900,
+    800
+   ],
+   "style": "bounce",
+   "scale": 1.3
+  },
+  {
+   "type": "enter",
+   "at_beat": 2,
+   "id": "a3",
+   "obj": {
+    "kind": "apple",
+    "color": "#E53935"
+   },
+   "from": "top",
+   "to": [
+    180,
+    1080
+   ],
+   "style": "bounce",
+   "scale": 1.3
+  },
+  {
+   "type": "sing",
+   "line": "Red:G4 ap-ples:A4,G4 on:E4 the:E4 tree:G4/2 _/1",
+   "show": "Red apples on the tree!",
+   "arms": "dance"
+  },
+  {
+   "type": "spin",
+   "at_beat": 6,
+   "id": "a2",
+   "turns": 1
+  },
+  {
+   "type": "sing",
+   "line": "Here:E4 comes:G4 a:E4 lit-tle:A4,G4 bird:E4/2 _/1",
+   "show": "Here comes a little bird!",
+   "face": "o",
+   "arms": "cheer"
+  },
+  {
+   "type": "enter",
+   "at_beat": 3,
+   "id": "bird",
+   "obj": {
+    "kind": "bird",
+    "color": "#4FC3F7"
+   },
+   "from": "top_right",
+   "to": [
+    880,
+    1080
+   ],
+   "style": "zoom",
+   "scale": 1.2
+  },
+  {
+   "type": "wait",
+   "at_beat": 7,
+   "sfx": "bird",
+   "dur": 0.5
+  },
+  {
+   "type": "sing",
+   "line": "Two:F4 lit-tle:A4,G4 frogs:E4 come:D4 too:C4/2 _/1",
+   "show": "Two little frogs come too!",
+   "face": "laugh",
+   "arms": "dance"
+  },
+  {
+   "type": "enter",
+   "at_beat": 1,
+   "id": "f1",
+   "obj": {
+    "kind": "frog",
+    "color": "#66BB6A"
+   },
+   "from": "left",
+   "to": "floor_left",
+   "style": "bounce",
+   "scale": 1.1
+  },
+  {
+   "type": "enter",
+   "at_beat": 2,
+   "id": "f2",
+   "obj": {
+    "kind": "frog",
+    "color": "#81C784"
+   },
+   "from": "right",
+   "to": "floor_right",
+   "style": "bounce",
+   "scale": 1.1
+  },
+  {
+   "type": "wait",
+   "at_beat": 7,
+   "sfx": "frog",
+   "dur": 0.5
+  },
+  {
+   "type": "sing",
+   "line": "One:E4 two:G4 three:C5 _/1 count:D5 with:C5 me:C5/2",
+   "show": "One, two, three, count with me!",
+   "face": "laugh",
+   "arms": "cheer",
+   "confetti": true
+  },
+  {
+   "type": "multiply",
+   "at_beat": 2,
+   "id": "a1",
+   "count": 4,
+   "radius": 110
+  },
+  {
+   "type": "sing",
+   "line": "Come:D5 and:C5 count:A4 with:G4 me:C5/4",
+   "show": "Come and count with me!",
+   "face": "proud",
+   "arms": "cheer",
+   "confetti": true
+  },
+  {
+   "type": "wait",
+   "at_beat": 5,
+   "sfx": "roar",
+   "dur": 0.6
+  },
+  {
+   "type": "end"
+  }
+ ],
+ "youtube": {
+  "title": "Count With Me Song with Stompy the Dino! #shorts",
+  "description": "Sing along with Stompy! One, two, three, count with me... red apples on the tree! 🍎🐸\n\nStompy is the gentlest little dinosaur in the forest, and he loves to count with his friends!\n\n🔔 Subscribe to Nerdy Noodles for more songs and giggles!\n\n#NerdyNoodles #shorts #kidssongs #nurseryrhymes #singalong #countingsong",
+  "tags": [
+   "kids songs",
+   "nursery rhymes",
+   "toddler songs",
+   "sing along for kids",
+   "counting song",
+   "count to three",
+   "learn to count",
+   "dinosaur song",
+   "Nerdy Noodles"
+  ]
+ }
+}
