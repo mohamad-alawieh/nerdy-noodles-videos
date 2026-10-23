@@ -1,0 +1,134 @@
+{
+  "id": "2026-10-23-pm-twiggy-nature-words",
+  "host": "tree",
+  "lesson": "nature words (leaf, flower, apple, bird, frog, owl + egg)",
+  "scene": "forest",
+  "intro_title": "Nature Words!",
+  "intro_say": "Hi! I'm Twiggy! Let's explore!",
+  "board_title": "Nature Words",
+  "board_label": "Words:",
+  "voice": "af_heart",
+  "music_seed": 61942,
+  "hook": {
+    "pre": "Breeze... breeze...",
+    "burst": "WHOOSH!",
+    "burst_say": "Whoosh!",
+    "line": "Oops! The wind blew Twiggy's friends away!",
+    "line_caption": "Oops! The wind blew\nTwiggy's friends away!"
+  },
+  "items": [
+    {
+      "kind": "leaf",
+      "color": "#F28C28",
+      "big": "LEAF",
+      "word": "LEAF",
+      "say": "A leaf! Leaves turn orange in fall!",
+      "scene": "forest"
+    },
+    {
+      "kind": "flower",
+      "color": "#FF6FB5",
+      "big": "FLOWER",
+      "word": "FLOWER",
+      "say": "A flower! Flowers need sun and rain!",
+      "scene": "park",
+      "trick": "sunglasses"
+    },
+    {
+      "kind": "apple",
+      "color": "#E53935",
+      "big": "APPLE",
+      "word": "APPLE",
+      "say": "An apple! Twiggy grows apples!",
+      "scene": "forest",
+      "trick": "cartwheel"
+    },
+    {
+      "kind": "bird",
+      "color": "#4FA3E0",
+      "big": "BIRD",
+      "word": "BIRD",
+      "say": "A bird flies in the sky! It says...",
+      "sound": "bird",
+      "sound_word": "TWEET!",
+      "scene": "sky"
+    },
+    {
+      "kind": "frog",
+      "color": "#5CC75C",
+      "big": "FROG",
+      "word": "FROG",
+      "say": "A frog hops at the pond! It says...",
+      "sound": "frog",
+      "sound_word": "RIBBIT!",
+      "scene": "pond",
+      "trick": "bounce"
+    },
+    {
+      "kind": "owl",
+      "color": "#8B6B4A",
+      "big": "OWL",
+      "word": "OWL",
+      "say": "An owl wakes up at night! It says...",
+      "sound": "owl",
+      "sound_word": "HOOT!",
+      "scene": "night"
+    }
+  ],
+  "song": [
+    "Leaf and flower,\napple so red,",
+    "Bird in the sky\nup over my head,",
+    "Frog in the pond,\nowl says goodnight,",
+    "Nature friends,\nwhat a sight!"
+  ],
+  "song_notes": [
+    "Leaf:E4 and:G4 flow-er:G4,A4 ap-ple:G4/0.5,E4/0.5 so:G4 red:E4/2",
+    "Bird:G4 in:A4 the:G4/0.5 sky:E4/1.5 up:G4/0.5 o-ver:A4/0.5,G4/0.5 my:E4/0.5 head:D4/2",
+    "Frog:E4 in:G4 the:G4/0.5 pond:A4/1.5 owl:G4/0.5 says:E4/0.5 good-night:G4,A4/2",
+    "Na-ture:A4,G4 friends:E4 what:D4 a:E4 sight:C4/3"
+  ],
+  "celebrate_word": "6 WORDS!",
+  "celebrate": "Six nature words! Twiggy found them all!",
+  "twist": {
+    "peek_line": "Who is that? Something round!",
+    "reveal_word": "AN EGG?!",
+    "reveal": "It's an egg! A baby bird is inside!",
+    "laugh": "Hee hee! Twiggy will keep it safe!",
+    "laugh_caption": "Hee hee! Twiggy\nwill keep it safe!",
+    "item": {
+      "kind": "egg",
+      "color": "#BFE3FF",
+      "big": "EGG",
+      "word": "BIRD EGG",
+      "say": "An egg! A baby bird will hatch!",
+      "scene": "forest"
+    }
+  },
+  "outro": "What do you see outside? Tell Twiggy in the comments!",
+  "outro_caption": "What do you see outside?\nTell Twiggy in the comments!",
+  "thumbnail": {
+    "lines": [
+      "NATURE",
+      "WORDS",
+      "FOR KIDS!"
+    ],
+    "sticker": "WOW!",
+    "burst": "WHOOSH!"
+  },
+  "youtube": {
+    "title": "Twiggy's Nature Words! (WHOOSH!) | Nerdy Noodles",
+    "description": "🍃 WHOOSH! A big wind shook Twiggy the tree and blew all of Twiggy's nature friends away! Can you help Twiggy find them?\n\nTwiggy learns 6 nature words: leaf, flower, apple, bird, frog and owl! The place changes with each friend (the forest, the park, the sky, the pond and the night) and you hear the REAL sounds of the bird, the frog and the owl. Then sing along with Twiggy, and stay till the end, because something round is hiding in the forest! 🌳\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn 6 nature words: leaf, flower, apple, bird, frog and owl\n✔️ See where each one lives: forest, park, sky, pond and night\n✔️ Hear the real sounds of a bird, a frog and an owl\n✔️ Sing a nature song with Twiggy!\n\n⏱️ Chapters\n0:00 Hello from Twiggy!\n0:04 WHOOSH! Oh no!\n0:09 Let's find the nature words!\n0:26 Sing along!\n0:46 Something round is peeking!\n0:56 What do you see outside?\n\n💬 What do you see outside? Tell Twiggy in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #NatureWords #FirstWords #LearnNature #AnimalSounds #Preschool #ToddlerLearning #Kindergarten",
+    "tags": [
+      "nature words for kids",
+      "first words for toddlers",
+      "learn nature",
+      "nature vocabulary",
+      "real animal sounds",
+      "forest for kids",
+      "preschool learning",
+      "toddler learning",
+      "educational videos for kids",
+      "Nerdy Noodles"
+    ]
+  }
+}

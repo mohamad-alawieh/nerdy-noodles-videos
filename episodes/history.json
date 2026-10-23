@@ -421,5 +421,24 @@
     "twist": "a grey kitten peeks from behind the board in the kitchen ('Mittens was a kitten too!') and answers with a real meow",
     "title": "Mittens' Baby Animals! (POUNCE!) | Nerdy Noodles",
     "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-8801646503471135415"
+  },
+  {
+    "id": "2026-10-23-pm-twiggy-nature-words",
+    "date": "2026-10-23",
+    "host": "tree",
+    "lesson": "nature words (leaf, flower, apple, bird, frog, owl + egg)",
+    "scene": "forest",
+    "kinds": [
+      "leaf",
+      "flower",
+      "apple",
+      "bird",
+      "frog",
+      "owl",
+      "egg"
+    ],
+    "hook": "a big wind shook Twiggy and blew the nature friends away WHOOSH",
+    "twist": "a blue egg peeks from behind the board in the forest ('A baby bird is inside!')",
+    "title": "Twiggy's Nature Words! (WHOOSH!) | Nerdy Noodles"
   }
 ]
