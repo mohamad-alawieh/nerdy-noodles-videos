@@ -1,0 +1,153 @@
+{
+ "id": "2026-10-24-pm-stompy-counts-eggs",
+ "host": "dino",
+ "lesson": "counting 1-10 (dino eggs)",
+ "scene": "jungle",
+ "intro_title": "Count the Eggs!",
+ "intro_say": "Hi friends! I'm Stompy! Let's count!",
+ "board_title": "Egg Count!",
+ "board_label": "Found:",
+ "voice": "af_heart",
+ "music_seed": 48213,
+ "hook": {
+  "pre": "Whoa... whoa...",
+  "burst": "OOPS!",
+  "burst_say": "Oops!",
+  "line": "Oh no! Stompy slipped and the eggs rolled away!",
+  "line_caption": "Oh no! Stompy slipped\nand the eggs rolled away!"
+ },
+ "items": [
+  {
+   "kind": "egg",
+   "color": "#E53935",
+   "big": "1",
+   "word": "ONE",
+   "say": "One!"
+  },
+  {
+   "kind": "egg",
+   "color": "#FF8C1A",
+   "big": "2",
+   "word": "TWO",
+   "say": "Two!"
+  },
+  {
+   "kind": "egg",
+   "color": "#FFC61A",
+   "big": "3",
+   "word": "THREE",
+   "say": "Three!",
+   "trick": "cartwheel"
+  },
+  {
+   "kind": "egg",
+   "color": "#3DBE5C",
+   "big": "4",
+   "word": "FOUR",
+   "say": "Four!"
+  },
+  {
+   "kind": "egg",
+   "color": "#2E86FF",
+   "big": "5",
+   "word": "FIVE",
+   "say": "Five!"
+  },
+  {
+   "kind": "egg",
+   "color": "#8E44FF",
+   "big": "6",
+   "word": "SIX",
+   "say": "Six!",
+   "trick": "bounce"
+  },
+  {
+   "kind": "egg",
+   "color": "#FF6FB5",
+   "big": "7",
+   "word": "SEVEN",
+   "say": "Seven!"
+  },
+  {
+   "kind": "egg",
+   "color": "#00BCD4",
+   "big": "8",
+   "word": "EIGHT",
+   "say": "Eight!"
+  },
+  {
+   "kind": "egg",
+   "color": "#FFFFFF",
+   "big": "9",
+   "word": "NINE",
+   "say": "Nine!",
+   "trick": "sunglasses"
+  },
+  {
+   "kind": "egg",
+   "color": "#8B5A2B",
+   "big": "10",
+   "word": "TEN",
+   "say": "Ten!"
+  }
+ ],
+ "song": [
+  "One, two, three,\nfour, five, yay!",
+  "Eggs that roll\nand rock and sway!",
+  "Six, seven, eight,\nnine and ten,",
+  "Ten eggs safe\nand home again!"
+ ],
+ "song_notes": [
+  "One:C4 two:E4 three:G4 four:A4 five:G4 yay:E4/3",
+  "Eggs:G4 that:A4 roll:G4 and:E4 rock:D4 and:E4 sway:G4/2",
+  "Six:E4 sev-en:G4,G4 eight:A4 nine:G4 and:E4 ten:D4/2",
+  "Ten:E4 eggs:G4 safe:A4 and:G4 home:E4 a-gain:D4,C4/2"
+ ],
+ "celebrate_word": "TEN!",
+ "celebrate": "Ten eggs! Stompy found them all!",
+ "twist": {
+  "peek_line": "Wait... what is that crack?",
+  "reveal_word": "BABY DINO?!",
+  "reveal": "An egg hatched! It's a baby dino!",
+  "laugh": "Hee hee! Hello, little baby dino!",
+  "laugh_caption": "Hee hee! Hello,\nlittle baby dino!",
+  "item": {
+   "kind": "dino",
+   "color": "#9BE15D",
+   "big": "",
+   "word": "BABY DINO",
+   "say": "Baby dino!",
+   "sound": "roar",
+   "sound_word": "ROAR!",
+   "scene": "jungle"
+  }
+ },
+ "outro": "What would you name the baby dino? Tell Stompy in the comments!",
+ "outro_caption": "What would you name the baby dino?\nTell Stompy in the comments!",
+ "thumbnail": {
+  "lines": [
+   "COUNT",
+   "THE",
+   "EGGS!"
+  ],
+  "sticker": "10!",
+  "burst": "OOPS!"
+ },
+ "youtube": {
+  "title": "Count the Dino Eggs with Stompy! (OOPS!) | Nerdy Noodles",
+  "description": "🥚 OOPS! Stompy the dino slipped in the jungle and all the colorful eggs rolled away! Can you help Stompy count them back?\n\nCount from 1 to 10 with Stompy, the nerdiest dinosaur in the jungle! Each egg comes back one by one with its number and its word. Then sing the egg counting song with Stompy, and stay till the end... something is going CRACK! 👀\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Count from 1 to 10\n✔️ See each number and its word (1 = ONE)\n✔️ Spot bright colors on every egg\n✔️ Sing an egg counting song with Stompy!\n\n⏱️ Chapters\n0:00 Hello from Stompy!\n0:04 OOPS! Oh no!\n0:09 Let's count the eggs!\n0:26 Sing along!\n0:46 What is that crack?\n0:56 Name the surprise!\n\n💬 What would you name the baby dino? Tell Stompy in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #CountingForKids #LearnToCount #CountTo10 #Dinosaurs #Preschool #ToddlerLearning #KidsSongs",
+  "tags": [
+   "counting for kids",
+   "learn to count",
+   "count to 10",
+   "counting song",
+   "dinosaurs for kids",
+   "dino eggs",
+   "numbers for kids",
+   "preschool learning",
+   "toddler learning",
+   "educational videos for kids",
+   "Nerdy Noodles"
+  ]
+ }
+}
