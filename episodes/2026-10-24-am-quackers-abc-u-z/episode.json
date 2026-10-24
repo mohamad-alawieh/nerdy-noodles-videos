@@ -1,0 +1,127 @@
+{
+  "id": "2026-10-24-am-quackers-abc-u-z",
+  "host": "duck",
+  "lesson": "letters U-Z",
+  "scene": "pond",
+  "intro_title": "ABC: U to Z!",
+  "intro_say": "Hi friends! I'm Quackers! Let's read!",
+  "board_title": "Quackers' ABC",
+  "board_label": "Letters:",
+  "voice": "af_heart",
+  "music_seed": 61043,
+  "hook": {
+    "pre": "La la la...",
+    "burst": "QUACK!",
+    "sound": "duck",
+    "line": "Oops! Quackers was so loud, letters flew!",
+    "line_caption": "Oops! Quackers was so loud,\nletters flew!"
+  },
+  "items": [
+    {
+      "kind": "block",
+      "text": "U",
+      "color": "#8E5CF7",
+      "big": "U",
+      "word": "UMBRELLA",
+      "say": "U is for umbrella!",
+      "scene": "park"
+    },
+    {
+      "kind": "block",
+      "text": "V",
+      "color": "#3DDC84",
+      "big": "V",
+      "word": "VEGGIES",
+      "say": "V is for veggies! Yum!",
+      "scene": "kitchen",
+      "trick": "bounce"
+    },
+    {
+      "kind": "block",
+      "text": "W",
+      "color": "#00B4D8",
+      "big": "W",
+      "word": "WHALE",
+      "say": "W is for whale!",
+      "scene": "ocean"
+    },
+    {
+      "kind": "block",
+      "text": "X",
+      "color": "#FF5A36",
+      "big": "X",
+      "word": "XYLOPHONE",
+      "say": "X is for xylophone!",
+      "scene": "classroom",
+      "trick": "cartwheel"
+    },
+    {
+      "kind": "block",
+      "text": "Y",
+      "color": "#FFB627",
+      "big": "Y",
+      "word": "YELLOW",
+      "say": "Y is for yellow, like Quackers!",
+      "scene": "pond",
+      "trick": "sunglasses"
+    }
+  ],
+  "song": [
+    "U, umbrella,\nV, veggies,",
+    "W for whale,\nX, xylophone,",
+    "Y for yellow,\njust like me!",
+    "Letters, letters,\nU to Y!"
+  ],
+  "song_notes": [
+    "U:G4 um-brel-la:E4,G4,A4 V:G4 veg-gies:A4,G4/2",
+    "W:G4 for:G4 whale:C5 X:A4 xy-lo-phone:G4,A4,G4/2",
+    "Y:E4 for:E4 yel-low:G4,G4 just:F4 like:E4 me:D4/2",
+    "Let-ters:E4,G4 let-ters:A4,G4 U:E4 to:D4 Y:C4/2"
+  ],
+  "celebrate_word": "U-V-W-X-Y!",
+  "celebrate": "U, V, W, X, Y! Quackers found them all!",
+  "twist": {
+    "peek_line": "Wait... who is zigzagging in?",
+    "reveal_word": "Z? ZIGZAG!",
+    "reveal": "Z! Z is for zigzag!",
+    "laugh": "Hee hee! Z is the very last letter!",
+    "laugh_caption": "Hee hee! Z is the\nvery last letter!",
+    "item": {
+      "kind": "block",
+      "text": "Z",
+      "color": "#FF4FA3",
+      "big": "Z",
+      "word": "ZIGZAG",
+      "say": "Z is for zigzag!",
+      "scene": "sky"
+    }
+  },
+  "outro": "Quackers knows A to Z! What word starts with Z? Tell Quackers!",
+  "outro_caption": "Quackers knows A to Z!\nWhat word starts with Z? Tell Quackers!",
+  "thumbnail": {
+    "lines": [
+      "ABC",
+      "U TO",
+      "Z!"
+    ],
+    "sticker": "QUACK!",
+    "burst": "QUACK!"
+  },
+  "youtube": {
+    "title": "Quackers' ABC: U to Z! (QUACK!) | Nerdy Noodles",
+    "description": "🦆 QUACK! Quackers the duck quacked so loud that all the letter blocks flew away! Can you help Quackers find them?\n\nLearn the letters U, V, W, X and Y with Quackers! Each letter block comes back one by one with a word that starts with it: U is for umbrella, V is for veggies, W is for whale, X is for xylophone, and Y is for yellow, just like Quackers! Visit the park, the kitchen, the ocean and the classroom. Then sing the letter song with Quackers, and stay till the end, because one more letter comes zigzagging in to finish the alphabet! ✨\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn the letters U, V, W, X, Y and Z\n✔️ Hear a word for each letter (W is for whale!)\n✔️ Practice early phonics and letter sounds\n✔️ Sing a happy alphabet song with Quackers the duck!\n\n⏱️ Chapters\n0:00 Intro\n0:04 QUACK! Oh no!\n0:09 Let's find the letters!\n0:26 Sing along!\n0:46 Wait... who is zigzagging in?\n0:56 What starts with Z?\n\n💬 What word starts with Z? Tell Quackers in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #ABC #LearnTheAlphabet #Phonics #AlphabetSong #Preschool #KidsSongs #ToddlerLearning",
+    "tags": [
+      "abc for kids",
+      "learn the alphabet",
+      "letters U to Z",
+      "alphabet song",
+      "phonics for kids",
+      "learn letters",
+      "duck song for kids",
+      "preschool learning",
+      "toddler learning",
+      "kids songs",
+      "Nerdy Noodles"
+    ]
+  }
+}
