@@ -352,5 +352,22 @@
   "gag": "Zoomy sings 'Shiny, shiny car!' as bubbles pile on the roof, a doggy wants a bath too, a bird chirps and Zoomy rolls out all clean",
   "title": "Shiny Car Wash Song with Zoomy the Car! #shorts",
   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-5378719734504732424"
+ },
+ {
+  "id": "2026-10-24-pm-cupcake-baking-song",
+  "date": "2026-10-24",
+  "host": "cat",
+  "lang": "en",
+  "format": "song",
+  "topic": "baking cupcakes in the kitchen with friends (baking song)",
+  "scene": "kitchen",
+  "objects": [
+   "cupcake",
+   "cow",
+   "egg",
+   "dog"
+  ],
+  "gag": "Mittens stirs the bowl, adds milk and an egg, the puppy wants a taste, and cupcakes multiply for friends",
+  "title": "Cupcake Baking Song with Mittens! #shorts"
  }
 ]
