@@ -1,0 +1,253 @@
+{
+ "id": "2026-10-24-pm-grow-flower-song",
+ "host": "duck",
+ "scene": "farm",
+ "voice": "af_heart",
+ "music_seed": 7731,
+ "song": {
+  "lang": "en",
+  "bpm": 104,
+  "intro_beats": 4
+ },
+ "hook_text": "SING WITH QUACKERS!",
+ "start_face": "happy",
+ "beats": [
+  {
+   "type": "sing",
+   "line": "Grow:G4 lit-tle:G4,E4 flow-er:G4,A4 grow:C5/2 _/1",
+   "show": "Grow, little flower, grow!",
+   "face": "laugh",
+   "arms": "wave"
+  },
+  {
+   "type": "enter",
+   "at_beat": 2,
+   "id": "fl",
+   "obj": {
+    "kind": "flower",
+    "color": "#FF6FA5"
+   },
+   "from": "bottom",
+   "to": [
+    900,
+    1380
+   ],
+   "style": "bounce",
+   "scale": 1.0
+  },
+  {
+   "type": "sing",
+   "line": "Plant:A4 a:A4 seed:G4 down:E4 low:D4/2 _/2",
+   "show": "Plant a seed down low!",
+   "arms": "rest"
+  },
+  {
+   "type": "enter",
+   "at_beat": 2,
+   "id": "seed",
+   "obj": {
+    "kind": "shape",
+    "shape": "oval",
+    "color": "#A0703C"
+   },
+   "from": "top_left",
+   "to": [
+    170,
+    1400
+   ],
+   "style": "fall",
+   "scale": 1.0
+  },
+  {
+   "type": "sing",
+   "line": "Give:E4 it:G4 wa-ter:E4,G4 ev-ery:A4,G4 day:E4/2",
+   "show": "Give it water every day!",
+   "face": "laugh",
+   "arms": "dance"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "w1",
+   "obj": {
+    "kind": "bubble",
+    "color": "#7FD3FF"
+   },
+   "from": "top",
+   "to": [
+    170,
+    1200
+   ],
+   "style": "fall",
+   "scale": 1.3
+  },
+  {
+   "type": "enter",
+   "at_beat": 2,
+   "id": "w2",
+   "obj": {
+    "kind": "bubble",
+    "color": "#9AD8FF"
+   },
+   "from": "top",
+   "to": [
+    900,
+    1180
+   ],
+   "style": "fall",
+   "scale": 1.3
+  },
+  {
+   "type": "pop",
+   "at_beat": 4,
+   "id": "w1",
+   "word": "SPLASH!",
+   "color": "#4FC3F7",
+   "dur": 0.3
+  },
+  {
+   "type": "pop",
+   "at_beat": 5,
+   "id": "w2",
+   "word": "SPLASH!",
+   "color": "#26C6DA",
+   "dur": 0.3
+  },
+  {
+   "type": "sing",
+   "line": "Sun:F4 sun:A4 shine:G4 so:E4 bright:C4/2 _/2",
+   "show": "Sun, sun, shine so bright!",
+   "face": "happy",
+   "arms": "cheer"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "sun",
+   "obj": {
+    "kind": "star",
+    "color": "#FFD23F"
+   },
+   "from": "top_right",
+   "to": [
+    900,
+    700
+   ],
+   "style": "zoom",
+   "scale": 1.7
+  },
+  {
+   "type": "spin",
+   "at_beat": 3,
+   "id": "sun",
+   "turns": 1
+  },
+  {
+   "type": "grow",
+   "at_beat": 5,
+   "id": "fl",
+   "scale": 1.5
+  },
+  {
+   "type": "sing",
+   "line": "Pig:G4 and:G4 Roos-ter:E4,G4 come:C5/2 _/2",
+   "show": "Pig and Rooster come!",
+   "face": "o",
+   "arms": "rest"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "pig",
+   "obj": {
+    "kind": "pig",
+    "color": "#FFB3C7"
+   },
+   "from": "left",
+   "to": [
+    170,
+    1150
+   ],
+   "style": "bounce",
+   "scale": 1.6
+  },
+  {
+   "type": "enter",
+   "at_beat": 2,
+   "id": "roo",
+   "obj": {
+    "kind": "rooster",
+    "color": "#E0533D"
+   },
+   "from": "right",
+   "to": [
+    900,
+    960
+   ],
+   "style": "bounce",
+   "scale": 1.6
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "pig",
+   "dur": 0.5
+  },
+  {
+   "type": "wait",
+   "at_beat": 6.9,
+   "sfx": "rooster",
+   "dur": 0.5
+  },
+  {
+   "type": "sing",
+   "line": "Grow:G4 lit-tle:G4,E4 flow-er:G4,A4 grow:C5/2 _/1",
+   "show": "Grow, little flower, grow!",
+   "face": "laugh",
+   "arms": "dance"
+  },
+  {
+   "type": "multiply",
+   "at_beat": 1,
+   "id": "fl",
+   "count": 4,
+   "radius": 140
+  },
+  {
+   "type": "noodle",
+   "at_beat": 4,
+   "action": "dance"
+  },
+  {
+   "type": "wait",
+   "at_beat": 7,
+   "sfx": "duck",
+   "dur": 0.4
+  },
+  {
+   "type": "sing",
+   "line": "Hel-lo:D5,C5 pret-ty:A4,G4 flow-er:C5,C5/3",
+   "show": "Hello, pretty flower!",
+   "face": "proud",
+   "arms": "cheer",
+   "confetti": true
+  },
+  {
+   "type": "end"
+  }
+ ],
+ "youtube": {
+  "title": "Grow Little Flower Song with Quackers! #shorts",
+  "description": "Sing along with Quackers! Plant a seed, give it water, and sing: Grow, little flower, grow! 🌱🌸\n\nQuackers is a cheerful little duck who loves to sing on the farm!\n\n🔔 Subscribe to Nerdy Noodles for more songs and giggles!\n\n#NerdyNoodles #shorts #kidssongs #nurseryrhymes #singalong #gardening",
+  "tags": [
+   "kids songs",
+   "nursery rhymes",
+   "toddler songs",
+   "sing along for kids",
+   "flower song for kids",
+   "planting seeds song",
+   "farm animals for kids",
+   "Nerdy Noodles"
+  ]
+ }
+}
