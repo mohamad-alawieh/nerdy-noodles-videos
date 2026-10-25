@@ -1,0 +1,140 @@
+{
+  "id": "2026-10-25-pm-noodle-animal-parts",
+  "host": "noodle",
+  "lesson": "animals: animal body parts (wings, fins, wool, big eyes, floppy ears, whiskers + spikes)",
+  "scene": "park",
+  "intro_title": "Animal Body Parts!",
+  "intro_say": "Hi friends! I'm Noodle! Look closely!",
+  "board_title": "Animal Parts",
+  "board_label": "Parts:",
+  "voice": "af_heart",
+  "music_seed": 61493,
+  "hook": {
+    "pre": "Blow... blow...",
+    "burst": "POP!",
+    "burst_say": "Pop!",
+    "line": "Oops! Noodle's bubble went pop! Find them!",
+    "line_caption": "Oops! Noodle's bubble\nwent pop! Find them!"
+  },
+  "items": [
+    {
+      "kind": "bird",
+      "color": "#4DA3FF",
+      "big": "WINGS",
+      "word": "BIRD",
+      "say": "A bird has wings to fly! It says...",
+      "sound": "bird",
+      "sound_word": "TWEET!",
+      "scene": "sky"
+    },
+    {
+      "kind": "fish",
+      "color": "#FF8C42",
+      "big": "FINS",
+      "word": "FISH",
+      "say": "A fish has fins to swim!",
+      "scene": "ocean",
+      "trick": "cartwheel"
+    },
+    {
+      "kind": "sheep",
+      "big": "WOOL",
+      "word": "SHEEP",
+      "say": "A sheep has soft, fluffy wool! It says...",
+      "sound": "sheep",
+      "sound_word": "BAA!",
+      "scene": "farm",
+      "trick": "sunglasses"
+    },
+    {
+      "kind": "owl",
+      "color": "#D9A86C",
+      "big": "BIG EYES",
+      "word": "OWL",
+      "say": "An owl has big eyes to see at night! It says...",
+      "sound": "owl",
+      "sound_word": "HOOT!",
+      "scene": "night"
+    },
+    {
+      "kind": "dog",
+      "color": "#C8874A",
+      "big": "EARS",
+      "word": "DOG",
+      "say": "A dog has floppy ears! It says...",
+      "sound": "dog",
+      "sound_word": "WOOF!",
+      "scene": "park",
+      "trick": "bounce"
+    },
+    {
+      "kind": "cat",
+      "color": "#9E9EAE",
+      "big": "WHISKERS",
+      "word": "CAT",
+      "say": "A cat has long whiskers! It says...",
+      "sound": "cat",
+      "sound_word": "MEOW!",
+      "scene": "kitchen"
+    }
+  ],
+  "song": [
+    "Birds have wings,\nfish have fins,",
+    "Fluffy sheep wool,\nbig wide grins!",
+    "Big owl eyes,\nfloppy dog ears,",
+    "Kitty whiskers,\nthree big cheers!"
+  ],
+  "song_notes": [
+    "Birds:E4 have:G4 wings:G4/2 fish:A4 have:G4 fins:E4/2",
+    "Fluf-fy:F4/0.5,F4/0.5 sheep:A4 wool:A4/2 big:G4 wide:G4 grins:E4/2",
+    "Big:E4 owl:G4 eyes:A4/2 flop-py:G4/0.5,G4/0.5 dog:E4 ears:A4/2",
+    "Kit-ty:G4/0.5,G4/0.5 whis-kers:A4/0.5,G4/0.5 three:E4 big:D4 cheers:C4/4"
+  ],
+  "celebrate_word": "6 PARTS!",
+  "celebrate": "Six animal parts! Noodle found them all!",
+  "twist": {
+    "peek_line": "Who has pointy spikes?",
+    "reveal_word": "A DINO?!",
+    "reveal": "It's a dino! A dino has spikes on its back!",
+    "laugh": "Hee hee! And Noodle has noodle hair!",
+    "laugh_caption": "Hee hee! And Noodle\nhas noodle hair!",
+    "item": {
+      "kind": "dino",
+      "color": "#6BCB77",
+      "big": "SPIKES",
+      "word": "DINO",
+      "say": "A dino has spikes!",
+      "sound": "roar",
+      "sound_word": "ROAR!",
+      "scene": "jungle"
+    }
+  },
+  "outro": "Which animal part would you love to have? Tell Noodle in the comments!",
+  "outro_caption": "Which animal part would you love to have?\nTell Noodle in the comments!",
+  "thumbnail": {
+    "lines": [
+      "ANIMAL",
+      "BODY",
+      "PARTS!"
+    ],
+    "sticker": "WINGS!",
+    "burst": "POP!"
+  },
+  "youtube": {
+    "title": "Noodle's Animal Body Parts! (POP!) | Nerdy Noodles",
+    "description": "🫧 POP! Noodle blew a giant bubble, it went POP, and all the animals flew away! Can you help Noodle find them?\n\nNoodle looks closely at 6 animals and learns their special body parts: a bird has wings to fly, a fish has fins to swim, a sheep has fluffy wool, an owl has big eyes to see at night, a dog has floppy ears and a cat has long whiskers! Each animal shows up in its own home (the sky, the ocean, the farm, the night, the park and the kitchen) and you hear the REAL sound it makes. Then sing along with Noodle, and stay till the end, because someone with pointy parts is peeking! 🐾\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn animal body parts: wings, fins, wool, big eyes, ears and whiskers\n✔️ Learn what each body part helps animals do\n✔️ Hear the real sound each animal makes\n✔️ Sing an animal body parts song with Noodle!\n\n⏱️ Chapters\n0:00 Hello from Noodle!\n0:04 POP! Oh no!\n0:09 Let's find the animal parts!\n0:26 Sing along!\n0:46 Who has pointy spikes?\n0:56 Which part would you love to have?\n\n💬 Which animal part would you love to have? Tell Noodle in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #AnimalBodyParts #LearnAnimals #AnimalSounds #Preschool #ToddlerLearning #Kindergarten #KidsLearning",
+    "tags": [
+      "animal body parts for kids",
+      "learn animals",
+      "animal parts",
+      "animal sounds for kids",
+      "real animal sounds",
+      "wings fins wool whiskers",
+      "preschool learning",
+      "toddler learning",
+      "educational videos for kids",
+      "kindergarten science",
+      "Nerdy Noodles"
+    ]
+  }
+}
