@@ -1,0 +1,143 @@
+{
+  "id": "2026-10-25-am-zoomy-car-colors",
+  "host": "car",
+  "lesson": "colors (red, orange, yellow, green, purple, pink + blue) with car friends",
+  "scene": "road",
+  "intro_title": "Car Colors!",
+  "intro_say": "Hi friends! I'm Zoomy! Colors, go!",
+  "board_title": "Car Colors!",
+  "board_label": "Cars:",
+  "voice": "af_heart",
+  "music_seed": 51973,
+  "hook": {
+    "pre": "One big horn...",
+    "burst": "HONK!",
+    "sound": "honk",
+    "line": "Oops! Zoomy's car friends zoomed away!",
+    "line_caption": "Oops! Zoomy's car friends\nzoomed away!"
+  },
+  "items": [
+    {
+      "kind": "car",
+      "color": "#E53935",
+      "big": "RED",
+      "word": "RED CAR",
+      "say": "Red! A red car!",
+      "sound": "beep",
+      "sound_word": "BEEP BEEP!",
+      "scene": "road",
+      "trick": "bounce"
+    },
+    {
+      "kind": "car",
+      "color": "#FF8C1A",
+      "big": "ORANGE",
+      "word": "ORANGE CAR",
+      "say": "Orange! An orange car!",
+      "sound": "vroom",
+      "sound_word": "VROOM!",
+      "scene": "farm"
+    },
+    {
+      "kind": "bus",
+      "color": "#FFC20E",
+      "big": "YELLOW",
+      "word": "YELLOW BUS",
+      "say": "Yellow! A yellow bus!",
+      "sound": "bus",
+      "sound_word": "HONK HONK!",
+      "scene": "city"
+    },
+    {
+      "kind": "car",
+      "color": "#2DBE60",
+      "big": "GREEN",
+      "word": "GREEN CAR",
+      "say": "Green! A green car!",
+      "sound": "beep",
+      "sound_word": "BEEP!",
+      "scene": "forest",
+      "trick": "sunglasses"
+    },
+    {
+      "kind": "car",
+      "color": "#8E44AD",
+      "big": "PURPLE",
+      "word": "PURPLE CAR",
+      "say": "Purple! A purple car!",
+      "sound": "honk",
+      "sound_word": "HONK!",
+      "scene": "snow"
+    },
+    {
+      "kind": "car",
+      "color": "#FF5FA2",
+      "big": "PINK",
+      "word": "PINK CAR",
+      "say": "Pink! A pink car!",
+      "sound": "vroom",
+      "sound_word": "VROOM!",
+      "scene": "park",
+      "trick": "cartwheel"
+    }
+  ],
+  "song": [
+    "Red and orange,\nyellow bus,",
+    "Green and purple,\ndrive with us!",
+    "Pink car comes\nto join the fun,",
+    "Colors, colors,\nevery one!"
+  ],
+  "song_notes": [
+    "Red:E4 and:E4 or-ange:G4,G4 yel-low:A4,A4 bus:G4/2",
+    "Green:E4 and:E4 pur-ple:G4,G4 drive:A4 with:A4 us:G4/2",
+    "Pink:C5 car:C5 comes:A4 to:G4 join:A4 the:G4 fun:E4/2",
+    "Col-ors:E4,F4 col-ors:G4,A4 ev-ery:G4,E4 one:C4/2"
+  ],
+  "celebrate_word": "6 COLORS!",
+  "celebrate": "Six colors! Zoomy found all the friends!",
+  "twist": {
+    "peek_line": "Wait... who's behind the board?",
+    "reveal_word": "A BLUE CAR?!",
+    "reveal": "Blue! A blue car, just like Zoomy!",
+    "laugh": "Hee hee! Zoomy has a blue twin!",
+    "laugh_caption": "Hee hee! Zoomy\nhas a blue twin!",
+    "item": {
+      "kind": "car",
+      "color": "#3A86FF",
+      "big": "BLUE",
+      "word": "BLUE CAR",
+      "say": "Blue!",
+      "sound": "beep",
+      "sound_word": "BEEP BEEP!",
+      "scene": "city"
+    }
+  },
+  "outro": "What color car would you drive? Tell Zoomy in the comments!",
+  "outro_caption": "What color car would you drive?\nTell Zoomy in the comments!",
+  "thumbnail": {
+    "lines": [
+      "COLOR",
+      "CARS",
+      "GO!"
+    ],
+    "sticker": "BEEP!",
+    "burst": "HONK!"
+  },
+  "youtube": {
+    "title": "Zoomy's Car Colors! Learn Colors (HONK!) | Nerdy Noodles",
+    "description": "🚗 HONK! Zoomy the car honked so loud that all the colorful car friends zoomed away! Can you help Zoomy find them?\n\nLearn colors with Zoomy and the car friends: RED, ORANGE, YELLOW, GREEN, PURPLE and PINK! Zoomy drives down the road, past the farm, through the city, the forest, the snow and the park, and every car friend answers with a REAL car sound. Then sing Zoomy's color song, and stay till the end, because one more car is hiding behind the board! 👀\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn 6 colors: red, orange, yellow, green, purple and pink\n✔️ Match each color word to a colorful car\n✔️ Hear real car and bus sounds\n✔️ Sing a driving color song with Zoomy!\n\n⏱️ Chapters\n0:00 Hello from Zoomy!\n0:04 HONK! Oh no!\n0:09 Let's learn colors!\n0:26 Sing along!\n0:46 Who's behind the board?\n0:56 What color car would you drive?\n\n💬 What color car would you drive? Tell Zoomy in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #LearnColors #ColorsForKids #CarsForKids #Preschool #ToddlerLearning #KidsSongs #Kindergarten",
+    "tags": [
+      "learn colors",
+      "colors for kids",
+      "color cars",
+      "car cartoon for kids",
+      "car sounds for kids",
+      "colors song",
+      "preschool learning",
+      "toddler learning",
+      "kindergarten learning",
+      "educational videos for kids",
+      "Nerdy Noodles"
+    ]
+  }
+}
