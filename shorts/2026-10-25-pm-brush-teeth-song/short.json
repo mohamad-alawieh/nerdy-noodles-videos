@@ -1,0 +1,246 @@
+{
+ "id": "2026-10-25-pm-brush-teeth-song",
+ "host": "dino",
+ "scene": "jungle",
+ "voice": "af_heart",
+ "music_seed": 9164,
+ "song": {
+  "lang": "en",
+  "bpm": 108,
+  "intro_beats": 4
+ },
+ "hook_text": "SING WITH STOMPY!",
+ "start_face": "happy",
+ "beats": [
+  {
+   "type": "sing",
+   "line": "Brush:G4 brush:G4 brush:E4 your:G4 teeth:C5/2 _/2",
+   "show": "Brush, brush, brush your teeth!",
+   "face": "laugh",
+   "arms": "wave"
+  },
+  {
+   "type": "enter",
+   "at_beat": 1,
+   "id": "b1",
+   "obj": {
+    "kind": "bubble",
+    "color": "#9AD8FF"
+   },
+   "from": "bottom",
+   "to": [
+    180,
+    820
+   ],
+   "style": "slide",
+   "scale": 1.2
+  },
+  {
+   "type": "enter",
+   "at_beat": 3,
+   "id": "b2",
+   "obj": {
+    "kind": "bubble",
+    "color": "#FFFFFF"
+   },
+   "from": "bottom",
+   "to": [
+    900,
+    820
+   ],
+   "style": "slide",
+   "scale": 1.2
+  },
+  {
+   "type": "sing",
+   "line": "Up:A4 and:A4 down:G4 and:E4 round:D4/2 _/2",
+   "show": "Up and down and round!",
+   "arms": "dance"
+  },
+  {
+   "type": "enter",
+   "at_beat": 2,
+   "id": "b3",
+   "obj": {
+    "kind": "bubble",
+    "color": "#B39DFF"
+   },
+   "from": "bottom",
+   "to": [
+    180,
+    1200
+   ],
+   "style": "slide",
+   "scale": 1.2
+  },
+  {
+   "type": "sing",
+   "line": "Shi-ny:E4,G4 shi-ny:E4,G4 smi-ling:A4,G4 bright:E4/2",
+   "show": "Shiny, shiny, smiling bright!",
+   "face": "proud",
+   "arms": "cheer"
+  },
+  {
+   "type": "enter",
+   "at_beat": 2,
+   "id": "st",
+   "obj": {
+    "kind": "star",
+    "color": "#FFD54F"
+   },
+   "from": "top_right",
+   "to": [
+    900,
+    1040
+   ],
+   "style": "zoom",
+   "scale": 1.1
+  },
+  {
+   "type": "spin",
+   "at_beat": 5,
+   "id": "st",
+   "turns": 1
+  },
+  {
+   "type": "sing",
+   "line": "Frog-gy:F4,A4 brush-es:G4,E4 too:D4/2 _/2",
+   "show": "Froggy brushes too!",
+   "face": "laugh",
+   "arms": "rest"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "frog",
+   "obj": {
+    "kind": "frog",
+    "color": "#66BB6A"
+   },
+   "from": "left",
+   "to": "floor_left",
+   "style": "bounce",
+   "scale": 1.3
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "frog",
+   "dur": 0.6
+  },
+  {
+   "type": "sing",
+   "line": "Brush:G4 brush:G4 brush:E4 your:G4 teeth:C5/2 _/2",
+   "show": "Brush, brush, brush your teeth!",
+   "face": "laugh",
+   "arms": "dance"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "bird",
+   "obj": {
+    "kind": "bird",
+    "color": "#4FC3F7"
+   },
+   "from": "top_right",
+   "to": [
+    880,
+    1250
+   ],
+   "style": "bounce",
+   "scale": 1.2
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "bird",
+   "dur": 0.6
+  },
+  {
+   "type": "sing",
+   "line": "Brush:G4 brush:G4 brush:E4 your:G4 teeth:C5/2 _/2",
+   "show": "Brush, brush, brush your teeth!",
+   "face": "happy",
+   "arms": "cheer"
+  },
+  {
+   "type": "pop",
+   "at_beat": 4,
+   "id": "b1",
+   "word": "POP!",
+   "color": "#4FC3F7",
+   "dur": 0.3
+  },
+  {
+   "type": "pop",
+   "at_beat": 5,
+   "id": "b2",
+   "word": "POP!",
+   "color": "#90CAF9",
+   "dur": 0.3
+  },
+  {
+   "type": "pop",
+   "at_beat": 6,
+   "id": "b3",
+   "word": "POP!",
+   "color": "#B39DFF",
+   "dur": 0.3
+  },
+  {
+   "type": "sing",
+   "line": "Spar-kle:D5,C5 spar-kle:A4,G4 smile:C5/4",
+   "show": "Sparkle, sparkle, smile!",
+   "face": "proud",
+   "arms": "cheer",
+   "confetti": true
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "h",
+   "obj": {
+    "kind": "heart",
+    "color": "#FF6F91"
+   },
+   "from": "top_left",
+   "to": [
+    180,
+    700
+   ],
+   "style": "zoom",
+   "scale": 1.0
+  },
+  {
+   "type": "multiply",
+   "at_beat": 2,
+   "id": "h",
+   "count": 3,
+   "radius": 90
+  },
+  {
+   "type": "wait",
+   "at_beat": 5,
+   "sfx": "roar",
+   "dur": 0.6
+  },
+  {
+   "type": "end"
+  }
+ ],
+ "youtube": {
+  "title": "Brush Your Teeth Song with Stompy! #shorts",
+  "description": "Sing along with Stompy! Brush, brush, brush your teeth... up and down and round! Froggy brushes too! Sparkle, sparkle, smile! 🪥🦖\n\nStompy is the gentlest little dinosaur in the jungle!\n\n🔔 Subscribe to Nerdy Noodles for more songs and giggles!\n\n#NerdyNoodles #shorts #kidssongs #nurseryrhymes #singalong #brushyourteeth",
+  "tags": [
+   "kids songs",
+   "nursery rhymes",
+   "toddler songs",
+   "sing along for kids",
+   "brush your teeth song",
+   "tooth brushing for kids",
+   "dinosaur song",
+   "Nerdy Noodles"
+  ]
+ }
+}
