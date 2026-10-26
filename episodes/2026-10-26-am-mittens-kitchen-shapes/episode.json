@@ -1,0 +1,144 @@
+{
+  "id": "2026-10-26-am-mittens-kitchen-shapes",
+  "host": "cat",
+  "lesson": "shapes (circle, square, rectangle, triangle, oval, hexagon, star)",
+  "scene": "kitchen",
+  "intro_title": "Kitchen Shapes!",
+  "intro_say": "Hi friends! I'm Mittens! Find shapes!",
+  "board_title": "Shapes",
+  "board_label": "Shapes:",
+  "voice": "af_heart",
+  "music_seed": 61026,
+  "hook": {
+    "pre": "Swish... swish...",
+    "burst": "SWISH!",
+    "burst_say": "Swish!",
+    "line": "Oops! Mittens swished, the shapes fell!",
+    "line_caption": "Oops! Mittens swished,\nthe shapes fell!"
+  },
+  "items": [
+    {
+      "kind": "shape",
+      "shape": "circle",
+      "color": "#FF5A36",
+      "big": "",
+      "word": "CIRCLE",
+      "say": "Circle! Round like a plate!",
+      "scene": "kitchen"
+    },
+    {
+      "kind": "shape",
+      "shape": "square",
+      "color": "#00B4D8",
+      "big": "",
+      "word": "SQUARE",
+      "say": "Square! Four sides the same!",
+      "scene": "classroom",
+      "trick": "bounce"
+    },
+    {
+      "kind": "shape",
+      "shape": "rectangle",
+      "color": "#3DDC84",
+      "big": "",
+      "word": "RECTANGLE",
+      "say": "Rectangle! Like a door!",
+      "scene": "city"
+    },
+    {
+      "kind": "shape",
+      "shape": "triangle",
+      "color": "#FFC93C",
+      "big": "",
+      "word": "TRIANGLE",
+      "say": "Triangle! Three sides!",
+      "scene": "farm",
+      "trick": "cartwheel"
+    },
+    {
+      "kind": "shape",
+      "shape": "oval",
+      "color": "#8E5CF7",
+      "big": "",
+      "word": "OVAL",
+      "say": "Oval! Like an egg!",
+      "scene": "kitchen"
+    },
+    {
+      "kind": "shape",
+      "shape": "hexagon",
+      "color": "#FF8C42",
+      "big": "",
+      "word": "HEXAGON",
+      "say": "Hexagon! Six sides!",
+      "scene": "candy"
+    },
+    {
+      "kind": "shape",
+      "shape": "star",
+      "color": "#FFE14D",
+      "big": "",
+      "word": "STAR",
+      "say": "Star! Five points!",
+      "scene": "night",
+      "trick": "sunglasses"
+    }
+  ],
+  "song": [
+    "Circle, square,\nrectangle, yay!",
+    "Oval, triangle,\ncome play!",
+    "Hexagon, star,\nshining bright,",
+    "Shapes with Mittens,\nall just right!"
+  ],
+  "song_notes": [
+    "Cir-cle:C4,E4 square:G4 rec-tan-gle:G4,A4,G4 yay:E4/2",
+    "O-val:E4,G4 tri-an-gle:A4,G4,E4 come:D4 play:E4/2",
+    "Hex-a-gon:G4,A4,C5 star:A4 shin-ing:G4,E4 bright:G4/2",
+    "Shapes:E4 with:G4 Mit-tens:A4,G4 all:E4 just:D4 right:C4/2"
+  ],
+  "celebrate_word": "7 SHAPES!",
+  "celebrate": "Seven shapes! Mittens found them all!",
+  "twist": {
+    "peek_line": "Wait... what is on the table?",
+    "reveal_word": "A COOKIE?!",
+    "reveal": "It's a cookie! A yummy circle!",
+    "laugh": "Hee hee! A circle you can share!",
+    "laugh_caption": "Hee hee! A circle\nyou can share!",
+    "item": {
+      "kind": "cookie",
+      "color": "#E0A458",
+      "big": "",
+      "word": "COOKIE",
+      "say": "A circle cookie!",
+      "scene": "kitchen"
+    }
+  },
+  "outro": "What shape is your favorite snack? Tell Mittens in the comments!",
+  "outro_caption": "What shape is your favorite snack?\nTell Mittens in the comments!",
+  "thumbnail": {
+    "lines": [
+      "SHAPES",
+      "WITH",
+      "MITTENS!"
+    ],
+    "sticker": "SWISH!",
+    "burst": ""
+  },
+  "youtube": {
+    "title": "Mittens' Kitchen Shapes! (SWISH!) | Nerdy Noodles",
+    "description": "🐱 SWISH! Mittens the cat swished her tail and all the shapes fell off the kitchen shelf! Can you help Mittens find them?\n\nLearn 7 shapes with Mittens: circle, square, rectangle, triangle, oval, hexagon and star! Each shape comes back one by one, and Mittens shows where you can spot it, like a round plate, a door and an egg. Then sing the kitchen shapes song with Mittens, and stay till the end, because something yummy is waiting on the table! 🍪\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn 7 shapes: circle, square, rectangle, triangle, oval, hexagon and star\n✔️ Count the sides: a triangle has 3, a square has 4, a hexagon has 6\n✔️ Spot shapes in everyday things: plates, doors and eggs\n✔️ Sing a happy shapes song with Mittens!\n\n⏱️ Chapters\n0:00 Hello from Mittens!\n0:04 SWISH! Oh no!\n0:09 Let's find the shapes!\n0:26 Sing along!\n0:46 What is on the table?\n0:56 What shape is your snack?\n\n💬 What shape is your favorite snack? Tell Mittens in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #Shapes #LearnShapes #ShapesSong #CatForKids #Preschool #ToddlerLearning #Kindergarten",
+    "tags": [
+      "shapes for kids",
+      "learn shapes",
+      "shapes song",
+      "circle square triangle",
+      "rectangle oval hexagon star",
+      "cat videos for kids",
+      "preschool learning",
+      "toddler learning",
+      "kindergarten shapes",
+      "educational videos for kids",
+      "Nerdy Noodles"
+    ]
+  }
+}

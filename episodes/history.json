@@ -505,5 +505,19 @@
     "twist": "a dino peeks from behind the board in the jungle ('A dino has spikes on its back!') and answers with a roar; 'And Noodle has noodle hair!'",
     "title": "Noodle's Animal Body Parts! (POP!) | Nerdy Noodles",
     "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-2983662330966163323"
+  },
+  {
+    "id": "2026-10-26-am-mittens-kitchen-shapes",
+    "date": "2026-10-26",
+    "host": "cat",
+    "lesson": "shapes (circle, square, rectangle, triangle, oval, hexagon, star)",
+    "scene": "kitchen",
+    "kinds": [
+      "shape",
+      "cookie"
+    ],
+    "hook": "Mittens swished her tail and the shapes fell off the kitchen shelf SWISH",
+    "twist": "a cookie peeks from behind the board on the kitchen table ('A yummy circle!')",
+    "title": "Mittens' Kitchen Shapes! (SWISH!) | Nerdy Noodles"
   }
 ]
