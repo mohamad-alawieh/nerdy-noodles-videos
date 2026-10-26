@@ -1,0 +1,207 @@
+{
+ "id": "2026-10-26-pm-hello-friends-song",
+ "host": "car",
+ "scene": "road",
+ "voice": "af_heart",
+ "music_seed": 5261,
+ "song": {
+  "lang": "en",
+  "bpm": 104,
+  "intro_beats": 4
+ },
+ "hook_text": "SING WITH ZOOMY!",
+ "start_face": "happy",
+ "beats": [
+  {
+   "type": "sing",
+   "line": "Hel-lo:D5,C5 hel-lo:A4,G4 friends:C5/2 _/2",
+   "show": "Hello, hello, friends!",
+   "face": "laugh"
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "beep",
+   "dur": 0.5
+  },
+  {
+   "type": "sing",
+   "line": "Zoom-y:A4,A4 drives:G4 a-long:E4,D4/2 _/2",
+   "show": "Zoomy drives along!",
+   "face": "happy"
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "vroom",
+   "dur": 0.5
+  },
+  {
+   "type": "sing",
+   "line": "Who:E4 is:G4 on:E4 the:G4 big:A4 green:G4 hill:E4/2",
+   "show": "Who is on the big green hill?",
+   "face": "o"
+  },
+  {
+   "type": "enter",
+   "at_beat": 4,
+   "id": "cow",
+   "obj": {
+    "kind": "cow",
+    "color": "#FFFFFF"
+   },
+   "from": "left",
+   "to": [
+    160,
+    720
+   ],
+   "style": "bounce",
+   "scale": 1.6
+  },
+  {
+   "type": "sing",
+   "line": "Wave:F4 to:A4 the:G4 cow:E4 and:D4 sheep:E4 _/2",
+   "show": "Wave to the cow and sheep!",
+   "face": "laugh"
+  },
+  {
+   "type": "wait",
+   "at_beat": 5.9,
+   "sfx": "cow",
+   "dur": 0.6
+  },
+  {
+   "type": "enter",
+   "at_beat": 3,
+   "id": "sheep",
+   "obj": {
+    "kind": "sheep",
+    "color": "#F5F5F5"
+   },
+   "from": "right",
+   "to": [
+    920,
+    720
+   ],
+   "style": "bounce",
+   "scale": 1.6
+  },
+  {
+   "type": "wait",
+   "at_beat": 6.9,
+   "sfx": "sheep",
+   "dur": 0.5
+  },
+  {
+   "type": "sing",
+   "line": "Hel-lo:D5,C5 hel-lo:A4,G4 friends:C5/2 _/2",
+   "show": "Hello, hello, friends!",
+   "face": "laugh"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "horse",
+   "obj": {
+    "kind": "horse",
+    "color": "#A0522D"
+   },
+   "from": "top_left",
+   "to": [
+    160,
+    1010
+   ],
+   "style": "bounce",
+   "scale": 1.4
+  },
+  {
+   "type": "enter",
+   "at_beat": 2,
+   "id": "duck",
+   "obj": {
+    "kind": "duck",
+    "color": "#FFD54F"
+   },
+   "from": "top_right",
+   "to": [
+    920,
+    1010
+   ],
+   "style": "bounce",
+   "scale": 1.4
+  },
+  {
+   "type": "wait",
+   "at_beat": 5.9,
+   "sfx": "horse",
+   "dur": 0.5
+  },
+  {
+   "type": "wait",
+   "at_beat": 6.9,
+   "sfx": "duck",
+   "dur": 0.5
+  },
+  {
+   "type": "sing",
+   "line": "Let's:G4 all:G4 dance:E4 and:G4 play:C5/2 _/2",
+   "show": "Let's all dance and play!",
+   "face": "laugh"
+  },
+  {
+   "type": "noodle",
+   "at_beat": 1,
+   "action": "dance",
+   "dur": 2.0
+  },
+  {
+   "type": "spin",
+   "at_beat": 2,
+   "id": "cow",
+   "turns": 1
+  },
+  {
+   "type": "spin",
+   "at_beat": 2,
+   "id": "sheep",
+   "turns": 1
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "honk",
+   "dur": 0.6
+  },
+  {
+   "type": "sing",
+   "line": "Hel-lo:D5,C5 hel-lo:A4,G4 friends:C5/4",
+   "show": "Hello, hello, friends!",
+   "face": "proud",
+   "confetti": true
+  },
+  {
+   "type": "multiply",
+   "at_beat": 2,
+   "id": "duck",
+   "count": 3,
+   "radius": 90
+  },
+  {
+   "type": "end"
+  }
+ ],
+ "youtube": {
+  "title": "Hello, Hello, Friends! Song with Zoomy #shorts",
+  "description": "Sing along with Zoomy! Hello, hello, friends! Zoomy drives along and waves to the cow, the sheep, the horse and the duck! \ud83d\ude97\ud83d\udc4b\n\nZoomy is a friendly little blue car who loves to sing!\n\n\ud83d\udd14 Subscribe to Nerdy Noodles for more songs and giggles!\n\n#NerdyNoodles #shorts #kidssongs #nurseryrhymes #singalong #hellosong",
+  "tags": [
+   "kids songs",
+   "nursery rhymes",
+   "toddler songs",
+   "sing along for kids",
+   "hello song",
+   "car song for kids",
+   "farm animal sounds",
+   "Nerdy Noodles"
+  ]
+ }
+}
