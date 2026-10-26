@@ -445,5 +445,22 @@
   "gag": "Zoomy drives along singing 'Hello, hello, friends!' and waves to a cow, sheep, horse and duck with real animal sounds",
   "title": "Hello, Hello, Friends! Song with Zoomy #shorts",
   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=4831347302580112518"
+ },
+ {
+  "id": "2026-10-26-pm-socks-on-song",
+  "date": "2026-10-26",
+  "host": "cat",
+  "lang": "en",
+  "format": "song",
+  "topic": "putting on socks to go out and play (getting dressed song)",
+  "scene": "farm",
+  "objects": [
+   "sock",
+   "dog",
+   "pig",
+   "rooster"
+  ],
+  "gag": "Mittens sings one sock, two socks, on we go; Puppy steals a sock and brings it back",
+  "title": "One Sock, Two Socks Song with Mittens! #shorts"
  }
 ]
