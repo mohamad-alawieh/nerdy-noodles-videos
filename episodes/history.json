@@ -520,5 +520,19 @@
     "twist": "a cookie peeks from behind the board on the kitchen table ('A yummy circle!')",
     "title": "Mittens' Kitchen Shapes! (SWISH!) | Nerdy Noodles",
     "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=8554509639196494917"
+  },
+  {
+    "id": "2026-10-26-pm-stompy-abc-a-e",
+    "date": "2026-10-26",
+    "host": "dino",
+    "lesson": "letters A-E",
+    "scene": "jungle",
+    "kinds": [
+      "block",
+      "frog"
+    ],
+    "hook": "Stompy jumped too high and the letter blocks flew away BOING",
+    "twist": "a frog hops in with the next letter: F is for frog (real frog sound)",
+    "title": "Stompy's ABC: A to E! (BOING!) | Nerdy Noodles"
   }
 ]

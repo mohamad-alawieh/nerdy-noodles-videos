@@ -1,0 +1,128 @@
+{
+  "id": "2026-10-26-pm-stompy-abc-a-e",
+  "host": "dino",
+  "lesson": "letters A-E",
+  "scene": "jungle",
+  "intro_title": "ABC: A to E!",
+  "intro_say": "Hi friends! I'm Stompy! Let's read!",
+  "board_title": "Stompy's ABC",
+  "board_label": "Letters:",
+  "voice": "af_heart",
+  "music_seed": 73519,
+  "hook": {
+    "pre": "Ready... set...",
+    "burst": "BOING!",
+    "burst_say": "Boing!",
+    "line": "Oops! Stompy jumped high and letters flew!",
+    "line_caption": "Oops! Stompy jumped high\nand letters flew!"
+  },
+  "items": [
+    {
+      "kind": "block",
+      "text": "A",
+      "color": "#FF5A36",
+      "big": "A",
+      "word": "ACORN",
+      "say": "A is for acorn!",
+      "scene": "forest"
+    },
+    {
+      "kind": "block",
+      "text": "B",
+      "color": "#FFB627",
+      "big": "B",
+      "word": "BUS",
+      "say": "B is for bus!",
+      "scene": "city",
+      "trick": "bounce"
+    },
+    {
+      "kind": "block",
+      "text": "C",
+      "color": "#3DDC84",
+      "big": "C",
+      "word": "COW",
+      "say": "C is for cow!",
+      "scene": "farm"
+    },
+    {
+      "kind": "block",
+      "text": "D",
+      "color": "#8E5CF7",
+      "big": "D",
+      "word": "DINO",
+      "say": "D is for dino, like Stompy!",
+      "scene": "jungle",
+      "trick": "sunglasses"
+    },
+    {
+      "kind": "block",
+      "text": "E",
+      "color": "#00B4D8",
+      "big": "E",
+      "word": "EARTH",
+      "say": "E is for Earth, our home!",
+      "scene": "space",
+      "trick": "cartwheel"
+    }
+  ],
+  "song": [
+    "A for acorn,\nB for bus,",
+    "C for cow,\nD for dino,",
+    "E is for Earth,\nhooray!",
+    "Letters, letters,\nA to E!"
+  ],
+  "song_notes": [
+    "A:G4 for:G4 a-corn:E4,G4 B:A4 for:A4 bus:G4/2",
+    "C:G4 for:G4 cow:C5 D:A4 for:G4 di-no:A4,G4/2",
+    "E:E4 is:E4 for:E4 Earth:G4 hoo-ray:F4,E4/3",
+    "Let-ters:E4,G4 let-ters:A4,G4 A:E4 to:D4 E:C4/2"
+  ],
+  "celebrate_word": "A-B-C-D-E!",
+  "celebrate": "A, B, C, D, E! Stompy found them all!",
+  "twist": {
+    "peek_line": "Wait... who is hopping in?",
+    "reveal_word": "F? FROG!",
+    "reveal": "F! F is for frog!",
+    "laugh": "Hee hee! F comes right after E!",
+    "laugh_caption": "Hee hee! F comes\nright after E!",
+    "item": {
+      "kind": "frog",
+      "color": "#4CC94C",
+      "big": "F",
+      "word": "FROG",
+      "say": "F is for frog!",
+      "sound": "frog",
+      "sound_word": "RIBBIT!",
+      "scene": "pond"
+    }
+  },
+  "outro": "Stompy loves letters! What word starts with A? Tell Stompy!",
+  "outro_caption": "Stompy loves letters!\nWhat word starts with A? Tell Stompy!",
+  "thumbnail": {
+    "lines": [
+      "ABC",
+      "WITH",
+      "STOMPY!"
+    ],
+    "sticker": "BOING!",
+    "burst": "BOING!"
+  },
+  "youtube": {
+    "title": "Stompy's ABC: A to E! (BOING!) | Nerdy Noodles",
+    "description": "🦖 BOING! Stompy the dino jumped so high that all the letter blocks flew away! Can you help Stompy find them?\n\nLearn the letters A, B, C, D and E with Stompy! Each letter block comes back one by one with a word that starts with it: A is for acorn, B is for bus, C is for cow, D is for dino (just like Stompy!) and E is for Earth. Visit the forest, the city, the farm, the jungle and outer space! Then sing the letter song with Stompy, and stay till the end, because somebody comes hopping in with the next letter! ✨\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn the letters A, B, C, D and E\n✔️ Hear a word for each letter (C is for cow!)\n✔️ Practice early phonics and letter sounds\n✔️ Sing a happy alphabet song with Stompy the dino!\n\n⏱️ Chapters\n0:00 Intro\n0:04 BOING! Oh no!\n0:09 Let's find the letters!\n0:26 Sing along!\n0:46 Wait... who is hopping in?\n0:56 What starts with A?\n\n💬 What word starts with A? Tell Stompy in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #ABC #LearnTheAlphabet #Phonics #AlphabetSong #Preschool #KidsSongs #ToddlerLearning",
+    "tags": [
+      "abc for kids",
+      "learn the alphabet",
+      "letters A to E",
+      "alphabet song",
+      "phonics for kids",
+      "learn letters",
+      "dinosaur song for kids",
+      "preschool learning",
+      "toddler learning",
+      "kids songs",
+      "Nerdy Noodles"
+    ]
+  }
+}
