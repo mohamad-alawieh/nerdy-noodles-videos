@@ -1,0 +1,212 @@
+{
+ "id": "2026-10-27-pm-balloon-up-song",
+ "host": "noodle",
+ "scene": "sky",
+ "voice": "af_heart",
+ "music_seed": 8427,
+ "song": {
+  "lang": "en",
+  "bpm": 108,
+  "intro_beats": 4
+ },
+ "hook_text": "SING WITH NOODLE!",
+ "start_face": "happy",
+ "beats": [
+  {
+   "type": "sing",
+   "line": "High-er:G4,G4 and:E4 high-er:G4,A4 we:G4 go:C5/2",
+   "show": "Higher and higher we go!",
+   "face": "laugh",
+   "arms": "cheer"
+  },
+  {
+   "type": "noodle",
+   "at_beat": 4,
+   "action": "jump"
+  },
+  {
+   "type": "sing",
+   "line": "Red:A4 and:A4 blue:G4 bal-loons:E4,D4/2 _/2",
+   "show": "Red and blue balloons!",
+   "arms": "wave"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "b1",
+   "obj": {
+    "kind": "balloon",
+    "color": "#FF5A5F"
+   },
+   "from": "bottom",
+   "to": [
+    190,
+    1000
+   ],
+   "style": "bounce",
+   "scale": 1.4
+  },
+  {
+   "type": "enter",
+   "at_beat": 3,
+   "id": "b2",
+   "obj": {
+    "kind": "balloon",
+    "color": "#4F8BFF"
+   },
+   "from": "bottom",
+   "to": [
+    890,
+    1000
+   ],
+   "style": "bounce",
+   "scale": 1.4
+  },
+  {
+   "type": "sing",
+   "line": "Float-ing:E4,G4 o-ver:E4,G4 fluf-fy:A4,G4 clouds:E4/2",
+   "show": "Floating over fluffy clouds!",
+   "face": "happy",
+   "arms": "dance"
+  },
+  {
+   "type": "move",
+   "at_beat": 0,
+   "id": "b1",
+   "to": [
+    190,
+    850
+   ],
+   "style": "slide"
+  },
+  {
+   "type": "move",
+   "at_beat": 2,
+   "id": "b2",
+   "to": [
+    890,
+    850
+   ],
+   "style": "slide"
+  },
+  {
+   "type": "noodle",
+   "at_beat": 4,
+   "action": "spin"
+  },
+  {
+   "type": "sing",
+   "line": "Hel-lo:G4,G4 to:E4 the:G4 lit-tle:A4,G4 bird:C5/2",
+   "show": "Hello to the little bird!",
+   "face": "o",
+   "arms": "wave"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "bird",
+   "obj": {
+    "kind": "bird",
+    "color": "#FF8FB1"
+   },
+   "from": "top_left",
+   "to": [
+    150,
+    1250
+   ],
+   "style": "fall",
+   "scale": 1.2
+  },
+  {
+   "type": "wait",
+   "at_beat": 6.5,
+   "sfx": "bird",
+   "dur": 0.6
+  },
+  {
+   "type": "sing",
+   "line": "Duck:G4 is:G4 fly-ing:E4,G4 by:A4 my:G4 side:C5/2",
+   "show": "Duck is flying by my side!",
+   "face": "laugh",
+   "arms": "cheer"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "duck",
+   "obj": {
+    "kind": "duck",
+    "color": "#FFE066"
+   },
+   "from": "right",
+   "to": [
+    930,
+    1250
+   ],
+   "style": "slide",
+   "scale": 1.2
+  },
+  {
+   "type": "wait",
+   "at_beat": 6.5,
+   "sfx": "duck",
+   "dur": 0.6
+  },
+  {
+   "type": "sing",
+   "line": "High-er:G4,G4 and:E4 high-er:G4,A4 we:G4 go:C5/2",
+   "show": "Higher and higher we go!",
+   "face": "laugh",
+   "arms": "dance"
+  },
+  {
+   "type": "multiply",
+   "at_beat": 1,
+   "id": "b1",
+   "count": 4,
+   "radius": 110
+  },
+  {
+   "type": "spin",
+   "at_beat": 3,
+   "id": "bird",
+   "turns": 1
+  },
+  {
+   "type": "spin",
+   "at_beat": 4,
+   "id": "duck",
+   "turns": 1
+  },
+  {
+   "type": "noodle",
+   "at_beat": 4,
+   "action": "jump"
+  },
+  {
+   "type": "sing",
+   "line": "Hap-py:D5,C5 in:A4 the:G4 sky:C5/4",
+   "show": "Happy in the sky!",
+   "face": "proud",
+   "arms": "cheer",
+   "confetti": true
+  },
+  {
+   "type": "end"
+  }
+ ],
+ "youtube": {
+  "title": "Higher and Higher Balloon Song with Noodle! #shorts",
+  "description": "Sing along with Noodle! Higher and higher we go! Red and blue balloons float over fluffy clouds, and Birdie and Duck fly along! \ud83c\udf88\n\nNoodle is a silly, curly noodle bowl with big nerd glasses who loves to sing!\n\n\ud83d\udd14 Subscribe to Nerdy Noodles for more songs and giggles!\n\n#NerdyNoodles #shorts #kidssongs #nurseryrhymes #singalong #balloons",
+  "tags": [
+   "kids songs",
+   "nursery rhymes",
+   "toddler songs",
+   "sing along for kids",
+   "balloon song",
+   "balloons for kids",
+   "sky song for kids",
+   "Nerdy Noodles"
+  ]
+ }
+}

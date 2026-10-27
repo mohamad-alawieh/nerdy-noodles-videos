@@ -463,5 +463,21 @@
   "gag": "Mittens sings one sock, two socks, on we go; Puppy steals a sock and brings it back",
   "title": "One Sock, Two Socks Song with Mittens! #shorts",
   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-2511209841027956249"
+ },
+ {
+  "id": "2026-10-27-pm-balloon-up-song",
+  "date": "2026-10-27",
+  "host": "noodle",
+  "lang": "en",
+  "format": "song",
+  "topic": "floating up with balloons in the sky (balloon song)",
+  "scene": "sky",
+  "objects": [
+   "balloon",
+   "bird",
+   "duck"
+  ],
+  "gag": "Noodle sings higher and higher we go, floating with red and blue balloons past a birdie and a duck",
+  "title": "Higher and Higher Balloon Song with Noodle! #shorts"
  }
 ]
