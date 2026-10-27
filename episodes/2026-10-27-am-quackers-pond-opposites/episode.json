@@ -1,0 +1,142 @@
+{
+  "id": "2026-10-27-am-quackers-pond-opposites",
+  "host": "duck",
+  "lesson": "opposites (big/small, up/down, day/night + soft)",
+  "scene": "pond",
+  "intro_title": "Duck Opposites!",
+  "intro_say": "Hi friends! I'm Quackers! Let's play!",
+  "board_title": "Opposites!",
+  "board_label": "Words:",
+  "voice": "af_heart",
+  "music_seed": 51973,
+  "hook": {
+    "pre": "One, two, three...",
+    "burst": "SPLASH!",
+    "burst_say": "Splash!",
+    "line": "Oops! Quackers splashed, the words flew!",
+    "line_caption": "Oops! Quackers splashed,\nthe words flew!"
+  },
+  "items": [
+    {
+      "kind": "cow",
+      "color": "#FFFFFF",
+      "big": "BIG",
+      "word": "COW",
+      "say": "Big! The cow is very big!",
+      "sound": "cow",
+      "sound_word": "MOO!",
+      "scene": "farm",
+      "trick": "bounce"
+    },
+    {
+      "kind": "frog",
+      "color": "#3DDC84",
+      "big": "SMALL",
+      "word": "FROG",
+      "say": "Small! The frog is so small!",
+      "sound": "frog",
+      "sound_word": "RIBBIT!",
+      "scene": "pond",
+      "trick": "cartwheel"
+    },
+    {
+      "kind": "bird",
+      "color": "#4FC3F7",
+      "big": "UP",
+      "word": "BIRD",
+      "say": "Up! The bird flies up high!",
+      "sound": "bird",
+      "sound_word": "TWEET!",
+      "scene": "sky"
+    },
+    {
+      "kind": "fish",
+      "color": "#FF8C42",
+      "big": "DOWN",
+      "word": "FISH",
+      "say": "Down! The fish swims down deep!",
+      "scene": "ocean"
+    },
+    {
+      "kind": "rooster",
+      "color": "#E53935",
+      "big": "DAY",
+      "word": "ROOSTER",
+      "say": "Day! The rooster wakes up in the day!",
+      "sound": "rooster",
+      "sound_word": "COCK-A-DOODLE-DOO!",
+      "scene": "farm"
+    },
+    {
+      "kind": "owl",
+      "color": "#8B5A2B",
+      "big": "NIGHT",
+      "word": "OWL",
+      "say": "Night! The owl is awake at night!",
+      "sound": "owl",
+      "sound_word": "HOOT!",
+      "scene": "night",
+      "trick": "sunglasses"
+    }
+  ],
+  "song": [
+    "Big and small,\nup and down,",
+    "Day and night,\nall around!",
+    "Quackers sings\na happy song,",
+    "Opposites!\nCome sing along!"
+  ],
+  "song_notes": [
+    "Big:G4 and:G4 small:E4/2 up:A4 and:G4 down:E4/2",
+    "Day:G4 and:G4 night:E4/2 all:A4 a-round:G4,D4/2",
+    "Quack-ers:E4,G4 sings:A4 a:G4 hap-py:A4,G4 song:E4/2",
+    "Op-po-sites:E4,F4,G4 come:A4 sing:G4 a-long:E4,C4/2"
+  ],
+  "celebrate_word": "3 PAIRS!",
+  "celebrate": "Three opposite pairs! Quackers did it!",
+  "twist": {
+    "peek_line": "Wait... who's behind the board?",
+    "reveal_word": "A SHEEP?!",
+    "reveal": "A sheep! Soft is the opposite of hard!",
+    "laugh": "Hee hee! Quackers loves soft, fluffy wool!",
+    "laugh_caption": "Hee hee! Quackers loves\nsoft, fluffy wool!",
+    "item": {
+      "kind": "sheep",
+      "color": "#F5F5F5",
+      "big": "SOFT",
+      "word": "SHEEP",
+      "say": "Soft!",
+      "sound": "sheep",
+      "sound_word": "BAA!",
+      "scene": "park"
+    }
+  },
+  "outro": "What is the opposite of hot? Tell Quackers in the comments!",
+  "outro_caption": "What is the opposite of hot?\nTell Quackers in the comments!",
+  "thumbnail": {
+    "lines": [
+      "BIG",
+      "OR",
+      "SMALL?"
+    ],
+    "sticker": "WOW!",
+    "burst": "SPLASH!"
+  },
+  "youtube": {
+    "title": "Quackers' Pond Opposites! Big and Small (SPLASH!) | Nerdy Noodles",
+    "description": "🦆 SPLASH! Quackers the duck jumped into the pond so hard that all the opposite words flew away! Can you help Quackers find them?\n\nLearn opposites with Quackers: BIG and SMALL, UP and DOWN, DAY and NIGHT! Quackers visits the farm, the pond, the sky, the ocean and the night, and you hear the REAL sounds of the cow, the frog, the bird, the rooster and the owl. Then sing Quackers' opposites song, and stay till the end, because someone soft is hiding behind the board! 👀\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn what opposites are\n✔️ Learn 3 opposite pairs: big/small, up/down, day/night\n✔️ Hear real animal sounds and see where animals live\n✔️ Sing a happy opposites song with Quackers the duck!\n\n⏱️ Chapters\n0:00 Intro\n0:04 SPLASH! Oh no!\n0:09 Let's learn opposites!\n0:26 Sing along!\n0:46 Who's behind the board?\n0:56 What's the opposite of hot?\n\n💬 What is the opposite of hot? Tell Quackers in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #Opposites #LearnOpposites #BigAndSmall #AnimalSounds #Preschool #ToddlerLearning #KidsSongs",
+    "tags": [
+      "opposites for kids",
+      "learn opposites",
+      "big and small",
+      "up and down",
+      "day and night",
+      "animal sounds for kids",
+      "duck cartoon for kids",
+      "preschool learning",
+      "toddler learning",
+      "kindergarten learning",
+      "educational videos for kids",
+      "Nerdy Noodles"
+    ]
+  }
+}
