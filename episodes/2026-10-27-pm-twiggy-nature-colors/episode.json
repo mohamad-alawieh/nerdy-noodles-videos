@@ -1,0 +1,137 @@
+{
+  "id": "2026-10-27-pm-twiggy-nature-colors",
+  "host": "tree",
+  "lesson": "colors (red, orange, yellow, green, blue, pink + brown) in nature",
+  "scene": "forest",
+  "intro_title": "Nature Colors!",
+  "intro_say": "Hi! I'm Twiggy! Let's find colors!",
+  "board_title": "Colors!",
+  "board_label": "Colors:",
+  "voice": "af_heart",
+  "music_seed": 73418,
+  "hook": {
+    "pre": "Tickle... tickle...",
+    "burst": "ACHOO!",
+    "burst_say": "Achoo!",
+    "line": "Oops! Twiggy sneezed, the colors flew!",
+    "line_caption": "Oops! Twiggy sneezed,\nthe colors flew!"
+  },
+  "items": [
+    {
+      "kind": "apple",
+      "color": "#E53935",
+      "big": "RED",
+      "word": "APPLE",
+      "say": "Red! A red apple!",
+      "scene": "forest",
+      "trick": "bounce"
+    },
+    {
+      "kind": "leaf",
+      "color": "#F28C28",
+      "big": "ORANGE",
+      "word": "LEAF",
+      "say": "Orange! An orange leaf!",
+      "scene": "forest"
+    },
+    {
+      "kind": "flower",
+      "color": "#FFD600",
+      "big": "YELLOW",
+      "word": "FLOWER",
+      "say": "Yellow! A yellow flower!",
+      "scene": "park"
+    },
+    {
+      "kind": "frog",
+      "color": "#3DDC84",
+      "big": "GREEN",
+      "word": "FROG",
+      "say": "Green! The green frog says...",
+      "sound": "frog",
+      "sound_word": "RIBBIT!",
+      "scene": "pond",
+      "trick": "cartwheel"
+    },
+    {
+      "kind": "bird",
+      "color": "#2F80ED",
+      "big": "BLUE",
+      "word": "BIRD",
+      "say": "Blue! The blue bird says...",
+      "sound": "bird",
+      "sound_word": "TWEET!",
+      "scene": "sky"
+    },
+    {
+      "kind": "pig",
+      "color": "#FF9EC4",
+      "big": "PINK",
+      "word": "PIG",
+      "say": "Pink! The pink pig says...",
+      "sound": "pig",
+      "sound_word": "OINK!",
+      "scene": "farm",
+      "trick": "sunglasses"
+    }
+  ],
+  "song": [
+    "Red and orange,\nyellow too,",
+    "Green and pink\nand sky so blue!",
+    "Twiggy's colors,\none, two, three,",
+    "Colors are\nso fun to see!"
+  ],
+  "song_notes": [
+    "Red:G4 and:G4 or-ange:E4,G4 yel-low:A4,G4 too:E4/2",
+    "Green:G4 and:G4 pink:E4 and:G4 sky:A4 so:G4 blue:E4/2",
+    "Twig-gy's:E4,G4 col-ors:A4,G4 one:E4 two:D4 three:D4/2",
+    "Col-ors:E4,F4 are:G4 so:A4 fun:G4 to:E4 see:C4/2"
+  ],
+  "celebrate_word": "6 COLORS!",
+  "celebrate": "Six colors! Twiggy did it!",
+  "twist": {
+    "peek_line": "Wait... who's behind the board?",
+    "reveal_word": "AN OWL?!",
+    "reveal": "An owl! Brown, like Twiggy's trunk!",
+    "laugh": "Hee hee! Owls love to live in trees!",
+    "laugh_caption": "Hee hee! Owls love\nto live in trees!",
+    "item": {
+      "kind": "owl",
+      "color": "#8B5A2B",
+      "big": "BROWN",
+      "word": "OWL",
+      "say": "Brown!",
+      "sound": "owl",
+      "sound_word": "HOOT!",
+      "scene": "night"
+    }
+  },
+  "outro": "What is your favorite color? Tell Twiggy in the comments!",
+  "outro_caption": "What is your favorite color?\nTell Twiggy in the comments!",
+  "thumbnail": {
+    "lines": [
+      "LEARN",
+      "THE",
+      "COLORS!"
+    ],
+    "sticker": "WOW!",
+    "burst": "ACHOO!"
+  },
+  "youtube": {
+    "title": "Twiggy's Nature Colors! (ACHOO!) | Nerdy Noodles",
+    "description": "🌳 ACHOO! Twiggy the tree sneezed so hard that all the colors flew away! Can you help Twiggy find them?\n\nLearn colors with Twiggy: RED, ORANGE, YELLOW, GREEN, BLUE and PINK! Twiggy visits the forest, the park, the pond, the sky and the farm, finds a red apple, an orange leaf, a yellow flower, a green frog, a blue bird and a pink pig, and you hear the REAL sounds of the frog, the bird and the pig. Then sing Twiggy's colors song, and stay till the end, because someone is hiding behind the board! 👀\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn 6 colors: red, orange, yellow, green, blue and pink\n✔️ Find colors in nature: apples, leaves, flowers and animals\n✔️ Hear real animal sounds and see where animals live\n✔️ Sing a happy colors song with Twiggy the tree!\n\n⏱️ Chapters\n0:00 Intro\n0:04 ACHOO! Oh no!\n0:09 Let's learn colors!\n0:26 Sing along!\n0:46 Who's behind the board?\n0:56 What's your favorite color?\n\n💬 What is your favorite color? Tell Twiggy in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #LearnColors #ColorsForKids #NatureForKids #AnimalSounds #Preschool #ToddlerLearning #KidsSongs",
+    "tags": [
+      "colors for kids",
+      "learn colors",
+      "colors song for kids",
+      "nature for kids",
+      "animal sounds for kids",
+      "tree cartoon for kids",
+      "preschool learning",
+      "toddler learning",
+      "kindergarten learning",
+      "educational videos for kids",
+      "Nerdy Noodles"
+    ]
+  }
+}

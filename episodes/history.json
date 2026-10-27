@@ -556,5 +556,24 @@
     "title": "Quackers' Pond Opposites! Big and Small (SPLASH!) | Nerdy Noodles",
     "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-5774939508473052047",
     "scheduled": "2026-10-27T08:17:00+02:00"
+  },
+  {
+    "id": "2026-10-27-pm-twiggy-nature-colors",
+    "date": "2026-10-27",
+    "host": "tree",
+    "lesson": "colors (red, orange, yellow, green, blue, pink + brown) in nature",
+    "scene": "forest",
+    "kinds": [
+      "apple",
+      "leaf",
+      "flower",
+      "frog",
+      "bird",
+      "pig",
+      "owl"
+    ],
+    "hook": "a leaf tickled Twiggy's nose, she sneezed and the colors flew away ACHOO",
+    "twist": "a brown owl peeks from behind the board at night ('Brown, like Twiggy's trunk!') and answers with a real hoot",
+    "title": "Twiggy's Nature Colors! (ACHOO!) | Nerdy Noodles"
   }
 ]
