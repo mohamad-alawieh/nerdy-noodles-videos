@@ -480,5 +480,22 @@
   "gag": "Noodle sings higher and higher we go, floating with red and blue balloons past a birdie and a duck",
   "title": "Higher and Higher Balloon Song with Noodle! #shorts",
   "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=-4688854126693430561"
+ },
+ {
+  "id": "2026-10-27-pm-night-stars-song",
+  "date": "2026-10-27",
+  "host": "duck",
+  "lang": "en",
+  "format": "song",
+  "topic": "saying good night to the moon, stars and animal friends (bedtime song)",
+  "scene": "night",
+  "objects": [
+   "star",
+   "moon",
+   "owl",
+   "frog"
+  ],
+  "gag": "Quackers sings night night, stars so bright, saying good night to the moon, a hooting owl and a croaking frog",
+  "title": "Night Night Stars Song with Quackers! #shorts"
  }
 ]

@@ -1,0 +1,195 @@
+{
+ "id": "2026-10-27-pm-night-stars-song",
+ "host": "duck",
+ "scene": "night",
+ "voice": "af_heart",
+ "music_seed": 5531,
+ "song": {
+  "lang": "en",
+  "bpm": 104,
+  "intro_beats": 4
+ },
+ "hook_text": "SING WITH QUACKERS",
+ "start_face": "happy",
+ "beats": [
+  {
+   "type": "sing",
+   "line": "Night:G4 night:G4 stars:E4 so:G4 bright:C5/2 _/2",
+   "show": "Night night, stars so bright!",
+   "face": "happy",
+   "arms": "wave"
+  },
+  {
+   "type": "enter",
+   "at_beat": 2,
+   "id": "s1",
+   "obj": {
+    "kind": "star",
+    "color": "#FFD43B"
+   },
+   "from": "top_left",
+   "to": [
+    170,
+    820
+   ],
+   "style": "fall",
+   "scale": 1.2
+  },
+  {
+   "type": "sing",
+   "line": "The:A4 moon:A4 is:G4 big:E4 and:G4 round:E4 _/2",
+   "show": "The moon is big and round!",
+   "face": "o",
+   "arms": "cheer"
+  },
+  {
+   "type": "enter",
+   "at_beat": 1,
+   "id": "moon",
+   "obj": {
+    "kind": "shape",
+    "shape": "moon",
+    "color": "#FFF3B0"
+   },
+   "from": "top_right",
+   "to": [
+    900,
+    800
+   ],
+   "style": "zoom",
+   "scale": 1.4
+  },
+  {
+   "type": "sing",
+   "line": "Owl:E4 is:G4 sit-ting:E4,G4 in:A4 a:G4 tree:E4/2",
+   "show": "Owl is sitting in a tree!",
+   "face": "happy",
+   "arms": "wave"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "owl",
+   "obj": {
+    "kind": "owl",
+    "color": "#A0785A"
+   },
+   "from": "left",
+   "to": [
+    120,
+    1010
+   ],
+   "style": "bounce",
+   "scale": 1.0
+  },
+  {
+   "type": "wait",
+   "at_beat": 6.5,
+   "sfx": "owl",
+   "dur": 0.6
+  },
+  {
+   "type": "sing",
+   "line": "Night:G4 night:G4 stars:E4 so:G4 bright:C5/2 _/2",
+   "show": "Night night, stars so bright!",
+   "face": "laugh",
+   "arms": "dance"
+  },
+  {
+   "type": "spin",
+   "at_beat": 1,
+   "id": "s1",
+   "turns": 1
+  },
+  {
+   "type": "noodle",
+   "at_beat": 4,
+   "action": "jump"
+  },
+  {
+   "type": "sing",
+   "line": "Frog-gy:F4,A4 sings:G4 a:E4 sleep-y:D4,E4 song:C4/2",
+   "show": "Froggy sings a sleepy song!",
+   "face": "squint",
+   "arms": "rest"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "frog",
+   "obj": {
+    "kind": "frog",
+    "color": "#6BCB77"
+   },
+   "from": "right",
+   "to": [
+    965,
+    1010
+   ],
+   "style": "bounce",
+   "scale": 1.0
+  },
+  {
+   "type": "wait",
+   "at_beat": 6.5,
+   "sfx": "frog",
+   "dur": 0.6
+  },
+  {
+   "type": "sing",
+   "line": "Night:G4 night:G4 stars:E4 so:G4 bright:C5/2 _/2",
+   "show": "Night night, stars so bright!",
+   "face": "laugh",
+   "arms": "cheer"
+  },
+  {
+   "type": "multiply",
+   "at_beat": 1,
+   "id": "s1",
+   "count": 4,
+   "radius": 110
+  },
+  {
+   "type": "spin",
+   "at_beat": 3,
+   "id": "owl",
+   "turns": 1
+  },
+  {
+   "type": "spin",
+   "at_beat": 4,
+   "id": "frog",
+   "turns": 1
+  },
+  {
+   "type": "noodle",
+   "at_beat": 4,
+   "action": "dance"
+  },
+  {
+   "type": "sing",
+   "line": "Sleep-y:D5,C5 time:A4 good:G4 night:C5/4",
+   "show": "Sleepy time, good night!",
+   "face": "proud",
+   "arms": "wave",
+   "confetti": true
+  },
+  {
+   "type": "end"
+  }
+ ],
+ "youtube": {
+  "title": "Night Night Stars Song with Quackers! #shorts",
+  "description": "Sing along with Quackers! Night night, stars so bright! Say good night to the big round moon, Owl in the tree and Froggy's sleepy song. \ud83c\udf19\n\nQuackers is a cheerful yellow duck with big nerd glasses who loves to sing!\n\n\ud83d\udd14 Subscribe to Nerdy Noodles for more songs and giggles!\n\n#NerdyNoodles #shorts #kidssongs #nurseryrhymes #singalong #bedtimesong",
+  "tags": [
+   "kids songs",
+   "nursery rhymes",
+   "toddler songs",
+   "sing along for kids",
+   "bedtime song",
+   "good night song for kids",
+   "stars and moon song",
+   "Nerdy Noodles"
+  ]
+ }
+}
