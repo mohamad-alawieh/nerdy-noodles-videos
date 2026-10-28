@@ -576,5 +576,24 @@
     "twist": "a brown owl peeks from behind the board at night ('Brown, like Twiggy's trunk!') and answers with a real hoot",
     "title": "Twiggy's Nature Colors! (ACHOO!) | Nerdy Noodles",
     "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7399011&openWithPostUuid=305183457145145423"
+  },
+  {
+    "id": "2026-10-28-am-zoomy-animal-road-trip",
+    "date": "2026-10-28",
+    "host": "car",
+    "lesson": "animals: animal sounds on a road trip (cow, frog, sheep, bird, owl, horse + dog)",
+    "scene": "road",
+    "kinds": [
+      "cow",
+      "frog",
+      "sheep",
+      "bird",
+      "owl",
+      "horse",
+      "dog"
+    ],
+    "hook": "Zoomy hit a bump on the road and the animal friends ran off to hide BUMP",
+    "twist": "a puppy peeks from behind the board in the city and answers with a real woof; 'The puppy wants a ride with Zoomy!'",
+    "title": "Zoomy's Animal Sounds Road Trip! (BUMP!) | Nerdy Noodles"
   }
 ]

@@ -1,0 +1,143 @@
+{
+  "id": "2026-10-28-am-zoomy-animal-road-trip",
+  "host": "car",
+  "lesson": "animals: animal sounds on a road trip (cow, frog, sheep, bird, owl, horse + dog)",
+  "scene": "road",
+  "intro_title": "Animal Sounds!",
+  "intro_say": "Hi friends! I'm Zoomy! Listen!",
+  "board_title": "Animal Trip!",
+  "board_label": "Friends:",
+  "voice": "af_heart",
+  "music_seed": 52731,
+  "hook": {
+    "pre": "Bumpy road...",
+    "burst": "BUMP!",
+    "burst_say": "Bump!",
+    "line": "Oh no! Zoomy hit a bump! Who is out there?",
+    "line_caption": "Oh no! Zoomy hit a bump!\nWho is out there?"
+  },
+  "items": [
+    {
+      "kind": "cow",
+      "color": "#FFFFFF",
+      "big": "COW",
+      "word": "FARM",
+      "say": "A cow on the farm! The cow says...",
+      "sound": "cow",
+      "sound_word": "MOO!",
+      "scene": "farm",
+      "trick": "bounce"
+    },
+    {
+      "kind": "frog",
+      "color": "#43B047",
+      "big": "FROG",
+      "word": "POND",
+      "say": "A frog at the pond! The frog says...",
+      "sound": "frog",
+      "sound_word": "RIBBIT!",
+      "scene": "pond"
+    },
+    {
+      "kind": "sheep",
+      "color": "#F5F5F5",
+      "big": "SHEEP",
+      "word": "MEADOW",
+      "say": "A sheep in the grass! The sheep says...",
+      "sound": "sheep",
+      "sound_word": "BAA!",
+      "scene": "park",
+      "trick": "sunglasses"
+    },
+    {
+      "kind": "bird",
+      "color": "#4FC3F7",
+      "big": "BIRD",
+      "word": "SKY",
+      "say": "A bird in the sky! The bird says...",
+      "sound": "bird",
+      "sound_word": "TWEET!",
+      "scene": "sky"
+    },
+    {
+      "kind": "owl",
+      "color": "#8D6E63",
+      "big": "OWL",
+      "word": "NIGHT",
+      "say": "An owl at night! The owl says...",
+      "sound": "owl",
+      "sound_word": "HOO HOO!",
+      "scene": "night"
+    },
+    {
+      "kind": "horse",
+      "color": "#8B5A2B",
+      "big": "HORSE",
+      "word": "FARM",
+      "say": "A horse on the farm! The horse says...",
+      "sound": "horse",
+      "sound_word": "NEIGH!",
+      "scene": "farm",
+      "trick": "cartwheel"
+    }
+  ],
+  "song": [
+    "Cow and frog,\nsheep and bird,",
+    "Owl and horse,\nthe sounds we heard!",
+    "Zoomy drives\nalong the way,",
+    "Hear them all\nand shout hooray!"
+  ],
+  "song_notes": [
+    "Cow:G4 and:G4 frog:E4/2 sheep:A4 and:G4 bird:E4/2",
+    "Owl:G4 and:G4 horse:E4 the:G4 sounds:A4 we:G4 heard:D4/2",
+    "Zoo-my:E4,G4 drives:A4 a-long:G4,A4 the:G4 way:E4/2",
+    "Hear:G4 them:G4 all:E4 and:A4 shout:G4 hoo:E4 ray:C4/2"
+  ],
+  "celebrate_word": "6 FRIENDS!",
+  "celebrate": "Six animal friends! Zoomy did it!",
+  "twist": {
+    "peek_line": "Wait... who's behind the board?",
+    "reveal_word": "A PUPPY?!",
+    "reveal": "A puppy in the city! The puppy says...",
+    "laugh": "Hee hee! The puppy wants a ride with Zoomy!",
+    "laugh_caption": "Hee hee! The puppy wants\na ride with Zoomy!",
+    "item": {
+      "kind": "dog",
+      "color": "#C68642",
+      "big": "PUPPY",
+      "word": "CITY",
+      "say": "A puppy!",
+      "sound": "dog",
+      "sound_word": "WOOF!",
+      "scene": "city"
+    }
+  },
+  "outro": "Which animal sound do you like best? Tell Zoomy in the comments!",
+  "outro_caption": "Which animal sound do you like best?\nTell Zoomy in the comments!",
+  "thumbnail": {
+    "lines": [
+      "ANIMAL",
+      "SOUNDS",
+      "TRIP!"
+    ],
+    "sticker": "MOO!",
+    "burst": "BUMP!"
+  },
+  "youtube": {
+    "title": "Zoomy's Animal Sounds Road Trip! (BUMP!) | Nerdy Noodles",
+    "description": "🚗 BUMP! Zoomy the car hit a bump on the road, and all the animal friends ran off to hide! Can you help Zoomy find them?\n\nGo on an animal sounds road trip with Zoomy! Zoomy drives to the farm, the pond, the meadow, the sky and the night, and meets a cow, a frog, a sheep, a bird, an owl and a horse. Listen to each animal's REAL sound, then sing Zoomy's animal song! Stay till the end, because someone is hiding behind the board! 👀\n\nPerfect for toddlers, preschoolers and kindergarten kids (ages 2-6).\n\n✨ In this video, kids will:\n✔️ Learn 6 animal names with Zoomy\n✔️ Hear the real sounds animals make\n✔️ Learn where animals live: farm, pond, sky and night\n✔️ Sing an animal sounds song with Zoomy!\n\n⏱️ Chapters\n0:00 Hello from Zoomy!\n0:04 BUMP! Oh no!\n0:09 Let's meet the animals!\n0:26 Sing along!\n0:46 Who's behind the board?\n0:56 Which sound do you like best?\n\n💬 Which animal sound do you like best? Tell Zoomy in the comments!\n\n🔔 Subscribe to Nerdy Noodles for more funny learning videos for kids!\n\n#NerdyNoodles #AnimalSounds #LearnAnimals #FarmAnimals #CarsForKids #Preschool #ToddlerLearning #KidsSongs",
+    "tags": [
+      "animal sounds for kids",
+      "learn animal names",
+      "farm animals for kids",
+      "real animal sounds",
+      "where animals live",
+      "car cartoon for kids",
+      "preschool learning",
+      "toddler learning",
+      "kindergarten learning",
+      "educational videos for kids",
+      "Nerdy Noodles"
+    ]
+  }
+}
