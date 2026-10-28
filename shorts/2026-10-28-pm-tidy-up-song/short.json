@@ -1,0 +1,216 @@
+{
+ "id": "2026-10-28-pm-tidy-up-song",
+ "host": "dino",
+ "scene": "classroom",
+ "voice": "af_heart",
+ "music_seed": 7312,
+ "song": {
+  "lang": "en",
+  "bpm": 112,
+  "intro_beats": 4
+ },
+ "hook_text": "SING WITH STOMPY!",
+ "start_face": "happy",
+ "beats": [
+  {
+   "type": "sing",
+   "line": "Ti-dy:G4,G4 ti-dy:E4,G4 ti-dy:A4,G4 up:C5/2",
+   "show": "Tidy, tidy, tidy up!",
+   "face": "laugh",
+   "arms": "wave"
+  },
+  {
+   "type": "sing",
+   "line": "Blocks:A4 go:A4 in:G4 the:E4 box:D4/2 _/2",
+   "show": "Blocks go in the box!",
+   "arms": "dance"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "bk",
+   "obj": {
+    "kind": "block",
+    "color": "#FF7043"
+   },
+   "from": "left",
+   "to": [
+    170,
+    880
+   ],
+   "style": "bounce",
+   "scale": 1.2
+  },
+  {
+   "type": "enter",
+   "at_beat": 2,
+   "id": "bk2",
+   "obj": {
+    "kind": "block",
+    "color": "#42A5F5"
+   },
+   "from": "left",
+   "to": [
+    170,
+    1080
+   ],
+   "style": "bounce",
+   "scale": 1.2
+  },
+  {
+   "type": "sing",
+   "line": "Roll:E4 the:G4 ball:A4 and:G4 car:E4/2 _/2",
+   "show": "Roll the ball and car!",
+   "face": "happy",
+   "arms": "dance"
+  },
+  {
+   "type": "enter",
+   "at_beat": 1,
+   "id": "ball",
+   "obj": {
+    "kind": "ball",
+    "color": "#FFCA28"
+   },
+   "from": "right",
+   "to": [
+    930,
+    700
+   ],
+   "style": "bounce",
+   "scale": 1.2
+  },
+  {
+   "type": "enter",
+   "at_beat": 4,
+   "id": "car",
+   "obj": {
+    "kind": "car",
+    "color": "#EF5350"
+   },
+   "from": "right",
+   "to": [
+    940,
+    890
+   ],
+   "style": "slide",
+   "scale": 1.2
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "vroom",
+   "dur": 0.5
+  },
+  {
+   "type": "sing",
+   "line": "Ti-dy:G4,G4 ti-dy:E4,G4 ti-dy:A4,G4 up:C5/2",
+   "show": "Tidy, tidy, tidy up!",
+   "face": "laugh",
+   "arms": "cheer"
+  },
+  {
+   "type": "sing",
+   "line": "Pup-py:F4,A4 helps:G4 us:E4 too:D4/2 _/2",
+   "show": "Puppy helps us too!",
+   "face": "happy",
+   "arms": "wave"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "dog",
+   "obj": {
+    "kind": "dog",
+    "color": "#C8A27A"
+   },
+   "from": "left",
+   "to": [
+    115,
+    1320
+   ],
+   "style": "bounce",
+   "scale": 1.5
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "dog",
+   "dur": 0.6
+  },
+  {
+   "type": "sing",
+   "line": "Kit-ty:F4,A4 helps:G4 us:E4 too:C4/2 _/2",
+   "show": "Kitty helps us too!",
+   "face": "happy",
+   "arms": "wave"
+  },
+  {
+   "type": "enter",
+   "at_beat": 0,
+   "id": "cat",
+   "obj": {
+    "kind": "cat",
+    "color": "#FFB74D"
+   },
+   "from": "right",
+   "to": [
+    965,
+    1230
+   ],
+   "style": "bounce",
+   "scale": 1.4
+  },
+  {
+   "type": "wait",
+   "at_beat": 6,
+   "sfx": "cat",
+   "dur": 0.6
+  },
+  {
+   "type": "sing",
+   "line": "Ti-dy:G4,G4 ti-dy:E4,G4 ti-dy:A4,G4 up:C5/2",
+   "show": "Tidy, tidy, tidy up!",
+   "face": "laugh",
+   "arms": "dance",
+   "confetti": true
+  },
+  {
+   "type": "noodle",
+   "at_beat": 4,
+   "action": "jump"
+  },
+  {
+   "type": "sing",
+   "line": "Put:D5 the:C5 toys:A4 back:G4 home:C5/4",
+   "show": "Put the toys back home!",
+   "face": "proud",
+   "arms": "cheer",
+   "confetti": true
+  },
+  {
+   "type": "multiply",
+   "at_beat": 4,
+   "id": "bk",
+   "count": 3,
+   "radius": 90
+  },
+  {
+   "type": "end"
+  }
+ ],
+ "youtube": {
+  "title": "Tidy Up Song with Stompy! #shorts",
+  "description": "Sing along with Stompy! Tidy, tidy, tidy up! Blocks go in the box, roll the ball and car... and put the toys back home! \ud83e\uddf8\ud83e\udd95\n\nStompy is a gentle green dino who loves to sing with his animal friends!\n\n\ud83d\udd14 Subscribe to Nerdy Noodles for more songs and giggles!\n\n#NerdyNoodles #shorts #kidssongs #nurseryrhymes #singalong #tidyup",
+  "tags": [
+   "kids songs",
+   "nursery rhymes",
+   "toddler songs",
+   "sing along for kids",
+   "tidy up song",
+   "clean up toys song",
+   "dinosaur song for kids",
+   "Nerdy Noodles"
+  ]
+ }
+}
